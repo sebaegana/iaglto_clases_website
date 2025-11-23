@@ -1,7 +1,7 @@
 ---
-listing_title: "Diapositiva 01"
-title: "Lorem ipsum"
-subtitle: "Clase 01 – Lorem ipsum"
+listing_title: "Diapositiva 02"
+title: "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional"
+subtitle: "FEN Unegocios"
 institution: 'Lorem ipsum'
 lang: es
 date: today
