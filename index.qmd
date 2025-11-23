@@ -1,0 +1,13 @@
+---
+title: "Magíster en Administración de Instituciones de Salud "
+subtitle: "Modelos predictivos"
+date: last-modified
+lang: es
+format:
+  html:
+    toc: true
+    theme: cosmo
+    number-sections: false
+---
+
+Este será el repositorio de los distintos materiales utilizados en el curso. 

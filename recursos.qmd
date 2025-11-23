@@ -1,0 +1,36 @@
+---
+title: "Recursos"
+format: html
+---
+
+# Recursos adicionales
+
+-   Vecillas Martin, D., Berruezo Fernández, C., & Gento Municio, A. M. (2025). Systematic Review of Discrete Event Simulation in Healthcare and Statistics Distributions. Applied Sciences, 15(4), 1861. [Enlace aquí](https://www.mdpi.com/2076-3417/15/4/1861#:~:text=53,CrossRef)
+
+-   Heins, J., Schoenfelder, J., Heider, S., Heller, A. R., & Brunner, J. O. (2022). A scalable forecasting framework to predict COVID-19 hospital bed occupancy. INFORMS Journal on Applied Analytics, 52(6), 508-523. [Enlace aquí](https://opus.bibliothek.uni-augsburg.de/opus4/frontdoor/deliver/index/docId/92025/file/92025.pdf#:~:text=jens.brunner%40uni,care%20units%20and%20regular%20wards)
+
+-   Harper, P. R., & Shahani, A. K. (2002). Modelling for the planning and management of bed capacities in hospitals. Journal of the Operational research Society, 53(1), 11-18.
+
+-   Cavalcante, T., Ospina, R., Leiva, V., Cabezas, X., & Martin-Barreiro, C. (2023). Weibull regression and machine learning survival models: Methodology, comparison, and application to biomedical data related to cardiac surgery. Biology, 12(3), 442.
+
+-   Fenina, S., Jendoubi, S., & Bouchoucha, F. (2023). Failure rate estimation by Weibull distribution in a stochastic environment: application to the hemodialysis machine. Reliability: Theory & Applications, 18(3 (74)), 450-463.
+
+-   Nketiah, E. A. (2021). Parameter Estimation of the Weibull Distribution; Comparison of the Least-Squares Method and the Maximum Likelihood Estimation. Int. J. Adv. Eng. Res. Sci, 8, 210-224.
+
+
+## Libros
+
+(1)	Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.". [Enlace acá](https://r4ds.had.co.nz/)
+(2)	Grolemund, G. (2014). Hands-on programming with R: Write your own functions and simulations. " O'Reilly Media, Inc.". [Enlace acá](https://rstudio-education.github.io/hopr/)
+(3)	Regenstein Jr, J. K. (2018). Reproducible finance with R: Code flows and shiny apps for portfolio analysis. CRC Press. [Enlace acá](http://www.reproduciblefinance.com/)
+(4)	Scheuch, C., Voigt, S., & Weiss, P. (2023). Tidy Finance with R (1st ed.). Chapman and Hall/CRC. https://doi.org/10.1201/b23237. [Enlace acá](https://www.tidy-finance.org/)
+(5)	Xie, Y., Allaire, J. J., & Grolemund, G. (2018). R markdown: The definitive guide. CRC Press. [Enlace acá](https://bookdown.org/yihui/rmarkdown/)
+(6) Bryan, J., & Hester, J. (n.d.). Happy Git and GitHub for the useR. [Enlace acá](https://happygitwithr.com)
+
+##
+
+- Utilización de Renv: [Enlace acá](https://docs.posit.co/ide/user/ide/guide/environments/r/renv.html)
+
+## Cheatsheets
+
+- https://posit.co/resources/cheatsheets/

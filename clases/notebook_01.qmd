@@ -1,0 +1,55 @@
+---
+listing_title: "Clase 01"
+title: |
+  | \includegraphics[width=5cm]{imagenes/Imagen1.jpg}  
+  | Lorem ipsum
+subtitle: Clase 01 - Lorem ipsum
+format: pdf
+editor: visual
+author:   
+  - Sebastián Egaña Santibáñez [{{< fa brands inbox >}}](mailto:segana@fen.uchile.cl)
+code-block-bg: true
+code-block-border-left: "#FF0000"
+---
+
+------------------------------------------------------------------------
+
+# Enlaces del profesor
+
+[{{< fa brands link >}}](https://segana.netlify.app) https://segana.netlify.app
+
+[{{< fa brands github >}}](https://github.com/sebaegana) https://github.com/sebaegana
+
+[{{< fa brands linkedin >}}](https://www.linkedin.com/in/sebastian-egana-santibanez/) https://www.linkedin.com/in/sebastian-egana-santibanez/
+
+------------------------------------------------------------------------
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Clase 01
+
+# Lorem Ipsum
+
+## "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+
+## "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor."
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum ante et velit faucibus gravida. Duis ut faucibus odio. Duis sed facilisis tortor, nec dignissim dolor. Nulla mattis lorem at eros gravida varius. Nullam semper tincidunt sem, in sagittis odio interdum sit amet. Proin in molestie lectus, nec viverra lacus. Nulla at egestas tellus. Pellentesque mollis nunc nec ante finibus semper. Nunc mollis sodales bibendum. Vivamus pulvinar urna et tincidunt mollis.
+
+Phasellus pulvinar nulla dapibus sem lacinia vestibulum. Curabitur quis ex interdum, egestas velit varius, sollicitudin nunc. In sed nisl vitae massa consectetur mattis. Mauris vehicula ultrices augue sed finibus. Ut eu eros at dui porttitor ornare eu vitae erat. Aenean non diam ullamcorper, convallis eros id, fringilla libero. Integer et erat justo. Duis iaculis eleifend mauris, vitae rutrum lorem vehicula eget. Integer dignissim vitae turpis vitae sagittis. Suspendisse tincidunt, neque eu molestie varius, eros sem porta libero, non pretium libero mi tristique nunc. In non est rhoncus, maximus lacus et, lacinia tellus. Vivamus nibh nisi, volutpat nec eros eget, porta euismod sapien.
+
+Donec et ornare ipsum, nec dictum ex. Suspendisse at nisl vitae ligula tincidunt tincidunt. Fusce placerat accumsan faucibus. Aliquam sed hendrerit felis. Praesent sed ornare odio. Nullam venenatis varius dolor ut dignissim. Donec lobortis in eros at tincidunt. Aliquam et nisl faucibus, hendrerit risus at, pellentesque ante.
+
+Mauris sed faucibus ex. Aenean interdum odio lectus, eget bibendum mauris posuere vel. Praesent sagittis rutrum tellus, quis convallis eros maximus quis. Pellentesque accumsan ex sit amet purus blandit mollis. Sed malesuada neque id turpis blandit dapibus. Donec dictum, nulla vel egestas cursus, quam elit blandit nibh, a malesuada arcu mauris eget lorem. Ut hendrerit eget turpis pulvinar placerat. Integer ultricies mi at interdum volutpat. Proin et nisl vel velit porttitor commodo. Aenean ut nibh at nisi blandit sagittis sit amet vel enim. Morbi euismod odio sapien, at placerat odio mattis nec. Sed vestibulum turpis nec tincidunt ultrices. Sed nec efficitur ante. Ut congue rhoncus metus eget accumsan. In sodales est ac libero pretium, et pulvinar nibh mollis.
+
+Fusce vel elit ut magna ultricies accumsan pellentesque ac ante. Quisque quis euismod nunc. Aliquam dapibus quam enim, quis tempor eros hendrerit id. Integer vitae purus in felis iaculis vulputate. Praesent ex sapien, blandit eu tincidunt non, pulvinar sed ante. Morbi pellentesque auctor ipsum. Nam sed laoreet nulla, et dignissim justo. Curabitur eu libero id turpis sollicitudin interdum vel ut quam. Aliquam nulla sem, cursus at tortor et, molestie vehicula leo. Curabitur a eros aliquet nisi pellentesque aliquam. Sed maximus lacus ex, ut eleifend turpis faucibus ut. Morbi et tortor lorem.
+
+# Referencias
+
+-   Vecillas Martin, D., Berruezo Fernández, C., & Gento Municio, A. M. (2025). Systematic Review of Discrete Event Simulation in Healthcare and Statistics Distributions. Applied Sciences, 15(4), 1861. [Enlace aquí](https://www.mdpi.com/2076-3417/15/4/1861#:~:text=53,CrossRef)
+
+-   Heins, J., Schoenfelder, J., Heider, S., Heller, A. R., & Brunner, J. O. (2022). A scalable forecasting framework to predict COVID-19 hospital bed occupancy. INFORMS Journal on Applied Analytics, 52(6), 508-523. [Enlace aquí](https://opus.bibliothek.uni-augsburg.de/opus4/frontdoor/deliver/index/docId/92025/file/92025.pdf#:~:text=jens.brunner%40uni,care%20units%20and%20regular%20wards)
+
+-   Harper, P. R., & Shahani, A. K. (2002). Modelling for the planning and management of bed capacities in hospitals. Journal of the Operational research Society, 53(1), 11-18.

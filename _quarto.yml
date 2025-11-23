@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Curso Modelos predictivos"
+  navbar:
+    left:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Clases"
+        file: clases/index.qmd
+      - text: "Recursos"
+        href: recursos.qmd
+      - text: "Contacto"
+        href: contacto.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+
