@@ -32,5 +32,9 @@
   "clases/diapo_01.qmd": {
     "diapo_01.html": "bf6ff936",
     "diapo_01.tex": "c8fa7d3a"
+  },
+  "clases/diapo_02.qmd": {
+    "diapo_02.html": "b6567543",
+    "diapo_02.tex": "0bd4d366"
   }
 }

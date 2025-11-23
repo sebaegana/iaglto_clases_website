@@ -1,0 +1,232 @@
+---
+listing_title: "Diapositiva 02"
+title: "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional"
+subtitle: "FEN Unegocios"
+institution: 'Lorem ipsum'
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    self-contained: true
+    incremental: true
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{=html}
+<style>
+.smaller { font-size: 85%; }
+.tiny { font-size: 70%; }
+</style>
+```
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` sebastian.egana\@udd.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+------------------------------------------------------------------------
+
+# Objetivo general
+
+-   Analizar el rol de la inteligencia artificial generativa en la estrategia empresarial
+
+# Actividad inicial
+
+## Revisión de la clase pasada
+
+## Pregunta activadora
+
+**¿Qué procesos de su organización creen que podrían mejorar con IA generativa?**
+
+![](imagenes/adoption_01.png){fig-align="center"}
+
+# ¿Qué es la IA Generativa? 
+
+## Conceptos fundamentales 
+
+- **IA (Artificial Intelligence):** máquinas que realizan tareas que suelen requerir inteligencia humana.  
+- **IA Generativa:** sistemas capaces de *crear* contenido como lo hacemos los humanos (texto, imágenes, audio, código).
+
+- Idea central: La IA generativa predice patrones para producir contenido original: [ver enlace](https://education.illinois.edu/about/news-events/news/article/2024/11/11/what-is-generative-ai-vs-ai)
+
+---
+
+## Cómo funciona: entrenamiento y prompting 
+
+- Entrenamiento: El modelo aprende patrones desde grandes volúmenes de datos.
+
+- Prompting: El usuario da una instrucción → el modelo genera contenido.
+
+- Ejemplo: Prompt: *“Escribe un haiku sobre IA generativa.”*
+
+> Un prompt no es solo una pregunta: es un programa breve que guía el comportamiento del modelo.
+
+---
+
+## Modelos discriminativos vs generativos
+
+- **Discriminativos:** clasifican o predicen.  
+- **Generativos:** crean contenido.
+
+**Analogía:**
+
+- Discriminativo → “¿Es fraude o no?”  
+- Generativo → “Resume este caso de fraude.”
+
+---
+
+## Aplicaciones de negocio 
+
+- Atención al cliente  
+- Desarrollo de software  
+- Diseño de productos  
+- Documentación y reportes  
+- Automatización de tareas repetitivas  
+- Insights desde grandes volúmenes de texto
+
+---
+
+# Rol estratégico de la IA Generativa
+
+## ¿Reemplazo o colaboración? 
+
+Caso: Kasparov vs Deep Blue  
+Conclusión:  
+> La IA reemplaza tareas, no profesiones completas.
+
+---
+
+## Transformación organizacional
+
+### Temas principales
+- **Alineamiento estratégico:** IA debe responder a objetivos de negocio.  
+- **Cambio cultural:** mentalidad de trabajo aumentado por IA.  
+- **Gobernanza:** seguridad, privacidad, responsables.  
+- **Impacto transversal:** marketing, operaciones, finanzas, CX, supply chain.  
+
+> La IA redistribuye capacidades dentro de la organización.
+
+---
+
+## Detección de oportunidades de IA 
+
+Clasificación de oportunidades:
+- **Augmentation**  
+- **Co-creation**  
+- **Replacement**
+
+Criterios:
+- ¿Tarea manual?  
+- ¿Generación de contenido?  
+- ¿Repetitiva o rutinaria?  
+- ¿Potencial de mejorar calidad/tiempo?
+
+---
+
+# Evolución de la IA Generativa: por qué ahora
+
+## ChatGPT y adopción masiva
+
+- La app de más rápido crecimiento en la historia.  
+- Ejemplo: Duolingo Max.
+
+---
+
+## Innovaciones clave en la historia
+
+1. **Cloud computing** → datos + cómputo.  
+2. **GANs** → imágenes fotorrealistas.  
+3. **Transformers** → comprensión profunda del lenguaje.  
+4. **RLHF** → modelos afinados con retroalimentación humana.  
+5. **Midjourney / Stable Diffusion / GPT-4** → multimodalidad y creatividad avanzada.
+
+### Idea central
+> La revolución ocurre por la convergencia de datos, cómputo y nuevas arquitecturas.
+
+---
+
+# Ética, privacidad y riesgos 
+
+## Sesgos
+
+- Qué es un sesgo  
+- Por qué ocurre  
+- Cómo detectarlo  
+- Estrategias de mitigación
+
+> Si los datos no representan la realidad, el modelo tampoco lo hará.
+
+---
+
+## 4.2 Copyright y propiedad intelectual
+
+Temas clave:
+- Autoría del contenido generado  
+- Restricciones legales  
+- Riesgos de datos sensibles  
+- Política de uso de herramientas
+
+---
+
+## 4.3 Riesgos emergentes 
+
+- Deepfakes  
+- Misinformación  
+- Seguridad  
+- Abuso y mal uso
+
+---
+
+# 5. Actividad final
+
+### Instrucciones
+1. Formar grupos de 4–5 personas.  
+2. Identificar **3 procesos** donde IA generativa aporte valor.  
+3. Clasificar cada uno en:  
+   - Augmentation  
+   - Co-creation  
+   - Replacement  
+4. Seleccionar uno y analizar:  
+   - Beneficios esperados  
+   - Riesgos  
+   - Requisitos para implementarlo  
+
+3 grupos presentan en 1 minuto.
+
+---
+
+# 6. Cierre 
+
+### Resumen
+- Qué es IA generativa  
+- Cómo funciona  
+- Su impacto estratégico  
+- Evolución tecnológica  
+- Riesgos y ética  
+
+### Pregunta de salida
+> Si la IA generativa ya es parte del trabajo del conocimiento, ¿cómo cambia el rol del profesional?
+
+
+
+------------------------------------------------------------------------
+
+# Referencias
+
+::: tiny
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L. & Polosukhin, I. (2017). Attention is all you need. Advances in neural information processing systems, 30. <https://arxiv.org/pdf/1706.03762>
+:::

@@ -39,7 +39,28 @@
     "href": "clases/index.html",
     "title": "Clases",
     "section": "",
-    "text": "Clases del curso\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase 01\n\n\n\n\n\n\n\n\n\n\n\nDiapositiva 01\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Clases del curso\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase 01\n\n\n\n\n\n\n\n\n\n\n\nDiapositiva 02\n\n\n\n\n\n\n\n\n\n\n\nDiapositiva 02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "clases/diapo_01.html#neque-porro-quisquam-est-qui-dolorem-ipsum-quia-dolor-sit-amet-consectetur-adipisci-velit",
+    "href": "clases/diapo_01.html#neque-porro-quisquam-est-qui-dolorem-ipsum-quia-dolor-sit-amet-consectetur-adipisci-velit",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…”",
+    "text": "“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…”"
+  },
+  {
+    "objectID": "clases/diapo_01.html#no-hay-nadie-que-ame-el-dolor-mismo-que-lo-busque-lo-encuentre-y-lo-quiera-simplemente-porque-es-el-dolor.",
+    "href": "clases/diapo_01.html#no-hay-nadie-que-ame-el-dolor-mismo-que-lo-busque-lo-encuentre-y-lo-quiera-simplemente-porque-es-el-dolor.",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "“No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.”",
+    "text": "“No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.”\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum ante et velit faucibus gravida. Duis ut faucibus odio. Duis sed facilisis tortor, nec dignissim dolor. Nulla mattis lorem at eros gravida varius. Nullam semper tincidunt sem, in sagittis odio interdum sit amet. Proin in molestie lectus, nec viverra lacus. Nulla at egestas tellus. Pellentesque mollis nunc nec ante finibus semper. Nunc mollis sodales bibendum. Vivamus pulvinar urna et tincidunt mollis."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1 + 1\n\n[1] 3"
   },
   {
     "objectID": "clases/clases.html",
@@ -56,25 +77,102 @@
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1 + 1\n\n[1] 3"
+    "objectID": "clases/diapo_02.html#revisión-de-la-clase-pasada",
+    "href": "clases/diapo_02.html#revisión-de-la-clase-pasada",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Revisión de la clase pasada",
+    "text": "Revisión de la clase pasada"
   },
   {
-    "objectID": "clases/diapo_01.html#neque-porro-quisquam-est-qui-dolorem-ipsum-quia-dolor-sit-amet-consectetur-adipisci-velit",
-    "href": "clases/diapo_01.html#neque-porro-quisquam-est-qui-dolorem-ipsum-quia-dolor-sit-amet-consectetur-adipisci-velit",
-    "title": "Lorem ipsum",
-    "section": "“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…”",
-    "text": "“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…”"
+    "objectID": "clases/diapo_02.html#pregunta-activadora",
+    "href": "clases/diapo_02.html#pregunta-activadora",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Pregunta activadora",
+    "text": "Pregunta activadora\n¿Qué procesos de su organización creen que podrían mejorar con IA generativa?"
   },
   {
-    "objectID": "clases/diapo_01.html#no-hay-nadie-que-ame-el-dolor-mismo-que-lo-busque-lo-encuentre-y-lo-quiera-simplemente-porque-es-el-dolor.",
-    "href": "clases/diapo_01.html#no-hay-nadie-que-ame-el-dolor-mismo-que-lo-busque-lo-encuentre-y-lo-quiera-simplemente-porque-es-el-dolor.",
-    "title": "Lorem ipsum",
-    "section": "“No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.”",
-    "text": "“No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.”\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum ante et velit faucibus gravida. Duis ut faucibus odio. Duis sed facilisis tortor, nec dignissim dolor. Nulla mattis lorem at eros gravida varius. Nullam semper tincidunt sem, in sagittis odio interdum sit amet. Proin in molestie lectus, nec viverra lacus. Nulla at egestas tellus. Pellentesque mollis nunc nec ante finibus semper. Nunc mollis sodales bibendum. Vivamus pulvinar urna et tincidunt mollis."
+    "objectID": "clases/diapo_02.html#conceptos-fundamentales",
+    "href": "clases/diapo_02.html#conceptos-fundamentales",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Conceptos fundamentales",
+    "text": "Conceptos fundamentales\n\nIA (Artificial Intelligence): máquinas que realizan tareas que suelen requerir inteligencia humana.\n\nIA Generativa: sistemas capaces de crear contenido como lo hacemos los humanos (texto, imágenes, audio, código).\nIdea central: La IA generativa predice patrones para producir contenido original: ver enlace"
+  },
+  {
+    "objectID": "clases/diapo_02.html#cómo-funciona-entrenamiento-y-prompting",
+    "href": "clases/diapo_02.html#cómo-funciona-entrenamiento-y-prompting",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Cómo funciona: entrenamiento y prompting",
+    "text": "Cómo funciona: entrenamiento y prompting\n\nEntrenamiento: El modelo aprende patrones desde grandes volúmenes de datos.\nPrompting: El usuario da una instrucción → el modelo genera contenido.\nEjemplo: Prompt: “Escribe un haiku sobre IA generativa.”\n\n\nUn prompt no es solo una pregunta: es un programa breve que guía el comportamiento del modelo."
+  },
+  {
+    "objectID": "clases/diapo_02.html#modelos-discriminativos-vs-generativos",
+    "href": "clases/diapo_02.html#modelos-discriminativos-vs-generativos",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Modelos discriminativos vs generativos",
+    "text": "Modelos discriminativos vs generativos\n\nDiscriminativos: clasifican o predicen.\n\nGenerativos: crean contenido.\n\nAnalogía:\n\nDiscriminativo → “¿Es fraude o no?”\n\nGenerativo → “Resume este caso de fraude.”"
+  },
+  {
+    "objectID": "clases/diapo_02.html#aplicaciones-de-negocio",
+    "href": "clases/diapo_02.html#aplicaciones-de-negocio",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Aplicaciones de negocio",
+    "text": "Aplicaciones de negocio\n\nAtención al cliente\n\nDesarrollo de software\n\nDiseño de productos\n\nDocumentación y reportes\n\nAutomatización de tareas repetitivas\n\nInsights desde grandes volúmenes de texto"
+  },
+  {
+    "objectID": "clases/diapo_02.html#reemplazo-o-colaboración",
+    "href": "clases/diapo_02.html#reemplazo-o-colaboración",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "¿Reemplazo o colaboración?",
+    "text": "¿Reemplazo o colaboración?\nCaso: Kasparov vs Deep Blue\nConclusión:\n&gt; La IA reemplaza tareas, no profesiones completas."
+  },
+  {
+    "objectID": "clases/diapo_02.html#transformación-organizacional",
+    "href": "clases/diapo_02.html#transformación-organizacional",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Transformación organizacional",
+    "text": "Transformación organizacional\nTemas principales\n\nAlineamiento estratégico: IA debe responder a objetivos de negocio.\n\nCambio cultural: mentalidad de trabajo aumentado por IA.\n\nGobernanza: seguridad, privacidad, responsables.\n\nImpacto transversal: marketing, operaciones, finanzas, CX, supply chain.\n\n\nLa IA redistribuye capacidades dentro de la organización."
+  },
+  {
+    "objectID": "clases/diapo_02.html#detección-de-oportunidades-de-ia",
+    "href": "clases/diapo_02.html#detección-de-oportunidades-de-ia",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Detección de oportunidades de IA",
+    "text": "Detección de oportunidades de IA\nClasificación de oportunidades: - Augmentation\n- Co-creation\n- Replacement\nCriterios: - ¿Tarea manual?\n- ¿Generación de contenido?\n- ¿Repetitiva o rutinaria?\n- ¿Potencial de mejorar calidad/tiempo?"
+  },
+  {
+    "objectID": "clases/diapo_02.html#chatgpt-y-adopción-masiva",
+    "href": "clases/diapo_02.html#chatgpt-y-adopción-masiva",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "ChatGPT y adopción masiva",
+    "text": "ChatGPT y adopción masiva\n\nLa app de más rápido crecimiento en la historia.\n\nEjemplo: Duolingo Max."
+  },
+  {
+    "objectID": "clases/diapo_02.html#innovaciones-clave-en-la-historia",
+    "href": "clases/diapo_02.html#innovaciones-clave-en-la-historia",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Innovaciones clave en la historia",
+    "text": "Innovaciones clave en la historia\n\nCloud computing → datos + cómputo.\n\nGANs → imágenes fotorrealistas.\n\nTransformers → comprensión profunda del lenguaje.\n\nRLHF → modelos afinados con retroalimentación humana.\n\nMidjourney / Stable Diffusion / GPT-4 → multimodalidad y creatividad avanzada.\n\nIdea central\n\nLa revolución ocurre por la convergencia de datos, cómputo y nuevas arquitecturas."
+  },
+  {
+    "objectID": "clases/diapo_02.html#sesgos",
+    "href": "clases/diapo_02.html#sesgos",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Sesgos",
+    "text": "Sesgos\n\nQué es un sesgo\n\nPor qué ocurre\n\nCómo detectarlo\n\nEstrategias de mitigación\n\n\nSi los datos no representan la realidad, el modelo tampoco lo hará."
+  },
+  {
+    "objectID": "clases/diapo_02.html#copyright-y-propiedad-intelectual",
+    "href": "clases/diapo_02.html#copyright-y-propiedad-intelectual",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "4.2 Copyright y propiedad intelectual",
+    "text": "4.2 Copyright y propiedad intelectual\nTemas clave: - Autoría del contenido generado\n- Restricciones legales\n- Riesgos de datos sensibles\n- Política de uso de herramientas"
+  },
+  {
+    "objectID": "clases/diapo_02.html#riesgos-emergentes",
+    "href": "clases/diapo_02.html#riesgos-emergentes",
+    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "4.3 Riesgos emergentes",
+    "text": "4.3 Riesgos emergentes\n\nDeepfakes\n\nMisinformación\n\nSeguridad\n\nAbuso y mal uso"
   },
   {
     "objectID": "index.html",
