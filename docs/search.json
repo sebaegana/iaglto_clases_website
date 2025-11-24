@@ -84,13 +84,6 @@
     "text": "Objetivo general\n\nAnalizar el rol de la inteligencia artificial generativa en la estrategia empresarial"
   },
   {
-    "objectID": "clases/diapo_02.html#revisión-de-la-clase-pasada",
-    "href": "clases/diapo_02.html#revisión-de-la-clase-pasada",
-    "title": "IA Generativa y LLMs para la Transformación Organizacional",
-    "section": "Revisión de la clase pasada",
-    "text": "Revisión de la clase pasada"
-  },
-  {
     "objectID": "clases/diapo_02.html#pregunta-activadora",
     "href": "clases/diapo_02.html#pregunta-activadora",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
@@ -116,7 +109,7 @@
     "href": "clases/diapo_02.html#para-revisar",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Para revisar",
-    "text": "Para revisar\n\n\n\n\n\n\nTraditional AI vs. Generative AI: What’s the Difference?\n\n\nNA\nLeer nota completa"
+    "text": "Para revisar\n\n\n\n\n\n\nTraditional AI vs. Generative AI: What’s the Difference?\n\n\nTo understand the benefits and uses of artificial intelligence (AI) in education, you first must discern the differences between traditional AI and generative AI. Here’s a comparison of the two.\nLeer nota completa"
   },
   {
     "objectID": "clases/diapo_02.html#la-ia-no-es-un-modelo-es-un-ecosistema-de-componentes",
@@ -130,7 +123,7 @@
     "href": "clases/diapo_02.html#qué-es-un-llm-large-language-model",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "¿Qué es un LLM? (Large Language Model)",
-    "text": "¿Qué es un LLM? (Large Language Model)\nUn LLM (Large Language Model) es un modelo de inteligencia artificial entrenado con enormes cantidades de texto para:\n\npredecir la siguiente palabra,\n\ngenerar respuestas coherentes,\n\ncomprender contextos complejos,\n\nproducir contenido (texto, código, instrucciones),\n\nrazonar de manera estadística."
+    "text": "¿Qué es un LLM? (Large Language Model)\nUn LLM (Large Language Model) es un modelo de inteligencia artificial entrenado con enormes cantidades de texto para:\n\npredecir la siguiente palabra\ngenerar respuestas coherentes\n\ncomprender contextos complejos\n\nproducir contenido (texto, código, instrucciones)\n\nrazonar de manera estadística"
   },
   {
     "objectID": "clases/diapo_02.html#frase-clave",
@@ -193,7 +186,7 @@
     "href": "clases/diapo_02.html#alineamiento-estratégico",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Alineamiento estratégico",
-    "text": "Alineamiento estratégico\nLa IA solo genera valor si está vinculada a metas del negocio.\nPrincipios:\n\nConectar iniciativas de IA con KPIs reales (eficiencia, ingresos, retención, calidad).\nPriorizar casos de uso de alto impacto y bajo riesgo.\nEvitar pilotos aislados o experimentación sin dirección.\nDiseñar una hoja de ruta que avance junto a la estrategia general de la organización.\n\nMensaje clave:\n\nLa IA es una herramienta estratégica, no un juguete tecnológico."
+    "text": "Alineamiento estratégico\nLa IA solo genera valor si está vinculada a metas del negocio.\nPrincipios:\n\n\nConectar iniciativas de IA con KPIs reales (eficiencia, ingresos, retención, calidad).\nPriorizar casos de uso de alto impacto y bajo riesgo.\nEvitar pilotos aislados o experimentación sin dirección.\nDiseñar una hoja de ruta que avance junto a la estrategia general de la organización.\n\nMensaje clave:\n\nLa IA es una herramienta estratégica, no un juguete tecnológico."
   },
   {
     "objectID": "clases/diapo_02.html#cambio-cultural-y-alfabetización-en-ia",
@@ -228,14 +221,14 @@
     "href": "clases/diapo_02.html#framework-operativo-para-transformar-con-ia",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Framework operativo para transformar con IA",
-    "text": "Framework operativo para transformar con IA\n1) Mapear procesos\n\nIdentificar tareas de alto costo cognitivo.\nDocumentar pasos actuales.\nDetectar “IA-fit” en microtareas específicas.\n\n2) Experimentar (“Trial & Iterate”)\n\nProbar IA en tareas acotadas.\nMedir impacto real.\nAjustar prompts, flujos y procesos.\n\n3) Escalar\n\nEntrenar más equipos.\nIntegrar IA en sistemas existentes.\nMantener mejora continua con métricas claras."
+    "text": "Framework operativo para transformar con IA\n1) Mapear procesos\n\nIdentificar tareas de alto costo cognitivo.\nDocumentar pasos actuales.\nDetectar “IA-fit” en microtareas específicas."
   },
   {
     "objectID": "clases/diapo_02.html#la-ia-redistribuye-capacidades-dentro-de-la-organización",
     "href": "clases/diapo_02.html#la-ia-redistribuye-capacidades-dentro-de-la-organización",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "La IA redistribuye capacidades dentro de la organización",
-    "text": "La IA redistribuye capacidades dentro de la organización\n\nLa IA cambia qué tareas hacen las personas y cómo se distribuye el trabajo:\n\nMás tiempo para creatividad, análisis y decisiones.\nMenos tiempo en tareas repetitivas.\nIncremento de autonomía en roles operativos.\nReorganización de funciones tradicionales (marketing, finanzas, CX, TI).\nEmergencia de nuevos roles:\n\nAI Product Owner\n\nPrompt Designer\n\nModel Steward\n\nAI Trainer\n\n\nIdea clave:\n&gt; La IA no reemplaza profesiones completas; reemplaza tareas dentro de ellas."
+    "text": "La IA redistribuye capacidades dentro de la organización\n\nLa IA cambia qué tareas hacen las personas y cómo se distribuye el trabajo:\n\nMás tiempo para creatividad, análisis y decisiones.\nMenos tiempo en tareas repetitivas.\nIncremento de autonomía en roles operativos.\nReorganización de funciones tradicionales (marketing, finanzas, CX, TI).\nEmergencia de nuevos roles:\n\nAI Product Owner\n\nPrompt Designer\n\nModel Steward\n\nAI Trainer"
   },
   {
     "objectID": "clases/diapo_02.html#sesgos-bias",
@@ -270,7 +263,7 @@
     "href": "clases/diapo_02.html#accountability-responsabilidad-humana",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Accountability (Responsabilidad humana)",
-    "text": "Accountability (Responsabilidad humana)\nLa IA no es una excusa para evitar responsabilidad. Siempre debe haber un responsable humano por las decisiones donde la IA participa.\n\n\n\n\n\n\n“Quería que ChatGPT me ayudara. Entonces, ¿por qué me aconsejó cómo suicidarme?” - BBC News Mundo\n\n\nChatGPT escribió una nota de suicidio para una joven con problemas mentales y le aconsejó cómo quitarse la vida, según una investigación de la BBC.\nLeer nota completa\n\n\n\n\nOpenAI estima que más de un millón de sus 800 millones de usuarios semanales parecen expresar pensamientos suicidas"
+    "text": "Accountability (Responsabilidad humana)\nLa IA no es una excusa para evitar responsabilidad. Siempre debe haber un responsable humano por las decisiones donde la IA participa.\n\n\n\n\n\n\n“Quería que ChatGPT me ayudara. Entonces, ¿por qué me aconsejó cómo suicidarme?” - BBC News Mundo\n\n\nChatGPT escribió una nota de suicidio para una joven con problemas mentales y le aconsejó cómo quitarse la vida, según una investigación de la BBC.\nLeer nota completa\n\n\n\n\n\nOpenAI estima que más de un millón de sus 800 millones de usuarios semanales parecen expresar pensamientos suicidas"
   },
   {
     "objectID": "clases/diapo_02.html#fairness-y-justicia-algorítmica",

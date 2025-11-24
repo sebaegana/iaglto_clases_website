@@ -42,10 +42,6 @@ library(fontawesome)
 
 ---
 
-# Actividad inicial
-
-## Revisión de la clase pasada
-
 ## Pregunta activadora
 
 **¿Qué procesos de su organización creen que podrían mejorar con IA generativa?**
@@ -119,7 +115,7 @@ title <- page %>%
   html_attr("content")
 
 description <- page %>%
-  html_element("meta[property='og:description']") %>%
+  html_element("meta[property='og:description'], meta[name='description']") %>%
   html_attr("content")
 
 cat(glue('
@@ -176,11 +172,11 @@ Para responder una consulta compleja, se articulan **varios segmentos de IA**:
 
 Un **LLM (Large Language Model)** es un modelo de inteligencia artificial entrenado con **enormes cantidades de texto** para:
 
-- predecir la siguiente palabra,  
-- generar respuestas coherentes,  
-- comprender contextos complejos,  
-- producir contenido (texto, código, instrucciones),  
-- razonar de manera estadística.
+- predecir la siguiente palabra 
+- generar respuestas coherentes  
+- comprender contextos complejos  
+- producir contenido (texto, código, instrucciones)  
+- razonar de manera estadística
 
 ---
 
@@ -191,6 +187,22 @@ Un LLM **no entiende**, sino que **modela patrones del lenguaje** para generar l
 ### ¿Cómo procesan texto los LLMs?
 
 Los modelos de lenguaje procesan texto mediante una serie de pasos y **parámetros clave** que controlan cómo entienden, representan y generan lenguaje.
+
+---
+
+### Parámetros internos del modelo (no ajustables por el usuario)
+
+:::tiny
+Son parte de la arquitectura del LLM y definen cómo representa y procesa lenguaje.
+
+- embedding dimension (p. ej. 768, 1536, 4096…)
+- tokenizer (reglas que dividen el texto)
+- context window (máximo de tokens simultáneos)
+- número de capas (layers)
+- número de cabezas de atención (attention heads)
+- matrices de atención
+- parámetros totales del modelo (ej. 8B, 70B, 1T)
+:::
 
 ---
 
@@ -236,22 +248,55 @@ Esto permite que el modelo codifique:
 
 Los embeddings que usamos (por ejemplo, con OpenAI o modelos open source) no se crean desde cero cada vez que los aplicamos. En realidad, provienen de un proceso de entrenamiento previo (pre-training) realizado sobre enormes cantidades de texto.
 
---
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: 'asis'
+
+library(rvest)
+library(dplyr)
+library(glue)
+
+url <- "https://huggingface.co/blog/getting-started-with-embeddings"
+
+page <- read_html(url)
+
+title <- page %>%
+  html_element("meta[property='og:title']") %>%
+  html_attr("content")
+
+description <- page %>%
+  html_element("meta[property='og:description'], meta[name='description']") %>%
+  html_attr("content")
+
+cat(glue('
+::: {{.callout-note}}
+## {title}
+
+{description}
+
+[Leer nota completa]({url})
+:::
+'))
+```
+
+---
 
 ##### ¿Qué aprende el modelo?
 
-Durante el entrenamiento, el modelo analiza millones o miles de millones de frases y aprende relaciones estadísticas entre palabras. El objetivo es que, al ver una secuencia de texto, el modelo pueda predecir la siguiente palabra o reconocer palabras que encajan en el mismo contexto.
-
 :::tiny
+
+Durante el entrenamiento, el modelo analiza millones o miles de millones de frases y aprende relaciones estadísticas entre palabras. El objetivo es que, al ver una secuencia de texto, el modelo pueda predecir la siguiente palabra o reconocer palabras que encajan en el mismo contexto.
 
 | Texto de entrenamiento | Tarea implícita | Lo que aprende |
 |-------------------|------------------------|------------------------------|
 | “El **perro** ladra en el jardín.” | Predecir “perro” a partir de su contexto (“El … ladra…”) | Que “perro” aparece en contextos parecidos a “gato”, “animal”, “mascota”. |
 | “El **avión** aterriza en la pista.” | Predecir “avión” | Que “avión” se asocia a “vuelo”, “piloto”, “aeropuerto”. |
 
-:::
-
 Así, el modelo descubre automáticamente los significados y las similitudes semánticas sin reglas escritas por humanos.
+
+:::
 
 ---
 
@@ -272,11 +317,20 @@ Imaginemos que tenemos solo dos dimensiones (en realidad hay miles). Cada palabr
 | lobo    | 0.88               | 0.30                 |
 | avión   | 0.10               | 0.05                 |
 
+---
+
 En el gráfico:
 
--   gato y perro están muy cerca, porque comparten significado.
--   lobo está un poco más lejos: sigue siendo animal, pero no doméstico.
--   avión está totalmente fuera del grupo
+![](imagenes/embedding_plot.png){width="50%" fig-align="center"}
+
+:::tiny
+
+  - gato y perro están muy cerca, porque comparten significado.
+  - lobo está un poco más lejos: sigue siendo animal, pero no doméstico.
+  - avión está totalmente fuera del grupo
+
+:::
+
 
 ---
 
@@ -354,88 +408,6 @@ Resultados similares:
 
 ---
 
-#### Ventana de contexto (context window)
-Es la cantidad máxima de tokens que el modelo puede considerar **al mismo tiempo**.
-
-- GPT-4: ~128k  
-- GPT-4o: ~200k  
-- Claude 3 Opus: ~200k  
-- Gemini 1.5 Ultra: ~1M  
-- Llama 3: 8k–128k (según versión)
-
-**Más contexto = modelos con “memoria a corto plazo” más amplia.**
-
----
-
-### Parámetros de generación (cómo controlamos la salida)
-
-Estos parámetros **no afectan cómo el modelo entiende**, sino **cómo genera texto**. Son esenciales en prompt engineering.
-
----
-
-#### Temperatura (temperature)
-
-Controla la **aleatoriedad**.
-
-- Temperatura baja (0.0–0.3):
-
-  - más precisión  
-  - respuestas estables y deterministas
-  
-- Temperatura alta (0.7–1.2): 
-
-  - más creatividad  
-  - más variación  
-  - mayor riesgo de errores
-
-**Regla:**  
-
-- análisis → baja  
-- creatividad → alta
-
----
-
-#### Top-p (nucleus sampling)
-
-Controla el **porcentaje de probabilidad acumulada** desde donde el modelo puede elegir la próxima palabra.
-
-- top-p = 0.1 → muy restrictivo  
-- top-p = 0.9 → muy diverso  
-- top-p = 1.0 → sin restricciones
-
-**Usado junto a temperatura para ajustar estilo y creatividad.**
-
----
-
-#### Top-k
-
-Límite del número de tokens candidatos que el modelo puede elegir.
-
-- top-k = 1 → modo determinista  
-- top-k = 40 → moderado  
-- top-k = 100+ → más creativo
-
----
-
-#### Penalización de repetición (repetition penalty)
-
-Evita que el modelo repita frases o palabras.
-
-- Valores altos = menos repetición  
-
-Ideal para textos largos, código y redacción formal.
-
----
-
-#### 🔹max_tokens (longitud máxima de respuesta)
-
-Define cuántos tokens **puede generar como salida**.
-
-Si max_tokens es muy pequeño → respuestas truncadas.  
-Si es grande → textos más detallados.
-
----
-
 ### Parámetros de entrenamiento (cómo se entrenan los modelos)
 
 Estos parámetros son importantes para entender el “por qué” del desempeño de un LLM.
@@ -499,6 +471,90 @@ Los modelos mejoran no solo por tamaño, sino por:
 
 ---
 
+#### Ventana de contexto (context window)
+Es la cantidad máxima de tokens que el modelo puede considerar **al mismo tiempo**.
+
+- GPT-4: ~128k  
+- GPT-4o: ~200k  
+- Claude 3 Opus: ~200k  
+- Gemini 1.5 Ultra: ~1M  
+- Llama 3: 8k–128k (según versión)
+
+**Más contexto = modelos con “memoria a corto plazo” más amplia.**
+
+---
+
+### Parámetros de generación (cómo controlamos la salida)
+
+Estos parámetros **no afectan cómo el modelo entiende**, sino **cómo genera texto**. Son esenciales en prompt engineering.
+
+---
+
+#### Temperatura (temperature)
+
+:::tiny
+Controla la **aleatoriedad**.
+
+- Temperatura baja (0.0–0.3):
+
+  - más precisión  
+  - respuestas estables y deterministas
+  
+- Temperatura alta (0.7–1.2): 
+
+  - más creatividad  
+  - más variación  
+  - mayor riesgo de errores
+
+**Regla:**  
+
+- análisis → baja  
+- creatividad → alta
+:::
+
+---
+
+#### Top-p (nucleus sampling)
+
+Controla el **porcentaje de probabilidad acumulada** desde donde el modelo puede elegir la próxima palabra.
+
+- top-p = 0.1 → muy restrictivo  
+- top-p = 0.9 → muy diverso  
+- top-p = 1.0 → sin restricciones
+
+**Usado junto a temperatura para ajustar estilo y creatividad.**
+
+---
+
+#### Top-k
+
+Límite del número de tokens candidatos que el modelo puede elegir.
+
+- top-k = 1 → modo determinista  
+- top-k = 40 → moderado  
+- top-k = 100+ → más creativo
+
+---
+
+#### Penalización de repetición (repetition penalty)
+
+Evita que el modelo repita frases o palabras.
+
+- Valores altos = menos repetición  
+
+Ideal para textos largos, código y redacción formal.
+
+---
+
+#### Max tokens (longitud máxima de respuesta)
+
+Define cuántos tokens **puede generar como salida**.
+
+Si max_tokens es muy pequeño → respuestas truncadas.  
+Si es grande → textos más detallados.
+
+---
+
 ### Resumen visual
 
 | Concepto | Rol |
@@ -529,6 +585,7 @@ Los modelos actuales pueden clasificarse en **cuatro grandes categorías**, seg�
 
 ### Modelos base (Base Models)
 
+:::tiny
 Entrenados con texto masivo, sin instrucciones humanas.  
 Generan lenguaje, pero no siguen órdenes de manera natural.
 
@@ -541,11 +598,13 @@ Generan lenguaje, pero no siguen órdenes de manera natural.
 - **Falcon 40B Base** (Technology Innovation Institute)
 
 **Uso típico:** pre-entrenamiento, fine-tuning, tareas no conversacionales.
+:::
 
 ---
 
 ### Modelos Instruct (afinados para seguir instrucciones)
 
+:::tiny
 Entrenados con **RLHF** + **datasets de instrucciones**. Son los modelos “para conversar”.
 
 **Ejemplos:**
@@ -561,11 +620,13 @@ Entrenados con **RLHF** + **datasets de instrucciones**. Son los modelos “para
 
 
 **Uso típico:** chat, preguntas/respuestas, análisis de texto, resúmenes, tareas empresariales.
+:::
 
 ---
 
 ### Modelos multimodales (texto + imágenes + audio + video)
 
+:::tiny
 Pueden **ver, escuchar, interpretar y generar contenido** en múltiples formatos.
 
 **Ejemplos principales (2024–2025):**
@@ -580,15 +641,14 @@ Pueden **ver, escuchar, interpretar y generar contenido** en múltiples formatos
 - **Runway Gen-2 / Gen-3** (video)
 
 **Uso típico:** interpretación de imágenes, resúmenes de PDFs, análisis de video, agentes con audio.
+:::
 
 ---
 
 ### Modelos especializados (fine-tuning o entrenamiento específico)
 Optimizados para **una disciplina o tipo de tarea**.
 
----
-
-#### Modelos para código
+##### Modelos para código
 
 - **GPT-4o y GPT-4 Turbo (Code Interpreter / o1)**  
 - **DeepSeek-Coder**  
@@ -845,6 +905,7 @@ La IA solo genera valor si está vinculada a metas del negocio.
 
 ### Principios:
 
+:::tiny
 - Conectar iniciativas de IA con KPIs reales (eficiencia, ingresos, retención, calidad).
 - Priorizar casos de uso de alto impacto y bajo riesgo.
 - Evitar pilotos aislados o experimentación sin dirección.
@@ -854,6 +915,7 @@ La IA solo genera valor si está vinculada a metas del negocio.
 
 > La IA es una herramienta estratégica, no un juguete tecnológico.
 
+:::
 ---
 
 ## Cambio cultural y alfabetización en IA
@@ -908,34 +970,38 @@ La IA necesita un marco formal de gestión responsable:
 La IA generativa afecta múltiples áreas al mismo tiempo:
 
 ### Marketing
+
 - Personalización.
 - Generación de contenido.
 - Segmentación inteligente.
 
 ---
 
-:::tiny
-
 ### Ventas
+
 - Redacción asistida.
 - Score de oportunidades.
 - Eficiencia comercial.
 
 ### Servicio al cliente
+
 - Chatbots aumentados.
 - Resúmenes de interacciones.
 - Derivación inteligente.
 
+---
+
 ### Operaciones / Supply Chain
+
 - Predicción.
 - Optimización.
 - Automatización de tareas repetitivas.
 
 ### Recursos Humanos
+
 - Redacción de perfiles.
 - Capacitación.
 - Evaluación y retroalimentación más eficiente.
-:::
 
 ---
 
@@ -966,16 +1032,21 @@ La IA automatiza una tarea o proceso completo.
 ## Framework operativo para transformar con IA
 
 ### **1) Mapear procesos**
+
 - Identificar tareas de alto costo cognitivo.
 - Documentar pasos actuales.
 - Detectar “IA-fit” en microtareas específicas.
 
+---
+
 ### **2) Experimentar (“Trial & Iterate”)**
+
 - Probar IA en tareas acotadas.
 - Medir impacto real.
 - Ajustar prompts, flujos y procesos.
 
 ### **3) Escalar**
+
 - Entrenar más equipos.
 - Integrar IA en sistemas existentes.
 - Mantener mejora continua con métricas claras.
@@ -996,9 +1067,6 @@ La IA cambia **qué tareas hacen las personas** y **cómo se distribuye el traba
   - Prompt Designer  
   - Model Steward  
   - AI Trainer  
-
-**Idea clave:**  
-> La IA no reemplaza profesiones completas; reemplaza tareas dentro de ellas.
 
 :::
 
@@ -1187,7 +1255,11 @@ cat(glue('
 '))
 ```
 
+:::tiny
+
 > OpenAI estima que más de un millón de sus 800 millones de usuarios semanales parecen expresar pensamientos suicidas
+
+:::
 
 ---
 
@@ -1223,6 +1295,8 @@ El principio de **fairness** busca evitar discriminaciones directas o indirectas
 - Nivel socioeconómico.
 - Lenguaje, acento o país de origen.
 - Discapacidad.
+
+---
 
 ### Ejemplos
 
