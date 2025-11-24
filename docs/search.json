@@ -77,102 +77,228 @@
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "clases/diapo_02.html#objetivo-general",
+    "href": "clases/diapo_02.html#objetivo-general",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Objetivo general",
+    "text": "Objetivo general\n\nAnalizar el rol de la inteligencia artificial generativa en la estrategia empresarial"
+  },
+  {
     "objectID": "clases/diapo_02.html#revisión-de-la-clase-pasada",
     "href": "clases/diapo_02.html#revisión-de-la-clase-pasada",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Revisión de la clase pasada",
     "text": "Revisión de la clase pasada"
   },
   {
     "objectID": "clases/diapo_02.html#pregunta-activadora",
     "href": "clases/diapo_02.html#pregunta-activadora",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Pregunta activadora",
     "text": "Pregunta activadora\n¿Qué procesos de su organización creen que podrían mejorar con IA generativa?"
   },
   {
     "objectID": "clases/diapo_02.html#conceptos-fundamentales",
     "href": "clases/diapo_02.html#conceptos-fundamentales",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Conceptos fundamentales",
-    "text": "Conceptos fundamentales\n\nIA (Artificial Intelligence): máquinas que realizan tareas que suelen requerir inteligencia humana.\n\nIA Generativa: sistemas capaces de crear contenido como lo hacemos los humanos (texto, imágenes, audio, código).\nIdea central: La IA generativa predice patrones para producir contenido original: ver enlace"
+    "text": "Conceptos fundamentales\n\nIA (Artificial Intelligence): máquinas que realizan tareas que suelen requerir inteligencia humana.\n\nIA Generativa: sistemas capaces de crear contenido como lo hacemos los humanos (texto, imágenes, audio, código).\nIdea central: La IA generativa predice patrones para producir contenido original.\nIA y algoritmos: Algoritmos como serie de reglas dadas; en el caso de la IA esos algoritmos son construidos por la IA y puede ser mejorados."
+  },
+  {
+    "objectID": "clases/diapo_02.html#innovaciones-clave-en-la-historia",
+    "href": "clases/diapo_02.html#innovaciones-clave-en-la-historia",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Innovaciones clave en la historia",
+    "text": "Innovaciones clave en la historia\n\n\n\n\nCloud computing → datos + cómputo\n\nGANs → imágenes fotorrealistas → Ver enlace\nTransformers → comprensión profunda del lenguaje → Ver enlace\nRLHF → modelos afinados con retroalimentación humana\n\nMidjourney / Stable Diffusion / GPT-4 → multimodalidad y creatividad avanzada\n\n\n\n\n\n\nRecuperado de: Curso Generative AI for Business, DataCamp"
+  },
+  {
+    "objectID": "clases/diapo_02.html#para-revisar",
+    "href": "clases/diapo_02.html#para-revisar",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Para revisar",
+    "text": "Para revisar\n\n\n\n\n\n\nTraditional AI vs. Generative AI: What’s the Difference?\n\n\nNA\nLeer nota completa"
+  },
+  {
+    "objectID": "clases/diapo_02.html#la-ia-no-es-un-modelo-es-un-ecosistema-de-componentes",
+    "href": "clases/diapo_02.html#la-ia-no-es-un-modelo-es-un-ecosistema-de-componentes",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "🤖 La IA no es un modelo — es un ecosistema de componentes",
+    "text": "🤖 La IA no es un modelo — es un ecosistema de componentes\nUn LLM (Large Language Model) como GPT o Claude es solo una parte del sistema.\nPara responder una consulta compleja, se articulan varios segmentos de IA:\n\n\nComputer Vision → detecta y analiza imágenes (objetos, rostros, escenas).\n\nOCR (Reconocimiento Óptico de Caracteres) → extrae texto de imágenes o PDFs.\n\nSpeech Recognition / TTS → convierte audio en texto y viceversa.\n\nLLM → interpreta, contextualiza y genera una respuesta en lenguaje natural.\n\nReasoning / Orchestration Layer → decide qué componentes usar y en qué orden."
+  },
+  {
+    "objectID": "clases/diapo_02.html#qué-es-un-llm-large-language-model",
+    "href": "clases/diapo_02.html#qué-es-un-llm-large-language-model",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "¿Qué es un LLM? (Large Language Model)",
+    "text": "¿Qué es un LLM? (Large Language Model)\nUn LLM (Large Language Model) es un modelo de inteligencia artificial entrenado con enormes cantidades de texto para:\n\npredecir la siguiente palabra,\n\ngenerar respuestas coherentes,\n\ncomprender contextos complejos,\n\nproducir contenido (texto, código, instrucciones),\n\nrazonar de manera estadística."
+  },
+  {
+    "objectID": "clases/diapo_02.html#frase-clave",
+    "href": "clases/diapo_02.html#frase-clave",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Frase clave:",
+    "text": "Frase clave:\n\nLos LLMs no “piensan”: calculan probabilidades en un espacio matemático gigante lleno de significados."
+  },
+  {
+    "objectID": "clases/diapo_02.html#tipos-de-llms-con-ejemplos",
+    "href": "clases/diapo_02.html#tipos-de-llms-con-ejemplos",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Tipos de LLMs (con ejemplos)",
+    "text": "Tipos de LLMs (con ejemplos)\nLos modelos actuales pueden clasificarse en cuatro grandes categorías, según su entrenamiento y capacidades."
   },
   {
     "objectID": "clases/diapo_02.html#cómo-funciona-entrenamiento-y-prompting",
     "href": "clases/diapo_02.html#cómo-funciona-entrenamiento-y-prompting",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Cómo funciona: entrenamiento y prompting",
     "text": "Cómo funciona: entrenamiento y prompting\n\nEntrenamiento: El modelo aprende patrones desde grandes volúmenes de datos.\nPrompting: El usuario da una instrucción → el modelo genera contenido.\nEjemplo: Prompt: “Escribe un haiku sobre IA generativa.”\n\n\nUn prompt no es solo una pregunta: es un programa breve que guía el comportamiento del modelo."
   },
   {
+    "objectID": "clases/diapo_02.html#qué-significa-un-resultado-confiable",
+    "href": "clases/diapo_02.html#qué-significa-un-resultado-confiable",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Qué significa un “resultado confiable”",
+    "text": "Qué significa un “resultado confiable”\n\nUn modelo no entrega certezas, entrega probabilidades\nLa confiabilidad depende de calidad de datos, validación del modelo, comparación entre predicciones y realidad\nEjemplo: modelo de churn predice 80% → no dice “renunciará”, sino “probabilidad alta de egreso”"
+  },
+  {
     "objectID": "clases/diapo_02.html#modelos-discriminativos-vs-generativos",
     "href": "clases/diapo_02.html#modelos-discriminativos-vs-generativos",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Modelos discriminativos vs generativos",
     "text": "Modelos discriminativos vs generativos\n\nDiscriminativos: clasifican o predicen.\n\nGenerativos: crean contenido.\n\nAnalogía:\n\nDiscriminativo → “¿Es fraude o no?”\n\nGenerativo → “Resume este caso de fraude.”"
   },
   {
     "objectID": "clases/diapo_02.html#aplicaciones-de-negocio",
     "href": "clases/diapo_02.html#aplicaciones-de-negocio",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Aplicaciones de negocio",
     "text": "Aplicaciones de negocio\n\nAtención al cliente\n\nDesarrollo de software\n\nDiseño de productos\n\nDocumentación y reportes\n\nAutomatización de tareas repetitivas\n\nInsights desde grandes volúmenes de texto"
   },
   {
     "objectID": "clases/diapo_02.html#reemplazo-o-colaboración",
     "href": "clases/diapo_02.html#reemplazo-o-colaboración",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "¿Reemplazo o colaboración?",
-    "text": "¿Reemplazo o colaboración?\nCaso: Kasparov vs Deep Blue\nConclusión:\n&gt; La IA reemplaza tareas, no profesiones completas."
+    "text": "¿Reemplazo o colaboración?\nCaso: Kasparov vs Deep Blue\n\n\n\n\n\n\nKasparov vs. Deep Blue | The Match That Changed History\n\n\nOver 20 years ago, World Champion Garry Kasparov took on IBM and the super-computer Deep Blue in the ultimate battle of man versus machine. This was a monumental moment in chess history and was followed closely around the world. This match appealed to chess players, scientists, computer experts, and…\nLeer nota completa"
   },
   {
-    "objectID": "clases/diapo_02.html#transformación-organizacional",
-    "href": "clases/diapo_02.html#transformación-organizacional",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
-    "section": "Transformación organizacional",
-    "text": "Transformación organizacional\nTemas principales\n\nAlineamiento estratégico: IA debe responder a objetivos de negocio.\n\nCambio cultural: mentalidad de trabajo aumentado por IA.\n\nGobernanza: seguridad, privacidad, responsables.\n\nImpacto transversal: marketing, operaciones, finanzas, CX, supply chain.\n\n\nLa IA redistribuye capacidades dentro de la organización."
+    "objectID": "clases/diapo_02.html#por-qué-la-ia-transforma-organizaciones",
+    "href": "clases/diapo_02.html#por-qué-la-ia-transforma-organizaciones",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "¿Por qué la IA transforma organizaciones?",
+    "text": "¿Por qué la IA transforma organizaciones?\nLa IA generativa impulsa cambios profundos porque:\n\nAumenta capacidades humanas.\nAutomatiza tareas de alto costo cognitivo.\nReduce tiempos entre idea → prototipo → ejecución.\nAbre nuevas posibilidades de productos y servicios.\nPermite rediseñar procesos completos.\n\nIdea clave: La pregunta ya no es “¿podemos usar IA?”, sino “¿cómo reorganizamos nuestro trabajo para aprovechar IA de forma estratégica?”"
   },
   {
-    "objectID": "clases/diapo_02.html#detección-de-oportunidades-de-ia",
-    "href": "clases/diapo_02.html#detección-de-oportunidades-de-ia",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
-    "section": "Detección de oportunidades de IA",
-    "text": "Detección de oportunidades de IA\nClasificación de oportunidades: - Augmentation\n- Co-creation\n- Replacement\nCriterios: - ¿Tarea manual?\n- ¿Generación de contenido?\n- ¿Repetitiva o rutinaria?\n- ¿Potencial de mejorar calidad/tiempo?"
+    "objectID": "clases/diapo_02.html#alineamiento-estratégico",
+    "href": "clases/diapo_02.html#alineamiento-estratégico",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Alineamiento estratégico",
+    "text": "Alineamiento estratégico\nLa IA solo genera valor si está vinculada a metas del negocio.\nPrincipios:\n\nConectar iniciativas de IA con KPIs reales (eficiencia, ingresos, retención, calidad).\nPriorizar casos de uso de alto impacto y bajo riesgo.\nEvitar pilotos aislados o experimentación sin dirección.\nDiseñar una hoja de ruta que avance junto a la estrategia general de la organización.\n\nMensaje clave:\n\nLa IA es una herramienta estratégica, no un juguete tecnológico."
   },
   {
-    "objectID": "clases/diapo_02.html#chatgpt-y-adopción-masiva",
-    "href": "clases/diapo_02.html#chatgpt-y-adopción-masiva",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
-    "section": "ChatGPT y adopción masiva",
-    "text": "ChatGPT y adopción masiva\n\nLa app de más rápido crecimiento en la historia.\n\nEjemplo: Duolingo Max."
+    "objectID": "clases/diapo_02.html#cambio-cultural-y-alfabetización-en-ia",
+    "href": "clases/diapo_02.html#cambio-cultural-y-alfabetización-en-ia",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Cambio cultural y alfabetización en IA",
+    "text": "Cambio cultural y alfabetización en IA\nEl mayor freno a la adopción no es técnico: es cultural.\nCambios necesarios:\n\nPasar de “trabajo manual” a “trabajo aumentado por IA”.\nFomentar una mentalidad de experimentación.\nEntrenar a los equipos en pensamiento crítico aplicado a IA.\nNormalizar el uso cotidiano de modelos generativos como un nuevo integrante del equipo."
   },
   {
-    "objectID": "clases/diapo_02.html#innovaciones-clave-en-la-historia",
-    "href": "clases/diapo_02.html#innovaciones-clave-en-la-historia",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
-    "section": "Innovaciones clave en la historia",
-    "text": "Innovaciones clave en la historia\n\nCloud computing → datos + cómputo.\n\nGANs → imágenes fotorrealistas.\n\nTransformers → comprensión profunda del lenguaje.\n\nRLHF → modelos afinados con retroalimentación humana.\n\nMidjourney / Stable Diffusion / GPT-4 → multimodalidad y creatividad avanzada.\n\nIdea central\n\nLa revolución ocurre por la convergencia de datos, cómputo y nuevas arquitecturas."
+    "objectID": "clases/diapo_02.html#gobernanza-y-gestión-del-riesgo",
+    "href": "clases/diapo_02.html#gobernanza-y-gestión-del-riesgo",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Gobernanza y gestión del riesgo",
+    "text": "Gobernanza y gestión del riesgo\nLa IA necesita un marco formal de gestión responsable:\nDimensiones de gobernanza:\n\nSeguridad y privacidad de datos.\nMitigación de sesgos y fairness.\nTransparencia en procesos y decisiones.\nRegulación y compliance.\nPolíticas de uso responsable.\nEvaluación del impacto ecológico asociado al cómputo."
   },
   {
-    "objectID": "clases/diapo_02.html#sesgos",
-    "href": "clases/diapo_02.html#sesgos",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
-    "section": "Sesgos",
-    "text": "Sesgos\n\nQué es un sesgo\n\nPor qué ocurre\n\nCómo detectarlo\n\nEstrategias de mitigación\n\n\nSi los datos no representan la realidad, el modelo tampoco lo hará."
+    "objectID": "clases/diapo_02.html#impacto-transversal-en-el-negocio",
+    "href": "clases/diapo_02.html#impacto-transversal-en-el-negocio",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Impacto transversal en el negocio",
+    "text": "Impacto transversal en el negocio\nLa IA generativa afecta múltiples áreas al mismo tiempo:\nMarketing\n\nPersonalización.\nGeneración de contenido.\nSegmentación inteligente."
+  },
+  {
+    "objectID": "clases/diapo_02.html#identificación-de-oportunidades-de-ia",
+    "href": "clases/diapo_02.html#identificación-de-oportunidades-de-ia",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Identificación de oportunidades de IA",
+    "text": "Identificación de oportunidades de IA\nLas oportunidades pueden clasificarse en tres arquetipos:\n1) Augmentation\nLa IA ejecuta parte de la tarea y el humano sigue controlando.\n2) Co-creation\nHumano + IA colaboran para producir un resultado final.\n3) Replacement\nLa IA automatiza una tarea o proceso completo."
+  },
+  {
+    "objectID": "clases/diapo_02.html#framework-operativo-para-transformar-con-ia",
+    "href": "clases/diapo_02.html#framework-operativo-para-transformar-con-ia",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Framework operativo para transformar con IA",
+    "text": "Framework operativo para transformar con IA\n1) Mapear procesos\n\nIdentificar tareas de alto costo cognitivo.\nDocumentar pasos actuales.\nDetectar “IA-fit” en microtareas específicas.\n\n2) Experimentar (“Trial & Iterate”)\n\nProbar IA en tareas acotadas.\nMedir impacto real.\nAjustar prompts, flujos y procesos.\n\n3) Escalar\n\nEntrenar más equipos.\nIntegrar IA en sistemas existentes.\nMantener mejora continua con métricas claras."
+  },
+  {
+    "objectID": "clases/diapo_02.html#la-ia-redistribuye-capacidades-dentro-de-la-organización",
+    "href": "clases/diapo_02.html#la-ia-redistribuye-capacidades-dentro-de-la-organización",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "La IA redistribuye capacidades dentro de la organización",
+    "text": "La IA redistribuye capacidades dentro de la organización\n\nLa IA cambia qué tareas hacen las personas y cómo se distribuye el trabajo:\n\nMás tiempo para creatividad, análisis y decisiones.\nMenos tiempo en tareas repetitivas.\nIncremento de autonomía en roles operativos.\nReorganización de funciones tradicionales (marketing, finanzas, CX, TI).\nEmergencia de nuevos roles:\n\nAI Product Owner\n\nPrompt Designer\n\nModel Steward\n\nAI Trainer\n\n\nIdea clave:\n&gt; La IA no reemplaza profesiones completas; reemplaza tareas dentro de ellas."
+  },
+  {
+    "objectID": "clases/diapo_02.html#sesgos-bias",
+    "href": "clases/diapo_02.html#sesgos-bias",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Sesgos (Bias)",
+    "text": "Sesgos (Bias)\nLos sesgos son uno de los riesgos más frecuentes y peligrosos en sistemas de IA. La IA aprende de datos históricos que pueden contener desigualdades y, por tanto, puede amplificarlas."
+  },
+  {
+    "objectID": "clases/diapo_02.html#privacidad-y-el-privacypersonalization-paradox",
+    "href": "clases/diapo_02.html#privacidad-y-el-privacypersonalization-paradox",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Privacidad y el “privacy–personalization paradox”",
+    "text": "Privacidad y el “privacy–personalization paradox”\nLa personalización aumenta la utilidad del sistema, pero genera tensiones con la privacidad. A mayor personalización, mayor necesidad de datos personales."
   },
   {
     "objectID": "clases/diapo_02.html#copyright-y-propiedad-intelectual",
     "href": "clases/diapo_02.html#copyright-y-propiedad-intelectual",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
-    "section": "4.2 Copyright y propiedad intelectual",
-    "text": "4.2 Copyright y propiedad intelectual\nTemas clave: - Autoría del contenido generado\n- Restricciones legales\n- Riesgos de datos sensibles\n- Política de uso de herramientas"
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Copyright y propiedad intelectual",
+    "text": "Copyright y propiedad intelectual\nLa IA generativa plantea desafíos legales y éticos en torno a la autoría y el uso de datos.\n\n\n\n\n\n\nCloudflare CEO warns AI is keeping businesses and their customers apart - The Logic\n\n\nMatthew Prince is calling on publishers and companies to block AI developers from taking their content, in hopes of forcing them to pay for it\nLeer nota completa"
+  },
+  {
+    "objectID": "clases/diapo_02.html#transparencia-cajas-negras-y-explicabilidad-xai",
+    "href": "clases/diapo_02.html#transparencia-cajas-negras-y-explicabilidad-xai",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Transparencia, cajas negras y explicabilidad (XAI)",
+    "text": "Transparencia, cajas negras y explicabilidad (XAI)\nMuchos modelos de IA —especialmente los LLMs— funcionan como cajas negras: sabemos qué entra y qué sale, pero no cómo se tomó la decisión."
+  },
+  {
+    "objectID": "clases/diapo_02.html#accountability-responsabilidad-humana",
+    "href": "clases/diapo_02.html#accountability-responsabilidad-humana",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Accountability (Responsabilidad humana)",
+    "text": "Accountability (Responsabilidad humana)\nLa IA no es una excusa para evitar responsabilidad. Siempre debe haber un responsable humano por las decisiones donde la IA participa.\n\n\n\n\n\n\n“Quería que ChatGPT me ayudara. Entonces, ¿por qué me aconsejó cómo suicidarme?” - BBC News Mundo\n\n\nChatGPT escribió una nota de suicidio para una joven con problemas mentales y le aconsejó cómo quitarse la vida, según una investigación de la BBC.\nLeer nota completa\n\n\n\n\nOpenAI estima que más de un millón de sus 800 millones de usuarios semanales parecen expresar pensamientos suicidas"
+  },
+  {
+    "objectID": "clases/diapo_02.html#fairness-y-justicia-algorítmica",
+    "href": "clases/diapo_02.html#fairness-y-justicia-algorítmica",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Fairness y justicia algorítmica",
+    "text": "Fairness y justicia algorítmica\nEl principio de fairness busca evitar discriminaciones directas o indirectas."
   },
   {
     "objectID": "clases/diapo_02.html#riesgos-emergentes",
     "href": "clases/diapo_02.html#riesgos-emergentes",
-    "title": "Diapositiva 02 – IA Generativa y LLMs para la Transformación Organizacional",
-    "section": "4.3 Riesgos emergentes",
-    "text": "4.3 Riesgos emergentes\n\nDeepfakes\n\nMisinformación\n\nSeguridad\n\nAbuso y mal uso"
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Riesgos emergentes",
+    "text": "Riesgos emergentes\nDeepfakes y manipulación\n\nContenido sintético difícil de distinguir de lo real.\nRiesgo reputacional.\nManipulación política o social.\nFraudes mediante audio y video falsificado."
+  },
+  {
+    "objectID": "clases/diapo_02.html#ethical-ai-by-design-ética-por-diseño",
+    "href": "clases/diapo_02.html#ethical-ai-by-design-ética-por-diseño",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Ethical AI by Design (Ética por diseño)",
+    "text": "Ethical AI by Design (Ética por diseño)\nLos principios éticos deben integrarse desde la concepción del proyecto, no como un “parche” posterior."
+  },
+  {
+    "objectID": "clases/diapo_02.html#por-qué-importa-todo-esto",
+    "href": "clases/diapo_02.html#por-qué-importa-todo-esto",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "¿Por qué importa todo esto?",
+    "text": "¿Por qué importa todo esto?\n\nAumenta la confianza del público y los usuarios.\n\nReduce riesgos legales, operacionales y reputacionales.\n\nFomenta la innovación sostenible.\n\nPermite aprovechar el potencial de la IA sin comprometer valores éticos.\n\nConvierte la ética en una ventaja competitiva.\n\n\nLa ética en IA no es solo buena práctica: es buena estrategia de negocios."
   },
   {
     "objectID": "index.html",
