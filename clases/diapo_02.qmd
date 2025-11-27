@@ -851,7 +851,7 @@ library(rvest)
 library(dplyr)
 library(glue)
 
-url <- "https://mngrwl.medium.com/explained-simply-how-a-i-defeated-world-champions-in-the-game-of-dota-2-f3df90d38a70"
+url <- "https://www.iic.uam.es/innovacion/openai-five-juego-dota2/"
 
 page <- read_html(url)
 
