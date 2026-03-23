@@ -8,5 +8,3 @@ listing:
 ---
 
 # Clases del curso
-
-Hola
