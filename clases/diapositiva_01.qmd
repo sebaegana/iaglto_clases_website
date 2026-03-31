@@ -28,12 +28,12 @@ library(fontawesome)
 
 # Enlaces
 
-- `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
-- `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
-- `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
-- `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
 
----
+------------------------------------------------------------------------
 
 # Clase 01
 
@@ -41,41 +41,41 @@ library(fontawesome)
 
 ### Del hype tecnológico a modelos concretos de creación de valor
 
----
+------------------------------------------------------------------------
 
 ## Objetivo de la sesión
 
-- Entender el panorama actual de IA e IA generativa
-- Distinguir qué es un LLM y qué no es un LLM
-- Revisar tipos de modelos y formas de uso en organizaciones
-- Introducir agentes, `skills` y arquitecturas de orquestación
-- Identificar oportunidades reales y límites actuales
+-   Entender el panorama actual de IA e IA generativa
+-   Distinguir qué es un LLM y qué no es un LLM
+-   Revisar tipos de modelos y formas de uso en organizaciones
+-   Introducir agentes, `skills` y arquitecturas de orquestación
+-   Identificar oportunidades reales y límites actuales
 
----
+------------------------------------------------------------------------
 
 ## Pregunta de apertura
 
 **¿Dónde está hoy el mayor valor para sus organizaciones?**
 
-- Automatizar tareas repetitivas
-- Mejorar productividad individual
-- Crear nuevos productos o servicios
-- Aumentar velocidad de análisis y decisión
-- Rediseñar procesos completos con apoyo de IA
+-   Automatizar tareas repetitivas
+-   Mejorar productividad individual
+-   Crear nuevos productos o servicios
+-   Aumentar velocidad de análisis y decisión
+-   Rediseñar procesos completos con apoyo de IA
 
----
+------------------------------------------------------------------------
 
 # Panorama actual de IA
 
 ## Tendencias que dominan la conversación
 
-- IA generativa integrada en software de trabajo diario
-- Modelos multimodales: texto, imagen, audio, video y documentos
-- Menor costo por token y mayor acceso vía API
-- Carrera por agentes capaces de ejecutar tareas complejas
-- Debate sobre gobernanza, propiedad intelectual y seguridad
+-   IA generativa integrada en software de trabajo diario
+-   Modelos multimodales: texto, imagen, audio, video y documentos
+-   Menor costo por token y mayor acceso vía API
+-   Carrera por agentes capaces de ejecutar tareas complejas
+-   Debate sobre gobernanza, propiedad intelectual y seguridad
 
----
+------------------------------------------------------------------------
 
 ## Qué está pasando realmente
 
@@ -83,152 +83,152 @@ La IA actual no es una sola tecnología.
 
 Es un **ecosistema** de capacidades que puede combinar:
 
-- modelos fundacionales
-- motores de búsqueda y recuperación
-- visión computacional
-- voz y síntesis de audio
-- automatización de flujos
-- software tradicional y reglas de negocio
+-   modelos fundacionales
+-   motores de búsqueda y recuperación
+-   visión computacional
+-   voz y síntesis de audio
+-   automatización de flujos
+-   software tradicional y reglas de negocio
 
----
+------------------------------------------------------------------------
 
 ## IA, IA generativa y LLMs
 
-- **IA**: sistemas que realizan tareas asociadas a inteligencia humana
-- **Machine Learning**: modelos que aprenden patrones desde datos
-- **IA generativa**: modelos que crean contenido nuevo
-- **LLM**: modelos de lenguaje de gran escala especializados en texto y secuencias
+-   **IA**: sistemas que realizan tareas asociadas a inteligencia humana
+-   **Machine Learning**: modelos que aprenden patrones desde datos
+-   **IA generativa**: modelos que crean contenido nuevo
+-   **LLM**: modelos de lenguaje de gran escala especializados en texto y secuencias
 
 ### Idea clave
 
 Un **LLM es una pieza importante del stack**, pero no equivale a todo el sistema de IA.
 
----
+------------------------------------------------------------------------
 
 ## Qué es un LLM
 
 Un **Large Language Model** es un modelo entrenado con grandes volúmenes de texto para:
 
-- predecir tokens
-- responder preguntas
-- resumir
-- clasificar
-- traducir
-- generar texto, código e instrucciones
+-   predecir tokens
+-   responder preguntas
+-   resumir
+-   clasificar
+-   traducir
+-   generar texto, código e instrucciones
 
 ### Intuición simple
 
 Aprende regularidades del lenguaje y genera la continuación más probable dado un contexto.
 
----
+------------------------------------------------------------------------
 
 ## Qué puede hacer bien un LLM
 
-- Redacción y reformulación
-- Síntesis de documentos extensos
-- Extracción estructurada de información
-- Generación de código y SQL
-- Asistencia conversacional
-- Apoyo a análisis exploratorio y brainstorming
- 
----
+-   Redacción y reformulación
+-   Síntesis de documentos extensos
+-   Extracción estructurada de información
+-   Generación de código y SQL
+-   Asistencia conversacional
+-   Apoyo a análisis exploratorio y brainstorming
+
+------------------------------------------------------------------------
 
 ## Qué hace mal o con riesgo
 
-- Inventar hechos
-- Citar fuentes inexistentes
-- Operar sin contexto específico del negocio
-- Mantener precisión sostenida en tareas largas sin controles
+-   Inventar hechos
+-   Citar fuentes inexistentes
+-   Operar sin contexto específico del negocio
+-   Mantener precisión sostenida en tareas largas sin controles
 
----
+------------------------------------------------------------------------
 
 ## Tipos de LLMs
 
 ### Según apertura del modelo
 
-- **Cerrados / propietarios**: GPT, Claude, Gemini
-- **Abiertos o abiertos en pesos**: Llama, Mistral, Qwen, DeepSeek
+-   **Cerrados / propietarios**: GPT, Claude, Gemini
+-   **Abiertos o abiertos en pesos**: Llama, Mistral, Qwen, DeepSeek
 
 ### Según especialización
 
-- Modelos generales
-- Modelos afinados para código
-- Modelos afinados para chat
-- Modelos multimodales
-- Modelos pequeños para despliegue local o en borde
+-   Modelos generales
+-   Modelos afinados para código
+-   Modelos afinados para chat
+-   Modelos multimodales
+-   Modelos pequeños para despliegue local o en borde
 
----
+------------------------------------------------------------------------
 
 ## Tipos de uso de modelos en empresas
 
 ### 1. Uso directo
 
-- Chat web
-- Copilots en suites de productividad
-- Asistentes embebidos en herramientas existentes
+-   Chat web
+-   Copilots en suites de productividad
+-   Asistentes embebidos en herramientas existentes
 
 ### 2. Uso vía API
 
-- Integración en portales, CRM, ERP o flujos internos
-- Automatización de tareas con reglas de negocio
+-   Integración en portales, CRM, ERP o flujos internos
+-   Automatización de tareas con reglas de negocio
 
 ### 3. Uso de modelos propios o afinados
 
-- Ajuste sobre datos y lenguaje del dominio
-- Despliegue controlado por cumplimiento o privacidad
+-   Ajuste sobre datos y lenguaje del dominio
+-   Despliegue controlado por cumplimiento o privacidad
 
----
+------------------------------------------------------------------------
 
 ## Empresas relevantes en el ecosistema
 
 ### Proveedores de modelos
 
-- OpenAI
-- Anthropic
-- Google
-- Meta
-- Mistral
-- Cohere
-- DeepSeek
+-   OpenAI
+-   Anthropic
+-   Google
+-   Meta
+-   Mistral
+-   Cohere
+-   DeepSeek
 
----
+------------------------------------------------------------------------
 
 ### Infraestructura y despliegue
 
-- Microsoft Azure
-- AWS
-- Google Cloud
-- NVIDIA
-- Hugging Face
+-   Microsoft Azure
+-   AWS
+-   Google Cloud
+-   NVIDIA
+-   Hugging Face
 
----
+------------------------------------------------------------------------
 
 ### Aplicación y automatización
 
-- Microsoft Copilot
-- GitHub Copilot
-- Notion AI
-- Slack AI
-- Salesforce
+-   Microsoft Copilot
+-   GitHub Copilot
+-   Notion AI
+-   Slack AI
+-   Salesforce
 
----
+------------------------------------------------------------------------
 
 ## Un modelo no es una solución completa
 
 Para resolver un problema organizacional suelen intervenir varias capas:
 
-- interfaz con el usuario
-- modelo de lenguaje
-- recuperación de información
-- herramientas o APIs
-- validaciones de negocio
-- monitoreo, trazabilidad y seguridad
+-   interfaz con el usuario
+-   modelo de lenguaje
+-   recuperación de información
+-   herramientas o APIs
+-   validaciones de negocio
+-   monitoreo, trazabilidad y seguridad
 
 ### Fórmula útil
 
 **Valor = modelo + contexto + integración + proceso**
 
----
+------------------------------------------------------------------------
 
 ## Modelos de uso organizacional
 
@@ -248,11 +248,12 @@ El sistema decide pasos, usa herramientas y devuelve un resultado trazable.
 
 Se rediseña el trabajo completo con IA como componente central.
 
----
+------------------------------------------------------------------------
 
 ## Relación entre IA y LLMs en la práctica
 
 ::: {=html}
+```{=html}
 <pre style="font-size:1em; line-height:1.2;">
 Datos / Documentos / Imágenes / Audio
                 ↓
@@ -264,12 +265,13 @@ Datos / Documentos / Imágenes / Audio
                 ↓
      Respuesta, acción o decisión asistida
 </pre>
+```
 :::
 
-- El LLM interpreta, traduce, organiza o genera
-- El resto del sistema aporta datos, memoria, control y ejecución
+-   El LLM interpreta, traduce, organiza o genera
+-   El resto del sistema aporta datos, memoria, control y ejecución
 
----
+------------------------------------------------------------------------
 
 # Agentes
 
@@ -279,24 +281,24 @@ Un chat responde.
 
 Un **agente** además puede:
 
-- planificar pasos
-- usar herramientas
-- consultar datos externos
-- ejecutar acciones
-- evaluar resultados y reintentar
+-   planificar pasos
+-   usar herramientas
+-   consultar datos externos
+-   ejecutar acciones
+-   evaluar resultados y reintentar
 
----
+------------------------------------------------------------------------
 
 ## Componentes típicos de un agente
 
-- **Objetivo**: qué debe lograr
-- **Modelo**: qué razonamiento o generación usa
-- **Memoria**: qué recuerda del contexto
-- **Herramientas**: buscadores, bases de datos, APIs, scripts
-- **Políticas**: límites, permisos y validaciones
-- **Observabilidad**: logs, trazas y evaluación
+-   **Objetivo**: qué debe lograr
+-   **Modelo**: qué razonamiento o generación usa
+-   **Memoria**: qué recuerda del contexto
+-   **Herramientas**: buscadores, bases de datos, APIs, scripts
+-   **Políticas**: límites, permisos y validaciones
+-   **Observabilidad**: logs, trazas y evaluación
 
----
+------------------------------------------------------------------------
 
 ## De prompts a agentes
 
@@ -316,7 +318,7 @@ LLM con herramientas y recuperación
 
 Agente con planificación, acciones y supervisión
 
----
+------------------------------------------------------------------------
 
 ## ¿Qué son `skills`?
 
@@ -324,93 +326,93 @@ Una `skill` es una capacidad reusable y delimitada que un agente o asistente pue
 
 ### Ejemplos
 
-- resumir actas de reunión
-- redactar correos con tono corporativo
-- consultar indicadores de gestión
-- extraer datos desde contratos
-- generar una minuta desde una videollamada
+-   resumir actas de reunión
+-   redactar correos con tono corporativo
+-   consultar indicadores de gestión
+-   extraer datos desde contratos
+-   generar una minuta desde una videollamada
 
 ### Idea clave
 
 Las `skills` encapsulan instrucciones, herramientas, contexto y formato de salida.
 
----
+------------------------------------------------------------------------
 
 ## Por qué importan las `skills`
 
-- Permiten modularizar capacidades
-- Reducen dependencia de un prompt único gigante
-- Mejoran mantenibilidad y control
-- Facilitan evaluación por tarea
-- Acercan la IA a procesos concretos del negocio
+-   Permiten modularizar capacidades
+-   Reducen dependencia de un prompt único gigante
+-   Mejoran mantenibilidad y control
+-   Facilitan evaluación por tarea
+-   Acercan la IA a procesos concretos del negocio
 
----
+------------------------------------------------------------------------
 
 ## OpenClaw como ejemplo de `skill`
 
 **OpenClaw** puede describirse, de forma simple, como una plataforma open source para construir y operar agentes de IA.
 
-- Puede conectarse a distintos modelos
-- Puede integrarse con distintos canales o entornos
-- Puede usar herramientas y permisos controlados
-- Puede extender capacidades mediante `skills`
+-   Puede conectarse a distintos modelos
+-   Puede integrarse con distintos canales o entornos
+-   Puede usar herramientas y permisos controlados
+-   Puede extender capacidades mediante `skills`
 
 ### Para esta clase, lo importante es esto
 
 OpenClaw muestra que una capacidad de IA puede empaquetarse como un componente reusable dentro de un agente.
 
----
+------------------------------------------------------------------------
 
 ## Cómo entiende OpenClaw una `skill`
 
 Según su documentación, una `skill` es una carpeta con un `SKILL.md` que describe:
 
-- definir una tarea acotada
-- instrucciones
-- contexto
-- reglas
-- dependencias o herramientas
-- condiciones para que el agente la cargue
+-   definir una tarea acotada
+-   instrucciones
+-   contexto
+-   reglas
+-   dependencias o herramientas
+-   condiciones para que el agente la cargue
 
 ### Idea clave
 
 No es solo un prompt suelto: es una capacidad declarada y reutilizable.
 
----
+------------------------------------------------------------------------
 
 ## Cómo se ve una `skill` en la práctica
 
 Una `skill` tipo OpenClaw podría incluir:
 
-- **nombre**: `resumir_reunion`
-- **objetivo**: producir una minuta ejecutiva
-- **entrada**: transcripción o notas
-- **reglas**: tono formal, sin inventar acuerdos
-- **salida**: resumen, acuerdos, riesgos, próximos pasos
-- **herramientas**: acceso a documentos, calendario o CRM
+-   **nombre**: `resumir_reunion`
+-   **objetivo**: producir una minuta ejecutiva
+-   **entrada**: transcripción o notas
+-   **reglas**: tono formal, sin inventar acuerdos
+-   **salida**: resumen, acuerdos, riesgos, próximos pasos
+-   **herramientas**: acceso a documentos, calendario o CRM
 
 ### Idea clave
 
 La `skill` empaqueta comportamiento reusable, no solo texto de prompt.
 
----
+------------------------------------------------------------------------
 
 ## Por qué OpenClaw sirve como ejemplo
 
-- Hace visible que una capacidad de IA puede tratarse como módulo
-- Ayuda a separar tareas pequeñas y evaluables
-- Permite gobernar mejor permisos, contexto y formato de salida
-- Facilita que distintos agentes reutilicen la misma capacidad
+-   Hace visible que una capacidad de IA puede tratarse como módulo
+-   Ayuda a separar tareas pequeñas y evaluables
+-   Permite gobernar mejor permisos, contexto y formato de salida
+-   Facilita que distintos agentes reutilicen la misma capacidad
 
 ### Traducción organizacional
 
 Una `skill` no es "usar ChatGPT", sino formalizar una tarea de trabajo asistida por IA.
 
----
+------------------------------------------------------------------------
 
 ## Ejemplo mínimo de una `skill` en Markdown
 
-```md
+``` md
 ---
 name: responder_saludo
 description: Responde saludos de forma breve y cordial.
@@ -434,28 +436,28 @@ description: Responde saludos de forma breve y cordial.
 Un saludo corto y una oferta simple de ayuda.
 ```
 
----
+------------------------------------------------------------------------
 
 ## Frameworks y ecosistemas agentic
 
 Hoy aparecen múltiples enfoques para construir agentes y `skills`:
 
-- frameworks de orquestación
-- SDKs de herramientas
-- entornos de ejecución con permisos
-- repositorios de capacidades reutilizables
+-   frameworks de orquestación
+-   SDKs de herramientas
+-   entornos de ejecución con permisos
+-   repositorios de capacidades reutilizables
 
----
+------------------------------------------------------------------------
 
 ## Referencias para observar
 
-- OpenClaw como ejemplo de `skills` reutilizables
-- LangGraph
-- CrewAI
-- AutoGen
-- Semantic Kernel
+-   OpenClaw como ejemplo de `skills` reutilizables
+-   LangGraph
+-   CrewAI
+-   AutoGen
+-   Semantic Kernel
 
----
+------------------------------------------------------------------------
 
 ## Cómo leer estas plataformas
 
@@ -463,41 +465,41 @@ No son "magia agentic".
 
 Son formas de combinar:
 
-- modelos
-- memoria
-- herramientas
-- estados
-- reglas de control
-- ejecución paso a paso
+-   modelos
+-   memoria
+-   herramientas
+-   estados
+-   reglas de control
+-   ejecución paso a paso
 
 ### Pregunta útil
 
 **¿Resuelven mejor un proceso real o solo agregan complejidad?**
 
----
+------------------------------------------------------------------------
 
 ## Riesgos y límites actuales
 
-- Alucinaciones y errores silenciosos
-- Sobreconfianza del usuario
-- Dependencia de proveedores
-- Fugas de datos y problemas de privacidad
-- Dificultad para medir calidad en tareas abiertas
-- Costos ocultos de integración, monitoreo y cambio organizacional
+-   Alucinaciones y errores silenciosos
+-   Sobreconfianza del usuario
+-   Dependencia de proveedores
+-   Fugas de datos y problemas de privacidad
+-   Dificultad para medir calidad en tareas abiertas
+-   Costos ocultos de integración, monitoreo y cambio organizacional
 
----
+------------------------------------------------------------------------
 
 ## Qué debería evaluar una organización
 
-- Casos de uso con impacto claro
-- Calidad y disponibilidad de datos
-- Nivel de riesgo del proceso
-- Necesidad de trazabilidad
-- Integración con sistemas existentes
-- Costo total de propiedad
-- Capacidades internas para adopción y gobernanza
+-   Casos de uso con impacto claro
+-   Calidad y disponibilidad de datos
+-   Nivel de riesgo del proceso
+-   Necesidad de trazabilidad
+-   Integración con sistemas existentes
+-   Costo total de propiedad
+-   Capacidades internas para adopción y gobernanza
 
----
+------------------------------------------------------------------------
 
 ## Idea de cierre
 
@@ -505,16 +507,16 @@ El punto no es "usar un LLM".
 
 El punto es **diseñar capacidades organizacionales** donde:
 
-- el modelo aporte lenguaje y flexibilidad
-- el sistema aporte contexto y control
-- la organización capture productividad, aprendizaje y ventaja competitiva
+-   el modelo aporte lenguaje y flexibilidad
+-   el sistema aporte contexto y control
+-   la organización capture productividad, aprendizaje y ventaja competitiva
 
----
+------------------------------------------------------------------------
 
 ## Para la siguiente parte del curso
 
-- Casos de uso por función
-- Prompting y diseño de instrucciones
-- RAG y uso de documentos propios
-- Automatización con herramientas
-- Diseño de agentes y evaluación
+-   Casos de uso por función
+-   Prompting y diseño de instrucciones
+-   RAG y uso de documentos propios
+-   Automatización con herramientas
+-   Diseño de agentes y evaluación
