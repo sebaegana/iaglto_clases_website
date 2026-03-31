@@ -1,0 +1,476 @@
+---
+listing_title: "Técnicas de Tokenización"
+title: "Técnicas de Tokenización"
+subtitle: "Cómo convierten texto en unidades procesables los modelos de lenguaje"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    self-contained: true
+    incremental: true
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+------------------------------------------------------------------------
+
+# Objetivo
+
+## Entender las principales técnicas de tokenización
+
+-   qué problema resuelven
+-   cómo segmentan el texto
+-   cuáles son sus ventajas y límites
+-   por qué la tokenización subword domina en LLMs modernos
+
+------------------------------------------------------------------------
+
+# ¿Qué es tokenizar?
+
+Tokenizar es convertir texto en unidades más pequeñas que un sistema puede procesar.
+
+### Esas unidades pueden ser:
+
+-   caracteres
+-   palabras completas
+-   fragmentos de palabra
+-   signos o símbolos
+
+### Idea clave
+
+El modelo no opera directamente sobre texto "humano", sino sobre tokens.
+
+------------------------------------------------------------------------
+
+## ¿Por qué importa?
+
+La técnica de tokenización afecta:
+
+-   tamaño del vocabulario
+-   costo computacional
+-   longitud efectiva del contexto
+-   capacidad para manejar palabras nuevas
+-   desempeño en distintos idiomas
+
+------------------------------------------------------------------------
+
+# Problema de fondo
+
+## El lenguaje no viene segmentado de forma perfecta
+
+Ejemplos:
+
+-   palabras muy largas
+-   nombres propios nuevos
+-   errores ortográficos
+-   abreviaturas
+-   emojis
+-   mezcla de idiomas
+
+### Pregunta central
+
+¿Cómo dividimos el texto sin perder demasiada información y sin volver el sistema inmanejable?
+
+------------------------------------------------------------------------
+
+# Técnica 1
+
+## Tokenización por caracteres
+
+Cada carácter es un token.
+
+### Ejemplo
+
+`gato` → `g`, `a`, `t`, `o`
+
+------------------------------------------------------------------------
+
+## Ventajas
+
+-   vocabulario muy pequeño
+-   nunca hay palabras fuera de vocabulario
+-   maneja bien errores ortográficos o palabras nuevas
+
+## Límites
+
+-   secuencias mucho más largas
+-   menor eficiencia
+-   más difícil capturar significado semántico de alto nivel
+
+------------------------------------------------------------------------
+
+# Técnica 2
+
+## Tokenización por palabras
+
+Cada palabra completa se trata como un token.
+
+### Ejemplo
+
+`el gato duerme en el sillón`
+
+→ `el`, `gato`, `duerme`, `en`, `el`, `sillón`
+
+------------------------------------------------------------------------
+
+## Ventajas
+
+-   interpretación intuitiva
+-   secuencias más cortas que con caracteres
+-   buena legibilidad para análisis simple
+
+## Límites
+
+-   vocabulario enorme
+-   problema de palabras fuera de vocabulario
+-   mala adaptación a errores, variantes y morfología rica
+
+------------------------------------------------------------------------
+
+# Técnica 3
+
+## Tokenización por reglas
+
+Se usan reglas lingüísticas o expresiones regulares para segmentar:
+
+-   espacios
+-   signos de puntuación
+-   prefijos o sufijos
+-   patrones conocidos
+
+### Ejemplo
+
+`Hola, mundo!`
+
+→ `Hola`, `,`, `mundo`, `!`
+
+------------------------------------------------------------------------
+
+## Ventajas
+
+-   simple de implementar
+-   controlable
+-   útil en pipelines clásicos de NLP
+
+## Límites
+
+-   frágil ante excepciones
+-   difícil de escalar a múltiples idiomas
+-   depende mucho del diseño manual
+
+------------------------------------------------------------------------
+
+# Técnica 4
+
+## Tokenización subword
+
+Divide las palabras en fragmentos frecuentes.
+
+### Ejemplo
+
+`internacionalización`
+
+podría dividirse como:
+
+-   `interna`
+-   `cional`
+-   `ización`
+
+### Idea clave
+
+Busca un equilibrio entre caracteres y palabras completas.
+
+------------------------------------------------------------------------
+
+## ¿Por qué es importante?
+
+La tokenización subword:
+
+-   reduce el tamaño del vocabulario
+-   maneja palabras raras o nuevas
+-   conserva patrones frecuentes del lenguaje
+-   mejora eficiencia frente a tokenización por caracteres
+
+### Por eso es el enfoque dominante en LLMs actuales
+
+------------------------------------------------------------------------
+
+# Principales métodos subword
+
+## Byte Pair Encoding (BPE)
+
+Empieza con unidades pequeñas y va fusionando pares frecuentes.
+
+### Intuición
+
+Si una combinación aparece muchas veces, conviene tratarla como una unidad estable.
+
+------------------------------------------------------------------------
+
+## Ejemplo simplificado de BPE
+
+Supongamos que vemos repetidamente:
+
+-   `l` + `a`
+-   `la` + `s`
+
+El algoritmo podría aprender:
+
+-   `la`
+-   `las`
+
+### Resultado
+
+Fragmentos frecuentes pasan a ser tokens completos.
+
+------------------------------------------------------------------------
+
+## Ventajas de BPE
+
+-   eficiente
+-   ampliamente usado
+-   buen equilibrio entre vocabulario y cobertura
+
+## Límites
+
+-   no siempre respeta fronteras lingüísticas intuitivas
+-   puede generar segmentaciones poco naturales
+
+------------------------------------------------------------------------
+
+## WordPiece
+
+Similar a BPE, pero selecciona combinaciones según cuánto mejoran la probabilidad del modelo.
+
+### Se hizo muy conocido por su uso en BERT
+
+Ejemplo:
+
+`playing` → `play` + `##ing`
+
+------------------------------------------------------------------------
+
+## Ventajas de WordPiece
+
+-   buen rendimiento en tareas de lenguaje
+-   produce piezas reutilizables
+-   útil para lenguas con variaciones morfológicas
+
+## Límites
+
+-   requiere entrenamiento cuidadoso del vocabulario
+-   la segmentación puede no ser transparente para usuarios
+
+------------------------------------------------------------------------
+
+## Unigram Language Model
+
+Parte de un vocabulario amplio y elimina piezas menos útiles según una función probabilística.
+
+### Idea
+
+No construye el vocabulario solo agregando piezas: también descarta las que aportan poco.
+
+### Es común en herramientas como SentencePiece
+
+------------------------------------------------------------------------
+
+## Ventajas de Unigram
+
+-   enfoque probabilístico flexible
+-   buenas segmentaciones en muchos idiomas
+-   útil cuando no queremos depender de espacios
+
+## Límites
+
+-   más abstracto de explicar
+-   requiere entrenamiento y evaluación adecuados
+
+------------------------------------------------------------------------
+
+# Técnica 5
+
+## Byte-level tokenization
+
+En lugar de partir desde caracteres visibles, parte desde bytes.
+
+### Ventaja fuerte
+
+Puede representar cualquier texto sin depender directamente de un alfabeto específico.
+
+### Uso típico
+
+Modelos como GPT han utilizado variantes de tokenización a nivel de bytes con fusiones subword.
+
+------------------------------------------------------------------------
+
+## Ventajas
+
+-   cobertura total
+-   robustez ante símbolos extraños
+-   evita el problema clásico de palabras fuera de vocabulario
+
+## Límites
+
+-   puede producir secuencias menos intuitivas
+-   la interpretación humana de los tokens se vuelve más difícil
+
+------------------------------------------------------------------------
+
+# Comparación rápida
+
+| Técnica | Vocabulario | Longitud de secuencia | Manejo de palabras nuevas | Intuición humana |
+|--------------|--------------|---------------|-----------------|--------------|
+| Caracteres | Muy bajo | Muy alta | Muy bueno | Alta |
+| Palabras | Muy alto | Baja | Malo | Muy alta |
+| Reglas | Variable | Media | Regular | Alta |
+| Subword | Medio | Media | Bueno | Media |
+| Byte-level | Bajo a medio | Media/alta | Muy bueno | Baja |
+
+------------------------------------------------------------------------
+
+# Ejemplo comparado
+
+## Frase
+
+`reorganización digital`
+
+### Por caracteres
+
+`r e o r g a n i z a c i ó n d i g i t a l`
+
+### Por palabras
+
+`reorganización`, `digital`
+
+### Por subword
+
+`re`, `organización`, `digital`
+
+o
+
+`reorgan`, `ización`, `digital`
+
+------------------------------------------------------------------------
+
+## ¿Qué buscamos realmente?
+
+Una buena tokenización intenta lograr equilibrio entre:
+
+-   cobertura
+-   eficiencia
+-   compresión del texto
+-   generalización a palabras nuevas
+-   utilidad para el modelo
+
+------------------------------------------------------------------------
+
+# Tokenización y contexto
+
+La tokenización afecta directamente cuántos tokens "caben" en una ventana de contexto.
+
+### Ejemplo
+
+Dos textos con el mismo número de caracteres pueden producir distinta cantidad de tokens según:
+
+-   el idioma
+-   la rareza del vocabulario
+-   el tipo de segmentación usado
+
+### Implicancia práctica
+
+Costo y capacidad de contexto dependen también de cómo tokeniza el modelo.
+
+------------------------------------------------------------------------
+
+# Tokenización en distintos idiomas
+
+No todos los idiomas se comportan igual.
+
+### Desafíos frecuentes
+
+-   idiomas sin separación clara por espacios
+-   lenguas con mucha flexión morfológica
+-   palabras compuestas largas
+-   mezcla de escritura latina y no latina
+
+### Conclusión
+
+La técnica óptima puede variar según idioma, dominio y aplicación.
+
+------------------------------------------------------------------------
+
+# ¿Qué usan los LLMs modernos?
+
+En general, variantes de:
+
+-   BPE
+-   WordPiece
+-   Unigram
+-   byte-level subword tokenization
+
+### Razón principal
+
+Ofrecen el mejor compromiso práctico entre eficiencia, cobertura y capacidad de generalización.
+
+------------------------------------------------------------------------
+
+## Idea de cierre
+
+Tokenizar no es un detalle técnico menor.
+
+Es una decisión fundamental que afecta:
+
+-   cómo entra el lenguaje al modelo
+-   cuánto cuesta procesarlo
+-   qué tan bien maneja palabras nuevas
+-   qué tan eficiente será el sistema completo
+
+------------------------------------------------------------------------
+
+# Actividad breve
+
+## Comparar tokenizaciones
+
+Tomen una frase y propongan cómo se segmentaría:
+
+-   por caracteres
+-   por palabras
+-   por subword
+
+### Luego discutan
+
+-   cuál sería más eficiente
+-   cuál manejaría mejor palabras nuevas
+-   cuál usarían en un LLM y por qué
+
+------------------------------------------------------------------------
+
+# Referencias sugeridas
+
+::: tiny
+-   Sennrich, Haddow y Birch (2016). *Neural Machine Translation of Rare Words with Subword Units*.
+-   Devlin et al. (2018). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*.
+-   Kudo y Richardson (2018). *SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing*.
+:::

@@ -1,0 +1,678 @@
+---
+listing_title: "Diapositiva 02 v2"
+title: "IA Generativa y LLMs para la Transformación Organizacional"
+subtitle: "Funcionamiento práctico, implementación y riesgos"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    self-contained: true
+    incremental: true
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+---
+
+# Clase 02
+
+## De la comprensión técnica a la implementación organizacional
+
+### Cómo funcionan los LLMs, cómo se controlan y cómo se adoptan con criterio
+
+---
+
+## Objetivo de la sesión
+
+-   Entender cómo procesan texto los LLMs
+-   Revisar conceptos operativos como tokens, embeddings y contexto
+-   Distinguir parámetros de entrenamiento y de generación
+-   Evaluar implicancias estratégicas para transformación organizacional
+-   Identificar riesgos éticos, legales y de gobernanza
+
+---
+
+## Pregunta de continuidad
+
+**Si ya entendemos qué lugar ocupa un LLM en el stack, la siguiente pregunta es esta:**
+
+### ¿Qué debemos comprender para usarlo bien, controlarlo mejor y desplegarlo con responsabilidad?
+
+---
+
+# Cómo procesan texto los LLMs
+
+## Idea central
+
+Un LLM no trabaja con "palabras" como las vemos nosotros.
+
+Opera sobre representaciones numéricas y calcula probabilidades de continuación en función del contexto disponible.
+
+---
+
+## Tokens
+
+Los LLMs dividen el texto en **tokens**, que pueden ser:
+
+-   fragmentos de palabra
+-   palabras completas
+-   signos de puntuación
+-   números o símbolos frecuentes
+
+### Implicancia práctica
+
+-   más tokens implican más costo
+-   todo input y output se mide en tokens
+-   el límite real de trabajo del modelo depende de su ventana de contexto
+
+---
+
+## Ejemplo simple de tokenización
+
+La frase:
+
+**"La inteligencia artificial generativa cambia procesos."**
+
+podría dividirse en piezas como:
+
+-   `La`
+-   `intelig`
+-   `encia`
+-   `artificial`
+-   `generativa`
+-   `cambia`
+-   `procesos`
+-   `.`
+
+### Idea clave
+
+El modelo no "lee" el texto literal: transforma esas piezas en unidades procesables.
+
+---
+
+## Embeddings
+
+Cada token se convierte en un **vector numérico** en un espacio de muchas dimensiones.
+
+Ese vector representa relaciones como:
+
+-   significado
+-   cercanía semántica
+-   contexto de uso
+-   similitud con otros conceptos
+
+### Idea clave
+
+Los embeddings son el "idioma interno" del modelo.
+
+---
+
+## Qué aprende el modelo
+
+Durante el entrenamiento, el modelo observa enormes cantidades de texto y aprende regularidades estadísticas:
+
+-   qué secuencias suelen aparecer juntas
+-   qué palabras cumplen roles parecidos
+-   qué patrones son plausibles en distintos contextos
+
+### Resultado
+
+Palabras o conceptos usados en contextos similares tienden a quedar cerca en el espacio vectorial.
+
+---
+
+## Ejemplo conceptual de embeddings
+
+| Palabra | Eje X | Eje Y |
+|---------|------:|------:|
+| gato    | 0.90  | 0.95  |
+| perro   | 0.85  | 0.97  |
+| lobo    | 0.88  | 0.30  |
+| avión   | 0.10  | 0.05  |
+
+### Lectura
+
+-   `gato` y `perro` quedan cerca
+-   `lobo` comparte una dimensión, pero se distancia en otra
+-   `avión` queda fuera del grupo
+
+---
+
+## Ventana de contexto
+
+La **context window** es la cantidad máxima de tokens que el modelo puede considerar al mismo tiempo.
+
+### Importa porque afecta:
+
+-   cuánto puede "recordar" en una interacción
+-   cuántos documentos o instrucciones caben en una consulta
+-   el costo total del procesamiento
+-   la calidad cuando la tarea exige mantener coherencia en textos largos
+
+### Idea útil
+
+Más contexto no reemplaza la necesidad de buena selección de información.
+
+---
+
+## De texto a predicción
+
+El ciclo básico del modelo puede simplificarse así:
+
+1. Recibe tokens de entrada.
+2. Los representa como embeddings.
+3. Calcula relaciones entre ellos dentro del contexto.
+4. Estima probabilidades para el siguiente token.
+5. Repite el proceso hasta completar la respuesta.
+
+### Frase clave
+
+Los LLMs no "piensan" como humanos: optimizan predicción secuencial sobre lenguaje.
+
+---
+
+# Parámetros que importan
+
+## Dos familias distintas
+
+### 1. Parámetros de entrenamiento
+
+Definen la capacidad y el comportamiento potencial del modelo.
+
+### 2. Parámetros de generación
+
+Controlan cómo responde el modelo en inferencia.
+
+---
+
+## Parámetros de entrenamiento
+
+-   **Tamaño del modelo**: cantidad de parámetros internos
+-   **Embedding dimension**: riqueza de representación semántica
+-   **Número de capas y atención**: profundidad del procesamiento
+-   **Batch size**: estabilidad y eficiencia durante entrenamiento
+-   **Longitud del pre-training**: cantidad y calidad de aprendizaje acumulado
+-   **Context window**: tamaño máximo del contexto procesable
+
+### Idea clave
+
+Más grande no siempre significa mejor: importa también la calidad de datos, arquitectura y fine-tuning.
+
+---
+
+## Parámetros de generación
+
+-   **Temperature**: nivel de aleatoriedad
+-   **Top-p**: diversidad probabilística permitida
+-   **Top-k**: cantidad de candidatos posibles
+-   **Repetition penalty**: control de repeticiones
+-   **Max tokens**: largo máximo de la salida
+
+### Implicancia práctica
+
+Estos parámetros no cambian lo que el modelo sabe, sino cómo expresa su respuesta.
+
+---
+
+## Temperatura
+
+-   baja: respuestas más estables, conservadoras y repetibles
+-   alta: respuestas más variadas, creativas y riesgosas
+
+### Regla simple
+
+-   análisis, clasificación o extracción: temperatura baja
+-   ideación, redacción creativa o exploración: temperatura más alta
+
+---
+
+## Top-p y Top-k
+
+Son dos formas de restringir el conjunto de opciones que el modelo puede elegir al generar.
+
+### Uso práctico
+
+-   valores más restrictivos favorecen precisión y consistencia
+-   valores más amplios favorecen diversidad estilística
+
+### Criterio
+
+No conviene ajustar demasiados controles a la vez sin un objetivo claro de calidad.
+
+---
+
+## Max tokens
+
+Define cuánto puede extenderse la respuesta.
+
+### Si el valor es muy bajo:
+
+-   la salida puede truncarse
+-   puede perder pasos importantes
+
+### Si el valor es muy alto:
+
+-   sube el costo
+-   aumenta el riesgo de verbosidad o deriva
+
+---
+
+## Resumen operativo
+
+| Concepto | Rol práctico |
+|---------|--------------|
+| Token | Unidad mínima procesada |
+| Embedding | Representación numérica del significado |
+| Context window | Memoria de corto plazo del modelo |
+| Temperature | Aleatoriedad |
+| Top-p / Top-k | Diversidad controlada |
+| Max tokens | Extensión de salida |
+
+---
+
+# Un ejemplo mínimo con embeddings
+
+## Flujo conceptual
+
+1. Convertir textos en vectores
+2. Guardarlos en un índice vectorial
+3. Transformar una nueva consulta en vector
+4. Buscar los vectores más cercanos
+5. Recuperar texto relevante para responder mejor
+
+### Esto está en la base de muchos sistemas RAG
+
+---
+
+## Ejemplo en Python
+
+```python
+from openai import OpenAI
+import numpy as np
+import faiss
+
+client = OpenAI()
+
+sentences = [
+    "The dog is barking.",
+    "A cat is sleeping on the couch.",
+    "A car is driving down the street.",
+    "I love my pet animal."
+]
+
+response = client.embeddings.create(
+    model="text-embedding-3-small",
+    input=sentences
+)
+
+vectors = np.array([item.embedding for item in response.data])
+
+index = faiss.IndexFlatL2(vectors.shape[1])
+index.add(vectors)
+
+query = "My puppy is barking loudly."
+query_vec = client.embeddings.create(
+    model="text-embedding-3-small",
+    input=query
+).data[0].embedding
+
+D, I = index.search(np.array([query_vec]), k=2)
+print(I)
+```
+
+---
+
+## Qué muestra este ejemplo
+
+-   el modelo representa cada texto como vector
+-   la similitud semántica puede buscarse matemáticamente
+-   eso permite recuperar contexto útil antes de pedir una respuesta al LLM
+
+### Traducción organizacional
+
+No solo importa el modelo: importa cómo se conecta con información relevante.
+
+---
+
+## Entrenamiento y prompting
+
+### Entrenamiento
+
+El modelo aprende patrones desde grandes volúmenes de datos.
+
+### Prompting
+
+El usuario orienta la tarea mediante instrucciones, contexto y formato esperado.
+
+### Idea clave
+
+Un prompt no reemplaza el entrenamiento del modelo, pero sí condiciona fuertemente su desempeño en una tarea concreta.
+
+---
+
+## Discriminativos vs generativos
+
+-   **Discriminativos**: clasifican, estiman o predicen
+-   **Generativos**: producen contenido nuevo
+
+### Analogía
+
+-   discriminativo: "¿es fraude o no?"
+-   generativo: "resume este caso de fraude y explica sus patrones"
+
+### En organizaciones
+
+Ambos enfoques pueden convivir dentro del mismo proceso.
+
+---
+
+# Implicancias estratégicas
+
+## ¿Reemplazo o colaboración?
+
+La evidencia práctica muestra algo más matizado que el reemplazo total.
+
+### Idea clave
+
+La IA reemplaza tareas, reorganiza procesos y redefine roles; rara vez reemplaza una profesión completa de forma inmediata.
+
+---
+
+## Transformación organizacional
+
+La IA generativa impacta:
+
+-   procesos
+-   tiempos de decisión
+-   productividad individual
+-   coordinación entre equipos
+-   creación de nuevos productos y servicios
+
+### La pregunta estratégica ya no es solo "usar IA"
+
+Es rediseñar el trabajo para capturar valor real.
+
+---
+
+## Alineamiento estratégico
+
+La IA genera valor cuando se conecta con objetivos de negocio medibles.
+
+### Principios
+
+-   vincular iniciativas con KPIs reales
+-   priorizar casos de alto impacto y riesgo manejable
+-   evitar pilotos aislados sin continuidad
+-   construir una hoja de ruta de adopción
+
+---
+
+## Cambio cultural y alfabetización
+
+El mayor freno a la adopción suele ser organizacional, no técnico.
+
+### Cambios necesarios
+
+-   pasar de trabajo manual a trabajo aumentado por IA
+-   desarrollar criterio para evaluar respuestas
+-   normalizar la experimentación controlada
+-   entrenar a equipos en uso y límites de los modelos
+
+---
+
+## Gobernanza y gestión del riesgo
+
+Una organización debería evaluar al menos estas dimensiones:
+
+-   seguridad y privacidad de datos
+-   sesgos y fairness
+-   trazabilidad de decisiones
+-   cumplimiento regulatorio
+-   políticas de uso responsable
+-   supervisión humana en procesos críticos
+
+---
+
+## Identificación de oportunidades
+
+Tres arquetipos útiles para clasificar casos de uso:
+
+### Augmentation
+
+La IA ejecuta parte de la tarea y el humano mantiene control.
+
+### Co-creation
+
+Humano e IA producen conjuntamente el resultado.
+
+### Replacement
+
+La IA automatiza la tarea o proceso bajo condiciones controladas.
+
+---
+
+## Criterios para detectar oportunidades
+
+-   la tarea es repetitiva
+-   consume mucho tiempo
+-   exige redactar, resumir o clasificar
+-   el output puede verificarse
+-   existe impacto claro en costo, calidad o velocidad
+
+### Criterio adicional
+
+Mientras más alto el riesgo del proceso, mayor debe ser el nivel de control y trazabilidad.
+
+---
+
+## Framework operativo
+
+### 1. Mapear procesos
+
+Identificar microtareas y puntos de dolor concretos.
+
+### 2. Experimentar
+
+Probar, medir y ajustar prompts, contexto y flujos.
+
+### 3. Escalar
+
+Integrar en sistemas, entrenar equipos y monitorear resultados.
+
+---
+
+## Redistribución de capacidades
+
+La IA cambia qué hacen las personas y cómo se organiza el trabajo.
+
+### Efectos esperables
+
+-   menos tiempo en tareas repetitivas
+-   más foco en supervisión, análisis y decisión
+-   mayor autonomía en roles operativos
+-   aparición de nuevos roles ligados a IA
+
+### Ejemplos
+
+-   AI Product Owner
+-   Model Steward
+-   AI Trainer
+-   Especialistas de procesos aumentados
+
+---
+
+# Ética, privacidad y riesgos
+
+## Sesgos
+
+Los modelos pueden amplificar desigualdades presentes en los datos.
+
+### Fuentes frecuentes
+
+-   datos desbalanceados
+-   variables sensibles directas o indirectas
+-   falta de representatividad
+-   ausencia de validación ética en diseño y despliegue
+
+---
+
+## Cómo detectar y mitigar sesgos
+
+### Detección
+
+-   evaluar desempeño en subgrupos
+-   auditar resultados
+-   monitorear continuamente
+
+### Mitigación
+
+-   rebalancear datos
+-   rediseñar variables
+-   incorporar supervisión humana
+-   medir fairness desde el inicio
+
+---
+
+## Privacidad
+
+La personalización puede aumentar valor, pero también eleva exposición de datos.
+
+### Riesgos
+
+-   uso indebido de datos sensibles
+-   envío de información a terceros
+-   retención excesiva
+-   entrenamiento no autorizado sobre datos internos
+
+### Mitigaciones
+
+-   minimización de datos
+-   anonimización y cifrado
+-   políticas claras de consentimiento
+-   modelos privados cuando el caso lo exija
+
+---
+
+## Copyright y propiedad intelectual
+
+Los problemas más comunes son:
+
+-   autoría del contenido generado
+-   uso de material protegido en entrenamiento
+-   derechos de imagen
+-   infracción involuntaria por parte del usuario
+
+### Respuesta organizacional
+
+Documentar fuentes, licencias, proveedores y condiciones de uso.
+
+---
+
+## Explicabilidad y cajas negras
+
+Muchos sistemas de IA son difíciles de interpretar internamente.
+
+### Riesgos
+
+-   baja confianza
+-   dificultad de auditoría
+-   problemas regulatorios
+-   escasa trazabilidad en decisiones sensibles
+
+### Respuesta práctica
+
+Usar documentación, monitoreo, validación y modelos más interpretables cuando corresponda.
+
+---
+
+## Accountability
+
+La responsabilidad por decisiones apoyadas por IA no desaparece.
+
+### Problemas típicos
+
+-   nadie asume errores del sistema
+-   se usa "lo dijo la IA" como justificación
+-   se automatizan decisiones críticas sin revisión humana
+
+### Regla
+
+Siempre debe existir un responsable humano claro.
+
+---
+
+## Riesgos emergentes
+
+-   deepfakes y manipulación
+-   desinformación a escala
+-   automatización fuera de límites esperados
+-   riesgos reputacionales y de ciberseguridad
+
+### Idea clave
+
+La velocidad de adopción no elimina la necesidad de controles.
+
+---
+
+## Ética por diseño
+
+Los principios éticos deben estar integrados desde el inicio del proyecto.
+
+### Principios mínimos
+
+-   objetivos explícitos
+-   gestión responsable de datos
+-   transparencia
+-   evaluación de sesgos
+-   monitoreo continuo
+-   revisión de impacto social
+
+---
+
+## Cierre
+
+Comprender LLMs no significa solo saber "qué son".
+
+Significa entender:
+
+-   cómo representan lenguaje
+-   cómo se controlan en operación
+-   cómo se integran en procesos
+-   cómo se gobiernan en contextos reales
+
+### La ventaja no está en usar IA antes que otros
+
+Está en usarla con mejor diseño técnico, mejor criterio organizacional y mejor gestión del riesgo.
+
+---
+
+# Referencias sugeridas
+
+::: tiny
+
+- Vaswani et al. (2017). *Attention Is All You Need*. <https://arxiv.org/abs/1706.03762>
+- OpenAI. Guías sobre embeddings y uso por API.
+- Hugging Face. Documentación introductoria sobre embeddings y modelos open source.
+- Materiales de gobernanza y adopción responsable de IA aplicados a negocio.
+
+:::
