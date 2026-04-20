@@ -6,7 +6,7 @@ project:
     - "clases/*.qmd"
 
 website:
-  title: "Curso Modelos predictivos"
+  title: "IA Generativa para Organizaciones"
   navbar:
     left:
       - text: "Inicio"
@@ -21,6 +21,7 @@ website:
 format:
   html:
     theme: cosmo
+    css: styles.css
     toc: true
 
 

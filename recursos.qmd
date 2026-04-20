@@ -5,32 +5,41 @@ format: html
 
 # Recursos adicionales
 
--   Vecillas Martin, D., Berruezo Fernández, C., & Gento Municio, A. M. (2025). Systematic Review of Discrete Event Simulation in Healthcare and Statistics Distributions. Applied Sciences, 15(4), 1861. [Enlace aquí](https://www.mdpi.com/2076-3417/15/4/1861#:~:text=53,CrossRef)
+Esta página reúne referencias útiles para profundizar los temas del curso. La idea no es cubrir todo, sino dejar una base confiable para seguir estudiando prompting, LLMs, agentes, evaluación y gobernanza.
 
--   Heins, J., Schoenfelder, J., Heider, S., Heller, A. R., & Brunner, J. O. (2022). A scalable forecasting framework to predict COVID-19 hospital bed occupancy. INFORMS Journal on Applied Analytics, 52(6), 508-523. [Enlace aquí](https://opus.bibliothek.uni-augsburg.de/opus4/frontdoor/deliver/index/docId/92025/file/92025.pdf#:~:text=jens.brunner%40uni,care%20units%20and%20regular%20wards)
+## Documentación base
 
--   Harper, P. R., & Shahani, A. K. (2002). Modelling for the planning and management of bed capacities in hospitals. Journal of the Operational research Society, 53(1), 11-18.
+- [Quarto](https://quarto.org/): documentación para publicar apuntes, clases y sitios del curso.
+- [Posit Cheatsheets](https://posit.co/resources/cheatsheets/): referencia rápida para flujos de trabajo con R y Quarto.
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/): base útil para entender la lógica de documentos reproducibles.
 
--   Cavalcante, T., Ospina, R., Leiva, V., Cabezas, X., & Martin-Barreiro, C. (2023). Weibull regression and machine learning survival models: Methodology, comparison, and application to biomedical data related to cardiac surgery. Biology, 12(3), 442.
+## Conceptos de IA generativa y LLMs
 
--   Fenina, S., Jendoubi, S., & Bouchoucha, F. (2023). Failure rate estimation by Weibull distribution in a stochastic environment: application to the hemodialysis machine. Reliability: Theory & Applications, 18(3 (74)), 450-463.
+- Mollick, E. (2024). *Co-Intelligence*. Libro útil para discutir impacto organizacional y trabajo con IA.
+- Russell, S., & Norvig, P. *Artificial Intelligence: A Modern Approach*. Referencia amplia para conectar IA generativa con el campo general.
+- [Hugging Face Learn](https://huggingface.co/learn): tutoriales y explicaciones accesibles sobre transformers, embeddings y modelos abiertos.
 
--   Nketiah, E. A. (2021). Parameter Estimation of the Weibull Distribution; Comparison of the Least-Squares Method and the Maximum Likelihood Estimation. Int. J. Adv. Eng. Res. Sci, 8, 210-224.
+## Prompting y diseño de soluciones
 
+- Materiales de clase sobre prompt estructurado, prompt como contrato y diferencias entre demo, workflow y agente.
+- [OpenAI Cookbook](https://cookbook.openai.com/): ejemplos prácticos para estructurar tareas, salidas y uso de herramientas.
+- [Anthropic Prompting Guides](https://docs.anthropic.com/): buenas prácticas para instrucciones, evaluación y uso más confiable de modelos.
 
-## Libros
+## Agentes, RAG y arquitectura
 
-(1)	Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.". [Enlace acá](https://r4ds.had.co.nz/)
-(2)	Grolemund, G. (2014). Hands-on programming with R: Write your own functions and simulations. " O'Reilly Media, Inc.". [Enlace acá](https://rstudio-education.github.io/hopr/)
-(3)	Regenstein Jr, J. K. (2018). Reproducible finance with R: Code flows and shiny apps for portfolio analysis. CRC Press. [Enlace acá](http://www.reproduciblefinance.com/)
-(4)	Scheuch, C., Voigt, S., & Weiss, P. (2023). Tidy Finance with R (1st ed.). Chapman and Hall/CRC. https://doi.org/10.1201/b23237. [Enlace acá](https://www.tidy-finance.org/)
-(5)	Xie, Y., Allaire, J. J., & Grolemund, G. (2018). R markdown: The definitive guide. CRC Press. [Enlace acá](https://bookdown.org/yihui/rmarkdown/)
-(6) Bryan, J., & Hester, J. (n.d.). Happy Git and GitHub for the useR. [Enlace acá](https://happygitwithr.com)
+- Lewis, P. et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
+- Documentación de proveedores y frameworks para herramientas, contexto y orquestación de agentes.
+- Casos del curso donde el modelo no opera solo, sino conectado a fuentes, reglas y acciones.
 
-##
+## Gobernanza, evaluación y criterios de uso
 
-- Utilización de Renv: [Enlace acá](https://docs.posit.co/ide/user/ide/guide/environments/r/renv.html)
+- NIST AI Risk Management Framework: marco útil para conversar sobre riesgo, control y responsabilidades.
+- OECD AI Principles: referencia para discutir uso responsable y accountability.
+- Materiales del módulo sobre observabilidad, CI/CD, MLOps, evaluación y human-in-the-loop.
 
-## Cheatsheets
+## Herramientas de trabajo reproducible
 
-- https://posit.co/resources/cheatsheets/
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
+- [Happy Git and GitHub for the useR](https://happygitwithr.com)
+- [Renv](https://docs.posit.co/ide/user/ide/guide/environments/r/renv.html)

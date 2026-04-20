@@ -1,9 +1,9 @@
 ---
-title: "About"
+title: "Sobre el sitio"
 ---
 
-About this site
+Este sitio reúne los materiales docentes del curso orientado a IA generativa, prompting, agentes y gobernanza aplicada.
 
-```{r}
-1 + 1 + 1
-```
+Su objetivo es ofrecer un punto único para consultar clases, casos, actividades y recursos complementarios, de modo que el trabajo en aula y el estudio posterior queden conectados en una misma estructura.
+
+El contenido está organizado para apoyar tanto la comprensión conceptual como la traducción de estos temas a problemas organizacionales concretos.
