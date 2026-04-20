@@ -1,0 +1,307 @@
+---
+listing_title: "Módulo 03 - Clase 01"
+title: "Módulo 3: Arquitectura y Funcionamiento de los LLMs"
+subtitle: "Fundamentos técnicos y panorama actual de modelos"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    self-contained: true
+    incremental: true
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+------------------------------------------------------------------------
+
+# Módulo 03
+
+## Clase 01: Arquitectura y funcionamiento de los LLMs
+
+### De los conceptos base al panorama actual de modelos
+
+------------------------------------------------------------------------
+
+## Objetivo de la sesión
+
+-   Entender cómo procesan lenguaje los LLMs
+-   Revisar tokens, embeddings, atención, contexto y parámetros
+-   Distinguir modelos abiertos, cerrados y open-weight
+-   Comparar familias como GPT, Claude, Gemini y Llama
+-   Traducir estos conceptos a implicancias prácticas para organizaciones
+
+------------------------------------------------------------------------
+
+## Pregunta de apertura
+
+**Cuando una organización dice "queremos usar IA generativa", ¿de qué pieza está hablando realmente?**
+
+-   de un chatbot
+-   de un modelo
+-   de una aplicación
+-   de una integración
+-   de un sistema completo
+
+------------------------------------------------------------------------
+
+# El stack
+
+## Un LLM no es toda la solución
+
+En la práctica, una solución generativa suele combinar:
+
+-   interfaz o canal
+-   modelo de lenguaje
+-   contexto de documentos o datos
+-   herramientas o APIs
+-   reglas de negocio
+-   monitoreo y seguridad
+
+### Idea clave
+
+El LLM es una capa central, pero no equivale al sistema completo.
+
+------------------------------------------------------------------------
+
+## ¿Qué es un LLM?
+
+Un **Large Language Model** es un modelo entrenado con grandes volúmenes de texto para estimar la continuación más probable dado un contexto.
+
+### Tareas típicas
+
+-   responder preguntas
+-   resumir
+-   redactar
+-   traducir
+-   clasificar
+-   extraer información
+
+------------------------------------------------------------------------
+
+## Tokens
+
+Los modelos no leen texto como nosotros lo vemos.
+
+Trabajan con **tokens**, unidades pequeñas que pueden ser:
+
+-   fragmentos de palabra
+-   palabras completas
+-   signos
+-   números frecuentes
+
+### Implicancia práctica
+
+Todo input, output, costo y límite de contexto se mide en tokens.
+
+------------------------------------------------------------------------
+
+## Ejemplo intuitivo de tokenización
+
+La frase:
+
+**"La inteligencia artificial transforma procesos."**
+
+podría dividirse en piezas como:
+
+-   `La`
+-   `intelig`
+-   `encia`
+-   `artificial`
+-   `transforma`
+-   `procesos`
+-   `.`
+
+### Idea clave
+
+El modelo procesa unidades operativas, no palabras completas "como humano".
+
+------------------------------------------------------------------------
+
+## Embeddings
+
+Cada token se transforma en una representación numérica.
+
+Eso permite que el modelo capture relaciones como:
+
+-   significado
+-   similitud
+-   contexto de uso
+-   cercanía semántica
+
+### Idea simple
+
+Los embeddings son el idioma interno del modelo.
+
+------------------------------------------------------------------------
+
+## Atención
+
+La **atención** es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.
+
+### Intuición
+
+Cuando genera una palabra, no mira todo el texto con el mismo peso.
+
+Algunas partes del contexto importan más que otras.
+
+------------------------------------------------------------------------
+
+## Ventana de contexto
+
+La **context window** es la cantidad máxima de tokens que el modelo puede considerar al mismo tiempo.
+
+### Importa porque afecta
+
+-   largo de instrucciones
+-   cantidad de documentos que caben
+-   calidad de tareas extensas
+-   costo total de la consulta
+
+------------------------------------------------------------------------
+
+## Parámetros del modelo
+
+Los **parámetros** son los pesos internos que el modelo ajusta durante entrenamiento.
+
+### Idea importante
+
+Más parámetros no garantizan mejor desempeño en todos los casos.
+
+------------------------------------------------------------------------
+
+## Parámetros de generación
+
+También controlamos cómo responde el modelo con variables como:
+
+-   temperatura
+-   top-p
+-   top-k
+-   max tokens
+
+### Regla operativa
+
+Análisis y extracción: baja temperatura.  
+Ideación y creatividad: temperatura mayor.
+
+------------------------------------------------------------------------
+
+## Qué hacen bien los LLMs
+
+-   sintetizar información extensa
+-   reformular contenido
+-   traducir y adaptar tono
+-   clasificar texto
+-   extraer patrones desde lenguaje
+-   ayudar a explorar ideas
+
+------------------------------------------------------------------------
+
+## Qué hacen mal o con riesgo
+
+-   inventar hechos
+-   citar fuentes inexistentes
+-   equivocarse con exceso de confianza
+-   degradarse en tareas largas sin control
+-   fallar si no tienen contexto suficiente
+
+------------------------------------------------------------------------
+
+# Modelos
+
+## Modelos cerrados, abiertos y open-weight
+
+| Tipo | Ventaja típica | Desafío típico |
+|---|---|---|
+| Cerrado | facilidad de uso | menor control |
+| Open-weight | flexibilidad | mayor complejidad operativa |
+| Afinado propio | ajuste al dominio | mayor costo de desarrollo |
+
+------------------------------------------------------------------------
+
+## Panorama actual de familias de modelos
+
+### Modelos cerrados relevantes
+
+-   GPT de OpenAI
+-   Claude de Anthropic
+-   Gemini de Google
+
+### Modelos abiertos u open-weight relevantes
+
+-   Llama de Meta
+-   Mistral
+-   Qwen
+-   gpt-oss de OpenAI
+
+------------------------------------------------------------------------
+
+## Lectura práctica del mercado
+
+-   OpenAI combina familia GPT cerrada con modelos open-weight
+-   Anthropic enfatiza razonamiento, seguridad y uso empresarial
+-   Google enfatiza multimodalidad y contexto largo
+-   Meta empuja apertura, control y despliegue flexible con Llama
+
+------------------------------------------------------------------------
+
+## ¿Cuál modelo elegir?
+
+La elección depende de:
+
+-   caso de uso
+-   presupuesto
+-   velocidad requerida
+-   privacidad
+-   nivel de control
+-   trazabilidad
+-   integración con sistemas existentes
+
+------------------------------------------------------------------------
+
+## Idea de cierre
+
+Comprender arquitectura de LLMs no busca convertir a todos en ingenieros del modelo.
+
+Busca permitir mejores decisiones sobre:
+
+-   qué usar
+-   cómo integrarlo
+-   qué controlar
+-   dónde están sus límites
+
+------------------------------------------------------------------------
+
+# Referencias sugeridas
+
+::: tiny
+
+-   OpenAI, "Models". <https://platform.openai.com/docs/models>
+-   OpenAI, "Compare models". <https://platform.openai.com/docs/models/compare>
+-   OpenAI, "gpt-oss". <https://platform.openai.com/docs/models/gpt-oss>
+-   Anthropic, "Models overview". <https://docs.anthropic.com/en/docs/about-claude/models>
+-   Google AI for Developers, "Gemini models". <https://ai.google.dev/models/gemini>
+-   Meta, "Open Source AI". <https://ai.meta.com/opensourceAI/>
+-   Vaswani et al. (2017), *Attention Is All You Need*. <https://arxiv.org/abs/1706.03762>
+
+:::

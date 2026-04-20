@@ -1,0 +1,605 @@
+---
+listing_title: "Diapositiva 03"
+title: "Conceptos Básicos de IA y LLM en la Actualidad"
+subtitle: "Lenguaje común para entender el panorama actual"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    self-contained: true
+    incremental: true
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+------------------------------------------------------------------------
+
+# Clase 03
+
+## Conceptos básicos de IA y LLM hoy
+
+### Un mapa simple para entender el lenguaje actual de la inteligencia artificial
+
+------------------------------------------------------------------------
+
+## Objetivo de la sesión
+
+-   Entender los conceptos más usados hoy en conversaciones sobre IA
+-   Diferenciar IA, IA generativa, LLM, agentes y automatización
+-   Reconocer qué significan términos como prompts, RAG, embeddings y MCP
+-   Traducir ese vocabulario a decisiones prácticas de negocio
+-   Identificar oportunidades, límites y riesgos reales
+
+------------------------------------------------------------------------
+
+## Pregunta de apertura
+
+**Cuando escuchan hablar de IA hoy, ¿qué es lo primero que aparece?**
+
+-   ChatGPT o asistentes conversacionales
+-   Automatización de tareas
+-   Análisis de documentos
+-   Generación de contenido
+-   Riesgos y reemplazo laboral
+
+------------------------------------------------------------------------
+
+# El mapa general
+
+## IA no es una sola cosa
+
+Cuando hoy se habla de IA, normalmente se mezclan varias capas:
+
+-   inteligencia artificial
+-   machine learning
+-   IA generativa
+-   LLMs
+-   herramientas, datos y automatización
+
+### Idea clave
+
+Un chatbot visible para el usuario suele ser solo la punta del sistema.
+
+------------------------------------------------------------------------
+
+## IA
+
+**Inteligencia Artificial** es un concepto amplio.
+
+Se usa para describir sistemas capaces de realizar tareas asociadas a inteligencia humana, por ejemplo:
+
+-   clasificar
+-   predecir
+-   recomendar
+-   reconocer patrones
+-   generar contenido
+
+------------------------------------------------------------------------
+
+## Machine Learning
+
+**Machine Learning** es una forma de construir IA usando datos para aprender patrones.
+
+### Ejemplos comunes
+
+-   detectar fraude
+-   predecir rotación de clientes
+-   recomendar productos
+-   estimar demanda
+
+### Idea simple
+
+No todas las soluciones de IA conversan; muchas solo predicen o clasifican.
+
+------------------------------------------------------------------------
+
+## IA generativa
+
+La **IA generativa** crea contenido nuevo a partir de patrones aprendidos.
+
+### Puede generar
+
+-   texto
+-   imágenes
+-   audio
+-   video
+-   código
+
+### Lo importante
+
+Su valor no está solo en "crear", sino en acelerar trabajo cognitivo.
+
+------------------------------------------------------------------------
+
+## LLM
+
+**LLM** significa **Large Language Model**.
+
+Son modelos entrenados con grandes volúmenes de texto para trabajar con lenguaje.
+
+### Hacen bien tareas como
+
+-   responder preguntas
+-   resumir
+-   redactar
+-   traducir
+-   clasificar texto
+-   extraer información desde documentos
+
+------------------------------------------------------------------------
+
+## Copilot, chatbot y asistente
+
+No son exactamente lo mismo:
+
+-   **chatbot**: responde en formato conversacional
+-   **asistente**: ayuda a una persona en una tarea
+-   **copilot**: acompaña el trabajo dentro de una herramienta o flujo
+
+### Ejemplo
+
+Un copiloto en Word o Excel no reemplaza el software: lo vuelve más asistido.
+
+------------------------------------------------------------------------
+
+## Multimodalidad
+
+Un sistema **multimodal** puede trabajar con más de un tipo de información.
+
+### Hoy puede combinar
+
+-   texto
+-   imágenes
+-   audio
+-   video
+-   documentos
+
+### Implicancia práctica
+
+La IA actual ya no solo "lee": también puede ver, escuchar e interpretar.
+
+------------------------------------------------------------------------
+
+## Token
+
+Los modelos no procesan texto exactamente como nosotros lo vemos.
+
+Trabajan con **tokens**, pequeñas unidades de texto.
+
+### Por qué importa
+
+-   el costo suele medirse en tokens
+-   el largo de una conversación depende de tokens
+-   los documentos grandes consumen tokens rápidamente
+
+------------------------------------------------------------------------
+
+## Ventana de contexto
+
+La **context window** es la cantidad de información que el modelo puede considerar al mismo tiempo.
+
+### Traducción simple
+
+Es como su memoria de corto plazo dentro de una conversación o tarea.
+
+### Importa porque afecta
+
+-   cuánta información cabe
+-   cuán largo puede ser un documento
+-   cuánta coherencia puede mantener
+
+------------------------------------------------------------------------
+
+## Prompt
+
+Un **prompt** es la instrucción que damos al modelo.
+
+### Puede incluir
+
+-   la tarea
+-   contexto
+-   restricciones
+-   formato esperado
+-   ejemplos
+
+### Idea clave
+
+Un buen prompt no es "hablar bonito con la IA"; es diseñar bien la instrucción.
+
+------------------------------------------------------------------------
+
+## Prompt engineering
+
+Es la práctica de mejorar resultados ajustando instrucciones y contexto.
+
+### Normalmente busca
+
+-   mayor claridad
+-   menos ambigüedad
+-   mejor formato de salida
+-   menos errores
+
+### En lenguaje simple
+
+Es aprender a pedir bien, no a programar el modelo desde cero.
+
+------------------------------------------------------------------------
+
+## Hallucinations
+
+Una **alucinación** ocurre cuando el modelo responde con seguridad, pero inventa o distorsiona información.
+
+### Puede pasar al
+
+-   citar fuentes que no existen
+-   afirmar datos incorrectos
+-   completar vacíos con texto plausible
+
+### Regla de negocio
+
+Si el caso es sensible, la salida debe validarse.
+
+------------------------------------------------------------------------
+
+## Embeddings
+
+Los **embeddings** son representaciones numéricas del significado.
+
+### Para qué se usan mucho hoy
+
+-   buscar textos parecidos
+-   comparar significado
+-   encontrar documentos relevantes
+-   alimentar sistemas RAG
+
+### Idea simple
+
+Permiten que una máquina compare cercanía semántica, no solo palabras exactas.
+
+------------------------------------------------------------------------
+
+## Base de datos vectorial
+
+Es una base pensada para guardar y buscar embeddings.
+
+### Su rol típico
+
+-   almacenar fragmentos de documentos
+-   recuperar lo más relevante para una consulta
+-   ayudar a responder con contexto específico
+
+### Traducción ejecutiva
+
+Es una pieza común en sistemas que "conversan con documentos".
+
+------------------------------------------------------------------------
+
+## RAG
+
+**RAG** significa **Retrieval-Augmented Generation**.
+
+Consiste en recuperar información relevante antes de responder.
+
+### Flujo simplificado
+
+1. El usuario pregunta.
+2. El sistema busca información relacionada.
+3. El modelo responde con ese contexto adicional.
+
+### Valor
+
+Reduce la dependencia exclusiva de lo que el modelo aprendió en entrenamiento.
+
+------------------------------------------------------------------------
+
+## Fine-tuning
+
+**Fine-tuning** es ajustar un modelo para que funcione mejor en una tarea o estilo específico.
+
+### Puede servir para
+
+-   respuestas con formato fijo
+-   lenguaje de una industria
+-   tono institucional
+-   tareas repetitivas muy concretas
+
+### Ojo
+
+No todo problema se resuelve con fine-tuning; muchas veces basta con mejor contexto y mejores prompts.
+
+------------------------------------------------------------------------
+
+## Tool use o function calling
+
+Hoy muchos modelos pueden usar **herramientas**.
+
+Eso significa que no solo generan texto: también pueden pedir acciones al sistema.
+
+### Ejemplos
+
+-   consultar una base de datos
+-   buscar en la web
+-   leer archivos
+-   enviar un correo
+-   ejecutar una acción en un sistema
+
+------------------------------------------------------------------------
+
+## Agentes
+
+Un **agente** es un sistema que usa un modelo para perseguir un objetivo con varios pasos.
+
+### A diferencia de un chat simple, puede
+
+-   planificar
+-   usar herramientas
+-   consultar fuentes
+-   ejecutar acciones
+-   revisar resultados
+
+### Idea clave
+
+No es solo "responder", sino coordinar trabajo.
+
+------------------------------------------------------------------------
+
+## AI agents, copilots y automatización
+
+Son conceptos cercanos, pero no idénticos:
+
+-   **copilot**: ayuda a una persona
+-   **agente**: ejecuta pasos con cierta autonomía
+-   **automatización**: flujo que corre con reglas definidas
+
+### Pregunta útil
+
+¿Qué nivel de autonomía queremos realmente?
+
+------------------------------------------------------------------------
+
+## Reasoning models
+
+Hoy se habla mucho de **reasoning models** o modelos de razonamiento.
+
+### La idea general
+
+Son modelos preparados para resolver tareas más complejas:
+
+-   planificación
+-   problemas de varios pasos
+-   análisis más exigente
+-   toma de decisiones asistida
+
+### Traducción práctica
+
+No todo requiere un modelo "más pensante"; depende del tipo de tarea.
+
+------------------------------------------------------------------------
+
+## Modelos pequeños y modelos grandes
+
+No siempre gana el modelo más grande.
+
+### Hoy conviven
+
+-   modelos frontier, más potentes
+-   modelos pequeños, más rápidos y baratos
+-   modelos especializados para tareas concretas
+
+### Criterios reales
+
+-   costo
+-   velocidad
+-   privacidad
+-   calidad requerida
+
+------------------------------------------------------------------------
+
+## Modelos cerrados, abiertos y open-weight
+
+Es una distinción cada vez más importante.
+
+-   **cerrados**: el proveedor controla el modelo y su acceso
+-   **abiertos en pesos / open-weight**: se pueden descargar y desplegar
+-   **afinados internamente**: adaptados por la organización
+
+### Implicancia
+
+La elección del modelo también es una decisión de control, costo y dependencia.
+
+------------------------------------------------------------------------
+
+## MCP
+
+**MCP** significa **Model Context Protocol**.
+
+Es un protocolo emergente para conectar modelos con datos, herramientas y servicios de forma estandarizada.
+
+### Idea simple
+
+Busca que distintos sistemas de IA puedan conectarse a fuentes externas sin integraciones totalmente artesanales cada vez.
+
+### Por qué aparece tanto hoy
+
+Porque el ecosistema se está moviendo desde "chat" hacia "sistemas conectados".
+
+------------------------------------------------------------------------
+
+## Evals
+
+**Evaluations** o **evals** son pruebas para medir si una solución de IA realmente funciona bien.
+
+### Sirven para revisar
+
+-   precisión
+-   consistencia
+-   formato
+-   seguridad
+-   cumplimiento de reglas
+
+### Idea clave
+
+En IA no basta con que "parezca bueno" en una demo.
+
+------------------------------------------------------------------------
+
+## Guardrails
+
+Los **guardrails** son controles para limitar comportamientos no deseados.
+
+### Ejemplos
+
+-   bloquear ciertos tipos de salida
+-   exigir validación humana
+-   restringir acceso a datos
+-   evitar acciones no autorizadas
+
+### Traducción
+
+Son cinturones de seguridad para sistemas con IA.
+
+------------------------------------------------------------------------
+
+## Privacidad, sesgos y seguridad
+
+Tres palabras que deben entrar temprano en cualquier conversación de adopción.
+
+### Riesgos frecuentes
+
+-   fuga de datos
+-   respuestas sesgadas
+-   automatización sin control
+-   dependencia excesiva del proveedor
+-   mal uso de contenido sintético
+
+------------------------------------------------------------------------
+
+## Deepfakes y contenido sintético
+
+La IA actual puede producir contenido muy convincente.
+
+### Eso abre oportunidades, pero también riesgos
+
+-   fraude
+-   desinformación
+-   suplantación
+-   daño reputacional
+
+### Idea clave
+
+Mientras mejor genera la IA, más importante se vuelve verificar origen y contexto.
+
+------------------------------------------------------------------------
+
+## Casos de uso que hoy son comunes
+
+-   resumen de reuniones y documentos
+-   asistentes de atención a clientes
+-   búsqueda sobre bases de conocimiento
+-   generación de propuestas y correos
+-   apoyo a análisis en áreas legales, comerciales o de operaciones
+-   copilotos de productividad
+
+------------------------------------------------------------------------
+
+## Donde suele estar el valor real
+
+En organizaciones, el impacto suele venir de combinar cuatro cosas:
+
+-   modelo
+-   contexto
+-   integración
+-   proceso
+
+### Fórmula simple
+
+**Valor = IA + datos útiles + buen diseño de trabajo**
+
+------------------------------------------------------------------------
+
+## Cómo leer el panorama actual sin perderse
+
+No es necesario dominar toda la jerga técnica.
+
+Lo importante es poder distinguir:
+
+-   qué hace el modelo
+-   qué hace el sistema alrededor
+-   dónde están los datos
+-   quién valida la salida
+-   cómo se mide el valor
+
+------------------------------------------------------------------------
+
+## Idea de cierre
+
+La conversación actual sobre IA ya no trata solo de "usar un chatbot".
+
+Trata de entender cómo combinar:
+
+-   modelos
+-   datos
+-   herramientas
+-   personas
+-   controles
+
+para rediseñar trabajo, productos y decisiones.
+
+------------------------------------------------------------------------
+
+## Conceptos que conviene recordar
+
+-   IA
+-   IA generativa
+-   LLM
+-   multimodalidad
+-   prompt
+-   contexto
+-   embeddings
+-   RAG
+-   tool use
+-   agentes
+-   reasoning models
+-   evals
+-   guardrails
+-   MCP
+
+------------------------------------------------------------------------
+
+# Referencias sugeridas
+
+::: tiny
+
+-   OpenAI, "Prompting". <https://platform.openai.com/docs/guides/prompting>
+-   OpenAI, "Function calling". <https://platform.openai.com/docs/guides/function-calling>
+-   OpenAI, "File search". <https://platform.openai.com/docs/guides/tools-file-search>
+-   OpenAI Help Center, "Retrieval Augmented Generation (RAG) and Semantic Search for GPTs". <https://help.openai.com/en/articles/8868588-retrieval-augmented-generation-rag-and-semantic-search-for-gpts>
+-   OpenAI, "Reasoning models". <https://platform.openai.com/docs/guides/reasoning>
+-   OpenAI, "Model optimization". <https://platform.openai.com/docs/guides/fine-tuning>
+-   Anthropic, "Model Context Protocol (MCP)". <https://docs.anthropic.com/en/docs/mcp>
+-   Anthropic, "Building with extended thinking". <https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking>
+-   Google AI for Developers, "Long context". <https://ai.google.dev/gemini-api/docs/long-context>
+-   Google AI for Developers, "Function calling with the Gemini API". <https://ai.google.dev/gemini-api/docs/function-calling>
+
+:::
