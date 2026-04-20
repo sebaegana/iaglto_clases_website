@@ -1,0 +1,281 @@
+---
+listing_title: "Módulo 03 - Clase 03"
+title: "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión"
+subtitle: "Cómo usar IA bajo incertidumbre sin delegar el criterio"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    self-contained: true
+    incremental: true
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+------------------------------------------------------------------------
+
+# Módulo 03
+
+## Clase 03: Decision Science, sesgos e IA
+
+### Cómo estructurar decisiones complejas bajo incertidumbre
+
+------------------------------------------------------------------------
+
+## Objetivo de la sesión
+
+-   Introducir principios básicos de Decision Science
+-   Revisar cómo estructurar decisiones complejas
+-   Entender heurísticas y sesgos cognitivos frecuentes
+-   Evaluar el rol de la IA como apoyo, no reemplazo, del juicio humano
+-   Traducir estos conceptos a contextos organizacionales reales
+
+------------------------------------------------------------------------
+
+## Punto de partida
+
+Las organizaciones no solo necesitan generar texto.
+
+Necesitan decidir:
+
+-   qué hacer
+-   en qué orden
+-   con qué prioridad
+-   con qué riesgo
+-   con qué evidencia
+
+------------------------------------------------------------------------
+
+# Decision Science
+
+## ¿Qué estudia la Ciencia de Decisiones?
+
+La **Decision Science** busca mejorar cómo tomamos decisiones, especialmente cuando:
+
+-   hay incertidumbre
+-   la información es incompleta
+-   existen múltiples criterios
+-   hay riesgo y trade-offs
+
+------------------------------------------------------------------------
+
+## Estructurar una decisión
+
+Un marco simple puede incluir:
+
+1. Definir la decisión.
+2. Identificar alternativas.
+3. Establecer criterios.
+4. Estimar consecuencias.
+5. Evaluar incertidumbre.
+6. Elegir y revisar.
+
+------------------------------------------------------------------------
+
+## ¿Qué vuelve compleja una decisión?
+
+-   múltiples objetivos
+-   información ambigua
+-   actores con intereses distintos
+-   consecuencias difíciles de anticipar
+-   presión por decidir rápido
+
+------------------------------------------------------------------------
+
+## Trade-offs
+
+Decidir bien casi siempre implica equilibrar tensiones:
+
+-   costo vs calidad
+-   velocidad vs precisión
+-   crecimiento vs riesgo
+-   automatización vs control
+
+------------------------------------------------------------------------
+
+# Sesgos y heurísticas
+
+## ¿Qué son las heurísticas?
+
+Son atajos mentales que usamos para decidir rápido.
+
+### Son útiles porque
+
+-   ahorran tiempo
+-   reducen esfuerzo cognitivo
+-   permiten actuar con información incompleta
+
+### Pero también pueden inducir error.
+
+------------------------------------------------------------------------
+
+## Sesgo de confirmación
+
+Tendencia a buscar o valorar más la información que confirma lo que ya creemos.
+
+### Riesgo organizacional
+
+Usar la IA solo para justificar decisiones ya tomadas.
+
+------------------------------------------------------------------------
+
+## Anclaje
+
+La primera cifra, idea o diagnóstico influye demasiado en la evaluación posterior.
+
+------------------------------------------------------------------------
+
+## Disponibilidad
+
+Tendemos a juzgar probabilidad o importancia según lo más fácil de recordar.
+
+------------------------------------------------------------------------
+
+## Exceso de confianza
+
+Las personas suelen sobreestimar la calidad de su juicio.
+
+### En IA esto se agrava cuando
+
+-   la respuesta suena convincente
+-   el formato parece profesional
+-   el usuario confunde fluidez con verdad
+
+------------------------------------------------------------------------
+
+## Sesgo de automatización
+
+Es la tendencia a confiar demasiado en sistemas automáticos.
+
+### Señal de alerta
+
+Aprobar la salida de la IA sin revisar porque "si el sistema lo dijo, debe estar bien".
+
+------------------------------------------------------------------------
+
+# El rol de la IA
+
+## ¿Cómo puede ayudar la IA en decisiones?
+
+Puede apoyar en tareas como:
+
+-   resumir evidencia
+-   comparar alternativas
+-   detectar patrones
+-   generar escenarios
+-   explicitar supuestos
+-   redactar recomendaciones preliminares
+
+------------------------------------------------------------------------
+
+## ¿Qué no debería delegarse ciegamente?
+
+-   decisiones críticas sin revisión humana
+-   juicios éticos complejos
+-   definiciones estratégicas de alto impacto
+-   acciones irreversibles basadas en evidencia dudosa
+
+------------------------------------------------------------------------
+
+## IA como apoyo, no como sustituto del criterio
+
+La IA puede aumentar capacidad analítica, pero no reemplaza:
+
+-   contexto político
+-   responsabilidad institucional
+-   criterio profesional
+-   comprensión de consecuencias humanas
+
+------------------------------------------------------------------------
+
+## Preguntas útiles al usar IA para decidir
+
+-   ¿qué evidencia está usando?
+-   ¿qué supuestos está dando por ciertos?
+-   ¿qué información falta?
+-   ¿qué riesgos no está viendo?
+-   ¿qué parte requiere validación humana?
+
+------------------------------------------------------------------------
+
+## Marco práctico para organizaciones
+
+1. Delimitar la decisión.
+2. Separar hechos de interpretación.
+3. Pedir a la IA alternativas y contraargumentos.
+4. Revisar sesgos posibles del equipo.
+5. Validar con responsables humanos.
+6. Documentar la lógica seguida.
+
+------------------------------------------------------------------------
+
+## Un uso inteligente de prompts en decisiones
+
+En vez de pedir:
+
+**"Dime qué hacer."**
+
+Conviene pedir:
+
+-   resume evidencia
+-   identifica supuestos
+-   plantea escenarios
+-   compara ventajas y riesgos
+-   propone preguntas pendientes
+
+------------------------------------------------------------------------
+
+## Accountability
+
+Si una decisión apoyada por IA sale mal, la responsabilidad no desaparece.
+
+### Regla central
+
+Siempre debe existir un responsable humano claro.
+
+------------------------------------------------------------------------
+
+## Idea de cierre
+
+La IA puede ser una gran herramienta para decidir mejor, pero solo cuando se usa para:
+
+-   ampliar análisis
+-   ordenar complejidad
+-   desafiar supuestos
+-   mejorar trazabilidad
+
+No cuando se usa para reemplazar criterio, responsabilidad o deliberación.
+
+------------------------------------------------------------------------
+
+# Referencias sugeridas
+
+::: tiny
+
+-   Kahneman, D. *Thinking, Fast and Slow.*
+-   Hammond, Keeney y Raiffa. *Smart Choices.*
+-   Bazerman y Moore. *Judgment in Managerial Decision Making.*
+-   Materiales introductorios sobre Responsible AI y human-in-the-loop
+
+:::
