@@ -1,10 +1,25 @@
 ---
-title: "Clases"
-listing:
-  contents: "*.qmd"
-  sort: "listing_title"
-  type: default
-  fields: [listing_title]    # ✅ Only show the title
+title: "Clases y materiales"
 ---
 
 # Clases del curso
+
+En esta sección se agrupan las sesiones del módulo, el diccionario de apoyo y algunos materiales prácticos usados durante el curso.
+
+## Módulo 3
+
+- [Clase 1: Arquitectura y funcionamiento de los LLMs](m03-clase01-arquitectura-llms.qmd)
+- [Clase 2: CI/CD, MLOps y gobernanza](m03-clase02-cicd-mlops-gobernanza.qmd)
+- [Clase 3: Decision Science y sesgos](m03-clase03-decision-science-sesgos.qmd)
+- [Caso aplicado: Agente AFP](m03-caso-aplicado-agente-afp.qmd)
+- [Diccionario y FAQ del curso](m03-diccionario-faq-terminos.qmd)
+
+## Materiales complementarios
+
+- [Tokenización: técnicas y fundamentos](tokenizacion_tecnicas.qmd)
+- [Notebook 01](notebook_01.qmd)
+- [Actividad: skill en Markdown](actividad_skill_markdown.qmd)
+
+## Nota de uso
+
+Algunos materiales están pensados como apoyo de clase y otros como referencia posterior. Si buscas un punto de partida, conviene comenzar por la Clase 1 y luego usar el diccionario como material transversal.

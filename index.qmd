@@ -1,6 +1,6 @@
 ---
-title: "Magíster en Administración de Instituciones de Salud "
-subtitle: "Modelos predictivos"
+title: "Curso de IA Generativa y LLMs"
+subtitle: "Materiales de clase, referencias y recursos de apoyo"
 date: last-modified
 lang: es
 format:
@@ -10,4 +10,21 @@ format:
     number-sections: false
 ---
 
-Este será el repositorio de los distintos materiales utilizados en el curso. 
+Bienvenidas y bienvenidos al sitio del curso. Acá reunimos las clases, materiales complementarios y recursos de apoyo para trabajar conceptos y casos sobre:
+
+- IA generativa y modelos de lenguaje
+- prompting y diseño de instrucciones
+- agentes, herramientas y arquitecturas con contexto
+- evaluación, gobernanza y criterios de uso organizacional
+
+## Cómo usar este sitio
+
+La navegación está organizada para acompañar el trabajo del curso:
+
+- en `Clases` encontrarás las sesiones del módulo y materiales asociados
+- en `Recursos` verás documentación, artículos, libros y guías para profundizar
+- en `Contacto` están los canales del docente
+
+## Enfoque del curso
+
+El objetivo no es solo entender qué puede hacer un LLM, sino también cuándo conviene usarlo, cómo integrarlo a procesos reales y qué riesgos hay que gestionar para pasar de una demo a una solución útil.

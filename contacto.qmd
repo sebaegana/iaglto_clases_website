@@ -6,11 +6,11 @@ format: html
 # Contacto
 
 **Sebastián Egaña Santibáñez**  
-Docente del curso  
+Docente del curso
 
-- 📧 segana@fen.uchile.cl  
-- 💼 [LinkedIn](https://linkedin.com/in/sebaegana)
-- 💻[Página Web](https://segana.netlify.app) 
-- 🐈[Github](https://github.com/sebaegana)
+- Correo: [segana@fen.uchile.cl](mailto:segana@fen.uchile.cl)
+- LinkedIn: [linkedin.com/in/sebaegana](https://linkedin.com/in/sebaegana)
+- Sitio web: [segana.netlify.app](https://segana.netlify.app)
+- GitHub: [github.com/sebaegana](https://github.com/sebaegana)
 
-
+Si estás usando este sitio como apoyo del curso, conviene escribir indicando el módulo, la clase o el material al que haces referencia para poder responder con más contexto.
