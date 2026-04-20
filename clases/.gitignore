@@ -1,3 +1,18 @@
 /.quarto/
 
+# Quarto / knitr intermediate files
+*.knit.md
+*.tex
+*.log
+*.aux
+*.toc
+*.nav
+*.snm
+*.out
+
+# Rendered local artifacts for slides and handouts in this subproject
+*_files/
+*.html
+*.pdf
+
 **/*.quarto_ipynb
