@@ -1,0 +1,690 @@
+---
+title: "Modulo 3: Diccionario y FAQ de terminos del curso"
+listing_title: "Modulo 03 - Diccionario y FAQ"
+subtitle: "Glosario practico para acompanar clases sobre IA, prompting, agentes y gobernanza"
+lang: es
+format:
+  html:
+    toc: true
+    number-sections: false
+  pdf:
+    toc: true
+---
+
+# Proposito
+
+Este material resume el vocabulario que aparece a lo largo del curso y responde dudas frecuentes de estudiantes. No busca reemplazar las clases, sino ofrecer un lenguaje comun para conversar sobre IA generativa, prompting, LLMs, agentes, RAG, MLOps, gobernanza y Decision Science.
+
+Esta version incorpora contexto de las clases en `qmd` y tambien de los PDF agregados al repo, especialmente en tres ideas que aparecieron con mucha fuerza:
+
+- el prompt como contrato
+- el agente como sistema que percibe, razona y actua
+- el trade-off entre no-code y codigo asistido al construir soluciones
+
+# Como leer este diccionario
+
+Cada termino importante tiene cinco capas:
+
+- `Definicion simple`: que significa en lenguaje directo
+- `Por que importa`: por que conviene recordarlo en el curso
+- `Ejemplo del curso`: donde se vio en una actividad o caso
+- `No confundir con`: distincion util para evitar errores
+- `Pregunta guia`: pregunta corta para discutir o estudiar
+
+# Mapa rapido
+
+| Bloque | Pregunta central | Terminos clave |
+|---|---|---|
+| Conceptos base | Que es lo que realmente hace un modelo | IA, IA generativa, LLM, token, embedding, contexto |
+| Prompting | Como pedir bien y con limites claros | prompt, prompt estructurado, temperatura, CoT, auditable |
+| Arquitectura | Como pasa de responder a actuar | agente, herramientas, memoria, workflow, MCP, RAG |
+| Operacion | Como pasa de demo a sistema confiable | evals, observabilidad, CI/CD, MLOps, trazabilidad |
+| Riesgo y criterio | Como usar IA sin delegar juicio ciegamente | guardrails, human-in-the-loop, sesgos, accountability, trade-off |
+| Construccion | Como elegir la forma de implementarlo | no-code, codigo asistido, prototipo, produccion |
+
+# Diccionario
+
+## Conceptos base
+
+**IA**
+
+`Definicion simple`: paraguas amplio para sistemas capaces de clasificar, predecir, recomendar o generar contenido.
+
+`Por que importa`: en clase sirve para no meter todo en el mismo saco. No toda IA es conversacional ni toda IA es generativa.
+
+`Ejemplo del curso`: en `diapositiva_03.qmd` se separa IA de Machine Learning, IA generativa y LLMs.
+
+`No confundir con`: IA generativa. Esta ultima es solo una parte del campo.
+
+`Pregunta guia`: cuando alguien dice "queremos usar IA", de que capa esta hablando realmente?
+
+**Machine Learning**
+
+`Definicion simple`: forma de construir IA a partir de datos y aprendizaje de patrones.
+
+`Por que importa`: ayuda a distinguir modelos que predicen o clasifican de modelos que conversan o generan texto.
+
+`Ejemplo del curso`: aparece como contrapunto a los LLMs en las diapositivas introductorias.
+
+`No confundir con`: LLM. Un LLM es un tipo especifico de modelo para lenguaje, no todo Machine Learning.
+
+`Pregunta guia`: la tarea que queremos resolver es de prediccion, clasificacion o generacion?
+
+**IA generativa**
+
+`Definicion simple`: familia de sistemas capaces de crear contenido nuevo, como texto, imagen, audio, video o codigo.
+
+`Por que importa`: es la base del curso, pero se trabaja siempre conectada a problemas organizacionales concretos.
+
+`Ejemplo del curso`: generacion de respuestas, informes, PDFs, correos o salidas explicativas en los casos practicos.
+
+`No confundir con`: automatizacion. Generar contenido no implica por si solo ejecutar un flujo.
+
+`Pregunta guia`: estamos usando IA para crear contenido o para tomar una accion?
+
+**LLM**
+
+`Definicion simple`: modelo entrenado con grandes volumenes de texto para trabajar con lenguaje y producir continuaciones probables dado un contexto.
+
+`Por que importa`: es el nucleo de gran parte de las soluciones del curso, pero no equivale al sistema completo.
+
+`Ejemplo del curso`: en `m03-clase01-arquitectura-llms.qmd` se presenta como capa central del stack; en el caso AFP redacta la respuesta despues de recuperar contexto.
+
+`No confundir con`: chatbot. El LLM es el modelo; el chatbot es una interfaz o aplicacion.
+
+`Pregunta guia`: el problema se resuelve solo con un modelo o necesita tambien datos, reglas y herramientas?
+
+**Token**
+
+`Definicion simple`: unidad pequena de texto con la que opera el modelo.
+
+`Por que importa`: costo, longitud de una conversacion y limite de contexto se entienden mejor en tokens que en palabras.
+
+`Ejemplo del curso`: `tokenizacion_tecnicas.qmd` y `diapositiva_03.qmd` muestran que un mismo texto puede ocupar mas o menos tokens segun el modelo.
+
+`No confundir con`: palabra. Un token puede ser una palabra, parte de una palabra o un signo.
+
+`Pregunta guia`: el problema es que el texto es largo o que ocupa demasiados tokens?
+
+**Tokenizacion**
+
+`Definicion simple`: proceso de dividir el texto en unidades operativas para el modelo.
+
+`Por que importa`: afecta costo, capacidad efectiva de contexto y comportamiento del modelo en distintos idiomas y dominios.
+
+`Ejemplo del curso`: en `tokenizacion_tecnicas.qmd` se comparan tokenizacion por caracteres, palabras, subword y bytes.
+
+`No confundir con`: compresion. Tokenizar no necesariamente acorta.
+
+`Pregunta guia`: dos textos del mismo largo visual ocupan la misma cantidad de tokens?
+
+**Embedding**
+
+`Definicion simple`: representacion numerica del significado de un texto.
+
+`Por que importa`: permite comparar similitud semantica y es pieza central en busqueda semantica y RAG.
+
+`Ejemplo del curso`: `diapositiva_03.qmd` y el caso AFP lo conectan con bases vectoriales y recuperacion de FAQ o normativa.
+
+`No confundir con`: respuesta generada. El embedding no responde; ayuda a buscar o representar significado.
+
+`Pregunta guia`: cuando un sistema "encuentra textos parecidos", como lo esta haciendo?
+
+**Atencion**
+
+`Definicion simple`: mecanismo por el cual el modelo decide que partes del contexto pesan mas al responder.
+
+`Por que importa`: ayuda a entender por que no todo lo que ponemos en el prompt tiene la misma influencia.
+
+`Ejemplo del curso`: `m03-clase01-arquitectura-llms.qmd` lo presenta como intuicion para comprender coherencia y relevancia.
+
+`No confundir con`: memoria perfecta. Que algo este en el contexto no garantiza que sea priorizado bien.
+
+`Pregunta guia`: que partes de la instruccion queremos que el modelo priorice?
+
+**Ventana de contexto**
+
+`Definicion simple`: cantidad maxima de informacion que el modelo puede considerar al mismo tiempo.
+
+`Por que importa`: determina cuanto cabe de instrucciones, documentos, historial o resultados de herramientas.
+
+`Ejemplo del curso`: aparece tanto en arquitectura LLM como en agentes con memoria y documentos.
+
+`No confundir con`: memoria de largo plazo. La ventana de contexto es memoria operativa de la interaccion actual.
+
+`Pregunta guia`: el problema se resuelve con mas contexto o con mejor seleccion de contexto?
+
+## Prompting y calidad
+
+**Prompt**
+
+`Definicion simple`: instruccion que damos al modelo.
+
+`Por que importa`: en el curso se insiste en que pedir bien no es un detalle cosmetico; cambia radicalmente el resultado.
+
+`Ejemplo del curso`: el PDF `Clase_260406_del-prompt-al-agente (1).pdf` muestra que un prompt libre para detectar fraude produjo criterios arbitrarios, mientras un prompt estructurado produjo una salida mas auditable.
+
+`No confundir con`: pregunta informal. Un prompt puede incluir rol, objetivo, restricciones, formato y ejemplos.
+
+`Pregunta guia`: si el resultado fue malo, fallo el modelo o la instruccion?
+
+**Prompt estructurado**
+
+`Definicion simple`: prompt que explicita contexto, objetivo, restricciones, audiencia y formato esperado.
+
+`Por que importa`: vuelve mas predecible la salida y ayuda a que el resultado sea defendible ante otros.
+
+`Ejemplo del curso`: en la actividad de fraude del PDF `Clase_260406_del-prompt-al-agente (1).pdf`, el cambio clave fue pasar de prompt libre a prompt estructurado y auditable.
+
+`No confundir con`: prompt largo. Un prompt puede ser largo y seguir siendo vago.
+
+`Pregunta guia`: que tendria que incluir el prompt para que el resultado sea auditable?
+
+**Prompt como contrato**
+
+`Definicion simple`: idea de que el prompt define con precision que esperamos del modelo, como si fuera un entregable acordado.
+
+`Por que importa`: es uno de los mensajes mas fuertes de los PDFs nuevos y ayuda mucho a estudiantes no tecnicos.
+
+`Ejemplo del curso`: el PDF `Clase_260406_del-prompt-al-agente (1).pdf` resume que "el prompt es el contrato entre tu y el modelo"; el PDF `Clase-03-No-Code-vs-Codigo-Asistido.pdf` agrega que en soluciones no-code el prompt funciona casi como codigo del agente.
+
+`No confundir con`: "hablar bonito". La idea no es persuadir al modelo, sino delimitar expectativas y errores permitidos.
+
+`Pregunta guia`: si esto fuera un encargo profesional, el prompt deja claro que hay que entregar y que no?
+
+**Temperatura**
+
+`Definicion simple`: parametro que modifica cuanta variabilidad tiene la respuesta del modelo.
+
+`Por que importa`: en tareas criticas afecta repetibilidad y consistencia.
+
+`Ejemplo del curso`: el PDF `Clase_260406_del-prompt-al-agente (1).pdf` muestra el contraste entre `T=0.0` para auditoria y valores mas altos para tareas creativas.
+
+`No confundir con`: calidad. Mas creatividad no significa mejor resultado.
+
+`Pregunta guia`: esta tarea necesita novedad o necesita reproducibilidad?
+
+**Chain of Thought (CoT)**
+
+`Definicion simple`: tecnica que pide al modelo analizar paso a paso antes de concluir.
+
+`Por que importa`: puede ayudar a tareas complejas, siempre que luego exista verificacion y no se confunda razonamiento aparente con verdad garantizada.
+
+`Ejemplo del curso`: en el PDF `Clase_260406_del-prompt-al-agente (1).pdf` aparece como tecnica para analizar fraude con pasos intermedios.
+
+`No confundir con`: evidencia externa. Pensar paso a paso no reemplaza datos ni fuentes.
+
+`Pregunta guia`: el problema necesita descomponer el razonamiento o necesita mas informacion?
+
+**Alucinacion**
+
+`Definicion simple`: respuesta inventada, distorsionada o no sustentada, aunque suene convincente.
+
+`Por que importa`: es uno de los riesgos mas recurrentes del curso, sobre todo cuando falta contexto o se sobreconfia en una salida elegante.
+
+`Ejemplo del curso`: en la actividad de fraude, el modelo inventa criterios cuando los datos y el prompt no bastan; en AFP el riesgo es responder con seguridad algo sensible sin base suficiente.
+
+`No confundir con`: error tipografico o simple imprecision. La alucinacion es un problema de contenido no sustentado.
+
+`Pregunta guia`: de donde sale exactamente esta afirmacion?
+
+**Auditable**
+
+`Definicion simple`: resultado cuya logica, fuentes y criterio pueden explicarse y defenderse ante terceros.
+
+`Por que importa`: aparece en varios materiales como exigencia organizacional, especialmente para finanzas, auditoria, riesgo y cumplimiento.
+
+`Ejemplo del curso`: en la actividad de fraude se pregunta explicitamente si el criterio puede defenderse ante un jefe o un comite de auditoria.
+
+`No confundir con`: solo "suena profesional". Una salida pulida puede seguir siendo imposible de auditar.
+
+`Pregunta guia`: podriamos justificar esta respuesta frente a un comite?
+
+## Arquitectura de soluciones
+
+**Chatbot**
+
+`Definicion simple`: interfaz conversacional que responde mensajes.
+
+`Por que importa`: ayuda a no sobrevalorar la capa visible del sistema.
+
+`Ejemplo del curso`: `diapositiva_03.qmd` lo contrasta con asistente, copilot y agente.
+
+`No confundir con`: agente. Un chatbot puede limitarse a responder sin usar herramientas ni ejecutar pasos.
+
+`Pregunta guia`: el sistema solo conversa o tambien resuelve tareas?
+
+**Asistente**
+
+`Definicion simple`: sistema que ayuda a una persona en una tarea.
+
+`Por que importa`: pone el foco en apoyo al trabajo humano, no solo en dialogo.
+
+`Ejemplo del curso`: en varios casos el sistema sugiere, resume o redacta, pero no necesariamente actua solo.
+
+`No confundir con`: automatizacion total. Un asistente puede requerir confirmacion constante.
+
+`Pregunta guia`: estamos aumentando capacidad humana o reemplazando un proceso?
+
+**Copilot**
+
+`Definicion simple`: asistente integrado dentro de una herramienta o flujo de trabajo.
+
+`Por que importa`: muestra una modalidad concreta de adopcion organizacional.
+
+`Ejemplo del curso`: aparece como tipo de sistema distinto a chatbot y agente.
+
+`No confundir con`: interfaz separada. El copilot acompana trabajo ya existente dentro de otra herramienta.
+
+`Pregunta guia`: la ayuda ocurre dentro del flujo de trabajo o en un canal aparte?
+
+**Agente**
+
+`Definicion simple`: sistema que recibe un objetivo, decide pasos, usa contexto o herramientas y produce una salida.
+
+`Por que importa`: es uno de los conceptos centrales del curso y de los PDFs nuevos.
+
+`Ejemplo del curso`: el caso AFP responde consultas usando fuentes oficiales; el PDF `Agentes-LLMs-Herramientas-que-Actuan.pdf` insiste en que la diferencia clave es que el agente toma decisiones en el camino y no solo devuelve una respuesta.
+
+`No confundir con`: prompt unico. Un agente puede usar multiples turnos, herramientas, memoria y controles.
+
+`Pregunta guia`: el sistema solo responde o decide como avanzar?
+
+**Herramientas**
+
+`Definicion simple`: capacidades externas que el agente puede usar, como leer archivos, consultar SQL, ejecutar codigo, buscar en la web, generar PDF o enviar correo.
+
+`Por que importa`: los PDFs nuevos las describen como "el musculo del agente".
+
+`Ejemplo del curso`: `Agentes-LLMs-Herramientas-que-Actuan.pdf` enumera categorias como datos, computo, busqueda, escritura, memoria y control; `Clase-03-No-Code-vs-Codigo-Asistido.pdf` muestra un agente que compara viajes, genera PDF y lo envia por correo.
+
+`No confundir con`: conocimiento interno del LLM. Una herramienta trae capacidad operativa o acceso a informacion externa.
+
+`Pregunta guia`: que herramienta concreta falta para que este agente sea realmente util?
+
+**Workflow**
+
+`Definicion simple`: secuencia de pasos mediante la cual una solucion transforma una entrada en una salida.
+
+`Por que importa`: evita pensar el sistema solo como una respuesta aislada.
+
+`Ejemplo del curso`: en AFP el flujo es consulta, recuperacion de informacion, redaccion, control y entrega; en viajes el flujo busca vuelos, hoteles, atracciones, calcula presupuesto y genera un informe.
+
+`No confundir con`: prompt. El prompt es una pieza; el workflow es el proceso completo.
+
+`Pregunta guia`: cuales son los pasos reales desde la pregunta hasta la accion final?
+
+**Memoria**
+
+`Definicion simple`: mecanismos para retener contexto entre pasos, sesiones o documentos.
+
+`Por que importa`: en agentes cambia mucho la experiencia y la capacidad de continuidad.
+
+`Ejemplo del curso`: `Agentes-LLMs-Herramientas-que-Actuan.pdf` distingue memoria de contexto, cache, vectorial y estructurada.
+
+`No confundir con`: ventana de contexto. Memoria puede ir mas alla de la conversacion actual.
+
+`Pregunta guia`: que necesita recordar el sistema y por cuanto tiempo?
+
+**RAG**
+
+`Definicion simple`: forma de responder usando informacion recuperada desde documentos o bases externas.
+
+`Por que importa`: reduce dependencia de la memoria generica del modelo y mejora trazabilidad.
+
+`Ejemplo del curso`: en AFP se usa para responder con FAQ, cartola y normativa; en `Agentes-LLMs-Herramientas-que-Actuan.pdf` se ejemplifica con Ley de Renta y documentos del SII.
+
+`No confundir con`: fine-tuning. RAG trae contexto al momento de responder; no reentrena el modelo.
+
+`Pregunta guia`: de donde saldra la informacion especifica y actualizada que necesita el sistema?
+
+**Base de datos vectorial**
+
+`Definicion simple`: infraestructura pensada para guardar y buscar embeddings.
+
+`Por que importa`: suele ser la pieza tecnica que vuelve operativo un esquema RAG.
+
+`Ejemplo del curso`: aparece asociada a FAQ institucionales, normativa y documentos internos.
+
+`No confundir con`: base relacional tradicional. Una sirve para similitud semantica; la otra para consultas estructuradas.
+
+`Pregunta guia`: necesito buscar por significado o por campos exactos?
+
+**MCP**
+
+`Definicion simple`: protocolo estandar para conectar agentes o modelos con herramientas externas.
+
+`Por que importa`: es uno de los terminos nuevos que aparece en los materiales recientes y ayuda a explicar integracion sin bajar demasiado a detalle tecnico.
+
+`Ejemplo del curso`: `Agentes-LLMs-Herramientas-que-Actuan.pdf` lo presenta como el estandar que hace a los agentes mas interoperables, analogandolo a USB para perifericos.
+
+`No confundir con`: una herramienta especifica. MCP no es la herramienta; es la forma estandarizada de conectar herramientas.
+
+`Pregunta guia`: la integracion esta hecha a mano o sigue un estandar reusable?
+
+**Multi-agente**
+
+`Definicion simple`: arquitectura donde varios agentes especializados colaboran para resolver una tarea.
+
+`Por que importa`: aparece como respuesta a problemas con subtareas, verificacion o paralelismo.
+
+`Ejemplo del curso`: `Agentes-LLMs-Herramientas-que-Actuan.pdf` muestra un equipo de cobranza automatizada con orquestador, analista, buscador normativo, redactor y revisor.
+
+`No confundir con`: complejidad innecesaria. No todo problema necesita varios agentes.
+
+`Pregunta guia`: un solo agente basta o conviene separar funciones especializadas?
+
+## Operacion y despliegue
+
+**Evals**
+
+`Definicion simple`: pruebas para medir si una solucion de IA funciona bien.
+
+`Por que importa`: permiten comparar versiones y evitar que la calidad dependa de intuicion o anecdotas.
+
+`Ejemplo del curso`: `m03-clase02-cicd-mlops-gobernanza.qmd` y el PDF de agentes recalcan metricas como task completion, pasos, tool accuracy, hallucination, latencia y costo.
+
+`No confundir con`: opinion del usuario solamente. El feedback ayuda, pero no reemplaza medicion sistematica.
+
+`Pregunta guia`: como sabremos si esta nueva version realmente mejora?
+
+**Observabilidad**
+
+`Definicion simple`: capacidad de mirar como se comporta el sistema en uso real.
+
+`Por que importa`: un sistema puede seguir "funcionando" y al mismo tiempo estar respondiendo peor, costando mas o fallando de formas silenciosas.
+
+`Ejemplo del curso`: calidad, latencia, costo, uso de contexto, fallos de herramientas y feedback del usuario.
+
+`No confundir con`: monitoreo tecnico minimo. En IA generativa hay que observar tambien calidad semantica.
+
+`Pregunta guia`: que veriamos en los datos si el sistema empieza a degradarse?
+
+**CI/CD**
+
+`Definicion simple`: practicas para integrar cambios frecuentes y desplegarlos con mas confiabilidad.
+
+`Por que importa`: en IA generativa se versionan no solo archivos de codigo, sino tambien prompts, configuraciones, datasets de prueba y evaluaciones.
+
+`Ejemplo del curso`: `m03-clase02-cicd-mlops-gobernanza.qmd` lo presenta como paso de experimentacion a despliegue continuo.
+
+`No confundir con`: solo automatizar deploy. Incluye integracion, pruebas y validacion de cambios.
+
+`Pregunta guia`: que cambia realmente cuando modificamos el sistema?
+
+**MLOps**
+
+`Definicion simple`: conjunto de practicas para desarrollar, desplegar, operar y mejorar sistemas basados en modelos de manera confiable.
+
+`Por que importa`: conecta datos, modelos, ingenieria y operacion.
+
+`Ejemplo del curso`: en clase se relaciona con drift, monitoreo, evaluacion, observabilidad y mejora continua.
+
+`No confundir con`: DevOps puro. MLOps agrega problemas propios de modelos, datos y evaluaciones no deterministas.
+
+`Pregunta guia`: que hace falta para que esto deje de ser demo y pase a capacidad organizacional?
+
+**Drift**
+
+`Definicion simple`: deterioro o cambio del comportamiento del sistema a lo largo del tiempo.
+
+`Por que importa`: explica por que una solucion puede empeorar sin que "se rompa" tecnicamente.
+
+`Ejemplo del curso`: cambios en datos, usuarios, prompts, modelos del proveedor o procesos internos.
+
+`No confundir con`: bug unico. El drift suele ser gradual y acumulativo.
+
+`Pregunta guia`: si esto funcionaba bien hace dos meses, que pudo haber cambiado?
+
+**Trazabilidad**
+
+`Definicion simple`: capacidad de reconstruir que informacion se uso, que reglas aplicaron y como se llego a un resultado.
+
+`Por que importa`: es clave para auditoria, seguridad, gobernanza y mantenimiento.
+
+`Ejemplo del curso`: los PDFs nuevos insisten en logica auditable, herramientas visibles y codigo modificable; el de no-code vs codigo asistido advierte que sin logs ni trazabilidad el sistema es imposible de auditar.
+
+`No confundir con`: tener solo el output final. La trazabilidad incluye el camino.
+
+`Pregunta guia`: podriamos explicar como se llego a esta respuesta o accion?
+
+## Riesgo, criterio y gobernanza
+
+**Gobernanza**
+
+`Definicion simple`: conjunto de reglas, roles y controles para asegurar uso responsable y alineado con objetivos organizacionales.
+
+`Por que importa`: ayuda a decidir que se permite, quien responde y que riesgos se aceptan.
+
+`Ejemplo del curso`: `m03-clase02-cicd-mlops-gobernanza.qmd` la conecta con privacidad, seguridad, roles, politicas y control.
+
+`No confundir con`: prohibicion. Gobernar no es impedir, sino ordenar y responsabilizar.
+
+`Pregunta guia`: quien decide los limites de este sistema y bajo que reglas?
+
+**Guardrails**
+
+`Definicion simple`: controles para limitar comportamientos no deseados.
+
+`Por que importa`: en agentes son esenciales para restringir temas, herramientas, acciones y escalamiento.
+
+`Ejemplo del curso`: en AFP sirve para impedir recomendaciones previsionales personalizadas sin revision; en agentes con herramientas ayuda a evitar acciones irreversibles o alcance excesivo.
+
+`No confundir con`: buen prompt solamente. Los guardrails pueden vivir tambien en reglas del sistema, permisos y aprobaciones.
+
+`Pregunta guia`: que no queremos que este agente haga nunca por su cuenta?
+
+**Human-in-the-loop**
+
+`Definicion simple`: esquema donde una persona revisa, corrige o aprueba parte del proceso.
+
+`Por que importa`: es la forma practica de graduar autonomia segun riesgo.
+
+`Ejemplo del curso`: `Agentes-LLMs-Herramientas-que-Actuan.pdf` define niveles de autonomia segun el tipo de accion; para decisiones de cobranza recomienda aprobacion o reporte de excepciones.
+
+`No confundir con`: supervision constante de todo. El punto es decidir bien en que momentos humanos deben intervenir.
+
+`Pregunta guia`: que accion requiere aprobacion humana antes de ejecutarse?
+
+**Trade-off**
+
+`Definicion simple`: tension entre objetivos que no pueden maximizarse al mismo tiempo.
+
+`Por que importa`: aparece transversalmente en el curso, desde precision versus velocidad hasta control versus facilidad de implementacion.
+
+`Ejemplo del curso`: AFP trabaja velocidad versus precision y autonomia versus control; el PDF de no-code versus codigo asistido trabaja velocidad y facilidad versus control y auditabilidad.
+
+`No confundir con`: error de diseno. Algunos trade-offs son inevitables; lo importante es explicitarlos.
+
+`Pregunta guia`: que estamos ganando y que estamos sacrificando con esta decision?
+
+**Decision Science**
+
+`Definicion simple`: disciplina que ayuda a estructurar decisiones complejas bajo incertidumbre.
+
+`Por que importa`: instala la idea de partir por el problema y no por la tecnologia.
+
+`Ejemplo del curso`: `m03-clase03-decision-science-sesgos.qmd` y el caso AFP preguntan primero que decision organizacional estamos tratando de mejorar.
+
+`No confundir con`: analitica tecnica solamente. Incluye criterios, consecuencias, incertidumbre y responsables.
+
+`Pregunta guia`: que decision real queremos mejorar con este sistema?
+
+**Sesgo de automatizacion**
+
+`Definicion simple`: tendencia a confiar demasiado en sistemas automaticos.
+
+`Por que importa`: es uno de los riesgos humanos mas relevantes al usar IA en organizaciones.
+
+`Ejemplo del curso`: en AFP se advierte el riesgo de tomar una respuesta bien escrita como recomendacion valida; en decision science se presenta como una señal de alerta organizacional.
+
+`No confundir con`: eficiencia. Que un sistema ahorre tiempo no significa que deba recibir confianza ciega.
+
+`Pregunta guia`: estamos revisando la salida o solo aceptandola porque viene del sistema?
+
+**Accountability**
+
+`Definicion simple`: responsabilidad por las decisiones y consecuencias del uso de IA.
+
+`Por que importa`: recuerda que la responsabilidad institucional no desaparece porque participe una herramienta.
+
+`Ejemplo del curso`: clase 3 de decision science lo vincula con criterio profesional y responsabilidad humana.
+
+`No confundir con`: culpa del proveedor o del modelo. La organizacion sigue respondiendo por su uso.
+
+`Pregunta guia`: si esto sale mal, quien responde y con que evidencia?
+
+## Construccion de soluciones
+
+**No-code**
+
+`Definicion simple`: forma de construir prototipos o soluciones usando interfaces visuales o descripciones en lenguaje natural, con minima programacion directa.
+
+`Por que importa`: baja la barrera de entrada y acelera el prototipado.
+
+`Ejemplo del curso`: el PDF `Clase-03-No-Code-vs-Codigo-Asistido.pdf` muestra `v0.app`, `n8n` y otras herramientas para construir rapido un agente funcional.
+
+`No confundir con`: produccion segura por defecto. Rapidez de prototipo no implica mantenibilidad ni auditabilidad suficientes.
+
+`Pregunta guia`: estamos validando una idea rapido o construyendo algo para operar de verdad?
+
+**Codigo asistido**
+
+`Definicion simple`: forma de construir software donde una IA ayuda a escribir, ejecutar y corregir codigo dentro de un proyecto real.
+
+`Por que importa`: permite mas control, integraciones y trazabilidad, pero exige mas criterio tecnico.
+
+`Ejemplo del curso`: `Clase-03-No-Code-vs-Codigo-Asistido.pdf` usa Claude Code para construir un agente comparador de viajes que genera PDF y envia correo.
+
+`No confundir con`: programacion totalmente automatica. Sigue requiriendo arquitectura, pruebas, seguridad y mantenimiento.
+
+`Pregunta guia`: necesitamos velocidad de prototipo o control fino sobre el sistema?
+
+**Prototipo**
+
+`Definicion simple`: version inicial para validar una idea rapidamente.
+
+`Por que importa`: los PDFs nuevos insisten en que un prototipo visible puede impresionar mucho, pero no equivale a producto listo.
+
+`Ejemplo del curso`: el agente de viajes y varias actividades estan pensados para salir de clase con algo funcional.
+
+`No confundir con`: produccion. Un prototipo puede carecer de pruebas, logs, seguridad o manejo de errores.
+
+`Pregunta guia`: estamos validando una hipotesis o prometiendo operacion real?
+
+**Produccion**
+
+`Definicion simple`: etapa en que el sistema opera con usuarios reales, datos reales y consecuencias reales.
+
+`Por que importa`: cambia el estandar exigido: seguridad, trazabilidad, monitoreo, manejo de errores, costos y mantenimiento.
+
+`Ejemplo del curso`: `Clase-03-No-Code-vs-Codigo-Asistido.pdf` recalca que pasar de prototipo a produccion sigue requiriendo ingenieria de software.
+
+`No confundir con`: demo exitosa. Una demo muestra posibilidad; la produccion exige confiabilidad sostenida.
+
+`Pregunta guia`: que nos falta para poner esto frente a usuarios reales con tranquilidad?
+
+# FAQ
+
+## 1. Cual es la diferencia entre IA, IA generativa y LLM?
+
+IA es el paraguas amplio. IA generativa es la parte que crea contenido nuevo. Un LLM es un tipo de modelo generativo especializado en lenguaje.
+
+## 2. Un LLM y un chatbot son lo mismo?
+
+No. El LLM es el modelo. El chatbot es una interfaz o aplicacion que puede usar un LLM, documentos, reglas, memoria y herramientas.
+
+## 3. Por que el curso insiste tanto en que el prompt es un contrato?
+
+Porque una instruccion vaga deja demasiado espacio a que el modelo complete vacios con patrones genericos. Los PDFs nuevos muestran que cuando el entregable, criterio y restricciones quedan mejor definidos, la salida se vuelve mas util y mas auditable.
+
+## 4. Un prompt bueno reemplaza RAG?
+
+No. Un buen prompt ayuda a pedir mejor. RAG ayuda a traer informacion especifica y actualizada. Cumplen funciones distintas.
+
+## 5. Mas contexto siempre mejora la respuesta?
+
+No. A veces mejora; otras veces ensucia, distrae o encarece. Muchas veces importa mas seleccionar bien el contexto que simplemente agregar mas.
+
+## 6. Si existe RAG, entonces ya no hay alucinaciones?
+
+No. RAG reduce parte del problema, pero no elimina errores de recuperacion, interpretacion o redaccion.
+
+## 7. Cuando un chatbot pasa a ser agente?
+
+Cuando deja de limitarse a responder y empieza a decidir pasos, usar herramientas, trabajar con objetivos y ejecutar acciones o subprocesos.
+
+## 8. Que aporta una herramienta a un agente?
+
+Le da capacidad operativa o acceso a informacion externa. Sin herramientas, el agente puede razonar sobre texto; con herramientas puede buscar, calcular, leer, escribir, enviar o consultar sistemas.
+
+## 9. Que diferencia hay entre no-code y codigo asistido?
+
+No-code privilegia velocidad y baja barrera de entrada. Codigo asistido privilegia control, integracion y auditabilidad. Ambos pueden servir, pero no para los mismos contextos.
+
+## 10. Por que no basta con que una demo funcione bien una vez?
+
+Porque un sistema real debe sostener calidad, seguridad, costo razonable, monitoreo, trazabilidad y mantenimiento en el tiempo.
+
+## 11. Que se deberia versionar en un proyecto de IA generativa?
+
+Codigo, prompts, configuraciones del modelo, datasets de prueba, reglas de negocio y resultados de evaluacion.
+
+## 12. Que miden las evals en agentes?
+
+No solo calidad del texto final. Tambien completion rate, cantidad de pasos, precision en el uso de herramientas, alucinacion, latencia y costo por tarea.
+
+## 13. Por que importa tanto human-in-the-loop?
+
+Porque hay acciones y decisiones que no deberian delegarse ciegamente, especialmente cuando son irreversibles o tienen impacto financiero, legal o humano.
+
+## 14. Cual es un error comun al usar IA para decidir?
+
+Pedirle a la IA que diga "que hacer" como si reemplazara criterio profesional. Suele ser mejor pedir alternativas, contraargumentos, evidencia usada, vacios de informacion y riesgos no considerados.
+
+## 15. Que parte del problema es tecnologica y que parte es de diseno?
+
+La tecnologia resuelve acceso a modelos, herramientas y automatizacion. El diseno define alcance, fuentes, riesgo aceptable, reglas, escalamiento y criterios de evaluacion. Sin buen diseno, la tecnologia sola no salva la solucion.
+
+## 16. Por que el caso AFP es tan buen ejemplo pedagogico?
+
+Porque obliga a pensar en fuentes oficiales, claridad, riesgo, escalamiento a humano, trazabilidad y limites de autonomia. Muestra muy bien que "responder" no es suficiente.
+
+# Confusiones comunes
+
+- `LLM` no es lo mismo que `chatbot`.
+- `prompt` no es solo una pregunta; puede ser una especificacion completa.
+- `RAG` no es `fine-tuning`.
+- `tener muchos datos` no significa `tener los datos correctos`.
+- `un prototipo funcional` no es `un sistema listo para produccion`.
+- `no-code` no elimina la necesidad de diseno, pruebas y gobernanza.
+
+# Terminos minimos que conviene recordar
+
+- LLM
+- contexto
+- prompt estructurado
+- temperatura
+- RAG
+- agente
+- herramienta
+- memoria
+- evals
+- trazabilidad
+- guardrails
+- human-in-the-loop
+- trade-off
+
+# Base del material en este repo
+
+Este diccionario y FAQ se construyo a partir del vocabulario y enfoque presentes en:
+
+- `diapositiva_03.qmd`
+- `m03-clase01-arquitectura-llms.qmd`
+- `m03-clase02-cicd-mlops-gobernanza.qmd`
+- `m03-clase03-decision-science-sesgos.qmd`
+- `m03-caso-aplicado-agente-afp.qmd`
+- `tokenizacion_tecnicas.qmd`
+- `clases_other/Clase_260406_del-prompt-al-agente (1).pdf`
+- `clases_other/Agentes-LLMs-Herramientas-que-Actuan.pdf`
+- `clases_other/Clase-03-No-Code-vs-Codigo-Asistido.pdf`
