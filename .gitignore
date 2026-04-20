@@ -4,3 +4,8 @@
 .Ruserdata
 
 /.quarto/
+/_site/
+*.knit.md
+*-listing.json
+
+**/*.quarto_ipynb
