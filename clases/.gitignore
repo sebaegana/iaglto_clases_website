@@ -16,3 +16,7 @@
 *.pdf
 
 **/*.quarto_ipynb
+
+# Keep curated support material versioned
+!materiales/
+!materiales/**

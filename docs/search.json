@@ -35,11 +35,865 @@
     "text": "Contacto\nSebastián Egaña Santibáñez\nDocente del curso\n\n📧 segana@fen.uchile.cl\n\n💼 LinkedIn\n💻Página Web\n🐈Github"
   },
   {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#clase-03-decision-science-sesgos-e-ia",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#clase-03-decision-science-sesgos-e-ia",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Clase 03: Decision Science, sesgos e IA",
+    "text": "Clase 03: Decision Science, sesgos e IA\nCómo estructurar decisiones complejas bajo incertidumbre"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#objetivo-de-la-sesión",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#objetivo-de-la-sesión",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\n\nIntroducir principios básicos de Decision Science\nRevisar cómo estructurar decisiones complejas\nEntender heurísticas y sesgos cognitivos frecuentes\nEvaluar el rol de la IA como apoyo, no reemplazo, del juicio humano\nTraducir estos conceptos a contextos organizacionales reales"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#punto-de-partida",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#punto-de-partida",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Punto de partida",
+    "text": "Punto de partida\nLas organizaciones no solo necesitan generar texto.\nNecesitan decidir:\n\nqué hacer\nen qué orden\ncon qué prioridad\ncon qué riesgo\ncon qué evidencia"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#qué-estudia-la-ciencia-de-decisiones",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#qué-estudia-la-ciencia-de-decisiones",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "¿Qué estudia la Ciencia de Decisiones?",
+    "text": "¿Qué estudia la Ciencia de Decisiones?\nLa Decision Science busca mejorar cómo tomamos decisiones, especialmente cuando:\n\nhay incertidumbre\nla información es incompleta\nexisten múltiples criterios\nhay riesgo y trade-offs"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#estructurar-una-decisión",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#estructurar-una-decisión",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Estructurar una decisión",
+    "text": "Estructurar una decisión\nUn marco simple puede incluir:\n\nDefinir la decisión.\nIdentificar alternativas.\nEstablecer criterios.\nEstimar consecuencias.\nEvaluar incertidumbre.\nElegir y revisar."
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#qué-vuelve-compleja-una-decisión",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#qué-vuelve-compleja-una-decisión",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "¿Qué vuelve compleja una decisión?",
+    "text": "¿Qué vuelve compleja una decisión?\n\nmúltiples objetivos\ninformación ambigua\nactores con intereses distintos\nconsecuencias difíciles de anticipar\npresión por decidir rápido"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#trade-offs",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#trade-offs",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Trade-offs",
+    "text": "Trade-offs\nDecidir bien casi siempre implica equilibrar tensiones:\n\ncosto vs calidad\nvelocidad vs precisión\ncrecimiento vs riesgo\nautomatización vs control"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#qué-son-las-heurísticas",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#qué-son-las-heurísticas",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "¿Qué son las heurísticas?",
+    "text": "¿Qué son las heurísticas?\nSon atajos mentales que usamos para decidir rápido.\nSon útiles porque\n\nahorran tiempo\nreducen esfuerzo cognitivo\npermiten actuar con información incompleta\n\nPero también pueden inducir error."
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#sesgo-de-confirmación",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#sesgo-de-confirmación",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Sesgo de confirmación",
+    "text": "Sesgo de confirmación\nTendencia a buscar o valorar más la información que confirma lo que ya creemos.\nRiesgo organizacional\nUsar la IA solo para justificar decisiones ya tomadas."
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#anclaje",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#anclaje",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Anclaje",
+    "text": "Anclaje\nLa primera cifra, idea o diagnóstico influye demasiado en la evaluación posterior."
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#disponibilidad",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#disponibilidad",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Disponibilidad",
+    "text": "Disponibilidad\nTendemos a juzgar probabilidad o importancia según lo más fácil de recordar."
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#exceso-de-confianza",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#exceso-de-confianza",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Exceso de confianza",
+    "text": "Exceso de confianza\nLas personas suelen sobreestimar la calidad de su juicio.\nEn IA esto se agrava cuando\n\nla respuesta suena convincente\nel formato parece profesional\nel usuario confunde fluidez con verdad"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#sesgo-de-automatización",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#sesgo-de-automatización",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Sesgo de automatización",
+    "text": "Sesgo de automatización\nEs la tendencia a confiar demasiado en sistemas automáticos.\nSeñal de alerta\nAprobar la salida de la IA sin revisar porque “si el sistema lo dijo, debe estar bien”."
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#cómo-puede-ayudar-la-ia-en-decisiones",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#cómo-puede-ayudar-la-ia-en-decisiones",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "¿Cómo puede ayudar la IA en decisiones?",
+    "text": "¿Cómo puede ayudar la IA en decisiones?\nPuede apoyar en tareas como:\n\nresumir evidencia\ncomparar alternativas\ndetectar patrones\ngenerar escenarios\nexplicitar supuestos\nredactar recomendaciones preliminares"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#qué-no-debería-delegarse-ciegamente",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#qué-no-debería-delegarse-ciegamente",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "¿Qué no debería delegarse ciegamente?",
+    "text": "¿Qué no debería delegarse ciegamente?\n\ndecisiones críticas sin revisión humana\njuicios éticos complejos\ndefiniciones estratégicas de alto impacto\nacciones irreversibles basadas en evidencia dudosa"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#ia-como-apoyo-no-como-sustituto-del-criterio",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#ia-como-apoyo-no-como-sustituto-del-criterio",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "IA como apoyo, no como sustituto del criterio",
+    "text": "IA como apoyo, no como sustituto del criterio\nLa IA puede aumentar capacidad analítica, pero no reemplaza:\n\ncontexto político\nresponsabilidad institucional\ncriterio profesional\ncomprensión de consecuencias humanas"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#preguntas-útiles-al-usar-ia-para-decidir",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#preguntas-útiles-al-usar-ia-para-decidir",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Preguntas útiles al usar IA para decidir",
+    "text": "Preguntas útiles al usar IA para decidir\n\n¿qué evidencia está usando?\n¿qué supuestos está dando por ciertos?\n¿qué información falta?\n¿qué riesgos no está viendo?\n¿qué parte requiere validación humana?"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#marco-práctico-para-organizaciones",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#marco-práctico-para-organizaciones",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Marco práctico para organizaciones",
+    "text": "Marco práctico para organizaciones\n\nDelimitar la decisión.\nSeparar hechos de interpretación.\nPedir a la IA alternativas y contraargumentos.\nRevisar sesgos posibles del equipo.\nValidar con responsables humanos.\nDocumentar la lógica seguida."
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#un-uso-inteligente-de-prompts-en-decisiones",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#un-uso-inteligente-de-prompts-en-decisiones",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Un uso inteligente de prompts en decisiones",
+    "text": "Un uso inteligente de prompts en decisiones\nEn vez de pedir:\n“Dime qué hacer.”\nConviene pedir:\n\nresume evidencia\nidentifica supuestos\nplantea escenarios\ncompara ventajas y riesgos\npropone preguntas pendientes"
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#accountability",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#accountability",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Accountability",
+    "text": "Accountability\nSi una decisión apoyada por IA sale mal, la responsabilidad no desaparece.\nRegla central\nSiempre debe existir un responsable humano claro."
+  },
+  {
+    "objectID": "clases/m03-clase03-decision-science-sesgos.html#idea-de-cierre",
+    "href": "clases/m03-clase03-decision-science-sesgos.html#idea-de-cierre",
+    "title": "Módulo 3: Decision Science, Sesgos e IA como Apoyo a la Decisión",
+    "section": "Idea de cierre",
+    "text": "Idea de cierre\nLa IA puede ser una gran herramienta para decidir mejor, pero solo cuando se usa para:\n\nampliar análisis\nordenar complejidad\ndesafiar supuestos\nmejorar trazabilidad\n\nNo cuando se usa para reemplazar criterio, responsabilidad o deliberación."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#clase-01-arquitectura-y-funcionamiento-de-los-llms",
+    "href": "clases/m03-clase01-arquitectura-llms.html#clase-01-arquitectura-y-funcionamiento-de-los-llms",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Clase 01: Arquitectura y funcionamiento de los LLMs",
+    "text": "Clase 01: Arquitectura y funcionamiento de los LLMs\nDe los conceptos base al panorama actual de modelos"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#objetivo-de-la-sesión",
+    "href": "clases/m03-clase01-arquitectura-llms.html#objetivo-de-la-sesión",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\n\nEntender cómo procesan lenguaje los LLMs\nRevisar tokens, embeddings, atención, contexto y parámetros\nDistinguir modelos abiertos, cerrados y open-weight\nComparar familias como GPT, Claude, Gemini y Llama\nTraducir estos conceptos a implicancias prácticas para organizaciones"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#pregunta-de-apertura",
+    "href": "clases/m03-clase01-arquitectura-llms.html#pregunta-de-apertura",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Pregunta de apertura",
+    "text": "Pregunta de apertura\nCuando una organización dice “queremos usar IA generativa”, ¿de qué pieza está hablando realmente?\n\nde un chatbot\nde un modelo\nde una aplicación\nde una integración\nde un sistema completo"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#un-llm-no-es-toda-la-solución",
+    "href": "clases/m03-clase01-arquitectura-llms.html#un-llm-no-es-toda-la-solución",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Un LLM no es toda la solución",
+    "text": "Un LLM no es toda la solución\nEn la práctica, una solución generativa suele combinar:\n\ninterfaz o canal\nmodelo de lenguaje\ncontexto de documentos o datos\nherramientas o APIs\nreglas de negocio\nmonitoreo y seguridad\n\nIdea clave\nEl LLM es una capa central, pero no equivale al sistema completo."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-es-un-llm",
+    "href": "clases/m03-clase01-arquitectura-llms.html#qué-es-un-llm",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "¿Qué es un LLM?",
+    "text": "¿Qué es un LLM?\nUn Large Language Model es un modelo entrenado con grandes volúmenes de texto para estimar la continuación más probable dado un contexto.\nTareas típicas\n\nresponder preguntas\nresumir\nredactar\ntraducir\nclasificar\nextraer información"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#tokens",
+    "href": "clases/m03-clase01-arquitectura-llms.html#tokens",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Tokens",
+    "text": "Tokens\nLos modelos no leen texto como nosotros lo vemos.\nTrabajan con tokens, unidades pequeñas que pueden ser:\n\nfragmentos de palabra\npalabras completas\nsignos\nnúmeros frecuentes\n\nImplicancia práctica\nTodo input, output, costo y límite de contexto se mide en tokens."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-intuitivo-de-tokenización",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-intuitivo-de-tokenización",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo intuitivo de tokenización",
+    "text": "Ejemplo intuitivo de tokenización\nLa frase:\n“La inteligencia artificial transforma procesos.”\npodría dividirse en piezas como:\n\nLa\nintelig\nencia\nartificial\ntransforma\nprocesos\n.\n\nIdea clave\nEl modelo procesa unidades operativas, no palabras completas “como humano”."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#embeddings",
+    "href": "clases/m03-clase01-arquitectura-llms.html#embeddings",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Embeddings",
+    "text": "Embeddings\nCada token se transforma en una representación numérica.\nEso permite que el modelo capture relaciones como:\n\nsignificado\nsimilitud\ncontexto de uso\ncercanía semántica\n\nIdea simple\nLos embeddings son el idioma interno del modelo."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#atención",
+    "href": "clases/m03-clase01-arquitectura-llms.html#atención",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Atención",
+    "text": "Atención\nLa atención es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.\nIntuición\nCuando genera una palabra, no mira todo el texto con el mismo peso.\nAlgunas partes del contexto importan más que otras."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ventana-de-contexto",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ventana-de-contexto",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ventana de contexto",
+    "text": "Ventana de contexto\nLa context window es la cantidad máxima de tokens que el modelo puede considerar al mismo tiempo.\nImporta porque afecta\n\nlargo de instrucciones\ncantidad de documentos que caben\ncalidad de tareas extensas\ncosto total de la consulta"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#parámetros-del-modelo",
+    "href": "clases/m03-clase01-arquitectura-llms.html#parámetros-del-modelo",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Parámetros del modelo",
+    "text": "Parámetros del modelo\nLos parámetros son los pesos internos que el modelo ajusta durante entrenamiento.\nIdea importante\nMás parámetros no garantizan mejor desempeño en todos los casos."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#parámetros-de-generación",
+    "href": "clases/m03-clase01-arquitectura-llms.html#parámetros-de-generación",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Parámetros de generación",
+    "text": "Parámetros de generación\nTambién controlamos cómo responde el modelo con variables como:\n\ntemperatura\ntop-p\ntop-k\nmax tokens\n\nRegla operativa\nAnálisis y extracción: baja temperatura.\nIdeación y creatividad: temperatura mayor."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-hacen-bien-los-llms",
+    "href": "clases/m03-clase01-arquitectura-llms.html#qué-hacen-bien-los-llms",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Qué hacen bien los LLMs",
+    "text": "Qué hacen bien los LLMs\n\nsintetizar información extensa\nreformular contenido\ntraducir y adaptar tono\nclasificar texto\nextraer patrones desde lenguaje\nayudar a explorar ideas"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-hacen-mal-o-con-riesgo",
+    "href": "clases/m03-clase01-arquitectura-llms.html#qué-hacen-mal-o-con-riesgo",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Qué hacen mal o con riesgo",
+    "text": "Qué hacen mal o con riesgo\n\ninventar hechos\ncitar fuentes inexistentes\nequivocarse con exceso de confianza\ndegradarse en tareas largas sin control\nfallar si no tienen contexto suficiente"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#modelos-cerrados-abiertos-y-open-weight",
+    "href": "clases/m03-clase01-arquitectura-llms.html#modelos-cerrados-abiertos-y-open-weight",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Modelos cerrados, abiertos y open-weight",
+    "text": "Modelos cerrados, abiertos y open-weight\n\n\n\nTipo\nVentaja típica\nDesafío típico\n\n\n\n\nCerrado\nfacilidad de uso\nmenor control\n\n\nOpen-weight\nflexibilidad\nmayor complejidad operativa\n\n\nAfinado propio\najuste al dominio\nmayor costo de desarrollo"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#panorama-actual-de-familias-de-modelos",
+    "href": "clases/m03-clase01-arquitectura-llms.html#panorama-actual-de-familias-de-modelos",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Panorama actual de familias de modelos",
+    "text": "Panorama actual de familias de modelos\nModelos cerrados relevantes\n\nGPT de OpenAI\nClaude de Anthropic\nGemini de Google\n\nModelos abiertos u open-weight relevantes\n\nLlama de Meta\nMistral\nQwen\ngpt-oss de OpenAI"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#lectura-práctica-del-mercado",
+    "href": "clases/m03-clase01-arquitectura-llms.html#lectura-práctica-del-mercado",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Lectura práctica del mercado",
+    "text": "Lectura práctica del mercado\n\nOpenAI combina familia GPT cerrada con modelos open-weight\nAnthropic enfatiza razonamiento, seguridad y uso empresarial\nGoogle enfatiza multimodalidad y contexto largo\nMeta empuja apertura, control y despliegue flexible con Llama"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#cuál-modelo-elegir",
+    "href": "clases/m03-clase01-arquitectura-llms.html#cuál-modelo-elegir",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "¿Cuál modelo elegir?",
+    "text": "¿Cuál modelo elegir?\nLa elección depende de:\n\ncaso de uso\npresupuesto\nvelocidad requerida\nprivacidad\nnivel de control\ntrazabilidad\nintegración con sistemas existentes"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#idea-de-cierre",
+    "href": "clases/m03-clase01-arquitectura-llms.html#idea-de-cierre",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Idea de cierre",
+    "text": "Idea de cierre\nComprender arquitectura de LLMs no busca convertir a todos en ingenieros del modelo.\nBusca permitir mejores decisiones sobre:\n\nqué usar\ncómo integrarlo\nqué controlar\ndónde están sus límites"
+  },
+  {
     "objectID": "clases/index.html",
     "href": "clases/index.html",
     "title": "Clases",
     "section": "",
-    "text": "Clases del curso\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\n\n\n\n\n\n\n\n\n\nDiapositiva 02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Clases del curso\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActividad: Skill en Markdown\n\n\n\n\n\n\n\n\n\n\n\nClase 02\n\n\n\n\n\n\n\n\n\n\n\nDiapositiva 01\n\n\n\n\n\n\n\n\n\n\n\nDiapositiva 02\n\n\n\n\n\n\n\n\n\n\n\nDiapositiva 02 v2\n\n\n\n\n\n\n\n\n\n\n\nDiapositiva 03\n\n\n\n\n\n\n\n\n\n\n\nModulo 03 - Diccionario y FAQ\n\n\n\n\n\n\n\n\n\n\n\nMódulo 03 - Caso Aplicado AFP\n\n\n\n\n\n\n\n\n\n\n\nMódulo 03 - Clase 01\n\n\n\n\n\n\n\n\n\n\n\nMódulo 03 - Clase 02\n\n\n\n\n\n\n\n\n\n\n\nMódulo 03 - Clase 03\n\n\n\n\n\n\n\n\n\n\n\nTécnicas de Tokenización\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#de-la-comprensión-técnica-a-la-implementación-organizacional",
+    "href": "clases/diapositiva_02_v2.html#de-la-comprensión-técnica-a-la-implementación-organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "De la comprensión técnica a la implementación organizacional",
+    "text": "De la comprensión técnica a la implementación organizacional\nCómo funcionan los LLMs, cómo se controlan y cómo se adoptan con criterio"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#objetivo-de-la-sesión",
+    "href": "clases/diapositiva_02_v2.html#objetivo-de-la-sesión",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\n\nEntender cómo procesan texto los LLMs\nRevisar conceptos operativos como tokens, embeddings y contexto\nDistinguir parámetros de entrenamiento y de generación\nEvaluar implicancias estratégicas para transformación organizacional\nIdentificar riesgos éticos, legales y de gobernanza"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#pregunta-de-continuidad",
+    "href": "clases/diapositiva_02_v2.html#pregunta-de-continuidad",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Pregunta de continuidad",
+    "text": "Pregunta de continuidad\nSi ya entendemos qué lugar ocupa un LLM en el stack, la siguiente pregunta es esta:\n¿Qué debemos comprender para usarlo bien, controlarlo mejor y desplegarlo con responsabilidad?"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#idea-central",
+    "href": "clases/diapositiva_02_v2.html#idea-central",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Idea central",
+    "text": "Idea central\nUn LLM no trabaja con “palabras” como las vemos nosotros.\nOpera sobre representaciones numéricas y calcula probabilidades de continuación en función del contexto disponible."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#tokens",
+    "href": "clases/diapositiva_02_v2.html#tokens",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Tokens",
+    "text": "Tokens\nLos LLMs dividen el texto en tokens, que pueden ser:\n\nfragmentos de palabra\npalabras completas\nsignos de puntuación\nnúmeros o símbolos frecuentes\n\nImplicancia práctica\n\nmás tokens implican más costo\ntodo input y output se mide en tokens\nel límite real de trabajo del modelo depende de su ventana de contexto"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#ejemplo-simple-de-tokenización",
+    "href": "clases/diapositiva_02_v2.html#ejemplo-simple-de-tokenización",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Ejemplo simple de tokenización",
+    "text": "Ejemplo simple de tokenización\nLa frase:\n“La inteligencia artificial generativa cambia procesos.”\npodría dividirse en piezas como:\n\nLa\nintelig\nencia\nartificial\ngenerativa\ncambia\nprocesos\n.\n\nIdea clave\nEl modelo no “lee” el texto literal: transforma esas piezas en unidades procesables."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#embeddings",
+    "href": "clases/diapositiva_02_v2.html#embeddings",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Embeddings",
+    "text": "Embeddings\nCada token se convierte en un vector numérico en un espacio de muchas dimensiones.\nEse vector representa relaciones como:\n\nsignificado\ncercanía semántica\ncontexto de uso\nsimilitud con otros conceptos\n\nIdea clave\nLos embeddings son el “idioma interno” del modelo."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#qué-aprende-el-modelo",
+    "href": "clases/diapositiva_02_v2.html#qué-aprende-el-modelo",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Qué aprende el modelo",
+    "text": "Qué aprende el modelo\nDurante el entrenamiento, el modelo observa enormes cantidades de texto y aprende regularidades estadísticas:\n\nqué secuencias suelen aparecer juntas\nqué palabras cumplen roles parecidos\nqué patrones son plausibles en distintos contextos\n\nResultado\nPalabras o conceptos usados en contextos similares tienden a quedar cerca en el espacio vectorial."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#ejemplo-conceptual-de-embeddings",
+    "href": "clases/diapositiva_02_v2.html#ejemplo-conceptual-de-embeddings",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Ejemplo conceptual de embeddings",
+    "text": "Ejemplo conceptual de embeddings\n\n\n\nPalabra\nEje X\nEje Y\n\n\n\n\ngato\n0.90\n0.95\n\n\nperro\n0.85\n0.97\n\n\nlobo\n0.88\n0.30\n\n\navión\n0.10\n0.05\n\n\n\nLectura\n\ngato y perro quedan cerca\nlobo comparte una dimensión, pero se distancia en otra\navión queda fuera del grupo"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#ventana-de-contexto",
+    "href": "clases/diapositiva_02_v2.html#ventana-de-contexto",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Ventana de contexto",
+    "text": "Ventana de contexto\nLa context window es la cantidad máxima de tokens que el modelo puede considerar al mismo tiempo.\nImporta porque afecta:\n\ncuánto puede “recordar” en una interacción\ncuántos documentos o instrucciones caben en una consulta\nel costo total del procesamiento\nla calidad cuando la tarea exige mantener coherencia en textos largos\n\nIdea útil\nMás contexto no reemplaza la necesidad de buena selección de información."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#de-texto-a-predicción",
+    "href": "clases/diapositiva_02_v2.html#de-texto-a-predicción",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "De texto a predicción",
+    "text": "De texto a predicción\nEl ciclo básico del modelo puede simplificarse así:\n\nRecibe tokens de entrada.\nLos representa como embeddings.\nCalcula relaciones entre ellos dentro del contexto.\nEstima probabilidades para el siguiente token.\nRepite el proceso hasta completar la respuesta.\n\nFrase clave\nLos LLMs no “piensan” como humanos: optimizan predicción secuencial sobre lenguaje."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#dos-familias-distintas",
+    "href": "clases/diapositiva_02_v2.html#dos-familias-distintas",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Dos familias distintas",
+    "text": "Dos familias distintas\n1. Parámetros de entrenamiento\nDefinen la capacidad y el comportamiento potencial del modelo.\n2. Parámetros de generación\nControlan cómo responde el modelo en inferencia."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#parámetros-de-entrenamiento-1",
+    "href": "clases/diapositiva_02_v2.html#parámetros-de-entrenamiento-1",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Parámetros de entrenamiento",
+    "text": "Parámetros de entrenamiento\n\nTamaño del modelo: cantidad de parámetros internos\nEmbedding dimension: riqueza de representación semántica\nNúmero de capas y atención: profundidad del procesamiento\nBatch size: estabilidad y eficiencia durante entrenamiento\nLongitud del pre-training: cantidad y calidad de aprendizaje acumulado\nContext window: tamaño máximo del contexto procesable\n\nIdea clave\nMás grande no siempre significa mejor: importa también la calidad de datos, arquitectura y fine-tuning."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#parámetros-de-generación-1",
+    "href": "clases/diapositiva_02_v2.html#parámetros-de-generación-1",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Parámetros de generación",
+    "text": "Parámetros de generación\n\nTemperature: nivel de aleatoriedad\nTop-p: diversidad probabilística permitida\nTop-k: cantidad de candidatos posibles\nRepetition penalty: control de repeticiones\nMax tokens: largo máximo de la salida\n\nImplicancia práctica\nEstos parámetros no cambian lo que el modelo sabe, sino cómo expresa su respuesta."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#temperatura",
+    "href": "clases/diapositiva_02_v2.html#temperatura",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Temperatura",
+    "text": "Temperatura\n\nbaja: respuestas más estables, conservadoras y repetibles\nalta: respuestas más variadas, creativas y riesgosas\n\nRegla simple\n\nanálisis, clasificación o extracción: temperatura baja\nideación, redacción creativa o exploración: temperatura más alta"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#top-p-y-top-k",
+    "href": "clases/diapositiva_02_v2.html#top-p-y-top-k",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Top-p y Top-k",
+    "text": "Top-p y Top-k\nSon dos formas de restringir el conjunto de opciones que el modelo puede elegir al generar.\nUso práctico\n\nvalores más restrictivos favorecen precisión y consistencia\nvalores más amplios favorecen diversidad estilística\n\nCriterio\nNo conviene ajustar demasiados controles a la vez sin un objetivo claro de calidad."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#max-tokens",
+    "href": "clases/diapositiva_02_v2.html#max-tokens",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Max tokens",
+    "text": "Max tokens\nDefine cuánto puede extenderse la respuesta.\nSi el valor es muy bajo:\n\nla salida puede truncarse\npuede perder pasos importantes\n\nSi el valor es muy alto:\n\nsube el costo\naumenta el riesgo de verbosidad o deriva"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#resumen-operativo",
+    "href": "clases/diapositiva_02_v2.html#resumen-operativo",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Resumen operativo",
+    "text": "Resumen operativo\n\n\n\nConcepto\nRol práctico\n\n\n\n\nToken\nUnidad mínima procesada\n\n\nEmbedding\nRepresentación numérica del significado\n\n\nContext window\nMemoria de corto plazo del modelo\n\n\nTemperature\nAleatoriedad\n\n\nTop-p / Top-k\nDiversidad controlada\n\n\nMax tokens\nExtensión de salida"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#flujo-conceptual",
+    "href": "clases/diapositiva_02_v2.html#flujo-conceptual",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Flujo conceptual",
+    "text": "Flujo conceptual\n\nConvertir textos en vectores\nGuardarlos en un índice vectorial\nTransformar una nueva consulta en vector\nBuscar los vectores más cercanos\nRecuperar texto relevante para responder mejor\n\nEsto está en la base de muchos sistemas RAG"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#ejemplo-en-python",
+    "href": "clases/diapositiva_02_v2.html#ejemplo-en-python",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Ejemplo en Python",
+    "text": "Ejemplo en Python\nfrom openai import OpenAI\nimport numpy as np\nimport faiss\n\nclient = OpenAI()\n\nsentences = [\n    \"The dog is barking.\",\n    \"A cat is sleeping on the couch.\",\n    \"A car is driving down the street.\",\n    \"I love my pet animal.\"\n]\n\nresponse = client.embeddings.create(\n    model=\"text-embedding-3-small\",\n    input=sentences\n)\n\nvectors = np.array([item.embedding for item in response.data])\n\nindex = faiss.IndexFlatL2(vectors.shape[1])\nindex.add(vectors)\n\nquery = \"My puppy is barking loudly.\"\nquery_vec = client.embeddings.create(\n    model=\"text-embedding-3-small\",\n    input=query\n).data[0].embedding\n\nD, I = index.search(np.array([query_vec]), k=2)\nprint(I)"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#qué-muestra-este-ejemplo",
+    "href": "clases/diapositiva_02_v2.html#qué-muestra-este-ejemplo",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Qué muestra este ejemplo",
+    "text": "Qué muestra este ejemplo\n\nel modelo representa cada texto como vector\nla similitud semántica puede buscarse matemáticamente\neso permite recuperar contexto útil antes de pedir una respuesta al LLM\n\nTraducción organizacional\nNo solo importa el modelo: importa cómo se conecta con información relevante."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#entrenamiento-y-prompting",
+    "href": "clases/diapositiva_02_v2.html#entrenamiento-y-prompting",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Entrenamiento y prompting",
+    "text": "Entrenamiento y prompting\nEntrenamiento\nEl modelo aprende patrones desde grandes volúmenes de datos.\nPrompting\nEl usuario orienta la tarea mediante instrucciones, contexto y formato esperado.\nIdea clave\nUn prompt no reemplaza el entrenamiento del modelo, pero sí condiciona fuertemente su desempeño en una tarea concreta."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#discriminativos-vs-generativos",
+    "href": "clases/diapositiva_02_v2.html#discriminativos-vs-generativos",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Discriminativos vs generativos",
+    "text": "Discriminativos vs generativos\n\nDiscriminativos: clasifican, estiman o predicen\nGenerativos: producen contenido nuevo\n\nAnalogía\n\ndiscriminativo: “¿es fraude o no?”\ngenerativo: “resume este caso de fraude y explica sus patrones”\n\nEn organizaciones\nAmbos enfoques pueden convivir dentro del mismo proceso."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#reemplazo-o-colaboración",
+    "href": "clases/diapositiva_02_v2.html#reemplazo-o-colaboración",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "¿Reemplazo o colaboración?",
+    "text": "¿Reemplazo o colaboración?\nLa evidencia práctica muestra algo más matizado que el reemplazo total.\nIdea clave\nLa IA reemplaza tareas, reorganiza procesos y redefine roles; rara vez reemplaza una profesión completa de forma inmediata."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#transformación-organizacional",
+    "href": "clases/diapositiva_02_v2.html#transformación-organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Transformación organizacional",
+    "text": "Transformación organizacional\nLa IA generativa impacta:\n\nprocesos\ntiempos de decisión\nproductividad individual\ncoordinación entre equipos\ncreación de nuevos productos y servicios\n\nLa pregunta estratégica ya no es solo “usar IA”\nEs rediseñar el trabajo para capturar valor real."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#alineamiento-estratégico",
+    "href": "clases/diapositiva_02_v2.html#alineamiento-estratégico",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Alineamiento estratégico",
+    "text": "Alineamiento estratégico\nLa IA genera valor cuando se conecta con objetivos de negocio medibles.\nPrincipios\n\nvincular iniciativas con KPIs reales\npriorizar casos de alto impacto y riesgo manejable\nevitar pilotos aislados sin continuidad\nconstruir una hoja de ruta de adopción"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#cambio-cultural-y-alfabetización",
+    "href": "clases/diapositiva_02_v2.html#cambio-cultural-y-alfabetización",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Cambio cultural y alfabetización",
+    "text": "Cambio cultural y alfabetización\nEl mayor freno a la adopción suele ser organizacional, no técnico.\nCambios necesarios\n\npasar de trabajo manual a trabajo aumentado por IA\ndesarrollar criterio para evaluar respuestas\nnormalizar la experimentación controlada\nentrenar a equipos en uso y límites de los modelos"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#gobernanza-y-gestión-del-riesgo",
+    "href": "clases/diapositiva_02_v2.html#gobernanza-y-gestión-del-riesgo",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Gobernanza y gestión del riesgo",
+    "text": "Gobernanza y gestión del riesgo\nUna organización debería evaluar al menos estas dimensiones:\n\nseguridad y privacidad de datos\nsesgos y fairness\ntrazabilidad de decisiones\ncumplimiento regulatorio\npolíticas de uso responsable\nsupervisión humana en procesos críticos"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#identificación-de-oportunidades",
+    "href": "clases/diapositiva_02_v2.html#identificación-de-oportunidades",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Identificación de oportunidades",
+    "text": "Identificación de oportunidades\nTres arquetipos útiles para clasificar casos de uso:\nAugmentation\nLa IA ejecuta parte de la tarea y el humano mantiene control.\nCo-creation\nHumano e IA producen conjuntamente el resultado.\nReplacement\nLa IA automatiza la tarea o proceso bajo condiciones controladas."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#criterios-para-detectar-oportunidades",
+    "href": "clases/diapositiva_02_v2.html#criterios-para-detectar-oportunidades",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Criterios para detectar oportunidades",
+    "text": "Criterios para detectar oportunidades\n\nla tarea es repetitiva\nconsume mucho tiempo\nexige redactar, resumir o clasificar\nel output puede verificarse\nexiste impacto claro en costo, calidad o velocidad\n\nCriterio adicional\nMientras más alto el riesgo del proceso, mayor debe ser el nivel de control y trazabilidad."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#framework-operativo",
+    "href": "clases/diapositiva_02_v2.html#framework-operativo",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Framework operativo",
+    "text": "Framework operativo\n1. Mapear procesos\nIdentificar microtareas y puntos de dolor concretos.\n2. Experimentar\nProbar, medir y ajustar prompts, contexto y flujos.\n3. Escalar\nIntegrar en sistemas, entrenar equipos y monitorear resultados."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#redistribución-de-capacidades",
+    "href": "clases/diapositiva_02_v2.html#redistribución-de-capacidades",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Redistribución de capacidades",
+    "text": "Redistribución de capacidades\nLa IA cambia qué hacen las personas y cómo se organiza el trabajo.\nEfectos esperables\n\nmenos tiempo en tareas repetitivas\nmás foco en supervisión, análisis y decisión\nmayor autonomía en roles operativos\naparición de nuevos roles ligados a IA\n\nEjemplos\n\nAI Product Owner\nModel Steward\nAI Trainer\nEspecialistas de procesos aumentados"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#sesgos",
+    "href": "clases/diapositiva_02_v2.html#sesgos",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Sesgos",
+    "text": "Sesgos\nLos modelos pueden amplificar desigualdades presentes en los datos.\nFuentes frecuentes\n\ndatos desbalanceados\nvariables sensibles directas o indirectas\nfalta de representatividad\nausencia de validación ética en diseño y despliegue"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#cómo-detectar-y-mitigar-sesgos",
+    "href": "clases/diapositiva_02_v2.html#cómo-detectar-y-mitigar-sesgos",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Cómo detectar y mitigar sesgos",
+    "text": "Cómo detectar y mitigar sesgos\nDetección\n\nevaluar desempeño en subgrupos\nauditar resultados\nmonitorear continuamente\n\nMitigación\n\nrebalancear datos\nrediseñar variables\nincorporar supervisión humana\nmedir fairness desde el inicio"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#privacidad",
+    "href": "clases/diapositiva_02_v2.html#privacidad",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Privacidad",
+    "text": "Privacidad\nLa personalización puede aumentar valor, pero también eleva exposición de datos.\nRiesgos\n\nuso indebido de datos sensibles\nenvío de información a terceros\nretención excesiva\nentrenamiento no autorizado sobre datos internos\n\nMitigaciones\n\nminimización de datos\nanonimización y cifrado\npolíticas claras de consentimiento\nmodelos privados cuando el caso lo exija"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#copyright-y-propiedad-intelectual",
+    "href": "clases/diapositiva_02_v2.html#copyright-y-propiedad-intelectual",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Copyright y propiedad intelectual",
+    "text": "Copyright y propiedad intelectual\nLos problemas más comunes son:\n\nautoría del contenido generado\nuso de material protegido en entrenamiento\nderechos de imagen\ninfracción involuntaria por parte del usuario\n\nRespuesta organizacional\nDocumentar fuentes, licencias, proveedores y condiciones de uso."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#explicabilidad-y-cajas-negras",
+    "href": "clases/diapositiva_02_v2.html#explicabilidad-y-cajas-negras",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Explicabilidad y cajas negras",
+    "text": "Explicabilidad y cajas negras\nMuchos sistemas de IA son difíciles de interpretar internamente.\nRiesgos\n\nbaja confianza\ndificultad de auditoría\nproblemas regulatorios\nescasa trazabilidad en decisiones sensibles\n\nRespuesta práctica\nUsar documentación, monitoreo, validación y modelos más interpretables cuando corresponda."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#accountability",
+    "href": "clases/diapositiva_02_v2.html#accountability",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Accountability",
+    "text": "Accountability\nLa responsabilidad por decisiones apoyadas por IA no desaparece.\nProblemas típicos\n\nnadie asume errores del sistema\nse usa “lo dijo la IA” como justificación\nse automatizan decisiones críticas sin revisión humana\n\nRegla\nSiempre debe existir un responsable humano claro."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#riesgos-emergentes",
+    "href": "clases/diapositiva_02_v2.html#riesgos-emergentes",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Riesgos emergentes",
+    "text": "Riesgos emergentes\n\ndeepfakes y manipulación\ndesinformación a escala\nautomatización fuera de límites esperados\nriesgos reputacionales y de ciberseguridad\n\nIdea clave\nLa velocidad de adopción no elimina la necesidad de controles."
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#ética-por-diseño",
+    "href": "clases/diapositiva_02_v2.html#ética-por-diseño",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Ética por diseño",
+    "text": "Ética por diseño\nLos principios éticos deben estar integrados desde el inicio del proyecto.\nPrincipios mínimos\n\nobjetivos explícitos\ngestión responsable de datos\ntransparencia\nevaluación de sesgos\nmonitoreo continuo\nrevisión de impacto social"
+  },
+  {
+    "objectID": "clases/diapositiva_02_v2.html#cierre",
+    "href": "clases/diapositiva_02_v2.html#cierre",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Cierre",
+    "text": "Cierre\nComprender LLMs no significa solo saber “qué son”.\nSignifica entender:\n\ncómo representan lenguaje\ncómo se controlan en operación\ncómo se integran en procesos\ncómo se gobiernan en contextos reales\n\nLa ventaja no está en usar IA antes que otros\nEstá en usarla con mejor diseño técnico, mejor criterio organizacional y mejor gestión del riesgo."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#ia-generativa-y-llms-en-las-organizaciones",
+    "href": "clases/diapositiva_01.html#ia-generativa-y-llms-en-las-organizaciones",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "IA Generativa y LLMs en las organizaciones",
+    "text": "IA Generativa y LLMs en las organizaciones\nDel hype tecnológico a modelos concretos de creación de valor"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#objetivo-de-la-sesión",
+    "href": "clases/diapositiva_01.html#objetivo-de-la-sesión",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\n\nEntender el panorama actual de IA e IA generativa\nDistinguir qué es un LLM y qué no es un LLM\nRevisar tipos de modelos y formas de uso en organizaciones\nIntroducir agentes, skills y arquitecturas de orquestación\nIdentificar oportunidades reales y límites actuales"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#pregunta-de-apertura",
+    "href": "clases/diapositiva_01.html#pregunta-de-apertura",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Pregunta de apertura",
+    "text": "Pregunta de apertura\n¿Dónde está hoy el mayor valor para sus organizaciones?\n\nAutomatizar tareas repetitivas\nMejorar productividad individual\nCrear nuevos productos o servicios\nAumentar velocidad de análisis y decisión\nRediseñar procesos completos con apoyo de IA"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#tendencias-que-dominan-la-conversación",
+    "href": "clases/diapositiva_01.html#tendencias-que-dominan-la-conversación",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Tendencias que dominan la conversación",
+    "text": "Tendencias que dominan la conversación\n\nIA generativa integrada en software de trabajo diario\nModelos multimodales: texto, imagen, audio, video y documentos\nMenor costo por token y mayor acceso vía API\nCarrera por agentes capaces de ejecutar tareas complejas\nDebate sobre gobernanza, propiedad intelectual y seguridad"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#qué-está-pasando-realmente",
+    "href": "clases/diapositiva_01.html#qué-está-pasando-realmente",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Qué está pasando realmente",
+    "text": "Qué está pasando realmente\nLa IA actual no es una sola tecnología.\nEs un ecosistema de capacidades que puede combinar:\n\nmodelos fundacionales\nmotores de búsqueda y recuperación\nvisión computacional\nvoz y síntesis de audio\nautomatización de flujos\nsoftware tradicional y reglas de negocio"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#ia-ia-generativa-y-llms",
+    "href": "clases/diapositiva_01.html#ia-ia-generativa-y-llms",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "IA, IA generativa y LLMs",
+    "text": "IA, IA generativa y LLMs\n\nIA: sistemas que realizan tareas asociadas a inteligencia humana\nMachine Learning: modelos que aprenden patrones desde datos\nIA generativa: modelos que crean contenido nuevo\nLLM: modelos de lenguaje de gran escala especializados en texto y secuencias\n\nIdea clave\nUn LLM es una pieza importante del stack, pero no equivale a todo el sistema de IA."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#qué-es-un-llm",
+    "href": "clases/diapositiva_01.html#qué-es-un-llm",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Qué es un LLM",
+    "text": "Qué es un LLM\nUn Large Language Model es un modelo entrenado con grandes volúmenes de texto para:\n\npredecir tokens\nresponder preguntas\nresumir\nclasificar\ntraducir\ngenerar texto, código e instrucciones\n\nIntuición simple\nAprende regularidades del lenguaje y genera la continuación más probable dado un contexto."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#qué-puede-hacer-bien-un-llm",
+    "href": "clases/diapositiva_01.html#qué-puede-hacer-bien-un-llm",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Qué puede hacer bien un LLM",
+    "text": "Qué puede hacer bien un LLM\n\nRedacción y reformulación\nSíntesis de documentos extensos\nExtracción estructurada de información\nGeneración de código y SQL\nAsistencia conversacional\nApoyo a análisis exploratorio y brainstorming"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#qué-hace-mal-o-con-riesgo",
+    "href": "clases/diapositiva_01.html#qué-hace-mal-o-con-riesgo",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Qué hace mal o con riesgo",
+    "text": "Qué hace mal o con riesgo\n\nInventar hechos\nCitar fuentes inexistentes\nOperar sin contexto específico del negocio\nMantener precisión sostenida en tareas largas sin controles"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#tipos-de-llms",
+    "href": "clases/diapositiva_01.html#tipos-de-llms",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Tipos de LLMs",
+    "text": "Tipos de LLMs\nSegún apertura del modelo\n\nCerrados / propietarios: GPT, Claude, Gemini\nAbiertos o abiertos en pesos: Llama, Mistral, Qwen, DeepSeek\n\nSegún especialización\n\nModelos generales\nModelos afinados para código\nModelos afinados para chat\nModelos multimodales\nModelos pequeños para despliegue local o en borde"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#tipos-de-uso-de-modelos-en-empresas",
+    "href": "clases/diapositiva_01.html#tipos-de-uso-de-modelos-en-empresas",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Tipos de uso de modelos en empresas",
+    "text": "Tipos de uso de modelos en empresas\n1. Uso directo\n\nChat web\nCopilots en suites de productividad\nAsistentes embebidos en herramientas existentes\n\n2. Uso vía API\n\nIntegración en portales, CRM, ERP o flujos internos\nAutomatización de tareas con reglas de negocio\n\n3. Uso de modelos propios o afinados\n\nAjuste sobre datos y lenguaje del dominio\nDespliegue controlado por cumplimiento o privacidad"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#empresas-relevantes-en-el-ecosistema",
+    "href": "clases/diapositiva_01.html#empresas-relevantes-en-el-ecosistema",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Empresas relevantes en el ecosistema",
+    "text": "Empresas relevantes en el ecosistema\nProveedores de modelos\n\nOpenAI\nAnthropic\nGoogle\nMeta\nMistral\nCohere\nDeepSeek"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#un-modelo-no-es-una-solución-completa",
+    "href": "clases/diapositiva_01.html#un-modelo-no-es-una-solución-completa",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Un modelo no es una solución completa",
+    "text": "Un modelo no es una solución completa\nPara resolver un problema organizacional suelen intervenir varias capas:\n\ninterfaz con el usuario\nmodelo de lenguaje\nrecuperación de información\nherramientas o APIs\nvalidaciones de negocio\nmonitoreo, trazabilidad y seguridad\n\nFórmula útil\nValor = modelo + contexto + integración + proceso"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#modelos-de-uso-organizacional",
+    "href": "clases/diapositiva_01.html#modelos-de-uso-organizacional",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Modelos de uso organizacional",
+    "text": "Modelos de uso organizacional\nAsistencia\nEl modelo sugiere, redacta, resume o explica.\nAutomatización parcial\nEl modelo ejecuta una parte del flujo y un humano valida.\nAutomatización orquestada\nEl sistema decide pasos, usa herramientas y devuelve un resultado trazable.\nTransformación de proceso\nSe rediseña el trabajo completo con IA como componente central."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#relación-entre-ia-y-llms-en-la-práctica",
+    "href": "clases/diapositiva_01.html#relación-entre-ia-y-llms-en-la-práctica",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Relación entre IA y LLMs en la práctica",
+    "text": "Relación entre IA y LLMs en la práctica\n\nDatos / Documentos / Imágenes / Audio\n                ↓\n     Recuperación / OCR / ETL / APIs\n                ↓\n        LLM como capa de lenguaje\n                ↓\n   Reglas de negocio / validaciones / workflow\n                ↓\n     Respuesta, acción o decisión asistida\n\n\n\nEl LLM interpreta, traduce, organiza o genera\nEl resto del sistema aporta datos, memoria, control y ejecución"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#qué-cambia-respecto-de-un-chat-simple",
+    "href": "clases/diapositiva_01.html#qué-cambia-respecto-de-un-chat-simple",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "¿Qué cambia respecto de un chat simple?",
+    "text": "¿Qué cambia respecto de un chat simple?\nUn chat responde.\nUn agente además puede:\n\nplanificar pasos\nusar herramientas\nconsultar datos externos\nejecutar acciones\nevaluar resultados y reintentar"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#componentes-típicos-de-un-agente",
+    "href": "clases/diapositiva_01.html#componentes-típicos-de-un-agente",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Componentes típicos de un agente",
+    "text": "Componentes típicos de un agente\n\nObjetivo: qué debe lograr\nModelo: qué razonamiento o generación usa\nMemoria: qué recuerda del contexto\nHerramientas: buscadores, bases de datos, APIs, scripts\nPolíticas: límites, permisos y validaciones\nObservabilidad: logs, trazas y evaluación"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#de-prompts-a-agentes",
+    "href": "clases/diapositiva_01.html#de-prompts-a-agentes",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "De prompts a agentes",
+    "text": "De prompts a agentes\nNivel 1\nPrompt único para una tarea acotada\nNivel 2\nPrompt + contexto de documentos\nNivel 3\nLLM con herramientas y recuperación\nNivel 4\nAgente con planificación, acciones y supervisión"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#qué-son-skills",
+    "href": "clases/diapositiva_01.html#qué-son-skills",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "¿Qué son skills?",
+    "text": "¿Qué son skills?\nUna skill es una capacidad reusable y delimitada que un agente o asistente puede invocar.\nEjemplos\n\nresumir actas de reunión\nredactar correos con tono corporativo\nconsultar indicadores de gestión\nextraer datos desde contratos\ngenerar una minuta desde una videollamada\n\nIdea clave\nLas skills encapsulan instrucciones, herramientas, contexto y formato de salida."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#por-qué-importan-las-skills",
+    "href": "clases/diapositiva_01.html#por-qué-importan-las-skills",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Por qué importan las skills",
+    "text": "Por qué importan las skills\n\nPermiten modularizar capacidades\nReducen dependencia de un prompt único gigante\nMejoran mantenibilidad y control\nFacilitan evaluación por tarea\nAcercan la IA a procesos concretos del negocio"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#openclaw-como-ejemplo-de-skill",
+    "href": "clases/diapositiva_01.html#openclaw-como-ejemplo-de-skill",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "OpenClaw como ejemplo de skill",
+    "text": "OpenClaw como ejemplo de skill\nOpenClaw puede describirse, de forma simple, como una plataforma open source para construir y operar agentes de IA.\n\nPuede conectarse a distintos modelos\nPuede integrarse con distintos canales o entornos\nPuede usar herramientas y permisos controlados\nPuede extender capacidades mediante skills\n\nPara esta clase, lo importante es esto\nOpenClaw muestra que una capacidad de IA puede empaquetarse como un componente reusable dentro de un agente."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#cómo-entiende-openclaw-una-skill",
+    "href": "clases/diapositiva_01.html#cómo-entiende-openclaw-una-skill",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Cómo entiende OpenClaw una skill",
+    "text": "Cómo entiende OpenClaw una skill\nSegún su documentación, una skill es una carpeta con un SKILL.md que describe:\n\ndefinir una tarea acotada\ninstrucciones\ncontexto\nreglas\ndependencias o herramientas\ncondiciones para que el agente la cargue\n\nIdea clave\nNo es solo un prompt suelto: es una capacidad declarada y reutilizable."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#cómo-se-ve-una-skill-en-la-práctica",
+    "href": "clases/diapositiva_01.html#cómo-se-ve-una-skill-en-la-práctica",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Cómo se ve una skill en la práctica",
+    "text": "Cómo se ve una skill en la práctica\nUna skill tipo OpenClaw podría incluir:\n\nnombre: resumir_reunion\nobjetivo: producir una minuta ejecutiva\nentrada: transcripción o notas\nreglas: tono formal, sin inventar acuerdos\nsalida: resumen, acuerdos, riesgos, próximos pasos\nherramientas: acceso a documentos, calendario o CRM\n\nIdea clave\nLa skill empaqueta comportamiento reusable, no solo texto de prompt."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#por-qué-openclaw-sirve-como-ejemplo",
+    "href": "clases/diapositiva_01.html#por-qué-openclaw-sirve-como-ejemplo",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Por qué OpenClaw sirve como ejemplo",
+    "text": "Por qué OpenClaw sirve como ejemplo\n\nHace visible que una capacidad de IA puede tratarse como módulo\nAyuda a separar tareas pequeñas y evaluables\nPermite gobernar mejor permisos, contexto y formato de salida\nFacilita que distintos agentes reutilicen la misma capacidad\n\nTraducción organizacional\nUna skill no es “usar ChatGPT”, sino formalizar una tarea de trabajo asistida por IA."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#ejemplo-mínimo-de-una-skill-en-markdown",
+    "href": "clases/diapositiva_01.html#ejemplo-mínimo-de-una-skill-en-markdown",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Ejemplo mínimo de una skill en Markdown",
+    "text": "Ejemplo mínimo de una skill en Markdown\n---\nname: responder_saludo\ndescription: Responde saludos de forma breve y cordial.\n---\n\n# Skill: responder_saludo\n\n## Cuándo usarla\n\n- Cuando el usuario solo saluda o inicia conversación.\n\n## Instrucciones\n\n1. Responde en español.\n2. Sé breve.\n3. Usa un tono cordial y profesional.\n4. No agregues información no solicitada.\n\n## Salida esperada\n\nUn saludo corto y una oferta simple de ayuda."
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#frameworks-y-ecosistemas-agentic",
+    "href": "clases/diapositiva_01.html#frameworks-y-ecosistemas-agentic",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Frameworks y ecosistemas agentic",
+    "text": "Frameworks y ecosistemas agentic\nHoy aparecen múltiples enfoques para construir agentes y skills:\n\nframeworks de orquestación\nSDKs de herramientas\nentornos de ejecución con permisos\nrepositorios de capacidades reutilizables"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#referencias-para-observar",
+    "href": "clases/diapositiva_01.html#referencias-para-observar",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Referencias para observar",
+    "text": "Referencias para observar\n\nOpenClaw como ejemplo de skills reutilizables\nLangGraph\nCrewAI\nAutoGen\nSemantic Kernel"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#cómo-leer-estas-plataformas",
+    "href": "clases/diapositiva_01.html#cómo-leer-estas-plataformas",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Cómo leer estas plataformas",
+    "text": "Cómo leer estas plataformas\nNo son “magia agentic”.\nSon formas de combinar:\n\nmodelos\nmemoria\nherramientas\nestados\nreglas de control\nejecución paso a paso\n\nPregunta útil\n¿Resuelven mejor un proceso real o solo agregan complejidad?"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#riesgos-y-límites-actuales",
+    "href": "clases/diapositiva_01.html#riesgos-y-límites-actuales",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Riesgos y límites actuales",
+    "text": "Riesgos y límites actuales\n\nAlucinaciones y errores silenciosos\nSobreconfianza del usuario\nDependencia de proveedores\nFugas de datos y problemas de privacidad\nDificultad para medir calidad en tareas abiertas\nCostos ocultos de integración, monitoreo y cambio organizacional"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#qué-debería-evaluar-una-organización",
+    "href": "clases/diapositiva_01.html#qué-debería-evaluar-una-organización",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Qué debería evaluar una organización",
+    "text": "Qué debería evaluar una organización\n\nCasos de uso con impacto claro\nCalidad y disponibilidad de datos\nNivel de riesgo del proceso\nNecesidad de trazabilidad\nIntegración con sistemas existentes\nCosto total de propiedad\nCapacidades internas para adopción y gobernanza"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#idea-de-cierre",
+    "href": "clases/diapositiva_01.html#idea-de-cierre",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Idea de cierre",
+    "text": "Idea de cierre\nEl punto no es “usar un LLM”.\nEl punto es diseñar capacidades organizacionales donde:\n\nel modelo aporte lenguaje y flexibilidad\nel sistema aporte contexto y control\nla organización capture productividad, aprendizaje y ventaja competitiva"
+  },
+  {
+    "objectID": "clases/diapositiva_01.html#para-la-siguiente-parte-del-curso",
+    "href": "clases/diapositiva_01.html#para-la-siguiente-parte-del-curso",
+    "title": "IA Generativa y LLMs para la Transformación Organizacional",
+    "section": "Para la siguiente parte del curso",
+    "text": "Para la siguiente parte del curso\n\nCasos de uso por función\nPrompting y diseño de instrucciones\nRAG y uso de documentos propios\nAutomatización con herramientas\nDiseño de agentes y evaluación"
+  },
+  {
+    "objectID": "clases/actividad_skill_markdown.html#diseñar-una-skill-en-markdown",
+    "href": "clases/actividad_skill_markdown.html#diseñar-una-skill-en-markdown",
+    "title": "Actividad",
+    "section": "Diseñar una skill en Markdown",
+    "text": "Diseñar una skill en Markdown\nObjetivo\nDiseñar una capacidad reusable para un agente de IA y documentarla en un archivo SKILL.md.\nEsta actividad busca practicar dos cosas al mismo tiempo:\n\nentender qué es una skill\naprender la estructura básica de Markdown"
+  },
+  {
+    "objectID": "clases/actividad_skill_markdown.html#apoyo-para-escribir-markdown",
+    "href": "clases/actividad_skill_markdown.html#apoyo-para-escribir-markdown",
+    "title": "Actividad",
+    "section": "Apoyo para escribir Markdown",
+    "text": "Apoyo para escribir Markdown\nPueden escribir y previsualizar su archivo aquí:\n\nhttps://markdownlivepreview.com"
+  },
+  {
+    "objectID": "clases/actividad_skill_markdown.html#instrucciones",
+    "href": "clases/actividad_skill_markdown.html#instrucciones",
+    "title": "Actividad",
+    "section": "Instrucciones",
+    "text": "Instrucciones\n\nFormen grupos pequeños.\nElijan una tarea real de una organización que podría transformarse en una skill.\nDefinan con claridad qué debe hacer esa skill.\nEscriban su propuesta usando la estructura sugerida.\nRevisen si las instrucciones son suficientemente claras para que un agente no improvise de más."
+  },
+  {
+    "objectID": "clases/actividad_skill_markdown.html#ejemplos-de-ideas",
+    "href": "clases/actividad_skill_markdown.html#ejemplos-de-ideas",
+    "title": "Actividad",
+    "section": "Ejemplos de ideas",
+    "text": "Ejemplos de ideas\n\nresumir una reunión\nresponder preguntas de RRHH\nredactar un correo ejecutivo\nextraer datos desde contratos\nclasificar reclamos de clientes"
+  },
+  {
+    "objectID": "clases/actividad_skill_markdown.html#plantilla-sugerida",
+    "href": "clases/actividad_skill_markdown.html#plantilla-sugerida",
+    "title": "Actividad",
+    "section": "Plantilla sugerida",
+    "text": "Plantilla sugerida\n---\nname: nombre_de_la_skill\ndescription: breve descripción de la capacidad\n---\n\n# Skill: nombre_de_la_skill\n\n## Objetivo\nExplicar qué debe lograr.\n\n## Cuándo usarla\n- Caso 1\n- Caso 2\n\n## Entrada esperada\n- Qué información recibe\n\n## Instrucciones\n1. Qué debe hacer\n2. Qué no debe hacer\n3. Qué reglas debe respetar\n\n## Salida esperada\n- Formato de salida\n- Nivel de detalle\n- Restricciones\n\n## Herramientas o fuentes\n- Documentos\n- Base de datos\n- API"
+  },
+  {
+    "objectID": "clases/actividad_skill_markdown.html#preguntas-guía",
+    "href": "clases/actividad_skill_markdown.html#preguntas-guía",
+    "title": "Actividad",
+    "section": "Preguntas guía",
+    "text": "Preguntas guía\n\n¿Qué problema resuelve esta skill?\n¿Qué información necesita para funcionar bien?\n¿Qué límites o reglas debería respetar?\n¿Cómo debería verse una buena salida?"
+  },
+  {
+    "objectID": "clases/actividad_skill_markdown.html#entregable",
+    "href": "clases/actividad_skill_markdown.html#entregable",
+    "title": "Actividad",
+    "section": "Entregable",
+    "text": "Entregable\nUn archivo SKILL.md breve, claro y reutilizable para una tarea concreta."
+  },
+  {
+    "objectID": "clases/actividad_skill_markdown.html#criterio-de-evaluación-rápido",
+    "href": "clases/actividad_skill_markdown.html#criterio-de-evaluación-rápido",
+    "title": "Actividad",
+    "section": "Criterio de evaluación rápido",
+    "text": "Criterio de evaluación rápido\n\nla tarea está bien delimitada\nlas instrucciones son claras\nla salida esperada está definida\nla skill parece reutilizable en un contexto real\nel Markdown está bien estructurado"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1 + 1\n\n[1] 3"
   },
   {
     "objectID": "clases/clases.html",
@@ -56,228 +910,1236 @@
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1 + 1\n\n[1] 3"
-  },
-  {
-    "objectID": "clases/diapo_02.html#objetivo-general",
-    "href": "clases/diapo_02.html#objetivo-general",
+    "objectID": "clases/diapositiva_02.html#objetivo-general",
+    "href": "clases/diapositiva_02.html#objetivo-general",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Objetivo general",
     "text": "Objetivo general\n\nAnalizar el rol de la inteligencia artificial generativa en la estrategia empresarial"
   },
   {
-    "objectID": "clases/diapo_02.html#pregunta-activadora",
-    "href": "clases/diapo_02.html#pregunta-activadora",
+    "objectID": "clases/diapositiva_02.html#pregunta-activadora",
+    "href": "clases/diapositiva_02.html#pregunta-activadora",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Pregunta activadora",
     "text": "Pregunta activadora\n¿Qué procesos de su organización creen que podrían mejorar con IA generativa?"
   },
   {
-    "objectID": "clases/diapo_02.html#conceptos-fundamentales",
-    "href": "clases/diapo_02.html#conceptos-fundamentales",
+    "objectID": "clases/diapositiva_02.html#conceptos-fundamentales",
+    "href": "clases/diapositiva_02.html#conceptos-fundamentales",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Conceptos fundamentales",
     "text": "Conceptos fundamentales\n\nIA (Artificial Intelligence): máquinas que realizan tareas que suelen requerir inteligencia humana.\n\nIA Generativa: sistemas capaces de crear contenido como lo hacemos los humanos (texto, imágenes, audio, código).\nIdea central: La IA generativa predice patrones para producir contenido original.\nIA y algoritmos: Algoritmos como serie de reglas dadas; en el caso de la IA esos algoritmos son construidos por la IA y puede ser mejorados."
   },
   {
-    "objectID": "clases/diapo_02.html#innovaciones-clave-en-la-historia",
-    "href": "clases/diapo_02.html#innovaciones-clave-en-la-historia",
+    "objectID": "clases/diapositiva_02.html#innovaciones-clave-en-la-historia",
+    "href": "clases/diapositiva_02.html#innovaciones-clave-en-la-historia",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Innovaciones clave en la historia",
     "text": "Innovaciones clave en la historia\n\n\n\n\nCloud computing → datos + cómputo\n\nGANs → imágenes fotorrealistas → Ver enlace\nTransformers → comprensión profunda del lenguaje → Ver enlace\nRLHF → modelos afinados con retroalimentación humana\n\nMidjourney / Stable Diffusion / GPT-4 → multimodalidad y creatividad avanzada\n\n\n\n\n\n\nRecuperado de: Curso Generative AI for Business, DataCamp"
   },
   {
-    "objectID": "clases/diapo_02.html#para-revisar",
-    "href": "clases/diapo_02.html#para-revisar",
+    "objectID": "clases/diapositiva_02.html#para-revisar",
+    "href": "clases/diapositiva_02.html#para-revisar",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Para revisar",
     "text": "Para revisar\n\n\n\n\n\n\nTraditional AI vs. Generative AI: What’s the Difference?\n\n\nTo understand the benefits and uses of artificial intelligence (AI) in education, you first must discern the differences between traditional AI and generative AI. Here’s a comparison of the two.\nLeer nota completa"
   },
   {
-    "objectID": "clases/diapo_02.html#la-ia-no-es-un-modelo-es-un-ecosistema-de-componentes",
-    "href": "clases/diapo_02.html#la-ia-no-es-un-modelo-es-un-ecosistema-de-componentes",
+    "objectID": "clases/diapositiva_02.html#la-ia-no-es-un-modelo-es-un-ecosistema-de-componentes",
+    "href": "clases/diapositiva_02.html#la-ia-no-es-un-modelo-es-un-ecosistema-de-componentes",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "🤖 La IA no es un modelo — es un ecosistema de componentes",
     "text": "🤖 La IA no es un modelo — es un ecosistema de componentes\nUn LLM (Large Language Model) como GPT o Claude es solo una parte del sistema.\nPara responder una consulta compleja, se articulan varios segmentos de IA:\n\n\nComputer Vision → detecta y analiza imágenes (objetos, rostros, escenas).\n\nOCR (Reconocimiento Óptico de Caracteres) → extrae texto de imágenes o PDFs.\n\nSpeech Recognition / TTS → convierte audio en texto y viceversa.\n\nLLM → interpreta, contextualiza y genera una respuesta en lenguaje natural.\n\nReasoning / Orchestration Layer → decide qué componentes usar y en qué orden."
   },
   {
-    "objectID": "clases/diapo_02.html#qué-es-un-llm-large-language-model",
-    "href": "clases/diapo_02.html#qué-es-un-llm-large-language-model",
+    "objectID": "clases/diapositiva_02.html#qué-es-un-llm-large-language-model",
+    "href": "clases/diapositiva_02.html#qué-es-un-llm-large-language-model",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "¿Qué es un LLM? (Large Language Model)",
     "text": "¿Qué es un LLM? (Large Language Model)\nUn LLM (Large Language Model) es un modelo de inteligencia artificial entrenado con enormes cantidades de texto para:\n\npredecir la siguiente palabra\ngenerar respuestas coherentes\n\ncomprender contextos complejos\n\nproducir contenido (texto, código, instrucciones)\n\nrazonar de manera estadística"
   },
   {
-    "objectID": "clases/diapo_02.html#frase-clave",
-    "href": "clases/diapo_02.html#frase-clave",
+    "objectID": "clases/diapositiva_02.html#frase-clave",
+    "href": "clases/diapositiva_02.html#frase-clave",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Frase clave:",
     "text": "Frase clave:\n\nLos LLMs no “piensan”: calculan probabilidades en un espacio matemático gigante lleno de significados."
   },
   {
-    "objectID": "clases/diapo_02.html#tipos-de-llms-con-ejemplos",
-    "href": "clases/diapo_02.html#tipos-de-llms-con-ejemplos",
+    "objectID": "clases/diapositiva_02.html#tipos-de-llms-con-ejemplos",
+    "href": "clases/diapositiva_02.html#tipos-de-llms-con-ejemplos",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Tipos de LLMs (con ejemplos)",
     "text": "Tipos de LLMs (con ejemplos)\nLos modelos actuales pueden clasificarse en cuatro grandes categorías, según su entrenamiento y capacidades."
   },
   {
-    "objectID": "clases/diapo_02.html#cómo-funciona-entrenamiento-y-prompting",
-    "href": "clases/diapo_02.html#cómo-funciona-entrenamiento-y-prompting",
+    "objectID": "clases/diapositiva_02.html#cómo-funciona-entrenamiento-y-prompting",
+    "href": "clases/diapositiva_02.html#cómo-funciona-entrenamiento-y-prompting",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Cómo funciona: entrenamiento y prompting",
     "text": "Cómo funciona: entrenamiento y prompting\n\nEntrenamiento: El modelo aprende patrones desde grandes volúmenes de datos.\nPrompting: El usuario da una instrucción → el modelo genera contenido.\nEjemplo: Prompt: “Escribe un haiku sobre IA generativa.”\n\n\nUn prompt no es solo una pregunta: es un programa breve que guía el comportamiento del modelo."
   },
   {
-    "objectID": "clases/diapo_02.html#qué-significa-un-resultado-confiable",
-    "href": "clases/diapo_02.html#qué-significa-un-resultado-confiable",
+    "objectID": "clases/diapositiva_02.html#qué-significa-un-resultado-confiable",
+    "href": "clases/diapositiva_02.html#qué-significa-un-resultado-confiable",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Qué significa un “resultado confiable”",
     "text": "Qué significa un “resultado confiable”\n\nUn modelo no entrega certezas, entrega probabilidades\nLa confiabilidad depende de calidad de datos, validación del modelo, comparación entre predicciones y realidad\nEjemplo: modelo de churn predice 80% → no dice “renunciará”, sino “probabilidad alta de egreso”"
   },
   {
-    "objectID": "clases/diapo_02.html#modelos-discriminativos-vs-generativos",
-    "href": "clases/diapo_02.html#modelos-discriminativos-vs-generativos",
+    "objectID": "clases/diapositiva_02.html#modelos-discriminativos-vs-generativos",
+    "href": "clases/diapositiva_02.html#modelos-discriminativos-vs-generativos",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Modelos discriminativos vs generativos",
     "text": "Modelos discriminativos vs generativos\n\nDiscriminativos: clasifican o predicen.\n\nGenerativos: crean contenido.\n\nAnalogía:\n\nDiscriminativo → “¿Es fraude o no?”\n\nGenerativo → “Resume este caso de fraude.”"
   },
   {
-    "objectID": "clases/diapo_02.html#aplicaciones-de-negocio",
-    "href": "clases/diapo_02.html#aplicaciones-de-negocio",
+    "objectID": "clases/diapositiva_02.html#aplicaciones-de-negocio",
+    "href": "clases/diapositiva_02.html#aplicaciones-de-negocio",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Aplicaciones de negocio",
     "text": "Aplicaciones de negocio\n\nAtención al cliente\n\nDesarrollo de software\n\nDiseño de productos\n\nDocumentación y reportes\n\nAutomatización de tareas repetitivas\n\nInsights desde grandes volúmenes de texto"
   },
   {
-    "objectID": "clases/diapo_02.html#reemplazo-o-colaboración",
-    "href": "clases/diapo_02.html#reemplazo-o-colaboración",
+    "objectID": "clases/diapositiva_02.html#reemplazo-o-colaboración",
+    "href": "clases/diapositiva_02.html#reemplazo-o-colaboración",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "¿Reemplazo o colaboración?",
     "text": "¿Reemplazo o colaboración?\nCaso: Kasparov vs Deep Blue\n\n\n\n\n\n\nKasparov vs. Deep Blue | The Match That Changed History\n\n\nOver 20 years ago, World Champion Garry Kasparov took on IBM and the super-computer Deep Blue in the ultimate battle of man versus machine. This was a monumental moment in chess history and was followed closely around the world. This match appealed to chess players, scientists, computer experts, and…\nLeer nota completa"
   },
   {
-    "objectID": "clases/diapo_02.html#por-qué-la-ia-transforma-organizaciones",
-    "href": "clases/diapo_02.html#por-qué-la-ia-transforma-organizaciones",
+    "objectID": "clases/diapositiva_02.html#por-qué-la-ia-transforma-organizaciones",
+    "href": "clases/diapositiva_02.html#por-qué-la-ia-transforma-organizaciones",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "¿Por qué la IA transforma organizaciones?",
     "text": "¿Por qué la IA transforma organizaciones?\nLa IA generativa impulsa cambios profundos porque:\n\nAumenta capacidades humanas.\nAutomatiza tareas de alto costo cognitivo.\nReduce tiempos entre idea → prototipo → ejecución.\nAbre nuevas posibilidades de productos y servicios.\nPermite rediseñar procesos completos.\n\nIdea clave: La pregunta ya no es “¿podemos usar IA?”, sino “¿cómo reorganizamos nuestro trabajo para aprovechar IA de forma estratégica?”"
   },
   {
-    "objectID": "clases/diapo_02.html#alineamiento-estratégico",
-    "href": "clases/diapo_02.html#alineamiento-estratégico",
+    "objectID": "clases/diapositiva_02.html#alineamiento-estratégico",
+    "href": "clases/diapositiva_02.html#alineamiento-estratégico",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Alineamiento estratégico",
     "text": "Alineamiento estratégico\nLa IA solo genera valor si está vinculada a metas del negocio.\nPrincipios:\n\n\nConectar iniciativas de IA con KPIs reales (eficiencia, ingresos, retención, calidad).\nPriorizar casos de uso de alto impacto y bajo riesgo.\nEvitar pilotos aislados o experimentación sin dirección.\nDiseñar una hoja de ruta que avance junto a la estrategia general de la organización.\n\nMensaje clave:\n\nLa IA es una herramienta estratégica, no un juguete tecnológico."
   },
   {
-    "objectID": "clases/diapo_02.html#cambio-cultural-y-alfabetización-en-ia",
-    "href": "clases/diapo_02.html#cambio-cultural-y-alfabetización-en-ia",
+    "objectID": "clases/diapositiva_02.html#cambio-cultural-y-alfabetización-en-ia",
+    "href": "clases/diapositiva_02.html#cambio-cultural-y-alfabetización-en-ia",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Cambio cultural y alfabetización en IA",
     "text": "Cambio cultural y alfabetización en IA\nEl mayor freno a la adopción no es técnico: es cultural.\nCambios necesarios:\n\nPasar de “trabajo manual” a “trabajo aumentado por IA”.\nFomentar una mentalidad de experimentación.\nEntrenar a los equipos en pensamiento crítico aplicado a IA.\nNormalizar el uso cotidiano de modelos generativos como un nuevo integrante del equipo."
   },
   {
-    "objectID": "clases/diapo_02.html#gobernanza-y-gestión-del-riesgo",
-    "href": "clases/diapo_02.html#gobernanza-y-gestión-del-riesgo",
+    "objectID": "clases/diapositiva_02.html#gobernanza-y-gestión-del-riesgo",
+    "href": "clases/diapositiva_02.html#gobernanza-y-gestión-del-riesgo",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Gobernanza y gestión del riesgo",
     "text": "Gobernanza y gestión del riesgo\nLa IA necesita un marco formal de gestión responsable:\nDimensiones de gobernanza:\n\nSeguridad y privacidad de datos.\nMitigación de sesgos y fairness.\nTransparencia en procesos y decisiones.\nRegulación y compliance.\nPolíticas de uso responsable.\nEvaluación del impacto ecológico asociado al cómputo."
   },
   {
-    "objectID": "clases/diapo_02.html#impacto-transversal-en-el-negocio",
-    "href": "clases/diapo_02.html#impacto-transversal-en-el-negocio",
+    "objectID": "clases/diapositiva_02.html#impacto-transversal-en-el-negocio",
+    "href": "clases/diapositiva_02.html#impacto-transversal-en-el-negocio",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Impacto transversal en el negocio",
     "text": "Impacto transversal en el negocio\nLa IA generativa afecta múltiples áreas al mismo tiempo:\nMarketing\n\nPersonalización.\nGeneración de contenido.\nSegmentación inteligente."
   },
   {
-    "objectID": "clases/diapo_02.html#identificación-de-oportunidades-de-ia",
-    "href": "clases/diapo_02.html#identificación-de-oportunidades-de-ia",
+    "objectID": "clases/diapositiva_02.html#identificación-de-oportunidades-de-ia",
+    "href": "clases/diapositiva_02.html#identificación-de-oportunidades-de-ia",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Identificación de oportunidades de IA",
     "text": "Identificación de oportunidades de IA\nLas oportunidades pueden clasificarse en tres arquetipos:\n1) Augmentation\nLa IA ejecuta parte de la tarea y el humano sigue controlando.\n2) Co-creation\nHumano + IA colaboran para producir un resultado final.\n3) Replacement\nLa IA automatiza una tarea o proceso completo."
   },
   {
-    "objectID": "clases/diapo_02.html#framework-operativo-para-transformar-con-ia",
-    "href": "clases/diapo_02.html#framework-operativo-para-transformar-con-ia",
+    "objectID": "clases/diapositiva_02.html#framework-operativo-para-transformar-con-ia",
+    "href": "clases/diapositiva_02.html#framework-operativo-para-transformar-con-ia",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Framework operativo para transformar con IA",
     "text": "Framework operativo para transformar con IA\n1) Mapear procesos\n\nIdentificar tareas de alto costo cognitivo.\nDocumentar pasos actuales.\nDetectar “IA-fit” en microtareas específicas."
   },
   {
-    "objectID": "clases/diapo_02.html#la-ia-redistribuye-capacidades-dentro-de-la-organización",
-    "href": "clases/diapo_02.html#la-ia-redistribuye-capacidades-dentro-de-la-organización",
+    "objectID": "clases/diapositiva_02.html#la-ia-redistribuye-capacidades-dentro-de-la-organización",
+    "href": "clases/diapositiva_02.html#la-ia-redistribuye-capacidades-dentro-de-la-organización",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "La IA redistribuye capacidades dentro de la organización",
     "text": "La IA redistribuye capacidades dentro de la organización\n\nLa IA cambia qué tareas hacen las personas y cómo se distribuye el trabajo:\n\nMás tiempo para creatividad, análisis y decisiones.\nMenos tiempo en tareas repetitivas.\nIncremento de autonomía en roles operativos.\nReorganización de funciones tradicionales (marketing, finanzas, CX, TI).\nEmergencia de nuevos roles:\n\nAI Product Owner\n\nPrompt Designer\n\nModel Steward\n\nAI Trainer"
   },
   {
-    "objectID": "clases/diapo_02.html#sesgos-bias",
-    "href": "clases/diapo_02.html#sesgos-bias",
+    "objectID": "clases/diapositiva_02.html#sesgos-bias",
+    "href": "clases/diapositiva_02.html#sesgos-bias",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Sesgos (Bias)",
     "text": "Sesgos (Bias)\nLos sesgos son uno de los riesgos más frecuentes y peligrosos en sistemas de IA. La IA aprende de datos históricos que pueden contener desigualdades y, por tanto, puede amplificarlas."
   },
   {
-    "objectID": "clases/diapo_02.html#privacidad-y-el-privacypersonalization-paradox",
-    "href": "clases/diapo_02.html#privacidad-y-el-privacypersonalization-paradox",
+    "objectID": "clases/diapositiva_02.html#privacidad-y-el-privacypersonalization-paradox",
+    "href": "clases/diapositiva_02.html#privacidad-y-el-privacypersonalization-paradox",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Privacidad y el “privacy–personalization paradox”",
     "text": "Privacidad y el “privacy–personalization paradox”\nLa personalización aumenta la utilidad del sistema, pero genera tensiones con la privacidad. A mayor personalización, mayor necesidad de datos personales."
   },
   {
-    "objectID": "clases/diapo_02.html#copyright-y-propiedad-intelectual",
-    "href": "clases/diapo_02.html#copyright-y-propiedad-intelectual",
+    "objectID": "clases/diapositiva_02.html#copyright-y-propiedad-intelectual",
+    "href": "clases/diapositiva_02.html#copyright-y-propiedad-intelectual",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Copyright y propiedad intelectual",
     "text": "Copyright y propiedad intelectual\nLa IA generativa plantea desafíos legales y éticos en torno a la autoría y el uso de datos.\n\n\n\n\n\n\nCloudflare CEO warns AI is keeping businesses and their customers apart - The Logic\n\n\nMatthew Prince is calling on publishers and companies to block AI developers from taking their content, in hopes of forcing them to pay for it\nLeer nota completa"
   },
   {
-    "objectID": "clases/diapo_02.html#transparencia-cajas-negras-y-explicabilidad-xai",
-    "href": "clases/diapo_02.html#transparencia-cajas-negras-y-explicabilidad-xai",
+    "objectID": "clases/diapositiva_02.html#transparencia-cajas-negras-y-explicabilidad-xai",
+    "href": "clases/diapositiva_02.html#transparencia-cajas-negras-y-explicabilidad-xai",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Transparencia, cajas negras y explicabilidad (XAI)",
     "text": "Transparencia, cajas negras y explicabilidad (XAI)\nMuchos modelos de IA —especialmente los LLMs— funcionan como cajas negras: sabemos qué entra y qué sale, pero no cómo se tomó la decisión."
   },
   {
-    "objectID": "clases/diapo_02.html#accountability-responsabilidad-humana",
-    "href": "clases/diapo_02.html#accountability-responsabilidad-humana",
+    "objectID": "clases/diapositiva_02.html#accountability-responsabilidad-humana",
+    "href": "clases/diapositiva_02.html#accountability-responsabilidad-humana",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Accountability (Responsabilidad humana)",
     "text": "Accountability (Responsabilidad humana)\nLa IA no es una excusa para evitar responsabilidad. Siempre debe haber un responsable humano por las decisiones donde la IA participa.\n\n\n\n\n\n\n“Quería que ChatGPT me ayudara. Entonces, ¿por qué me aconsejó cómo suicidarme?” - BBC News Mundo\n\n\nChatGPT escribió una nota de suicidio para una joven con problemas mentales y le aconsejó cómo quitarse la vida, según una investigación de la BBC.\nLeer nota completa\n\n\n\n\n\nOpenAI estima que más de un millón de sus 800 millones de usuarios semanales parecen expresar pensamientos suicidas"
   },
   {
-    "objectID": "clases/diapo_02.html#fairness-y-justicia-algorítmica",
-    "href": "clases/diapo_02.html#fairness-y-justicia-algorítmica",
+    "objectID": "clases/diapositiva_02.html#fairness-y-justicia-algorítmica",
+    "href": "clases/diapositiva_02.html#fairness-y-justicia-algorítmica",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Fairness y justicia algorítmica",
     "text": "Fairness y justicia algorítmica\nEl principio de fairness busca evitar discriminaciones directas o indirectas."
   },
   {
-    "objectID": "clases/diapo_02.html#riesgos-emergentes",
-    "href": "clases/diapo_02.html#riesgos-emergentes",
+    "objectID": "clases/diapositiva_02.html#riesgos-emergentes",
+    "href": "clases/diapositiva_02.html#riesgos-emergentes",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Riesgos emergentes",
     "text": "Riesgos emergentes\nDeepfakes y manipulación\n\nContenido sintético difícil de distinguir de lo real.\nRiesgo reputacional.\nManipulación política o social.\nFraudes mediante audio y video falsificado."
   },
   {
-    "objectID": "clases/diapo_02.html#ethical-ai-by-design-ética-por-diseño",
-    "href": "clases/diapo_02.html#ethical-ai-by-design-ética-por-diseño",
+    "objectID": "clases/diapositiva_02.html#ethical-ai-by-design-ética-por-diseño",
+    "href": "clases/diapositiva_02.html#ethical-ai-by-design-ética-por-diseño",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "Ethical AI by Design (Ética por diseño)",
     "text": "Ethical AI by Design (Ética por diseño)\nLos principios éticos deben integrarse desde la concepción del proyecto, no como un “parche” posterior."
   },
   {
-    "objectID": "clases/diapo_02.html#por-qué-importa-todo-esto",
-    "href": "clases/diapo_02.html#por-qué-importa-todo-esto",
+    "objectID": "clases/diapositiva_02.html#por-qué-importa-todo-esto",
+    "href": "clases/diapositiva_02.html#por-qué-importa-todo-esto",
     "title": "IA Generativa y LLMs para la Transformación Organizacional",
     "section": "¿Por qué importa todo esto?",
     "text": "¿Por qué importa todo esto?\n\nAumenta la confianza del público y los usuarios.\n\nReduce riesgos legales, operacionales y reputacionales.\n\nFomenta la innovación sostenible.\n\nPermite aprovechar el potencial de la IA sin comprometer valores éticos.\n\nConvierte la ética en una ventaja competitiva.\n\n\nLa ética en IA no es solo buena práctica: es buena estrategia de negocios."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#conceptos-básicos-de-ia-y-llm-hoy",
+    "href": "clases/diapositiva_03.html#conceptos-básicos-de-ia-y-llm-hoy",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Conceptos básicos de IA y LLM hoy",
+    "text": "Conceptos básicos de IA y LLM hoy\nUn mapa simple para entender el lenguaje actual de la inteligencia artificial"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#objetivo-de-la-sesión",
+    "href": "clases/diapositiva_03.html#objetivo-de-la-sesión",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\n\nEntender los conceptos más usados hoy en conversaciones sobre IA\nDiferenciar IA, IA generativa, LLM, agentes y automatización\nReconocer qué significan términos como prompts, RAG, embeddings y MCP\nTraducir ese vocabulario a decisiones prácticas de negocio\nIdentificar oportunidades, límites y riesgos reales"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#pregunta-de-apertura",
+    "href": "clases/diapositiva_03.html#pregunta-de-apertura",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Pregunta de apertura",
+    "text": "Pregunta de apertura\nCuando escuchan hablar de IA hoy, ¿qué es lo primero que aparece?\n\nChatGPT o asistentes conversacionales\nAutomatización de tareas\nAnálisis de documentos\nGeneración de contenido\nRiesgos y reemplazo laboral"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#ia-no-es-una-sola-cosa",
+    "href": "clases/diapositiva_03.html#ia-no-es-una-sola-cosa",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "IA no es una sola cosa",
+    "text": "IA no es una sola cosa\nCuando hoy se habla de IA, normalmente se mezclan varias capas:\n\ninteligencia artificial\nmachine learning\nIA generativa\nLLMs\nherramientas, datos y automatización\n\nIdea clave\nUn chatbot visible para el usuario suele ser solo la punta del sistema."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#ia",
+    "href": "clases/diapositiva_03.html#ia",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "IA",
+    "text": "IA\nInteligencia Artificial es un concepto amplio.\nSe usa para describir sistemas capaces de realizar tareas asociadas a inteligencia humana, por ejemplo:\n\nclasificar\npredecir\nrecomendar\nreconocer patrones\ngenerar contenido"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#machine-learning",
+    "href": "clases/diapositiva_03.html#machine-learning",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Machine Learning",
+    "text": "Machine Learning\nMachine Learning es una forma de construir IA usando datos para aprender patrones.\nEjemplos comunes\n\ndetectar fraude\npredecir rotación de clientes\nrecomendar productos\nestimar demanda\n\nIdea simple\nNo todas las soluciones de IA conversan; muchas solo predicen o clasifican."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#ia-generativa",
+    "href": "clases/diapositiva_03.html#ia-generativa",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "IA generativa",
+    "text": "IA generativa\nLa IA generativa crea contenido nuevo a partir de patrones aprendidos.\nPuede generar\n\ntexto\nimágenes\naudio\nvideo\ncódigo\n\nLo importante\nSu valor no está solo en “crear”, sino en acelerar trabajo cognitivo."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#llm",
+    "href": "clases/diapositiva_03.html#llm",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "LLM",
+    "text": "LLM\nLLM significa Large Language Model.\nSon modelos entrenados con grandes volúmenes de texto para trabajar con lenguaje.\nHacen bien tareas como\n\nresponder preguntas\nresumir\nredactar\ntraducir\nclasificar texto\nextraer información desde documentos"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#copilot-chatbot-y-asistente",
+    "href": "clases/diapositiva_03.html#copilot-chatbot-y-asistente",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Copilot, chatbot y asistente",
+    "text": "Copilot, chatbot y asistente\nNo son exactamente lo mismo:\n\nchatbot: responde en formato conversacional\nasistente: ayuda a una persona en una tarea\ncopilot: acompaña el trabajo dentro de una herramienta o flujo\n\nEjemplo\nUn copiloto en Word o Excel no reemplaza el software: lo vuelve más asistido."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#multimodalidad",
+    "href": "clases/diapositiva_03.html#multimodalidad",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Multimodalidad",
+    "text": "Multimodalidad\nUn sistema multimodal puede trabajar con más de un tipo de información.\nHoy puede combinar\n\ntexto\nimágenes\naudio\nvideo\ndocumentos\n\nImplicancia práctica\nLa IA actual ya no solo “lee”: también puede ver, escuchar e interpretar."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#token",
+    "href": "clases/diapositiva_03.html#token",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Token",
+    "text": "Token\nLos modelos no procesan texto exactamente como nosotros lo vemos.\nTrabajan con tokens, pequeñas unidades de texto.\nPor qué importa\n\nel costo suele medirse en tokens\nel largo de una conversación depende de tokens\nlos documentos grandes consumen tokens rápidamente"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#ventana-de-contexto",
+    "href": "clases/diapositiva_03.html#ventana-de-contexto",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Ventana de contexto",
+    "text": "Ventana de contexto\nLa context window es la cantidad de información que el modelo puede considerar al mismo tiempo.\nTraducción simple\nEs como su memoria de corto plazo dentro de una conversación o tarea.\nImporta porque afecta\n\ncuánta información cabe\ncuán largo puede ser un documento\ncuánta coherencia puede mantener"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#prompt",
+    "href": "clases/diapositiva_03.html#prompt",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Prompt",
+    "text": "Prompt\nUn prompt es la instrucción que damos al modelo.\nPuede incluir\n\nla tarea\ncontexto\nrestricciones\nformato esperado\nejemplos\n\nIdea clave\nUn buen prompt no es “hablar bonito con la IA”; es diseñar bien la instrucción."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#prompt-engineering",
+    "href": "clases/diapositiva_03.html#prompt-engineering",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Prompt engineering",
+    "text": "Prompt engineering\nEs la práctica de mejorar resultados ajustando instrucciones y contexto.\nNormalmente busca\n\nmayor claridad\nmenos ambigüedad\nmejor formato de salida\nmenos errores\n\nEn lenguaje simple\nEs aprender a pedir bien, no a programar el modelo desde cero."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#hallucinations",
+    "href": "clases/diapositiva_03.html#hallucinations",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Hallucinations",
+    "text": "Hallucinations\nUna alucinación ocurre cuando el modelo responde con seguridad, pero inventa o distorsiona información.\nPuede pasar al\n\ncitar fuentes que no existen\nafirmar datos incorrectos\ncompletar vacíos con texto plausible\n\nRegla de negocio\nSi el caso es sensible, la salida debe validarse."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#embeddings",
+    "href": "clases/diapositiva_03.html#embeddings",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Embeddings",
+    "text": "Embeddings\nLos embeddings son representaciones numéricas del significado.\nPara qué se usan mucho hoy\n\nbuscar textos parecidos\ncomparar significado\nencontrar documentos relevantes\nalimentar sistemas RAG\n\nIdea simple\nPermiten que una máquina compare cercanía semántica, no solo palabras exactas."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#base-de-datos-vectorial",
+    "href": "clases/diapositiva_03.html#base-de-datos-vectorial",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Base de datos vectorial",
+    "text": "Base de datos vectorial\nEs una base pensada para guardar y buscar embeddings.\nSu rol típico\n\nalmacenar fragmentos de documentos\nrecuperar lo más relevante para una consulta\nayudar a responder con contexto específico\n\nTraducción ejecutiva\nEs una pieza común en sistemas que “conversan con documentos”."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#rag",
+    "href": "clases/diapositiva_03.html#rag",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "RAG",
+    "text": "RAG\nRAG significa Retrieval-Augmented Generation.\nConsiste en recuperar información relevante antes de responder.\nFlujo simplificado\n\nEl usuario pregunta.\nEl sistema busca información relacionada.\nEl modelo responde con ese contexto adicional.\n\nValor\nReduce la dependencia exclusiva de lo que el modelo aprendió en entrenamiento."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#fine-tuning",
+    "href": "clases/diapositiva_03.html#fine-tuning",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Fine-tuning",
+    "text": "Fine-tuning\nFine-tuning es ajustar un modelo para que funcione mejor en una tarea o estilo específico.\nPuede servir para\n\nrespuestas con formato fijo\nlenguaje de una industria\ntono institucional\ntareas repetitivas muy concretas\n\nOjo\nNo todo problema se resuelve con fine-tuning; muchas veces basta con mejor contexto y mejores prompts."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#tool-use-o-function-calling",
+    "href": "clases/diapositiva_03.html#tool-use-o-function-calling",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Tool use o function calling",
+    "text": "Tool use o function calling\nHoy muchos modelos pueden usar herramientas.\nEso significa que no solo generan texto: también pueden pedir acciones al sistema.\nEjemplos\n\nconsultar una base de datos\nbuscar en la web\nleer archivos\nenviar un correo\nejecutar una acción en un sistema"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#agentes",
+    "href": "clases/diapositiva_03.html#agentes",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Agentes",
+    "text": "Agentes\nUn agente es un sistema que usa un modelo para perseguir un objetivo con varios pasos.\nA diferencia de un chat simple, puede\n\nplanificar\nusar herramientas\nconsultar fuentes\nejecutar acciones\nrevisar resultados\n\nIdea clave\nNo es solo “responder”, sino coordinar trabajo."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#ai-agents-copilots-y-automatización",
+    "href": "clases/diapositiva_03.html#ai-agents-copilots-y-automatización",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "AI agents, copilots y automatización",
+    "text": "AI agents, copilots y automatización\nSon conceptos cercanos, pero no idénticos:\n\ncopilot: ayuda a una persona\nagente: ejecuta pasos con cierta autonomía\nautomatización: flujo que corre con reglas definidas\n\nPregunta útil\n¿Qué nivel de autonomía queremos realmente?"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#reasoning-models",
+    "href": "clases/diapositiva_03.html#reasoning-models",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Reasoning models",
+    "text": "Reasoning models\nHoy se habla mucho de reasoning models o modelos de razonamiento.\nLa idea general\nSon modelos preparados para resolver tareas más complejas:\n\nplanificación\nproblemas de varios pasos\nanálisis más exigente\ntoma de decisiones asistida\n\nTraducción práctica\nNo todo requiere un modelo “más pensante”; depende del tipo de tarea."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#modelos-pequeños-y-modelos-grandes",
+    "href": "clases/diapositiva_03.html#modelos-pequeños-y-modelos-grandes",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Modelos pequeños y modelos grandes",
+    "text": "Modelos pequeños y modelos grandes\nNo siempre gana el modelo más grande.\nHoy conviven\n\nmodelos frontier, más potentes\nmodelos pequeños, más rápidos y baratos\nmodelos especializados para tareas concretas\n\nCriterios reales\n\ncosto\nvelocidad\nprivacidad\ncalidad requerida"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#modelos-cerrados-abiertos-y-open-weight",
+    "href": "clases/diapositiva_03.html#modelos-cerrados-abiertos-y-open-weight",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Modelos cerrados, abiertos y open-weight",
+    "text": "Modelos cerrados, abiertos y open-weight\nEs una distinción cada vez más importante.\n\ncerrados: el proveedor controla el modelo y su acceso\nabiertos en pesos / open-weight: se pueden descargar y desplegar\nafinados internamente: adaptados por la organización\n\nImplicancia\nLa elección del modelo también es una decisión de control, costo y dependencia."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#mcp",
+    "href": "clases/diapositiva_03.html#mcp",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "MCP",
+    "text": "MCP\nMCP significa Model Context Protocol.\nEs un protocolo emergente para conectar modelos con datos, herramientas y servicios de forma estandarizada.\nIdea simple\nBusca que distintos sistemas de IA puedan conectarse a fuentes externas sin integraciones totalmente artesanales cada vez.\nPor qué aparece tanto hoy\nPorque el ecosistema se está moviendo desde “chat” hacia “sistemas conectados”."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#evals",
+    "href": "clases/diapositiva_03.html#evals",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Evals",
+    "text": "Evals\nEvaluations o evals son pruebas para medir si una solución de IA realmente funciona bien.\nSirven para revisar\n\nprecisión\nconsistencia\nformato\nseguridad\ncumplimiento de reglas\n\nIdea clave\nEn IA no basta con que “parezca bueno” en una demo."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#guardrails",
+    "href": "clases/diapositiva_03.html#guardrails",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Guardrails",
+    "text": "Guardrails\nLos guardrails son controles para limitar comportamientos no deseados.\nEjemplos\n\nbloquear ciertos tipos de salida\nexigir validación humana\nrestringir acceso a datos\nevitar acciones no autorizadas\n\nTraducción\nSon cinturones de seguridad para sistemas con IA."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#privacidad-sesgos-y-seguridad",
+    "href": "clases/diapositiva_03.html#privacidad-sesgos-y-seguridad",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Privacidad, sesgos y seguridad",
+    "text": "Privacidad, sesgos y seguridad\nTres palabras que deben entrar temprano en cualquier conversación de adopción.\nRiesgos frecuentes\n\nfuga de datos\nrespuestas sesgadas\nautomatización sin control\ndependencia excesiva del proveedor\nmal uso de contenido sintético"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#deepfakes-y-contenido-sintético",
+    "href": "clases/diapositiva_03.html#deepfakes-y-contenido-sintético",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Deepfakes y contenido sintético",
+    "text": "Deepfakes y contenido sintético\nLa IA actual puede producir contenido muy convincente.\nEso abre oportunidades, pero también riesgos\n\nfraude\ndesinformación\nsuplantación\ndaño reputacional\n\nIdea clave\nMientras mejor genera la IA, más importante se vuelve verificar origen y contexto."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#casos-de-uso-que-hoy-son-comunes",
+    "href": "clases/diapositiva_03.html#casos-de-uso-que-hoy-son-comunes",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Casos de uso que hoy son comunes",
+    "text": "Casos de uso que hoy son comunes\n\nresumen de reuniones y documentos\nasistentes de atención a clientes\nbúsqueda sobre bases de conocimiento\ngeneración de propuestas y correos\napoyo a análisis en áreas legales, comerciales o de operaciones\ncopilotos de productividad"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#donde-suele-estar-el-valor-real",
+    "href": "clases/diapositiva_03.html#donde-suele-estar-el-valor-real",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Donde suele estar el valor real",
+    "text": "Donde suele estar el valor real\nEn organizaciones, el impacto suele venir de combinar cuatro cosas:\n\nmodelo\ncontexto\nintegración\nproceso\n\nFórmula simple\nValor = IA + datos útiles + buen diseño de trabajo"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#cómo-leer-el-panorama-actual-sin-perderse",
+    "href": "clases/diapositiva_03.html#cómo-leer-el-panorama-actual-sin-perderse",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Cómo leer el panorama actual sin perderse",
+    "text": "Cómo leer el panorama actual sin perderse\nNo es necesario dominar toda la jerga técnica.\nLo importante es poder distinguir:\n\nqué hace el modelo\nqué hace el sistema alrededor\ndónde están los datos\nquién valida la salida\ncómo se mide el valor"
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#idea-de-cierre",
+    "href": "clases/diapositiva_03.html#idea-de-cierre",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Idea de cierre",
+    "text": "Idea de cierre\nLa conversación actual sobre IA ya no trata solo de “usar un chatbot”.\nTrata de entender cómo combinar:\n\nmodelos\ndatos\nherramientas\npersonas\ncontroles\n\npara rediseñar trabajo, productos y decisiones."
+  },
+  {
+    "objectID": "clases/diapositiva_03.html#conceptos-que-conviene-recordar",
+    "href": "clases/diapositiva_03.html#conceptos-que-conviene-recordar",
+    "title": "Conceptos Básicos de IA y LLM en la Actualidad",
+    "section": "Conceptos que conviene recordar",
+    "text": "Conceptos que conviene recordar\n\nIA\nIA generativa\nLLM\nmultimodalidad\nprompt\ncontexto\nembeddings\nRAG\ntool use\nagentes\nreasoning models\nevals\nguardrails\nMCP"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#asistente-afp-que-responde-consultas-de-afiliados",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#asistente-afp-que-responde-consultas-de-afiliados",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Asistente AFP que responde consultas de afiliados",
+    "text": "Asistente AFP que responde consultas de afiliados\nCómo diseñar un agente útil, seguro y realista para responder preguntas sobre pensiones"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#objetivo-de-la-actividad",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#objetivo-de-la-actividad",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Objetivo de la actividad",
+    "text": "Objetivo de la actividad\n\nDiseñar un agente que responda consultas previsionales usando información oficial\nAplicar principios de Decision Science antes de construir la solución\nEntender cómo se combinan LLM, RAG, workflow y control humano\nIdentificar límites, riesgos y decisiones de diseño en un caso realista"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#contexto-del-caso",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#contexto-del-caso",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Contexto del caso",
+    "text": "Contexto del caso\nCaso: “Queremos un agente que responda preguntas sobre pensiones usando información oficial.”\nEl desafío organizacional\nUna AFP quiere mejorar atención a afiliados sin exponerlos a respuestas erróneas, ambiguas o riesgosas.\nLa promesa\nResponder más rápido, más claro y con mejor acceso a información.\nEl riesgo\nDar una respuesta incorrecta en un tema altamente sensible."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#antes-de-construir-definir-la-decisión",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#antes-de-construir-definir-la-decisión",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Antes de construir: definir la decisión",
+    "text": "Antes de construir: definir la decisión\nLa primera pregunta no es tecnológica.\nEs esta:\n¿Qué decisión organizacional estamos tratando de mejorar con este agente?"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#decision-science-aplicada-al-caso",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#decision-science-aplicada-al-caso",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Decision Science aplicada al caso",
+    "text": "Decision Science aplicada al caso\nAntes de hablar de LLM o RAG, conviene estructurar el problema:\n\n¿Qué necesidad resuelve?\n¿Qué alternativas existen?\n¿Qué riesgos hay?\n¿Qué nivel de autonomía es aceptable?\n¿Qué decisiones deben quedar en manos humanas?"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#qué-problema-resuelve-este-agente",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#qué-problema-resuelve-este-agente",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "¿Qué problema resuelve este agente?",
+    "text": "¿Qué problema resuelve este agente?\nPosibles respuestas:\n\nreducir tiempos de atención\nmejorar consistencia en respuestas\nfacilitar acceso a información compleja\napoyar a ejecutivos humanos\nampliar cobertura de atención básica\n\nIdea clave\nUn agente mal definido suele fallar aunque la tecnología sea buena."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#delimitar-el-alcance",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#delimitar-el-alcance",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Delimitar el alcance",
+    "text": "Delimitar el alcance\nNo todo lo previsional debería responderse automáticamente.\nPreguntas razonables para automatizar\n\n“¿Qué es el multifondo?”\n“¿Por qué puede bajar mi saldo?”\n“¿Qué significa esta sección de mi cartola?”\n“¿Cuándo puedo pensionarme según la regla general?”\n\nPreguntas delicadas\n\n“¿Cuánto ganaré de pensión?”\n“¿Qué me conviene hacer con mis ahorros?”\n“¿Debo cambiarme de fondo ahora?”"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#estructurar-la-decisión-de-diseño",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#estructurar-la-decisión-de-diseño",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Estructurar la decisión de diseño",
+    "text": "Estructurar la decisión de diseño\nAntes de construir, el equipo debe decidir:\n\nqué sí responde el agente\nqué no responde\ncuándo debe escalar a humano\nqué fuentes puede usar\nqué tono y nivel de claridad debe tener"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#trade-offs-del-caso",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#trade-offs-del-caso",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Trade-offs del caso",
+    "text": "Trade-offs del caso\n\nvelocidad vs precisión\nautonomía vs control\ncobertura vs riesgo\npersonalización vs privacidad\n\nPregunta útil\n¿Preferimos responder más preguntas o responder menos, pero con más seguridad?"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#sesgos-y-errores-posibles",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#sesgos-y-errores-posibles",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Sesgos y errores posibles",
+    "text": "Sesgos y errores posibles\nEn este caso pueden aparecer:\n\nexceso de confianza del usuario\nsesgo de automatización\nfalsa sensación de precisión\nsobreinterpretación de respuestas probabilísticas\n\nRiesgo central\nQue una respuesta “bien escrita” sea tomada como recomendación previsional válida."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#definir-el-agente",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#definir-el-agente",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Definir el agente",
+    "text": "Definir el agente\nUna vez delimitado el problema, recién pasamos a la solución.\nDefinición simple\nUn agente es un sistema que recibe una consulta, busca contexto y genera una respuesta siguiendo reglas."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#qué-hará-el-agente",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#qué-hará-el-agente",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Qué hará el agente",
+    "text": "Qué hará el agente\n\nRecibe la pregunta del afiliado.\nBusca información relevante.\nUsa un LLM para redactar una respuesta clara.\nDevuelve una salida simple y comprensible."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#componentes-del-agente",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#componentes-del-agente",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Componentes del agente",
+    "text": "Componentes del agente\nLLM\nRazona sobre la pregunta y redacta la respuesta.\nRAG\nBusca información en documentos como FAQ, cartola y normativa.\nOutput\nEntrega una respuesta clara, simple y trazable."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#workflow-del-caso",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#workflow-del-caso",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Workflow del caso",
+    "text": "Workflow del caso\nUsuario → Agente\nAgente → Busca información\nAgente → LLM redacta respuesta\nAgente → Entrega respuesta al afiliado\nLectura pedagógica\nPrompt + RAG + automatización."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#fuentes-posibles-del-agente",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#fuentes-posibles-del-agente",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Fuentes posibles del agente",
+    "text": "Fuentes posibles del agente\n\ncartola simulada del afiliado\nFAQ institucional\nnormativa previsional resumida\nglosario de conceptos\n\nRegla de diseño\nMientras más sensible la pregunta, más importante la calidad de la fuente."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#herramientas-sin-código-para-la-actividad",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#herramientas-sin-código-para-la-actividad",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Herramientas sin código para la actividad",
+    "text": "Herramientas sin código para la actividad\nOpción 1: ChatGPT con archivos\nLa más simple y potente para clase.\nOpción 2: Poe o Flowise\nPermiten armar bots personalizados y flujos simples.\nOpción 3: Make o n8n\nPermiten mostrar visualmente el workflow completo."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#opción-recomendada-para-clase",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#opción-recomendada-para-clase",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Opción recomendada para clase",
+    "text": "Opción recomendada para clase\nChatGPT con archivos\nQué hacen los estudiantes:\n\nsuben PDF con FAQ AFP\nsuben cartola simulada\nhacen preguntas como usuarios\nobservan cómo responde el sistema\n\nIdea clave\nEsto ya funciona como un mini agente con RAG."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#actividad-práctica",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#actividad-práctica",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Actividad práctica",
+    "text": "Actividad práctica\nDesafío\nConstruyan un agente que responda preguntas de afiliados."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#paso-1-entregar-contexto",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#paso-1-entregar-contexto",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Paso 1: entregar contexto",
+    "text": "Paso 1: entregar contexto\nCada equipo recibe:\n\nPDF con FAQ AFP\nejemplo de cartola\n3 o 4 preguntas tipo cliente\n\nEjemplos\n\n“¿Por qué bajó mi saldo?”\n“¿Cuándo me puedo pensionar?”\n“¿Qué es el multifondo?”"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#paso-2-usar-la-herramienta",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#paso-2-usar-la-herramienta",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Paso 2: usar la herramienta",
+    "text": "Paso 2: usar la herramienta\nCon ChatGPT:\n\nsuben los documentos\nprueban preguntas\nobservan qué responde"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#paso-3-iterar",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#paso-3-iterar",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Paso 3: iterar",
+    "text": "Paso 3: iterar\nAquí ocurre el aprendizaje real.\nPreguntas guía\n\n¿Responde bien?\n¿Se equivoca?\n¿Le falta contexto?\n¿Responde demasiado técnico?\n¿Podría inducir a error?"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#qué-deberían-descubrir",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#qué-deberían-descubrir",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Qué deberían descubrir",
+    "text": "Qué deberían descubrir\n\nlímites del LLM\nimportancia del contexto\nnecesidad de reglas claras\nvalor del diseño del agente\nnecesidad de control en casos sensibles"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#paso-4-subirlo-a-agente-real",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#paso-4-subirlo-a-agente-real",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Paso 4: subirlo a “agente real”",
+    "text": "Paso 4: subirlo a “agente real”\nDespués de probar manualmente, introducimos la idea de automatización.\nLo que hicieron manualmente\nUn agente real podría hacerlo de forma automática y escalable.\nFlujo\nUsuario → Agente\n↓\nBusca info con RAG\n↓\nLLM responde"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#paso-5-poner-nombre-a-lo-vivido",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#paso-5-poner-nombre-a-lo-vivido",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Paso 5: poner nombre a lo vivido",
+    "text": "Paso 5: poner nombre a lo vivido\nAhora sí, los conceptos tienen significado real:\n\nLLM: lo que redactó la respuesta\nRAG: los documentos que aportaron contexto\nAgente: la automatización del flujo\nWorkflow: los pasos que sigue el sistema"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#hacerlo-fallar-a-propósito",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#hacerlo-fallar-a-propósito",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Hacerlo fallar a propósito",
+    "text": "Hacerlo fallar a propósito\nLa parte más potente del ejercicio es esta:\nforzar un caso donde el sistema no debería responder con seguridad"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#pregunta-tricky",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#pregunta-tricky",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Pregunta tricky",
+    "text": "Pregunta tricky\n“¿Cuánto ganaré de pensión?”\n¿Qué puede pasar?\n\nel modelo generaliza\ninventa supuestos\nentrega una respuesta demasiado segura\nconfunde orientación con recomendación"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#discusión-posterior",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#discusión-posterior",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Discusión posterior",
+    "text": "Discusión posterior\nAquí aparecen temas centrales:\n\nriesgo reputacional\nmala decisión para el cliente\nfalsa confianza\nnecesidad de escalamiento a humano\nimportancia de límites explícitos"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#qué-debería-hacer-un-agente-bien-diseñado",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#qué-debería-hacer-un-agente-bien-diseñado",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Qué debería hacer un agente bien diseñado",
+    "text": "Qué debería hacer un agente bien diseñado\nAnte una pregunta de alto riesgo, debería:\n\nreconocer el límite\nno inventar cifras\nexplicar que requiere más antecedentes\nderivar a un canal humano o simulador formal\n\nIdea clave\nUn buen agente no es el que siempre responde.\nEs el que sabe cuándo no debe responder."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#cierre-estratégico",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#cierre-estratégico",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Cierre estratégico",
+    "text": "Cierre estratégico\nPregunta final para la clase:\n¿Confiarían en este agente para hablar con clientes reales?"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#conexión-con-gobernanza-y-ética",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#conexión-con-gobernanza-y-ética",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Conexión con gobernanza y ética",
+    "text": "Conexión con gobernanza y ética\nEsta pregunta abre la conversación sobre:\n\ngobernanza\nética\naccountability\ndiseño organizacional\nsupervisión humana"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#aprendizaje-clave-para-estudiantes",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#aprendizaje-clave-para-estudiantes",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Aprendizaje clave para estudiantes",
+    "text": "Aprendizaje clave para estudiantes\nNo necesitan saber programar para diseñar agentes útiles.\nPero sí necesitan saber:\n\nestructurar problemas\ndelimitar decisiones\nidentificar riesgos\ndefinir criterios de calidad\ndiseñar procesos con control"
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#mensaje-final",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#mensaje-final",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Mensaje final",
+    "text": "Mensaje final\nUn agente no se diseña empezando por la tecnología.\nSe diseña empezando por:\n\nla decisión que queremos mejorar\nel riesgo que queremos controlar\nel proceso que queremos rediseñar\n\nDespués viene la arquitectura."
+  },
+  {
+    "objectID": "clases/m03-caso-aplicado-agente-afp.html#caso-alternativo-agente-analista-de-inversiones",
+    "href": "clases/m03-caso-aplicado-agente-afp.html#caso-alternativo-agente-analista-de-inversiones",
+    "title": "Módulo 3: Caso Aplicado",
+    "section": "Caso alternativo: agente analista de inversiones",
+    "text": "Caso alternativo: agente analista de inversiones\nInput\nTabla simple de precios o indicadores.\nTarea\n\nresumir\ndetectar tendencia\nsugerir interpretación\n\nMisma lógica\nLLM + contexto + workflow + control."
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#clase-02-cicd-mlops-y-gobernanza",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#clase-02-cicd-mlops-y-gobernanza",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Clase 02: CI/CD, MLOps y gobernanza",
+    "text": "Clase 02: CI/CD, MLOps y gobernanza\nDe la experimentación con prompts al despliegue continuo y confiable"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#objetivo-de-la-sesión",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#objetivo-de-la-sesión",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\n\nEntender qué significa desplegar IA generativa en producción\nRevisar principios de CI/CD en proyectos de IA\nIntroducir MLOps y sus diferencias respecto de software tradicional\nConectar confiabilidad, escalabilidad, monitoreo y gobernanza\nTraducir estos conceptos a prácticas organizacionales concretas"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#punto-de-partida",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#punto-de-partida",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Punto de partida",
+    "text": "Punto de partida\nUna demo útil no es todavía una capacidad organizacional estable.\nPara pasar a producción suelen hacer falta\n\nintegración continua\npruebas\nmonitoreo\nversionamiento\nseguridad\npolíticas de uso"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-es-cicd",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-es-cicd",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "¿Qué es CI/CD?",
+    "text": "¿Qué es CI/CD?\nCI: Continuous Integration\nIntegrar cambios frecuentes y validarlos rápido.\nCD: Continuous Delivery / Deployment\nEntregar cambios con un proceso más automatizado y confiable."
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-cambia-en-ia-generativa",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-cambia-en-ia-generativa",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "¿Qué cambia en IA generativa?",
+    "text": "¿Qué cambia en IA generativa?\nAdemás de código, ahora importan:\n\nprompts\nconfiguraciones del modelo\ndatasets\nevaluaciones\nproveedores externos\npolíticas de seguridad\n\nTraducción\nLa unidad de cambio ya no es solo el software."
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-debería-versionarse",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-debería-versionarse",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Qué debería versionarse",
+    "text": "Qué debería versionarse\n\ncódigo de la aplicación\nprompts y templates\nconfiguración del modelo\ndatasets de prueba\nreglas de negocio\nresultados de evaluación"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#pipeline-mínimo-en-ia-generativa",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#pipeline-mínimo-en-ia-generativa",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Pipeline mínimo en IA generativa",
+    "text": "Pipeline mínimo en IA generativa\n\nSe modifica código, prompt o configuración.\nSe ejecutan pruebas automáticas.\nSe comparan resultados esperados y reales.\nSe aprueba despliegue a un ambiente controlado.\nSe monitorea comportamiento post-lanzamiento."
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-se-prueba",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-se-prueba",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "¿Qué se prueba?",
+    "text": "¿Qué se prueba?\nNo basta con que el sistema “no se caiga”.\nTambién conviene probar:\n\nformato de salida\ncumplimiento de instrucciones\nprecisión razonable\nseguridad\nestabilidad entre versiones"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#evals-como-parte-del-pipeline",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#evals-como-parte-del-pipeline",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Evals como parte del pipeline",
+    "text": "Evals como parte del pipeline\nLas evals permiten medir si una nueva versión:\n\nmejora\nse mantiene estable\nrompe comportamientos útiles\naumenta riesgos no deseados"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-es-mlops",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-es-mlops",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "¿Qué es MLOps?",
+    "text": "¿Qué es MLOps?\nMLOps es el conjunto de prácticas para desarrollar, desplegar, operar y mejorar sistemas basados en modelos de manera confiable.\nUne al menos cuatro mundos\n\ndatos\nmodelos\ningeniería\noperación"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#relación-entre-devops-y-mlops",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#relación-entre-devops-y-mlops",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Relación entre DevOps y MLOps",
+    "text": "Relación entre DevOps y MLOps\nDevOps\nSe enfoca en software y operaciones.\nMLOps\nAgrega desafíos propios de modelos y datos.\nEjemplos de diferencias\n\ndrift\ncalidad de datos\nreentrenamiento\nevaluación no determinista"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#por-qué-importa-mlops-en-ia-generativa",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#por-qué-importa-mlops-en-ia-generativa",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "¿Por qué importa MLOps en IA generativa?",
+    "text": "¿Por qué importa MLOps en IA generativa?\nPorque estos sistemas pueden fallar sin “romperse” técnicamente.\nEjemplo\nLa app sigue funcionando, pero:\n\nresponde peor\ninventa más\nincumple formato\nusa un contexto incorrecto"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#componentes-típicos-de-mlops",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#componentes-típicos-de-mlops",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Componentes típicos de MLOps",
+    "text": "Componentes típicos de MLOps\n\ngestión de datos\nversionamiento\nevaluación\ndespliegue\nmonitoreo\nobservabilidad\nretroalimentación\nmejora continua"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#observabilidad-en-ia-generativa",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#observabilidad-en-ia-generativa",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Observabilidad en IA generativa",
+    "text": "Observabilidad en IA generativa\nTambién conviene observar:\n\ncalidad de respuestas\ntasa de error por tarea\ncostos por uso\nlatencia\nuso de contexto\nfallos de herramientas\nfeedback del usuario"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#drift-y-degradación",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#drift-y-degradación",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Drift y degradación",
+    "text": "Drift y degradación\nUn sistema puede deteriorarse con el tiempo por cambios en:\n\ndatos\ncomportamiento del usuario\nprompts\nmodelos del proveedor\nprocesos internos"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#escalabilidad",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#escalabilidad",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Escalabilidad",
+    "text": "Escalabilidad\nEscalar no significa solo atender más usuarios.\nTambién significa sostener:\n\nrendimiento\ncostos razonables\ncalidad estable\ntrazabilidad\nseguridad"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-es-gobernanza-en-ia",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#qué-es-gobernanza-en-ia",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "¿Qué es gobernanza en IA?",
+    "text": "¿Qué es gobernanza en IA?\nEs el conjunto de reglas, roles y controles para asegurar que la IA se use de manera responsable, segura y alineada con los objetivos organizacionales."
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#dimensiones-de-gobernanza",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#dimensiones-de-gobernanza",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Dimensiones de gobernanza",
+    "text": "Dimensiones de gobernanza\n\nprivacidad\nseguridad\ncumplimiento regulatorio\ncontrol de acceso\nresponsabilidad humana\ndocumentación\nauditoría\ngestión de riesgo"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#preguntas-de-gobernanza-que-importan",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#preguntas-de-gobernanza-que-importan",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Preguntas de gobernanza que importan",
+    "text": "Preguntas de gobernanza que importan\n\n¿qué datos puede usar el sistema?\n¿quién aprueba su despliegue?\n¿qué tareas puede automatizar?\n¿qué nivel de supervisión humana requiere?\n¿cómo se registran decisiones y eventos?"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#guardrails",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#guardrails",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Guardrails",
+    "text": "Guardrails\nLos guardrails son controles para limitar comportamientos no deseados.\nEjemplos\n\nfiltros de contenido\nlímites de permisos\nvalidaciones previas a una acción\nrevisión humana en procesos críticos"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#human-in-the-loop",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#human-in-the-loop",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Human-in-the-loop",
+    "text": "Human-in-the-loop\nEn procesos sensibles, la IA no debería cerrar sola el ciclo completo.\nLa supervisión humana ayuda a\n\ndetectar errores\nvalidar decisiones\nreducir riesgo reputacional\nmejorar aprendizaje organizacional"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#de-la-demo-al-proceso",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#de-la-demo-al-proceso",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "De la demo al proceso",
+    "text": "De la demo al proceso\nLa madurez organizacional suele avanzar así:\n\nExperimentos aislados\nCasos de uso acotados\nIntegraciones con controles\nOperación monitoreada\nEscalamiento con gobernanza formal"
+  },
+  {
+    "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#idea-de-cierre",
+    "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#idea-de-cierre",
+    "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
+    "section": "Idea de cierre",
+    "text": "Idea de cierre\nEl verdadero desafío no es “hacer funcionar un prompt”.\nEs construir una capacidad que:\n\nse pueda mantener\nse pueda medir\nse pueda auditar\nse pueda mejorar"
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html",
+    "href": "clases/m03-diccionario-faq-terminos.html",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "",
+    "text": "Este material resume el vocabulario que aparece a lo largo del curso y responde dudas frecuentes de estudiantes. No busca reemplazar las clases, sino ofrecer un lenguaje comun para conversar sobre IA generativa, prompting, LLMs, agentes, RAG, MLOps, gobernanza y Decision Science.\nEsta version incorpora contexto de las clases en qmd y tambien de los PDF agregados al repo, especialmente en tres ideas que aparecieron con mucha fuerza:\n\nel prompt como contrato\nel agente como sistema que percibe, razona y actua\nel trade-off entre no-code y codigo asistido al construir soluciones"
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#conceptos-base",
+    "href": "clases/m03-diccionario-faq-terminos.html#conceptos-base",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "Conceptos base",
+    "text": "Conceptos base\nIA\nDefinicion simple: paraguas amplio para sistemas capaces de clasificar, predecir, recomendar o generar contenido.\nPor que importa: en clase sirve para no meter todo en el mismo saco. No toda IA es conversacional ni toda IA es generativa.\nEjemplo del curso: en diapositiva_03.qmd se separa IA de Machine Learning, IA generativa y LLMs.\nNo confundir con: IA generativa. Esta ultima es solo una parte del campo.\nPregunta guia: cuando alguien dice “queremos usar IA”, de que capa esta hablando realmente?\nMachine Learning\nDefinicion simple: forma de construir IA a partir de datos y aprendizaje de patrones.\nPor que importa: ayuda a distinguir modelos que predicen o clasifican de modelos que conversan o generan texto.\nEjemplo del curso: aparece como contrapunto a los LLMs en las diapositivas introductorias.\nNo confundir con: LLM. Un LLM es un tipo especifico de modelo para lenguaje, no todo Machine Learning.\nPregunta guia: la tarea que queremos resolver es de prediccion, clasificacion o generacion?\nIA generativa\nDefinicion simple: familia de sistemas capaces de crear contenido nuevo, como texto, imagen, audio, video o codigo.\nPor que importa: es la base del curso, pero se trabaja siempre conectada a problemas organizacionales concretos.\nEjemplo del curso: generacion de respuestas, informes, PDFs, correos o salidas explicativas en los casos practicos.\nNo confundir con: automatizacion. Generar contenido no implica por si solo ejecutar un flujo.\nPregunta guia: estamos usando IA para crear contenido o para tomar una accion?\nLLM\nDefinicion simple: modelo entrenado con grandes volumenes de texto para trabajar con lenguaje y producir continuaciones probables dado un contexto.\nPor que importa: es el nucleo de gran parte de las soluciones del curso, pero no equivale al sistema completo.\nEjemplo del curso: en m03-clase01-arquitectura-llms.qmd se presenta como capa central del stack; en el caso AFP redacta la respuesta despues de recuperar contexto.\nNo confundir con: chatbot. El LLM es el modelo; el chatbot es una interfaz o aplicacion.\nPregunta guia: el problema se resuelve solo con un modelo o necesita tambien datos, reglas y herramientas?\nToken\nDefinicion simple: unidad pequena de texto con la que opera el modelo.\nPor que importa: costo, longitud de una conversacion y limite de contexto se entienden mejor en tokens que en palabras.\nEjemplo del curso: tokenizacion_tecnicas.qmd y diapositiva_03.qmd muestran que un mismo texto puede ocupar mas o menos tokens segun el modelo.\nNo confundir con: palabra. Un token puede ser una palabra, parte de una palabra o un signo.\nPregunta guia: el problema es que el texto es largo o que ocupa demasiados tokens?\nTokenizacion\nDefinicion simple: proceso de dividir el texto en unidades operativas para el modelo.\nPor que importa: afecta costo, capacidad efectiva de contexto y comportamiento del modelo en distintos idiomas y dominios.\nEjemplo del curso: en tokenizacion_tecnicas.qmd se comparan tokenizacion por caracteres, palabras, subword y bytes.\nNo confundir con: compresion. Tokenizar no necesariamente acorta.\nPregunta guia: dos textos del mismo largo visual ocupan la misma cantidad de tokens?\nEmbedding\nDefinicion simple: representacion numerica del significado de un texto.\nPor que importa: permite comparar similitud semantica y es pieza central en busqueda semantica y RAG.\nEjemplo del curso: diapositiva_03.qmd y el caso AFP lo conectan con bases vectoriales y recuperacion de FAQ o normativa.\nNo confundir con: respuesta generada. El embedding no responde; ayuda a buscar o representar significado.\nPregunta guia: cuando un sistema “encuentra textos parecidos”, como lo esta haciendo?\nAtencion\nDefinicion simple: mecanismo por el cual el modelo decide que partes del contexto pesan mas al responder.\nPor que importa: ayuda a entender por que no todo lo que ponemos en el prompt tiene la misma influencia.\nEjemplo del curso: m03-clase01-arquitectura-llms.qmd lo presenta como intuicion para comprender coherencia y relevancia.\nNo confundir con: memoria perfecta. Que algo este en el contexto no garantiza que sea priorizado bien.\nPregunta guia: que partes de la instruccion queremos que el modelo priorice?\nVentana de contexto\nDefinicion simple: cantidad maxima de informacion que el modelo puede considerar al mismo tiempo.\nPor que importa: determina cuanto cabe de instrucciones, documentos, historial o resultados de herramientas.\nEjemplo del curso: aparece tanto en arquitectura LLM como en agentes con memoria y documentos.\nNo confundir con: memoria de largo plazo. La ventana de contexto es memoria operativa de la interaccion actual.\nPregunta guia: el problema se resuelve con mas contexto o con mejor seleccion de contexto?"
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#prompting-y-calidad",
+    "href": "clases/m03-diccionario-faq-terminos.html#prompting-y-calidad",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "Prompting y calidad",
+    "text": "Prompting y calidad\nPrompt\nDefinicion simple: instruccion que damos al modelo.\nPor que importa: en el curso se insiste en que pedir bien no es un detalle cosmetico; cambia radicalmente el resultado.\nEjemplo del curso: el PDF Clase_260406_del-prompt-al-agente (1).pdf muestra que un prompt libre para detectar fraude produjo criterios arbitrarios, mientras un prompt estructurado produjo una salida mas auditable.\nNo confundir con: pregunta informal. Un prompt puede incluir rol, objetivo, restricciones, formato y ejemplos.\nPregunta guia: si el resultado fue malo, fallo el modelo o la instruccion?\nPrompt estructurado\nDefinicion simple: prompt que explicita contexto, objetivo, restricciones, audiencia y formato esperado.\nPor que importa: vuelve mas predecible la salida y ayuda a que el resultado sea defendible ante otros.\nEjemplo del curso: en la actividad de fraude del PDF Clase_260406_del-prompt-al-agente (1).pdf, el cambio clave fue pasar de prompt libre a prompt estructurado y auditable.\nNo confundir con: prompt largo. Un prompt puede ser largo y seguir siendo vago.\nPregunta guia: que tendria que incluir el prompt para que el resultado sea auditable?\nPrompt como contrato\nDefinicion simple: idea de que el prompt define con precision que esperamos del modelo, como si fuera un entregable acordado.\nPor que importa: es uno de los mensajes mas fuertes de los PDFs nuevos y ayuda mucho a estudiantes no tecnicos.\nEjemplo del curso: el PDF Clase_260406_del-prompt-al-agente (1).pdf resume que “el prompt es el contrato entre tu y el modelo”; el PDF Clase-03-No-Code-vs-Codigo-Asistido.pdf agrega que en soluciones no-code el prompt funciona casi como codigo del agente.\nNo confundir con: “hablar bonito”. La idea no es persuadir al modelo, sino delimitar expectativas y errores permitidos.\nPregunta guia: si esto fuera un encargo profesional, el prompt deja claro que hay que entregar y que no?\nTemperatura\nDefinicion simple: parametro que modifica cuanta variabilidad tiene la respuesta del modelo.\nPor que importa: en tareas criticas afecta repetibilidad y consistencia.\nEjemplo del curso: el PDF Clase_260406_del-prompt-al-agente (1).pdf muestra el contraste entre T=0.0 para auditoria y valores mas altos para tareas creativas.\nNo confundir con: calidad. Mas creatividad no significa mejor resultado.\nPregunta guia: esta tarea necesita novedad o necesita reproducibilidad?\nChain of Thought (CoT)\nDefinicion simple: tecnica que pide al modelo analizar paso a paso antes de concluir.\nPor que importa: puede ayudar a tareas complejas, siempre que luego exista verificacion y no se confunda razonamiento aparente con verdad garantizada.\nEjemplo del curso: en el PDF Clase_260406_del-prompt-al-agente (1).pdf aparece como tecnica para analizar fraude con pasos intermedios.\nNo confundir con: evidencia externa. Pensar paso a paso no reemplaza datos ni fuentes.\nPregunta guia: el problema necesita descomponer el razonamiento o necesita mas informacion?\nAlucinacion\nDefinicion simple: respuesta inventada, distorsionada o no sustentada, aunque suene convincente.\nPor que importa: es uno de los riesgos mas recurrentes del curso, sobre todo cuando falta contexto o se sobreconfia en una salida elegante.\nEjemplo del curso: en la actividad de fraude, el modelo inventa criterios cuando los datos y el prompt no bastan; en AFP el riesgo es responder con seguridad algo sensible sin base suficiente.\nNo confundir con: error tipografico o simple imprecision. La alucinacion es un problema de contenido no sustentado.\nPregunta guia: de donde sale exactamente esta afirmacion?\nAuditable\nDefinicion simple: resultado cuya logica, fuentes y criterio pueden explicarse y defenderse ante terceros.\nPor que importa: aparece en varios materiales como exigencia organizacional, especialmente para finanzas, auditoria, riesgo y cumplimiento.\nEjemplo del curso: en la actividad de fraude se pregunta explicitamente si el criterio puede defenderse ante un jefe o un comite de auditoria.\nNo confundir con: solo “suena profesional”. Una salida pulida puede seguir siendo imposible de auditar.\nPregunta guia: podriamos justificar esta respuesta frente a un comite?"
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#arquitectura-de-soluciones",
+    "href": "clases/m03-diccionario-faq-terminos.html#arquitectura-de-soluciones",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "Arquitectura de soluciones",
+    "text": "Arquitectura de soluciones\nChatbot\nDefinicion simple: interfaz conversacional que responde mensajes.\nPor que importa: ayuda a no sobrevalorar la capa visible del sistema.\nEjemplo del curso: diapositiva_03.qmd lo contrasta con asistente, copilot y agente.\nNo confundir con: agente. Un chatbot puede limitarse a responder sin usar herramientas ni ejecutar pasos.\nPregunta guia: el sistema solo conversa o tambien resuelve tareas?\nAsistente\nDefinicion simple: sistema que ayuda a una persona en una tarea.\nPor que importa: pone el foco en apoyo al trabajo humano, no solo en dialogo.\nEjemplo del curso: en varios casos el sistema sugiere, resume o redacta, pero no necesariamente actua solo.\nNo confundir con: automatizacion total. Un asistente puede requerir confirmacion constante.\nPregunta guia: estamos aumentando capacidad humana o reemplazando un proceso?\nCopilot\nDefinicion simple: asistente integrado dentro de una herramienta o flujo de trabajo.\nPor que importa: muestra una modalidad concreta de adopcion organizacional.\nEjemplo del curso: aparece como tipo de sistema distinto a chatbot y agente.\nNo confundir con: interfaz separada. El copilot acompana trabajo ya existente dentro de otra herramienta.\nPregunta guia: la ayuda ocurre dentro del flujo de trabajo o en un canal aparte?\nAgente\nDefinicion simple: sistema que recibe un objetivo, decide pasos, usa contexto o herramientas y produce una salida.\nPor que importa: es uno de los conceptos centrales del curso y de los PDFs nuevos.\nEjemplo del curso: el caso AFP responde consultas usando fuentes oficiales; el PDF Agentes-LLMs-Herramientas-que-Actuan.pdf insiste en que la diferencia clave es que el agente toma decisiones en el camino y no solo devuelve una respuesta.\nNo confundir con: prompt unico. Un agente puede usar multiples turnos, herramientas, memoria y controles.\nPregunta guia: el sistema solo responde o decide como avanzar?\nHerramientas\nDefinicion simple: capacidades externas que el agente puede usar, como leer archivos, consultar SQL, ejecutar codigo, buscar en la web, generar PDF o enviar correo.\nPor que importa: los PDFs nuevos las describen como “el musculo del agente”.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf enumera categorias como datos, computo, busqueda, escritura, memoria y control; Clase-03-No-Code-vs-Codigo-Asistido.pdf muestra un agente que compara viajes, genera PDF y lo envia por correo.\nNo confundir con: conocimiento interno del LLM. Una herramienta trae capacidad operativa o acceso a informacion externa.\nPregunta guia: que herramienta concreta falta para que este agente sea realmente util?\nWorkflow\nDefinicion simple: secuencia de pasos mediante la cual una solucion transforma una entrada en una salida.\nPor que importa: evita pensar el sistema solo como una respuesta aislada.\nEjemplo del curso: en AFP el flujo es consulta, recuperacion de informacion, redaccion, control y entrega; en viajes el flujo busca vuelos, hoteles, atracciones, calcula presupuesto y genera un informe.\nNo confundir con: prompt. El prompt es una pieza; el workflow es el proceso completo.\nPregunta guia: cuales son los pasos reales desde la pregunta hasta la accion final?\nMemoria\nDefinicion simple: mecanismos para retener contexto entre pasos, sesiones o documentos.\nPor que importa: en agentes cambia mucho la experiencia y la capacidad de continuidad.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf distingue memoria de contexto, cache, vectorial y estructurada.\nNo confundir con: ventana de contexto. Memoria puede ir mas alla de la conversacion actual.\nPregunta guia: que necesita recordar el sistema y por cuanto tiempo?\nRAG\nDefinicion simple: forma de responder usando informacion recuperada desde documentos o bases externas.\nPor que importa: reduce dependencia de la memoria generica del modelo y mejora trazabilidad.\nEjemplo del curso: en AFP se usa para responder con FAQ, cartola y normativa; en Agentes-LLMs-Herramientas-que-Actuan.pdf se ejemplifica con Ley de Renta y documentos del SII.\nNo confundir con: fine-tuning. RAG trae contexto al momento de responder; no reentrena el modelo.\nPregunta guia: de donde saldra la informacion especifica y actualizada que necesita el sistema?\nBase de datos vectorial\nDefinicion simple: infraestructura pensada para guardar y buscar embeddings.\nPor que importa: suele ser la pieza tecnica que vuelve operativo un esquema RAG.\nEjemplo del curso: aparece asociada a FAQ institucionales, normativa y documentos internos.\nNo confundir con: base relacional tradicional. Una sirve para similitud semantica; la otra para consultas estructuradas.\nPregunta guia: necesito buscar por significado o por campos exactos?\nMCP\nDefinicion simple: protocolo estandar para conectar agentes o modelos con herramientas externas.\nPor que importa: es uno de los terminos nuevos que aparece en los materiales recientes y ayuda a explicar integracion sin bajar demasiado a detalle tecnico.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf lo presenta como el estandar que hace a los agentes mas interoperables, analogandolo a USB para perifericos.\nNo confundir con: una herramienta especifica. MCP no es la herramienta; es la forma estandarizada de conectar herramientas.\nPregunta guia: la integracion esta hecha a mano o sigue un estandar reusable?\nMulti-agente\nDefinicion simple: arquitectura donde varios agentes especializados colaboran para resolver una tarea.\nPor que importa: aparece como respuesta a problemas con subtareas, verificacion o paralelismo.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf muestra un equipo de cobranza automatizada con orquestador, analista, buscador normativo, redactor y revisor.\nNo confundir con: complejidad innecesaria. No todo problema necesita varios agentes.\nPregunta guia: un solo agente basta o conviene separar funciones especializadas?"
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#operacion-y-despliegue",
+    "href": "clases/m03-diccionario-faq-terminos.html#operacion-y-despliegue",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "Operacion y despliegue",
+    "text": "Operacion y despliegue\nEvals\nDefinicion simple: pruebas para medir si una solucion de IA funciona bien.\nPor que importa: permiten comparar versiones y evitar que la calidad dependa de intuicion o anecdotas.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd y el PDF de agentes recalcan metricas como task completion, pasos, tool accuracy, hallucination, latencia y costo.\nNo confundir con: opinion del usuario solamente. El feedback ayuda, pero no reemplaza medicion sistematica.\nPregunta guia: como sabremos si esta nueva version realmente mejora?\nObservabilidad\nDefinicion simple: capacidad de mirar como se comporta el sistema en uso real.\nPor que importa: un sistema puede seguir “funcionando” y al mismo tiempo estar respondiendo peor, costando mas o fallando de formas silenciosas.\nEjemplo del curso: calidad, latencia, costo, uso de contexto, fallos de herramientas y feedback del usuario.\nNo confundir con: monitoreo tecnico minimo. En IA generativa hay que observar tambien calidad semantica.\nPregunta guia: que veriamos en los datos si el sistema empieza a degradarse?\nCI/CD\nDefinicion simple: practicas para integrar cambios frecuentes y desplegarlos con mas confiabilidad.\nPor que importa: en IA generativa se versionan no solo archivos de codigo, sino tambien prompts, configuraciones, datasets de prueba y evaluaciones.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd lo presenta como paso de experimentacion a despliegue continuo.\nNo confundir con: solo automatizar deploy. Incluye integracion, pruebas y validacion de cambios.\nPregunta guia: que cambia realmente cuando modificamos el sistema?\nMLOps\nDefinicion simple: conjunto de practicas para desarrollar, desplegar, operar y mejorar sistemas basados en modelos de manera confiable.\nPor que importa: conecta datos, modelos, ingenieria y operacion.\nEjemplo del curso: en clase se relaciona con drift, monitoreo, evaluacion, observabilidad y mejora continua.\nNo confundir con: DevOps puro. MLOps agrega problemas propios de modelos, datos y evaluaciones no deterministas.\nPregunta guia: que hace falta para que esto deje de ser demo y pase a capacidad organizacional?\nDrift\nDefinicion simple: deterioro o cambio del comportamiento del sistema a lo largo del tiempo.\nPor que importa: explica por que una solucion puede empeorar sin que “se rompa” tecnicamente.\nEjemplo del curso: cambios en datos, usuarios, prompts, modelos del proveedor o procesos internos.\nNo confundir con: bug unico. El drift suele ser gradual y acumulativo.\nPregunta guia: si esto funcionaba bien hace dos meses, que pudo haber cambiado?\nTrazabilidad\nDefinicion simple: capacidad de reconstruir que informacion se uso, que reglas aplicaron y como se llego a un resultado.\nPor que importa: es clave para auditoria, seguridad, gobernanza y mantenimiento.\nEjemplo del curso: los PDFs nuevos insisten en logica auditable, herramientas visibles y codigo modificable; el de no-code vs codigo asistido advierte que sin logs ni trazabilidad el sistema es imposible de auditar.\nNo confundir con: tener solo el output final. La trazabilidad incluye el camino.\nPregunta guia: podriamos explicar como se llego a esta respuesta o accion?"
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#riesgo-criterio-y-gobernanza",
+    "href": "clases/m03-diccionario-faq-terminos.html#riesgo-criterio-y-gobernanza",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "Riesgo, criterio y gobernanza",
+    "text": "Riesgo, criterio y gobernanza\nGobernanza\nDefinicion simple: conjunto de reglas, roles y controles para asegurar uso responsable y alineado con objetivos organizacionales.\nPor que importa: ayuda a decidir que se permite, quien responde y que riesgos se aceptan.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd la conecta con privacidad, seguridad, roles, politicas y control.\nNo confundir con: prohibicion. Gobernar no es impedir, sino ordenar y responsabilizar.\nPregunta guia: quien decide los limites de este sistema y bajo que reglas?\nGuardrails\nDefinicion simple: controles para limitar comportamientos no deseados.\nPor que importa: en agentes son esenciales para restringir temas, herramientas, acciones y escalamiento.\nEjemplo del curso: en AFP sirve para impedir recomendaciones previsionales personalizadas sin revision; en agentes con herramientas ayuda a evitar acciones irreversibles o alcance excesivo.\nNo confundir con: buen prompt solamente. Los guardrails pueden vivir tambien en reglas del sistema, permisos y aprobaciones.\nPregunta guia: que no queremos que este agente haga nunca por su cuenta?\nHuman-in-the-loop\nDefinicion simple: esquema donde una persona revisa, corrige o aprueba parte del proceso.\nPor que importa: es la forma practica de graduar autonomia segun riesgo.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf define niveles de autonomia segun el tipo de accion; para decisiones de cobranza recomienda aprobacion o reporte de excepciones.\nNo confundir con: supervision constante de todo. El punto es decidir bien en que momentos humanos deben intervenir.\nPregunta guia: que accion requiere aprobacion humana antes de ejecutarse?\nTrade-off\nDefinicion simple: tension entre objetivos que no pueden maximizarse al mismo tiempo.\nPor que importa: aparece transversalmente en el curso, desde precision versus velocidad hasta control versus facilidad de implementacion.\nEjemplo del curso: AFP trabaja velocidad versus precision y autonomia versus control; el PDF de no-code versus codigo asistido trabaja velocidad y facilidad versus control y auditabilidad.\nNo confundir con: error de diseno. Algunos trade-offs son inevitables; lo importante es explicitarlos.\nPregunta guia: que estamos ganando y que estamos sacrificando con esta decision?\nDecision Science\nDefinicion simple: disciplina que ayuda a estructurar decisiones complejas bajo incertidumbre.\nPor que importa: instala la idea de partir por el problema y no por la tecnologia.\nEjemplo del curso: m03-clase03-decision-science-sesgos.qmd y el caso AFP preguntan primero que decision organizacional estamos tratando de mejorar.\nNo confundir con: analitica tecnica solamente. Incluye criterios, consecuencias, incertidumbre y responsables.\nPregunta guia: que decision real queremos mejorar con este sistema?\nSesgo de automatizacion\nDefinicion simple: tendencia a confiar demasiado en sistemas automaticos.\nPor que importa: es uno de los riesgos humanos mas relevantes al usar IA en organizaciones.\nEjemplo del curso: en AFP se advierte el riesgo de tomar una respuesta bien escrita como recomendacion valida; en decision science se presenta como una señal de alerta organizacional.\nNo confundir con: eficiencia. Que un sistema ahorre tiempo no significa que deba recibir confianza ciega.\nPregunta guia: estamos revisando la salida o solo aceptandola porque viene del sistema?\nAccountability\nDefinicion simple: responsabilidad por las decisiones y consecuencias del uso de IA.\nPor que importa: recuerda que la responsabilidad institucional no desaparece porque participe una herramienta.\nEjemplo del curso: clase 3 de decision science lo vincula con criterio profesional y responsabilidad humana.\nNo confundir con: culpa del proveedor o del modelo. La organizacion sigue respondiendo por su uso.\nPregunta guia: si esto sale mal, quien responde y con que evidencia?"
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#construccion-de-soluciones",
+    "href": "clases/m03-diccionario-faq-terminos.html#construccion-de-soluciones",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "Construccion de soluciones",
+    "text": "Construccion de soluciones\nNo-code\nDefinicion simple: forma de construir prototipos o soluciones usando interfaces visuales o descripciones en lenguaje natural, con minima programacion directa.\nPor que importa: baja la barrera de entrada y acelera el prototipado.\nEjemplo del curso: el PDF Clase-03-No-Code-vs-Codigo-Asistido.pdf muestra v0.app, n8n y otras herramientas para construir rapido un agente funcional.\nNo confundir con: produccion segura por defecto. Rapidez de prototipo no implica mantenibilidad ni auditabilidad suficientes.\nPregunta guia: estamos validando una idea rapido o construyendo algo para operar de verdad?\nCodigo asistido\nDefinicion simple: forma de construir software donde una IA ayuda a escribir, ejecutar y corregir codigo dentro de un proyecto real.\nPor que importa: permite mas control, integraciones y trazabilidad, pero exige mas criterio tecnico.\nEjemplo del curso: Clase-03-No-Code-vs-Codigo-Asistido.pdf usa Claude Code para construir un agente comparador de viajes que genera PDF y envia correo.\nNo confundir con: programacion totalmente automatica. Sigue requiriendo arquitectura, pruebas, seguridad y mantenimiento.\nPregunta guia: necesitamos velocidad de prototipo o control fino sobre el sistema?\nPrototipo\nDefinicion simple: version inicial para validar una idea rapidamente.\nPor que importa: los PDFs nuevos insisten en que un prototipo visible puede impresionar mucho, pero no equivale a producto listo.\nEjemplo del curso: el agente de viajes y varias actividades estan pensados para salir de clase con algo funcional.\nNo confundir con: produccion. Un prototipo puede carecer de pruebas, logs, seguridad o manejo de errores.\nPregunta guia: estamos validando una hipotesis o prometiendo operacion real?\nProduccion\nDefinicion simple: etapa en que el sistema opera con usuarios reales, datos reales y consecuencias reales.\nPor que importa: cambia el estandar exigido: seguridad, trazabilidad, monitoreo, manejo de errores, costos y mantenimiento.\nEjemplo del curso: Clase-03-No-Code-vs-Codigo-Asistido.pdf recalca que pasar de prototipo a produccion sigue requiriendo ingenieria de software.\nNo confundir con: demo exitosa. Una demo muestra posibilidad; la produccion exige confiabilidad sostenida.\nPregunta guia: que nos falta para poner esto frente a usuarios reales con tranquilidad?"
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#cual-es-la-diferencia-entre-ia-ia-generativa-y-llm",
+    "href": "clases/m03-diccionario-faq-terminos.html#cual-es-la-diferencia-entre-ia-ia-generativa-y-llm",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "1. Cual es la diferencia entre IA, IA generativa y LLM?",
+    "text": "1. Cual es la diferencia entre IA, IA generativa y LLM?\nIA es el paraguas amplio. IA generativa es la parte que crea contenido nuevo. Un LLM es un tipo de modelo generativo especializado en lenguaje."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#un-llm-y-un-chatbot-son-lo-mismo",
+    "href": "clases/m03-diccionario-faq-terminos.html#un-llm-y-un-chatbot-son-lo-mismo",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "2. Un LLM y un chatbot son lo mismo?",
+    "text": "2. Un LLM y un chatbot son lo mismo?\nNo. El LLM es el modelo. El chatbot es una interfaz o aplicacion que puede usar un LLM, documentos, reglas, memoria y herramientas."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato",
+    "href": "clases/m03-diccionario-faq-terminos.html#por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "3. Por que el curso insiste tanto en que el prompt es un contrato?",
+    "text": "3. Por que el curso insiste tanto en que el prompt es un contrato?\nPorque una instruccion vaga deja demasiado espacio a que el modelo complete vacios con patrones genericos. Los PDFs nuevos muestran que cuando el entregable, criterio y restricciones quedan mejor definidos, la salida se vuelve mas util y mas auditable."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#un-prompt-bueno-reemplaza-rag",
+    "href": "clases/m03-diccionario-faq-terminos.html#un-prompt-bueno-reemplaza-rag",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "4. Un prompt bueno reemplaza RAG?",
+    "text": "4. Un prompt bueno reemplaza RAG?\nNo. Un buen prompt ayuda a pedir mejor. RAG ayuda a traer informacion especifica y actualizada. Cumplen funciones distintas."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#mas-contexto-siempre-mejora-la-respuesta",
+    "href": "clases/m03-diccionario-faq-terminos.html#mas-contexto-siempre-mejora-la-respuesta",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "5. Mas contexto siempre mejora la respuesta?",
+    "text": "5. Mas contexto siempre mejora la respuesta?\nNo. A veces mejora; otras veces ensucia, distrae o encarece. Muchas veces importa mas seleccionar bien el contexto que simplemente agregar mas."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#si-existe-rag-entonces-ya-no-hay-alucinaciones",
+    "href": "clases/m03-diccionario-faq-terminos.html#si-existe-rag-entonces-ya-no-hay-alucinaciones",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "6. Si existe RAG, entonces ya no hay alucinaciones?",
+    "text": "6. Si existe RAG, entonces ya no hay alucinaciones?\nNo. RAG reduce parte del problema, pero no elimina errores de recuperacion, interpretacion o redaccion."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#cuando-un-chatbot-pasa-a-ser-agente",
+    "href": "clases/m03-diccionario-faq-terminos.html#cuando-un-chatbot-pasa-a-ser-agente",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "7. Cuando un chatbot pasa a ser agente?",
+    "text": "7. Cuando un chatbot pasa a ser agente?\nCuando deja de limitarse a responder y empieza a decidir pasos, usar herramientas, trabajar con objetivos y ejecutar acciones o subprocesos."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#que-aporta-una-herramienta-a-un-agente",
+    "href": "clases/m03-diccionario-faq-terminos.html#que-aporta-una-herramienta-a-un-agente",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "8. Que aporta una herramienta a un agente?",
+    "text": "8. Que aporta una herramienta a un agente?\nLe da capacidad operativa o acceso a informacion externa. Sin herramientas, el agente puede razonar sobre texto; con herramientas puede buscar, calcular, leer, escribir, enviar o consultar sistemas."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#que-diferencia-hay-entre-no-code-y-codigo-asistido",
+    "href": "clases/m03-diccionario-faq-terminos.html#que-diferencia-hay-entre-no-code-y-codigo-asistido",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "9. Que diferencia hay entre no-code y codigo asistido?",
+    "text": "9. Que diferencia hay entre no-code y codigo asistido?\nNo-code privilegia velocidad y baja barrera de entrada. Codigo asistido privilegia control, integracion y auditabilidad. Ambos pueden servir, pero no para los mismos contextos."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#por-que-no-basta-con-que-una-demo-funcione-bien-una-vez",
+    "href": "clases/m03-diccionario-faq-terminos.html#por-que-no-basta-con-que-una-demo-funcione-bien-una-vez",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "10. Por que no basta con que una demo funcione bien una vez?",
+    "text": "10. Por que no basta con que una demo funcione bien una vez?\nPorque un sistema real debe sostener calidad, seguridad, costo razonable, monitoreo, trazabilidad y mantenimiento en el tiempo."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#que-se-deberia-versionar-en-un-proyecto-de-ia-generativa",
+    "href": "clases/m03-diccionario-faq-terminos.html#que-se-deberia-versionar-en-un-proyecto-de-ia-generativa",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "11. Que se deberia versionar en un proyecto de IA generativa?",
+    "text": "11. Que se deberia versionar en un proyecto de IA generativa?\nCodigo, prompts, configuraciones del modelo, datasets de prueba, reglas de negocio y resultados de evaluacion."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#que-miden-las-evals-en-agentes",
+    "href": "clases/m03-diccionario-faq-terminos.html#que-miden-las-evals-en-agentes",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "12. Que miden las evals en agentes?",
+    "text": "12. Que miden las evals en agentes?\nNo solo calidad del texto final. Tambien completion rate, cantidad de pasos, precision en el uso de herramientas, alucinacion, latencia y costo por tarea."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#por-que-importa-tanto-human-in-the-loop",
+    "href": "clases/m03-diccionario-faq-terminos.html#por-que-importa-tanto-human-in-the-loop",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "13. Por que importa tanto human-in-the-loop?",
+    "text": "13. Por que importa tanto human-in-the-loop?\nPorque hay acciones y decisiones que no deberian delegarse ciegamente, especialmente cuando son irreversibles o tienen impacto financiero, legal o humano."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#cual-es-un-error-comun-al-usar-ia-para-decidir",
+    "href": "clases/m03-diccionario-faq-terminos.html#cual-es-un-error-comun-al-usar-ia-para-decidir",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "14. Cual es un error comun al usar IA para decidir?",
+    "text": "14. Cual es un error comun al usar IA para decidir?\nPedirle a la IA que diga “que hacer” como si reemplazara criterio profesional. Suele ser mejor pedir alternativas, contraargumentos, evidencia usada, vacios de informacion y riesgos no considerados."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno",
+    "href": "clases/m03-diccionario-faq-terminos.html#que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "15. Que parte del problema es tecnologica y que parte es de diseno?",
+    "text": "15. Que parte del problema es tecnologica y que parte es de diseno?\nLa tecnologia resuelve acceso a modelos, herramientas y automatizacion. El diseno define alcance, fuentes, riesgo aceptable, reglas, escalamiento y criterios de evaluacion. Sin buen diseno, la tecnologia sola no salva la solucion."
+  },
+  {
+    "objectID": "clases/m03-diccionario-faq-terminos.html#por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico",
+    "href": "clases/m03-diccionario-faq-terminos.html#por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico",
+    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
+    "section": "16. Por que el caso AFP es tan buen ejemplo pedagogico?",
+    "text": "16. Por que el caso AFP es tan buen ejemplo pedagogico?\nPorque obliga a pensar en fuentes oficiales, claridad, riesgo, escalamiento a humano, trazabilidad y limites de autonomia. Muestra muy bien que “responder” no es suficiente."
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#entender-las-principales-técnicas-de-tokenización",
+    "href": "clases/tokenizacion_tecnicas.html#entender-las-principales-técnicas-de-tokenización",
+    "title": "Técnicas de Tokenización",
+    "section": "Entender las principales técnicas de tokenización",
+    "text": "Entender las principales técnicas de tokenización\n\nqué problema resuelven\ncómo segmentan el texto\ncuáles son sus ventajas y límites\npor qué la tokenización subword domina en LLMs modernos"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#por-qué-importa",
+    "href": "clases/tokenizacion_tecnicas.html#por-qué-importa",
+    "title": "Técnicas de Tokenización",
+    "section": "¿Por qué importa?",
+    "text": "¿Por qué importa?\nLa técnica de tokenización afecta:\n\ntamaño del vocabulario\ncosto computacional\nlongitud efectiva del contexto\ncapacidad para manejar palabras nuevas\ndesempeño en distintos idiomas"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#el-lenguaje-no-viene-segmentado-de-forma-perfecta",
+    "href": "clases/tokenizacion_tecnicas.html#el-lenguaje-no-viene-segmentado-de-forma-perfecta",
+    "title": "Técnicas de Tokenización",
+    "section": "El lenguaje no viene segmentado de forma perfecta",
+    "text": "El lenguaje no viene segmentado de forma perfecta\nEjemplos:\n\npalabras muy largas\nnombres propios nuevos\nerrores ortográficos\nabreviaturas\nemojis\nmezcla de idiomas\n\nPregunta central\n¿Cómo dividimos el texto sin perder demasiada información y sin volver el sistema inmanejable?"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#tokenización-por-caracteres",
+    "href": "clases/tokenizacion_tecnicas.html#tokenización-por-caracteres",
+    "title": "Técnicas de Tokenización",
+    "section": "Tokenización por caracteres",
+    "text": "Tokenización por caracteres\nCada carácter es un token.\nEjemplo\ngato → g, a, t, o"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#ventajas",
+    "href": "clases/tokenizacion_tecnicas.html#ventajas",
+    "title": "Técnicas de Tokenización",
+    "section": "Ventajas",
+    "text": "Ventajas\n\nvocabulario muy pequeño\nnunca hay palabras fuera de vocabulario\nmaneja bien errores ortográficos o palabras nuevas"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#límites",
+    "href": "clases/tokenizacion_tecnicas.html#límites",
+    "title": "Técnicas de Tokenización",
+    "section": "Límites",
+    "text": "Límites\n\nsecuencias mucho más largas\nmenor eficiencia\nmás difícil capturar significado semántico de alto nivel"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#tokenización-por-palabras",
+    "href": "clases/tokenizacion_tecnicas.html#tokenización-por-palabras",
+    "title": "Técnicas de Tokenización",
+    "section": "Tokenización por palabras",
+    "text": "Tokenización por palabras\nCada palabra completa se trata como un token.\nEjemplo\nel gato duerme en el sillón\n→ el, gato, duerme, en, el, sillón"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#ventajas-1",
+    "href": "clases/tokenizacion_tecnicas.html#ventajas-1",
+    "title": "Técnicas de Tokenización",
+    "section": "Ventajas",
+    "text": "Ventajas\n\ninterpretación intuitiva\nsecuencias más cortas que con caracteres\nbuena legibilidad para análisis simple"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#límites-1",
+    "href": "clases/tokenizacion_tecnicas.html#límites-1",
+    "title": "Técnicas de Tokenización",
+    "section": "Límites",
+    "text": "Límites\n\nvocabulario enorme\nproblema de palabras fuera de vocabulario\nmala adaptación a errores, variantes y morfología rica"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#tokenización-por-reglas",
+    "href": "clases/tokenizacion_tecnicas.html#tokenización-por-reglas",
+    "title": "Técnicas de Tokenización",
+    "section": "Tokenización por reglas",
+    "text": "Tokenización por reglas\nSe usan reglas lingüísticas o expresiones regulares para segmentar:\n\nespacios\nsignos de puntuación\nprefijos o sufijos\npatrones conocidos\n\nEjemplo\nHola, mundo!\n→ Hola, ,, mundo, !"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#ventajas-2",
+    "href": "clases/tokenizacion_tecnicas.html#ventajas-2",
+    "title": "Técnicas de Tokenización",
+    "section": "Ventajas",
+    "text": "Ventajas\n\nsimple de implementar\ncontrolable\nútil en pipelines clásicos de NLP"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#límites-2",
+    "href": "clases/tokenizacion_tecnicas.html#límites-2",
+    "title": "Técnicas de Tokenización",
+    "section": "Límites",
+    "text": "Límites\n\nfrágil ante excepciones\ndifícil de escalar a múltiples idiomas\ndepende mucho del diseño manual"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#tokenización-subword",
+    "href": "clases/tokenizacion_tecnicas.html#tokenización-subword",
+    "title": "Técnicas de Tokenización",
+    "section": "Tokenización subword",
+    "text": "Tokenización subword\nDivide las palabras en fragmentos frecuentes.\nEjemplo\ninternacionalización\npodría dividirse como:\n\ninterna\ncional\nización\n\nIdea clave\nBusca un equilibrio entre caracteres y palabras completas."
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#por-qué-es-importante",
+    "href": "clases/tokenizacion_tecnicas.html#por-qué-es-importante",
+    "title": "Técnicas de Tokenización",
+    "section": "¿Por qué es importante?",
+    "text": "¿Por qué es importante?\nLa tokenización subword:\n\nreduce el tamaño del vocabulario\nmaneja palabras raras o nuevas\nconserva patrones frecuentes del lenguaje\nmejora eficiencia frente a tokenización por caracteres\n\nPor eso es el enfoque dominante en LLMs actuales"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#byte-pair-encoding-bpe",
+    "href": "clases/tokenizacion_tecnicas.html#byte-pair-encoding-bpe",
+    "title": "Técnicas de Tokenización",
+    "section": "Byte Pair Encoding (BPE)",
+    "text": "Byte Pair Encoding (BPE)\nEmpieza con unidades pequeñas y va fusionando pares frecuentes.\nIntuición\nSi una combinación aparece muchas veces, conviene tratarla como una unidad estable."
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#ejemplo-simplificado-de-bpe",
+    "href": "clases/tokenizacion_tecnicas.html#ejemplo-simplificado-de-bpe",
+    "title": "Técnicas de Tokenización",
+    "section": "Ejemplo simplificado de BPE",
+    "text": "Ejemplo simplificado de BPE\nSupongamos que vemos repetidamente:\n\nl + a\nla + s\n\nEl algoritmo podría aprender:\n\nla\nlas\n\nResultado\nFragmentos frecuentes pasan a ser tokens completos."
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#ventajas-de-bpe",
+    "href": "clases/tokenizacion_tecnicas.html#ventajas-de-bpe",
+    "title": "Técnicas de Tokenización",
+    "section": "Ventajas de BPE",
+    "text": "Ventajas de BPE\n\neficiente\nampliamente usado\nbuen equilibrio entre vocabulario y cobertura"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#límites-3",
+    "href": "clases/tokenizacion_tecnicas.html#límites-3",
+    "title": "Técnicas de Tokenización",
+    "section": "Límites",
+    "text": "Límites\n\nno siempre respeta fronteras lingüísticas intuitivas\npuede generar segmentaciones poco naturales"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#wordpiece",
+    "href": "clases/tokenizacion_tecnicas.html#wordpiece",
+    "title": "Técnicas de Tokenización",
+    "section": "WordPiece",
+    "text": "WordPiece\nSimilar a BPE, pero selecciona combinaciones según cuánto mejoran la probabilidad del modelo.\nSe hizo muy conocido por su uso en BERT\nEjemplo:\nplaying → play + ##ing"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#ventajas-de-wordpiece",
+    "href": "clases/tokenizacion_tecnicas.html#ventajas-de-wordpiece",
+    "title": "Técnicas de Tokenización",
+    "section": "Ventajas de WordPiece",
+    "text": "Ventajas de WordPiece\n\nbuen rendimiento en tareas de lenguaje\nproduce piezas reutilizables\nútil para lenguas con variaciones morfológicas"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#límites-4",
+    "href": "clases/tokenizacion_tecnicas.html#límites-4",
+    "title": "Técnicas de Tokenización",
+    "section": "Límites",
+    "text": "Límites\n\nrequiere entrenamiento cuidadoso del vocabulario\nla segmentación puede no ser transparente para usuarios"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#unigram-language-model",
+    "href": "clases/tokenizacion_tecnicas.html#unigram-language-model",
+    "title": "Técnicas de Tokenización",
+    "section": "Unigram Language Model",
+    "text": "Unigram Language Model\nParte de un vocabulario amplio y elimina piezas menos útiles según una función probabilística.\nIdea\nNo construye el vocabulario solo agregando piezas: también descarta las que aportan poco.\nEs común en herramientas como SentencePiece"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#ventajas-de-unigram",
+    "href": "clases/tokenizacion_tecnicas.html#ventajas-de-unigram",
+    "title": "Técnicas de Tokenización",
+    "section": "Ventajas de Unigram",
+    "text": "Ventajas de Unigram\n\nenfoque probabilístico flexible\nbuenas segmentaciones en muchos idiomas\nútil cuando no queremos depender de espacios"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#límites-5",
+    "href": "clases/tokenizacion_tecnicas.html#límites-5",
+    "title": "Técnicas de Tokenización",
+    "section": "Límites",
+    "text": "Límites\n\nmás abstracto de explicar\nrequiere entrenamiento y evaluación adecuados"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#byte-level-tokenization",
+    "href": "clases/tokenizacion_tecnicas.html#byte-level-tokenization",
+    "title": "Técnicas de Tokenización",
+    "section": "Byte-level tokenization",
+    "text": "Byte-level tokenization\nEn lugar de partir desde caracteres visibles, parte desde bytes.\nVentaja fuerte\nPuede representar cualquier texto sin depender directamente de un alfabeto específico.\nUso típico\nModelos como GPT han utilizado variantes de tokenización a nivel de bytes con fusiones subword."
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#ventajas-3",
+    "href": "clases/tokenizacion_tecnicas.html#ventajas-3",
+    "title": "Técnicas de Tokenización",
+    "section": "Ventajas",
+    "text": "Ventajas\n\ncobertura total\nrobustez ante símbolos extraños\nevita el problema clásico de palabras fuera de vocabulario"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#límites-6",
+    "href": "clases/tokenizacion_tecnicas.html#límites-6",
+    "title": "Técnicas de Tokenización",
+    "section": "Límites",
+    "text": "Límites\n\npuede producir secuencias menos intuitivas\nla interpretación humana de los tokens se vuelve más difícil"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#frase",
+    "href": "clases/tokenizacion_tecnicas.html#frase",
+    "title": "Técnicas de Tokenización",
+    "section": "Frase",
+    "text": "Frase\nreorganización digital\nPor caracteres\nr e o r g a n i z a c i ó n d i g i t a l\nPor palabras\nreorganización, digital\nPor subword\nre, organización, digital\no\nreorgan, ización, digital"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#qué-buscamos-realmente",
+    "href": "clases/tokenizacion_tecnicas.html#qué-buscamos-realmente",
+    "title": "Técnicas de Tokenización",
+    "section": "¿Qué buscamos realmente?",
+    "text": "¿Qué buscamos realmente?\nUna buena tokenización intenta lograr equilibrio entre:\n\ncobertura\neficiencia\ncompresión del texto\ngeneralización a palabras nuevas\nutilidad para el modelo"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#idea-de-cierre",
+    "href": "clases/tokenizacion_tecnicas.html#idea-de-cierre",
+    "title": "Técnicas de Tokenización",
+    "section": "Idea de cierre",
+    "text": "Idea de cierre\nTokenizar no es un detalle técnico menor.\nEs una decisión fundamental que afecta:\n\ncómo entra el lenguaje al modelo\ncuánto cuesta procesarlo\nqué tan bien maneja palabras nuevas\nqué tan eficiente será el sistema completo"
+  },
+  {
+    "objectID": "clases/tokenizacion_tecnicas.html#comparar-tokenizaciones",
+    "href": "clases/tokenizacion_tecnicas.html#comparar-tokenizaciones",
+    "title": "Técnicas de Tokenización",
+    "section": "Comparar tokenizaciones",
+    "text": "Comparar tokenizaciones\nTomen una frase y propongan cómo se segmentaría:\n\npor caracteres\npor palabras\npor subword\n\nLuego discutan\n\ncuál sería más eficiente\ncuál manejaría mejor palabras nuevas\ncuál usarían en un LLM y por qué"
   },
   {
     "objectID": "index.html",
