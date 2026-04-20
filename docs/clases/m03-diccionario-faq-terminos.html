@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Modulo 3: Diccionario y FAQ de terminos del curso – Curso Modelos predictivos</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Curso Modelos predictivos</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../clases/index.html"> 
+<span class="menu-text">Clases</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../recursos.html"> 
+<span class="menu-text">Recursos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contacto.html"> 
+<span class="menu-text">Contacto</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#proposito" id="toc-proposito" class="nav-link active" data-scroll-target="#proposito">Proposito</a></li>
+  <li><a href="#como-leer-este-diccionario" id="toc-como-leer-este-diccionario" class="nav-link" data-scroll-target="#como-leer-este-diccionario">Como leer este diccionario</a></li>
+  <li><a href="#mapa-rapido" id="toc-mapa-rapido" class="nav-link" data-scroll-target="#mapa-rapido">Mapa rapido</a></li>
+  <li><a href="#diccionario" id="toc-diccionario" class="nav-link" data-scroll-target="#diccionario">Diccionario</a>
+  <ul class="collapse">
+  <li><a href="#conceptos-base" id="toc-conceptos-base" class="nav-link" data-scroll-target="#conceptos-base">Conceptos base</a></li>
+  <li><a href="#prompting-y-calidad" id="toc-prompting-y-calidad" class="nav-link" data-scroll-target="#prompting-y-calidad">Prompting y calidad</a></li>
+  <li><a href="#arquitectura-de-soluciones" id="toc-arquitectura-de-soluciones" class="nav-link" data-scroll-target="#arquitectura-de-soluciones">Arquitectura de soluciones</a></li>
+  <li><a href="#operacion-y-despliegue" id="toc-operacion-y-despliegue" class="nav-link" data-scroll-target="#operacion-y-despliegue">Operacion y despliegue</a></li>
+  <li><a href="#riesgo-criterio-y-gobernanza" id="toc-riesgo-criterio-y-gobernanza" class="nav-link" data-scroll-target="#riesgo-criterio-y-gobernanza">Riesgo, criterio y gobernanza</a></li>
+  <li><a href="#construccion-de-soluciones" id="toc-construccion-de-soluciones" class="nav-link" data-scroll-target="#construccion-de-soluciones">Construccion de soluciones</a></li>
+  </ul></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a>
+  <ul class="collapse">
+  <li><a href="#cual-es-la-diferencia-entre-ia-ia-generativa-y-llm" id="toc-cual-es-la-diferencia-entre-ia-ia-generativa-y-llm" class="nav-link" data-scroll-target="#cual-es-la-diferencia-entre-ia-ia-generativa-y-llm">1. Cual es la diferencia entre IA, IA generativa y LLM?</a></li>
+  <li><a href="#un-llm-y-un-chatbot-son-lo-mismo" id="toc-un-llm-y-un-chatbot-son-lo-mismo" class="nav-link" data-scroll-target="#un-llm-y-un-chatbot-son-lo-mismo">2. Un LLM y un chatbot son lo mismo?</a></li>
+  <li><a href="#por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato" id="toc-por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato" class="nav-link" data-scroll-target="#por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato">3. Por que el curso insiste tanto en que el prompt es un contrato?</a></li>
+  <li><a href="#un-prompt-bueno-reemplaza-rag" id="toc-un-prompt-bueno-reemplaza-rag" class="nav-link" data-scroll-target="#un-prompt-bueno-reemplaza-rag">4. Un prompt bueno reemplaza RAG?</a></li>
+  <li><a href="#mas-contexto-siempre-mejora-la-respuesta" id="toc-mas-contexto-siempre-mejora-la-respuesta" class="nav-link" data-scroll-target="#mas-contexto-siempre-mejora-la-respuesta">5. Mas contexto siempre mejora la respuesta?</a></li>
+  <li><a href="#si-existe-rag-entonces-ya-no-hay-alucinaciones" id="toc-si-existe-rag-entonces-ya-no-hay-alucinaciones" class="nav-link" data-scroll-target="#si-existe-rag-entonces-ya-no-hay-alucinaciones">6. Si existe RAG, entonces ya no hay alucinaciones?</a></li>
+  <li><a href="#cuando-un-chatbot-pasa-a-ser-agente" id="toc-cuando-un-chatbot-pasa-a-ser-agente" class="nav-link" data-scroll-target="#cuando-un-chatbot-pasa-a-ser-agente">7. Cuando un chatbot pasa a ser agente?</a></li>
+  <li><a href="#que-aporta-una-herramienta-a-un-agente" id="toc-que-aporta-una-herramienta-a-un-agente" class="nav-link" data-scroll-target="#que-aporta-una-herramienta-a-un-agente">8. Que aporta una herramienta a un agente?</a></li>
+  <li><a href="#que-diferencia-hay-entre-no-code-y-codigo-asistido" id="toc-que-diferencia-hay-entre-no-code-y-codigo-asistido" class="nav-link" data-scroll-target="#que-diferencia-hay-entre-no-code-y-codigo-asistido">9. Que diferencia hay entre no-code y codigo asistido?</a></li>
+  <li><a href="#por-que-no-basta-con-que-una-demo-funcione-bien-una-vez" id="toc-por-que-no-basta-con-que-una-demo-funcione-bien-una-vez" class="nav-link" data-scroll-target="#por-que-no-basta-con-que-una-demo-funcione-bien-una-vez">10. Por que no basta con que una demo funcione bien una vez?</a></li>
+  <li><a href="#que-se-deberia-versionar-en-un-proyecto-de-ia-generativa" id="toc-que-se-deberia-versionar-en-un-proyecto-de-ia-generativa" class="nav-link" data-scroll-target="#que-se-deberia-versionar-en-un-proyecto-de-ia-generativa">11. Que se deberia versionar en un proyecto de IA generativa?</a></li>
+  <li><a href="#que-miden-las-evals-en-agentes" id="toc-que-miden-las-evals-en-agentes" class="nav-link" data-scroll-target="#que-miden-las-evals-en-agentes">12. Que miden las evals en agentes?</a></li>
+  <li><a href="#por-que-importa-tanto-human-in-the-loop" id="toc-por-que-importa-tanto-human-in-the-loop" class="nav-link" data-scroll-target="#por-que-importa-tanto-human-in-the-loop">13. Por que importa tanto human-in-the-loop?</a></li>
+  <li><a href="#cual-es-un-error-comun-al-usar-ia-para-decidir" id="toc-cual-es-un-error-comun-al-usar-ia-para-decidir" class="nav-link" data-scroll-target="#cual-es-un-error-comun-al-usar-ia-para-decidir">14. Cual es un error comun al usar IA para decidir?</a></li>
+  <li><a href="#que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno" id="toc-que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno" class="nav-link" data-scroll-target="#que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno">15. Que parte del problema es tecnologica y que parte es de diseno?</a></li>
+  <li><a href="#por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico" id="toc-por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico" class="nav-link" data-scroll-target="#por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico">16. Por que el caso AFP es tan buen ejemplo pedagogico?</a></li>
+  </ul></li>
+  <li><a href="#confusiones-comunes" id="toc-confusiones-comunes" class="nav-link" data-scroll-target="#confusiones-comunes">Confusiones comunes</a></li>
+  <li><a href="#terminos-minimos-que-conviene-recordar" id="toc-terminos-minimos-que-conviene-recordar" class="nav-link" data-scroll-target="#terminos-minimos-que-conviene-recordar">Terminos minimos que conviene recordar</a></li>
+  <li><a href="#base-del-material-en-este-repo" id="toc-base-del-material-en-este-repo" class="nav-link" data-scroll-target="#base-del-material-en-este-repo">Base del material en este repo</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="m03-diccionario-faq-terminos.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Modulo 3: Diccionario y FAQ de terminos del curso</h1>
+<p class="subtitle lead">Glosario practico para acompanar clases sobre IA, prompting, agentes y gobernanza</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="proposito" class="level1">
+<h1>Proposito</h1>
+<p>Este material resume el vocabulario que aparece a lo largo del curso y responde dudas frecuentes de estudiantes. No busca reemplazar las clases, sino ofrecer un lenguaje comun para conversar sobre IA generativa, prompting, LLMs, agentes, RAG, MLOps, gobernanza y Decision Science.</p>
+<p>Esta version incorpora contexto de las clases en <code>qmd</code> y tambien de los PDF agregados al repo, especialmente en tres ideas que aparecieron con mucha fuerza:</p>
+<ul>
+<li>el prompt como contrato</li>
+<li>el agente como sistema que percibe, razona y actua</li>
+<li>el trade-off entre no-code y codigo asistido al construir soluciones</li>
+</ul>
+</section>
+<section id="como-leer-este-diccionario" class="level1">
+<h1>Como leer este diccionario</h1>
+<p>Cada termino importante tiene cinco capas:</p>
+<ul>
+<li><code>Definicion simple</code>: que significa en lenguaje directo</li>
+<li><code>Por que importa</code>: por que conviene recordarlo en el curso</li>
+<li><code>Ejemplo del curso</code>: donde se vio en una actividad o caso</li>
+<li><code>No confundir con</code>: distincion util para evitar errores</li>
+<li><code>Pregunta guia</code>: pregunta corta para discutir o estudiar</li>
+</ul>
+</section>
+<section id="mapa-rapido" class="level1">
+<h1>Mapa rapido</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bloque</th>
+<th>Pregunta central</th>
+<th>Terminos clave</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conceptos base</td>
+<td>Que es lo que realmente hace un modelo</td>
+<td>IA, IA generativa, LLM, token, embedding, contexto</td>
+</tr>
+<tr class="even">
+<td>Prompting</td>
+<td>Como pedir bien y con limites claros</td>
+<td>prompt, prompt estructurado, temperatura, CoT, auditable</td>
+</tr>
+<tr class="odd">
+<td>Arquitectura</td>
+<td>Como pasa de responder a actuar</td>
+<td>agente, herramientas, memoria, workflow, MCP, RAG</td>
+</tr>
+<tr class="even">
+<td>Operacion</td>
+<td>Como pasa de demo a sistema confiable</td>
+<td>evals, observabilidad, CI/CD, MLOps, trazabilidad</td>
+</tr>
+<tr class="odd">
+<td>Riesgo y criterio</td>
+<td>Como usar IA sin delegar juicio ciegamente</td>
+<td>guardrails, human-in-the-loop, sesgos, accountability, trade-off</td>
+</tr>
+<tr class="even">
+<td>Construccion</td>
+<td>Como elegir la forma de implementarlo</td>
+<td>no-code, codigo asistido, prototipo, produccion</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="diccionario" class="level1">
+<h1>Diccionario</h1>
+<section id="conceptos-base" class="level2">
+<h2 class="anchored" data-anchor-id="conceptos-base">Conceptos base</h2>
+<p><strong>IA</strong></p>
+<p><code>Definicion simple</code>: paraguas amplio para sistemas capaces de clasificar, predecir, recomendar o generar contenido.</p>
+<p><code>Por que importa</code>: en clase sirve para no meter todo en el mismo saco. No toda IA es conversacional ni toda IA es generativa.</p>
+<p><code>Ejemplo del curso</code>: en <code>diapositiva_03.qmd</code> se separa IA de Machine Learning, IA generativa y LLMs.</p>
+<p><code>No confundir con</code>: IA generativa. Esta ultima es solo una parte del campo.</p>
+<p><code>Pregunta guia</code>: cuando alguien dice “queremos usar IA”, de que capa esta hablando realmente?</p>
+<p><strong>Machine Learning</strong></p>
+<p><code>Definicion simple</code>: forma de construir IA a partir de datos y aprendizaje de patrones.</p>
+<p><code>Por que importa</code>: ayuda a distinguir modelos que predicen o clasifican de modelos que conversan o generan texto.</p>
+<p><code>Ejemplo del curso</code>: aparece como contrapunto a los LLMs en las diapositivas introductorias.</p>
+<p><code>No confundir con</code>: LLM. Un LLM es un tipo especifico de modelo para lenguaje, no todo Machine Learning.</p>
+<p><code>Pregunta guia</code>: la tarea que queremos resolver es de prediccion, clasificacion o generacion?</p>
+<p><strong>IA generativa</strong></p>
+<p><code>Definicion simple</code>: familia de sistemas capaces de crear contenido nuevo, como texto, imagen, audio, video o codigo.</p>
+<p><code>Por que importa</code>: es la base del curso, pero se trabaja siempre conectada a problemas organizacionales concretos.</p>
+<p><code>Ejemplo del curso</code>: generacion de respuestas, informes, PDFs, correos o salidas explicativas en los casos practicos.</p>
+<p><code>No confundir con</code>: automatizacion. Generar contenido no implica por si solo ejecutar un flujo.</p>
+<p><code>Pregunta guia</code>: estamos usando IA para crear contenido o para tomar una accion?</p>
+<p><strong>LLM</strong></p>
+<p><code>Definicion simple</code>: modelo entrenado con grandes volumenes de texto para trabajar con lenguaje y producir continuaciones probables dado un contexto.</p>
+<p><code>Por que importa</code>: es el nucleo de gran parte de las soluciones del curso, pero no equivale al sistema completo.</p>
+<p><code>Ejemplo del curso</code>: en <code>m03-clase01-arquitectura-llms.qmd</code> se presenta como capa central del stack; en el caso AFP redacta la respuesta despues de recuperar contexto.</p>
+<p><code>No confundir con</code>: chatbot. El LLM es el modelo; el chatbot es una interfaz o aplicacion.</p>
+<p><code>Pregunta guia</code>: el problema se resuelve solo con un modelo o necesita tambien datos, reglas y herramientas?</p>
+<p><strong>Token</strong></p>
+<p><code>Definicion simple</code>: unidad pequena de texto con la que opera el modelo.</p>
+<p><code>Por que importa</code>: costo, longitud de una conversacion y limite de contexto se entienden mejor en tokens que en palabras.</p>
+<p><code>Ejemplo del curso</code>: <code>tokenizacion_tecnicas.qmd</code> y <code>diapositiva_03.qmd</code> muestran que un mismo texto puede ocupar mas o menos tokens segun el modelo.</p>
+<p><code>No confundir con</code>: palabra. Un token puede ser una palabra, parte de una palabra o un signo.</p>
+<p><code>Pregunta guia</code>: el problema es que el texto es largo o que ocupa demasiados tokens?</p>
+<p><strong>Tokenizacion</strong></p>
+<p><code>Definicion simple</code>: proceso de dividir el texto en unidades operativas para el modelo.</p>
+<p><code>Por que importa</code>: afecta costo, capacidad efectiva de contexto y comportamiento del modelo en distintos idiomas y dominios.</p>
+<p><code>Ejemplo del curso</code>: en <code>tokenizacion_tecnicas.qmd</code> se comparan tokenizacion por caracteres, palabras, subword y bytes.</p>
+<p><code>No confundir con</code>: compresion. Tokenizar no necesariamente acorta.</p>
+<p><code>Pregunta guia</code>: dos textos del mismo largo visual ocupan la misma cantidad de tokens?</p>
+<p><strong>Embedding</strong></p>
+<p><code>Definicion simple</code>: representacion numerica del significado de un texto.</p>
+<p><code>Por que importa</code>: permite comparar similitud semantica y es pieza central en busqueda semantica y RAG.</p>
+<p><code>Ejemplo del curso</code>: <code>diapositiva_03.qmd</code> y el caso AFP lo conectan con bases vectoriales y recuperacion de FAQ o normativa.</p>
+<p><code>No confundir con</code>: respuesta generada. El embedding no responde; ayuda a buscar o representar significado.</p>
+<p><code>Pregunta guia</code>: cuando un sistema “encuentra textos parecidos”, como lo esta haciendo?</p>
+<p><strong>Atencion</strong></p>
+<p><code>Definicion simple</code>: mecanismo por el cual el modelo decide que partes del contexto pesan mas al responder.</p>
+<p><code>Por que importa</code>: ayuda a entender por que no todo lo que ponemos en el prompt tiene la misma influencia.</p>
+<p><code>Ejemplo del curso</code>: <code>m03-clase01-arquitectura-llms.qmd</code> lo presenta como intuicion para comprender coherencia y relevancia.</p>
+<p><code>No confundir con</code>: memoria perfecta. Que algo este en el contexto no garantiza que sea priorizado bien.</p>
+<p><code>Pregunta guia</code>: que partes de la instruccion queremos que el modelo priorice?</p>
+<p><strong>Ventana de contexto</strong></p>
+<p><code>Definicion simple</code>: cantidad maxima de informacion que el modelo puede considerar al mismo tiempo.</p>
+<p><code>Por que importa</code>: determina cuanto cabe de instrucciones, documentos, historial o resultados de herramientas.</p>
+<p><code>Ejemplo del curso</code>: aparece tanto en arquitectura LLM como en agentes con memoria y documentos.</p>
+<p><code>No confundir con</code>: memoria de largo plazo. La ventana de contexto es memoria operativa de la interaccion actual.</p>
+<p><code>Pregunta guia</code>: el problema se resuelve con mas contexto o con mejor seleccion de contexto?</p>
+</section>
+<section id="prompting-y-calidad" class="level2">
+<h2 class="anchored" data-anchor-id="prompting-y-calidad">Prompting y calidad</h2>
+<p><strong>Prompt</strong></p>
+<p><code>Definicion simple</code>: instruccion que damos al modelo.</p>
+<p><code>Por que importa</code>: en el curso se insiste en que pedir bien no es un detalle cosmetico; cambia radicalmente el resultado.</p>
+<p><code>Ejemplo del curso</code>: el PDF <code>Clase_260406_del-prompt-al-agente (1).pdf</code> muestra que un prompt libre para detectar fraude produjo criterios arbitrarios, mientras un prompt estructurado produjo una salida mas auditable.</p>
+<p><code>No confundir con</code>: pregunta informal. Un prompt puede incluir rol, objetivo, restricciones, formato y ejemplos.</p>
+<p><code>Pregunta guia</code>: si el resultado fue malo, fallo el modelo o la instruccion?</p>
+<p><strong>Prompt estructurado</strong></p>
+<p><code>Definicion simple</code>: prompt que explicita contexto, objetivo, restricciones, audiencia y formato esperado.</p>
+<p><code>Por que importa</code>: vuelve mas predecible la salida y ayuda a que el resultado sea defendible ante otros.</p>
+<p><code>Ejemplo del curso</code>: en la actividad de fraude del PDF <code>Clase_260406_del-prompt-al-agente (1).pdf</code>, el cambio clave fue pasar de prompt libre a prompt estructurado y auditable.</p>
+<p><code>No confundir con</code>: prompt largo. Un prompt puede ser largo y seguir siendo vago.</p>
+<p><code>Pregunta guia</code>: que tendria que incluir el prompt para que el resultado sea auditable?</p>
+<p><strong>Prompt como contrato</strong></p>
+<p><code>Definicion simple</code>: idea de que el prompt define con precision que esperamos del modelo, como si fuera un entregable acordado.</p>
+<p><code>Por que importa</code>: es uno de los mensajes mas fuertes de los PDFs nuevos y ayuda mucho a estudiantes no tecnicos.</p>
+<p><code>Ejemplo del curso</code>: el PDF <code>Clase_260406_del-prompt-al-agente (1).pdf</code> resume que “el prompt es el contrato entre tu y el modelo”; el PDF <code>Clase-03-No-Code-vs-Codigo-Asistido.pdf</code> agrega que en soluciones no-code el prompt funciona casi como codigo del agente.</p>
+<p><code>No confundir con</code>: “hablar bonito”. La idea no es persuadir al modelo, sino delimitar expectativas y errores permitidos.</p>
+<p><code>Pregunta guia</code>: si esto fuera un encargo profesional, el prompt deja claro que hay que entregar y que no?</p>
+<p><strong>Temperatura</strong></p>
+<p><code>Definicion simple</code>: parametro que modifica cuanta variabilidad tiene la respuesta del modelo.</p>
+<p><code>Por que importa</code>: en tareas criticas afecta repetibilidad y consistencia.</p>
+<p><code>Ejemplo del curso</code>: el PDF <code>Clase_260406_del-prompt-al-agente (1).pdf</code> muestra el contraste entre <code>T=0.0</code> para auditoria y valores mas altos para tareas creativas.</p>
+<p><code>No confundir con</code>: calidad. Mas creatividad no significa mejor resultado.</p>
+<p><code>Pregunta guia</code>: esta tarea necesita novedad o necesita reproducibilidad?</p>
+<p><strong>Chain of Thought (CoT)</strong></p>
+<p><code>Definicion simple</code>: tecnica que pide al modelo analizar paso a paso antes de concluir.</p>
+<p><code>Por que importa</code>: puede ayudar a tareas complejas, siempre que luego exista verificacion y no se confunda razonamiento aparente con verdad garantizada.</p>
+<p><code>Ejemplo del curso</code>: en el PDF <code>Clase_260406_del-prompt-al-agente (1).pdf</code> aparece como tecnica para analizar fraude con pasos intermedios.</p>
+<p><code>No confundir con</code>: evidencia externa. Pensar paso a paso no reemplaza datos ni fuentes.</p>
+<p><code>Pregunta guia</code>: el problema necesita descomponer el razonamiento o necesita mas informacion?</p>
+<p><strong>Alucinacion</strong></p>
+<p><code>Definicion simple</code>: respuesta inventada, distorsionada o no sustentada, aunque suene convincente.</p>
+<p><code>Por que importa</code>: es uno de los riesgos mas recurrentes del curso, sobre todo cuando falta contexto o se sobreconfia en una salida elegante.</p>
+<p><code>Ejemplo del curso</code>: en la actividad de fraude, el modelo inventa criterios cuando los datos y el prompt no bastan; en AFP el riesgo es responder con seguridad algo sensible sin base suficiente.</p>
+<p><code>No confundir con</code>: error tipografico o simple imprecision. La alucinacion es un problema de contenido no sustentado.</p>
+<p><code>Pregunta guia</code>: de donde sale exactamente esta afirmacion?</p>
+<p><strong>Auditable</strong></p>
+<p><code>Definicion simple</code>: resultado cuya logica, fuentes y criterio pueden explicarse y defenderse ante terceros.</p>
+<p><code>Por que importa</code>: aparece en varios materiales como exigencia organizacional, especialmente para finanzas, auditoria, riesgo y cumplimiento.</p>
+<p><code>Ejemplo del curso</code>: en la actividad de fraude se pregunta explicitamente si el criterio puede defenderse ante un jefe o un comite de auditoria.</p>
+<p><code>No confundir con</code>: solo “suena profesional”. Una salida pulida puede seguir siendo imposible de auditar.</p>
+<p><code>Pregunta guia</code>: podriamos justificar esta respuesta frente a un comite?</p>
+</section>
+<section id="arquitectura-de-soluciones" class="level2">
+<h2 class="anchored" data-anchor-id="arquitectura-de-soluciones">Arquitectura de soluciones</h2>
+<p><strong>Chatbot</strong></p>
+<p><code>Definicion simple</code>: interfaz conversacional que responde mensajes.</p>
+<p><code>Por que importa</code>: ayuda a no sobrevalorar la capa visible del sistema.</p>
+<p><code>Ejemplo del curso</code>: <code>diapositiva_03.qmd</code> lo contrasta con asistente, copilot y agente.</p>
+<p><code>No confundir con</code>: agente. Un chatbot puede limitarse a responder sin usar herramientas ni ejecutar pasos.</p>
+<p><code>Pregunta guia</code>: el sistema solo conversa o tambien resuelve tareas?</p>
+<p><strong>Asistente</strong></p>
+<p><code>Definicion simple</code>: sistema que ayuda a una persona en una tarea.</p>
+<p><code>Por que importa</code>: pone el foco en apoyo al trabajo humano, no solo en dialogo.</p>
+<p><code>Ejemplo del curso</code>: en varios casos el sistema sugiere, resume o redacta, pero no necesariamente actua solo.</p>
+<p><code>No confundir con</code>: automatizacion total. Un asistente puede requerir confirmacion constante.</p>
+<p><code>Pregunta guia</code>: estamos aumentando capacidad humana o reemplazando un proceso?</p>
+<p><strong>Copilot</strong></p>
+<p><code>Definicion simple</code>: asistente integrado dentro de una herramienta o flujo de trabajo.</p>
+<p><code>Por que importa</code>: muestra una modalidad concreta de adopcion organizacional.</p>
+<p><code>Ejemplo del curso</code>: aparece como tipo de sistema distinto a chatbot y agente.</p>
+<p><code>No confundir con</code>: interfaz separada. El copilot acompana trabajo ya existente dentro de otra herramienta.</p>
+<p><code>Pregunta guia</code>: la ayuda ocurre dentro del flujo de trabajo o en un canal aparte?</p>
+<p><strong>Agente</strong></p>
+<p><code>Definicion simple</code>: sistema que recibe un objetivo, decide pasos, usa contexto o herramientas y produce una salida.</p>
+<p><code>Por que importa</code>: es uno de los conceptos centrales del curso y de los PDFs nuevos.</p>
+<p><code>Ejemplo del curso</code>: el caso AFP responde consultas usando fuentes oficiales; el PDF <code>Agentes-LLMs-Herramientas-que-Actuan.pdf</code> insiste en que la diferencia clave es que el agente toma decisiones en el camino y no solo devuelve una respuesta.</p>
+<p><code>No confundir con</code>: prompt unico. Un agente puede usar multiples turnos, herramientas, memoria y controles.</p>
+<p><code>Pregunta guia</code>: el sistema solo responde o decide como avanzar?</p>
+<p><strong>Herramientas</strong></p>
+<p><code>Definicion simple</code>: capacidades externas que el agente puede usar, como leer archivos, consultar SQL, ejecutar codigo, buscar en la web, generar PDF o enviar correo.</p>
+<p><code>Por que importa</code>: los PDFs nuevos las describen como “el musculo del agente”.</p>
+<p><code>Ejemplo del curso</code>: <code>Agentes-LLMs-Herramientas-que-Actuan.pdf</code> enumera categorias como datos, computo, busqueda, escritura, memoria y control; <code>Clase-03-No-Code-vs-Codigo-Asistido.pdf</code> muestra un agente que compara viajes, genera PDF y lo envia por correo.</p>
+<p><code>No confundir con</code>: conocimiento interno del LLM. Una herramienta trae capacidad operativa o acceso a informacion externa.</p>
+<p><code>Pregunta guia</code>: que herramienta concreta falta para que este agente sea realmente util?</p>
+<p><strong>Workflow</strong></p>
+<p><code>Definicion simple</code>: secuencia de pasos mediante la cual una solucion transforma una entrada en una salida.</p>
+<p><code>Por que importa</code>: evita pensar el sistema solo como una respuesta aislada.</p>
+<p><code>Ejemplo del curso</code>: en AFP el flujo es consulta, recuperacion de informacion, redaccion, control y entrega; en viajes el flujo busca vuelos, hoteles, atracciones, calcula presupuesto y genera un informe.</p>
+<p><code>No confundir con</code>: prompt. El prompt es una pieza; el workflow es el proceso completo.</p>
+<p><code>Pregunta guia</code>: cuales son los pasos reales desde la pregunta hasta la accion final?</p>
+<p><strong>Memoria</strong></p>
+<p><code>Definicion simple</code>: mecanismos para retener contexto entre pasos, sesiones o documentos.</p>
+<p><code>Por que importa</code>: en agentes cambia mucho la experiencia y la capacidad de continuidad.</p>
+<p><code>Ejemplo del curso</code>: <code>Agentes-LLMs-Herramientas-que-Actuan.pdf</code> distingue memoria de contexto, cache, vectorial y estructurada.</p>
+<p><code>No confundir con</code>: ventana de contexto. Memoria puede ir mas alla de la conversacion actual.</p>
+<p><code>Pregunta guia</code>: que necesita recordar el sistema y por cuanto tiempo?</p>
+<p><strong>RAG</strong></p>
+<p><code>Definicion simple</code>: forma de responder usando informacion recuperada desde documentos o bases externas.</p>
+<p><code>Por que importa</code>: reduce dependencia de la memoria generica del modelo y mejora trazabilidad.</p>
+<p><code>Ejemplo del curso</code>: en AFP se usa para responder con FAQ, cartola y normativa; en <code>Agentes-LLMs-Herramientas-que-Actuan.pdf</code> se ejemplifica con Ley de Renta y documentos del SII.</p>
+<p><code>No confundir con</code>: fine-tuning. RAG trae contexto al momento de responder; no reentrena el modelo.</p>
+<p><code>Pregunta guia</code>: de donde saldra la informacion especifica y actualizada que necesita el sistema?</p>
+<p><strong>Base de datos vectorial</strong></p>
+<p><code>Definicion simple</code>: infraestructura pensada para guardar y buscar embeddings.</p>
+<p><code>Por que importa</code>: suele ser la pieza tecnica que vuelve operativo un esquema RAG.</p>
+<p><code>Ejemplo del curso</code>: aparece asociada a FAQ institucionales, normativa y documentos internos.</p>
+<p><code>No confundir con</code>: base relacional tradicional. Una sirve para similitud semantica; la otra para consultas estructuradas.</p>
+<p><code>Pregunta guia</code>: necesito buscar por significado o por campos exactos?</p>
+<p><strong>MCP</strong></p>
+<p><code>Definicion simple</code>: protocolo estandar para conectar agentes o modelos con herramientas externas.</p>
+<p><code>Por que importa</code>: es uno de los terminos nuevos que aparece en los materiales recientes y ayuda a explicar integracion sin bajar demasiado a detalle tecnico.</p>
+<p><code>Ejemplo del curso</code>: <code>Agentes-LLMs-Herramientas-que-Actuan.pdf</code> lo presenta como el estandar que hace a los agentes mas interoperables, analogandolo a USB para perifericos.</p>
+<p><code>No confundir con</code>: una herramienta especifica. MCP no es la herramienta; es la forma estandarizada de conectar herramientas.</p>
+<p><code>Pregunta guia</code>: la integracion esta hecha a mano o sigue un estandar reusable?</p>
+<p><strong>Multi-agente</strong></p>
+<p><code>Definicion simple</code>: arquitectura donde varios agentes especializados colaboran para resolver una tarea.</p>
+<p><code>Por que importa</code>: aparece como respuesta a problemas con subtareas, verificacion o paralelismo.</p>
+<p><code>Ejemplo del curso</code>: <code>Agentes-LLMs-Herramientas-que-Actuan.pdf</code> muestra un equipo de cobranza automatizada con orquestador, analista, buscador normativo, redactor y revisor.</p>
+<p><code>No confundir con</code>: complejidad innecesaria. No todo problema necesita varios agentes.</p>
+<p><code>Pregunta guia</code>: un solo agente basta o conviene separar funciones especializadas?</p>
+</section>
+<section id="operacion-y-despliegue" class="level2">
+<h2 class="anchored" data-anchor-id="operacion-y-despliegue">Operacion y despliegue</h2>
+<p><strong>Evals</strong></p>
+<p><code>Definicion simple</code>: pruebas para medir si una solucion de IA funciona bien.</p>
+<p><code>Por que importa</code>: permiten comparar versiones y evitar que la calidad dependa de intuicion o anecdotas.</p>
+<p><code>Ejemplo del curso</code>: <code>m03-clase02-cicd-mlops-gobernanza.qmd</code> y el PDF de agentes recalcan metricas como task completion, pasos, tool accuracy, hallucination, latencia y costo.</p>
+<p><code>No confundir con</code>: opinion del usuario solamente. El feedback ayuda, pero no reemplaza medicion sistematica.</p>
+<p><code>Pregunta guia</code>: como sabremos si esta nueva version realmente mejora?</p>
+<p><strong>Observabilidad</strong></p>
+<p><code>Definicion simple</code>: capacidad de mirar como se comporta el sistema en uso real.</p>
+<p><code>Por que importa</code>: un sistema puede seguir “funcionando” y al mismo tiempo estar respondiendo peor, costando mas o fallando de formas silenciosas.</p>
+<p><code>Ejemplo del curso</code>: calidad, latencia, costo, uso de contexto, fallos de herramientas y feedback del usuario.</p>
+<p><code>No confundir con</code>: monitoreo tecnico minimo. En IA generativa hay que observar tambien calidad semantica.</p>
+<p><code>Pregunta guia</code>: que veriamos en los datos si el sistema empieza a degradarse?</p>
+<p><strong>CI/CD</strong></p>
+<p><code>Definicion simple</code>: practicas para integrar cambios frecuentes y desplegarlos con mas confiabilidad.</p>
+<p><code>Por que importa</code>: en IA generativa se versionan no solo archivos de codigo, sino tambien prompts, configuraciones, datasets de prueba y evaluaciones.</p>
+<p><code>Ejemplo del curso</code>: <code>m03-clase02-cicd-mlops-gobernanza.qmd</code> lo presenta como paso de experimentacion a despliegue continuo.</p>
+<p><code>No confundir con</code>: solo automatizar deploy. Incluye integracion, pruebas y validacion de cambios.</p>
+<p><code>Pregunta guia</code>: que cambia realmente cuando modificamos el sistema?</p>
+<p><strong>MLOps</strong></p>
+<p><code>Definicion simple</code>: conjunto de practicas para desarrollar, desplegar, operar y mejorar sistemas basados en modelos de manera confiable.</p>
+<p><code>Por que importa</code>: conecta datos, modelos, ingenieria y operacion.</p>
+<p><code>Ejemplo del curso</code>: en clase se relaciona con drift, monitoreo, evaluacion, observabilidad y mejora continua.</p>
+<p><code>No confundir con</code>: DevOps puro. MLOps agrega problemas propios de modelos, datos y evaluaciones no deterministas.</p>
+<p><code>Pregunta guia</code>: que hace falta para que esto deje de ser demo y pase a capacidad organizacional?</p>
+<p><strong>Drift</strong></p>
+<p><code>Definicion simple</code>: deterioro o cambio del comportamiento del sistema a lo largo del tiempo.</p>
+<p><code>Por que importa</code>: explica por que una solucion puede empeorar sin que “se rompa” tecnicamente.</p>
+<p><code>Ejemplo del curso</code>: cambios en datos, usuarios, prompts, modelos del proveedor o procesos internos.</p>
+<p><code>No confundir con</code>: bug unico. El drift suele ser gradual y acumulativo.</p>
+<p><code>Pregunta guia</code>: si esto funcionaba bien hace dos meses, que pudo haber cambiado?</p>
+<p><strong>Trazabilidad</strong></p>
+<p><code>Definicion simple</code>: capacidad de reconstruir que informacion se uso, que reglas aplicaron y como se llego a un resultado.</p>
+<p><code>Por que importa</code>: es clave para auditoria, seguridad, gobernanza y mantenimiento.</p>
+<p><code>Ejemplo del curso</code>: los PDFs nuevos insisten en logica auditable, herramientas visibles y codigo modificable; el de no-code vs codigo asistido advierte que sin logs ni trazabilidad el sistema es imposible de auditar.</p>
+<p><code>No confundir con</code>: tener solo el output final. La trazabilidad incluye el camino.</p>
+<p><code>Pregunta guia</code>: podriamos explicar como se llego a esta respuesta o accion?</p>
+</section>
+<section id="riesgo-criterio-y-gobernanza" class="level2">
+<h2 class="anchored" data-anchor-id="riesgo-criterio-y-gobernanza">Riesgo, criterio y gobernanza</h2>
+<p><strong>Gobernanza</strong></p>
+<p><code>Definicion simple</code>: conjunto de reglas, roles y controles para asegurar uso responsable y alineado con objetivos organizacionales.</p>
+<p><code>Por que importa</code>: ayuda a decidir que se permite, quien responde y que riesgos se aceptan.</p>
+<p><code>Ejemplo del curso</code>: <code>m03-clase02-cicd-mlops-gobernanza.qmd</code> la conecta con privacidad, seguridad, roles, politicas y control.</p>
+<p><code>No confundir con</code>: prohibicion. Gobernar no es impedir, sino ordenar y responsabilizar.</p>
+<p><code>Pregunta guia</code>: quien decide los limites de este sistema y bajo que reglas?</p>
+<p><strong>Guardrails</strong></p>
+<p><code>Definicion simple</code>: controles para limitar comportamientos no deseados.</p>
+<p><code>Por que importa</code>: en agentes son esenciales para restringir temas, herramientas, acciones y escalamiento.</p>
+<p><code>Ejemplo del curso</code>: en AFP sirve para impedir recomendaciones previsionales personalizadas sin revision; en agentes con herramientas ayuda a evitar acciones irreversibles o alcance excesivo.</p>
+<p><code>No confundir con</code>: buen prompt solamente. Los guardrails pueden vivir tambien en reglas del sistema, permisos y aprobaciones.</p>
+<p><code>Pregunta guia</code>: que no queremos que este agente haga nunca por su cuenta?</p>
+<p><strong>Human-in-the-loop</strong></p>
+<p><code>Definicion simple</code>: esquema donde una persona revisa, corrige o aprueba parte del proceso.</p>
+<p><code>Por que importa</code>: es la forma practica de graduar autonomia segun riesgo.</p>
+<p><code>Ejemplo del curso</code>: <code>Agentes-LLMs-Herramientas-que-Actuan.pdf</code> define niveles de autonomia segun el tipo de accion; para decisiones de cobranza recomienda aprobacion o reporte de excepciones.</p>
+<p><code>No confundir con</code>: supervision constante de todo. El punto es decidir bien en que momentos humanos deben intervenir.</p>
+<p><code>Pregunta guia</code>: que accion requiere aprobacion humana antes de ejecutarse?</p>
+<p><strong>Trade-off</strong></p>
+<p><code>Definicion simple</code>: tension entre objetivos que no pueden maximizarse al mismo tiempo.</p>
+<p><code>Por que importa</code>: aparece transversalmente en el curso, desde precision versus velocidad hasta control versus facilidad de implementacion.</p>
+<p><code>Ejemplo del curso</code>: AFP trabaja velocidad versus precision y autonomia versus control; el PDF de no-code versus codigo asistido trabaja velocidad y facilidad versus control y auditabilidad.</p>
+<p><code>No confundir con</code>: error de diseno. Algunos trade-offs son inevitables; lo importante es explicitarlos.</p>
+<p><code>Pregunta guia</code>: que estamos ganando y que estamos sacrificando con esta decision?</p>
+<p><strong>Decision Science</strong></p>
+<p><code>Definicion simple</code>: disciplina que ayuda a estructurar decisiones complejas bajo incertidumbre.</p>
+<p><code>Por que importa</code>: instala la idea de partir por el problema y no por la tecnologia.</p>
+<p><code>Ejemplo del curso</code>: <code>m03-clase03-decision-science-sesgos.qmd</code> y el caso AFP preguntan primero que decision organizacional estamos tratando de mejorar.</p>
+<p><code>No confundir con</code>: analitica tecnica solamente. Incluye criterios, consecuencias, incertidumbre y responsables.</p>
+<p><code>Pregunta guia</code>: que decision real queremos mejorar con este sistema?</p>
+<p><strong>Sesgo de automatizacion</strong></p>
+<p><code>Definicion simple</code>: tendencia a confiar demasiado en sistemas automaticos.</p>
+<p><code>Por que importa</code>: es uno de los riesgos humanos mas relevantes al usar IA en organizaciones.</p>
+<p><code>Ejemplo del curso</code>: en AFP se advierte el riesgo de tomar una respuesta bien escrita como recomendacion valida; en decision science se presenta como una señal de alerta organizacional.</p>
+<p><code>No confundir con</code>: eficiencia. Que un sistema ahorre tiempo no significa que deba recibir confianza ciega.</p>
+<p><code>Pregunta guia</code>: estamos revisando la salida o solo aceptandola porque viene del sistema?</p>
+<p><strong>Accountability</strong></p>
+<p><code>Definicion simple</code>: responsabilidad por las decisiones y consecuencias del uso de IA.</p>
+<p><code>Por que importa</code>: recuerda que la responsabilidad institucional no desaparece porque participe una herramienta.</p>
+<p><code>Ejemplo del curso</code>: clase 3 de decision science lo vincula con criterio profesional y responsabilidad humana.</p>
+<p><code>No confundir con</code>: culpa del proveedor o del modelo. La organizacion sigue respondiendo por su uso.</p>
+<p><code>Pregunta guia</code>: si esto sale mal, quien responde y con que evidencia?</p>
+</section>
+<section id="construccion-de-soluciones" class="level2">
+<h2 class="anchored" data-anchor-id="construccion-de-soluciones">Construccion de soluciones</h2>
+<p><strong>No-code</strong></p>
+<p><code>Definicion simple</code>: forma de construir prototipos o soluciones usando interfaces visuales o descripciones en lenguaje natural, con minima programacion directa.</p>
+<p><code>Por que importa</code>: baja la barrera de entrada y acelera el prototipado.</p>
+<p><code>Ejemplo del curso</code>: el PDF <code>Clase-03-No-Code-vs-Codigo-Asistido.pdf</code> muestra <code>v0.app</code>, <code>n8n</code> y otras herramientas para construir rapido un agente funcional.</p>
+<p><code>No confundir con</code>: produccion segura por defecto. Rapidez de prototipo no implica mantenibilidad ni auditabilidad suficientes.</p>
+<p><code>Pregunta guia</code>: estamos validando una idea rapido o construyendo algo para operar de verdad?</p>
+<p><strong>Codigo asistido</strong></p>
+<p><code>Definicion simple</code>: forma de construir software donde una IA ayuda a escribir, ejecutar y corregir codigo dentro de un proyecto real.</p>
+<p><code>Por que importa</code>: permite mas control, integraciones y trazabilidad, pero exige mas criterio tecnico.</p>
+<p><code>Ejemplo del curso</code>: <code>Clase-03-No-Code-vs-Codigo-Asistido.pdf</code> usa Claude Code para construir un agente comparador de viajes que genera PDF y envia correo.</p>
+<p><code>No confundir con</code>: programacion totalmente automatica. Sigue requiriendo arquitectura, pruebas, seguridad y mantenimiento.</p>
+<p><code>Pregunta guia</code>: necesitamos velocidad de prototipo o control fino sobre el sistema?</p>
+<p><strong>Prototipo</strong></p>
+<p><code>Definicion simple</code>: version inicial para validar una idea rapidamente.</p>
+<p><code>Por que importa</code>: los PDFs nuevos insisten en que un prototipo visible puede impresionar mucho, pero no equivale a producto listo.</p>
+<p><code>Ejemplo del curso</code>: el agente de viajes y varias actividades estan pensados para salir de clase con algo funcional.</p>
+<p><code>No confundir con</code>: produccion. Un prototipo puede carecer de pruebas, logs, seguridad o manejo de errores.</p>
+<p><code>Pregunta guia</code>: estamos validando una hipotesis o prometiendo operacion real?</p>
+<p><strong>Produccion</strong></p>
+<p><code>Definicion simple</code>: etapa en que el sistema opera con usuarios reales, datos reales y consecuencias reales.</p>
+<p><code>Por que importa</code>: cambia el estandar exigido: seguridad, trazabilidad, monitoreo, manejo de errores, costos y mantenimiento.</p>
+<p><code>Ejemplo del curso</code>: <code>Clase-03-No-Code-vs-Codigo-Asistido.pdf</code> recalca que pasar de prototipo a produccion sigue requiriendo ingenieria de software.</p>
+<p><code>No confundir con</code>: demo exitosa. Una demo muestra posibilidad; la produccion exige confiabilidad sostenida.</p>
+<p><code>Pregunta guia</code>: que nos falta para poner esto frente a usuarios reales con tranquilidad?</p>
+</section>
+</section>
+<section id="faq" class="level1">
+<h1>FAQ</h1>
+<section id="cual-es-la-diferencia-entre-ia-ia-generativa-y-llm" class="level2">
+<h2 class="anchored" data-anchor-id="cual-es-la-diferencia-entre-ia-ia-generativa-y-llm">1. Cual es la diferencia entre IA, IA generativa y LLM?</h2>
+<p>IA es el paraguas amplio. IA generativa es la parte que crea contenido nuevo. Un LLM es un tipo de modelo generativo especializado en lenguaje.</p>
+</section>
+<section id="un-llm-y-un-chatbot-son-lo-mismo" class="level2">
+<h2 class="anchored" data-anchor-id="un-llm-y-un-chatbot-son-lo-mismo">2. Un LLM y un chatbot son lo mismo?</h2>
+<p>No.&nbsp;El LLM es el modelo. El chatbot es una interfaz o aplicacion que puede usar un LLM, documentos, reglas, memoria y herramientas.</p>
+</section>
+<section id="por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato">3. Por que el curso insiste tanto en que el prompt es un contrato?</h2>
+<p>Porque una instruccion vaga deja demasiado espacio a que el modelo complete vacios con patrones genericos. Los PDFs nuevos muestran que cuando el entregable, criterio y restricciones quedan mejor definidos, la salida se vuelve mas util y mas auditable.</p>
+</section>
+<section id="un-prompt-bueno-reemplaza-rag" class="level2">
+<h2 class="anchored" data-anchor-id="un-prompt-bueno-reemplaza-rag">4. Un prompt bueno reemplaza RAG?</h2>
+<p>No.&nbsp;Un buen prompt ayuda a pedir mejor. RAG ayuda a traer informacion especifica y actualizada. Cumplen funciones distintas.</p>
+</section>
+<section id="mas-contexto-siempre-mejora-la-respuesta" class="level2">
+<h2 class="anchored" data-anchor-id="mas-contexto-siempre-mejora-la-respuesta">5. Mas contexto siempre mejora la respuesta?</h2>
+<p>No.&nbsp;A veces mejora; otras veces ensucia, distrae o encarece. Muchas veces importa mas seleccionar bien el contexto que simplemente agregar mas.</p>
+</section>
+<section id="si-existe-rag-entonces-ya-no-hay-alucinaciones" class="level2">
+<h2 class="anchored" data-anchor-id="si-existe-rag-entonces-ya-no-hay-alucinaciones">6. Si existe RAG, entonces ya no hay alucinaciones?</h2>
+<p>No.&nbsp;RAG reduce parte del problema, pero no elimina errores de recuperacion, interpretacion o redaccion.</p>
+</section>
+<section id="cuando-un-chatbot-pasa-a-ser-agente" class="level2">
+<h2 class="anchored" data-anchor-id="cuando-un-chatbot-pasa-a-ser-agente">7. Cuando un chatbot pasa a ser agente?</h2>
+<p>Cuando deja de limitarse a responder y empieza a decidir pasos, usar herramientas, trabajar con objetivos y ejecutar acciones o subprocesos.</p>
+</section>
+<section id="que-aporta-una-herramienta-a-un-agente" class="level2">
+<h2 class="anchored" data-anchor-id="que-aporta-una-herramienta-a-un-agente">8. Que aporta una herramienta a un agente?</h2>
+<p>Le da capacidad operativa o acceso a informacion externa. Sin herramientas, el agente puede razonar sobre texto; con herramientas puede buscar, calcular, leer, escribir, enviar o consultar sistemas.</p>
+</section>
+<section id="que-diferencia-hay-entre-no-code-y-codigo-asistido" class="level2">
+<h2 class="anchored" data-anchor-id="que-diferencia-hay-entre-no-code-y-codigo-asistido">9. Que diferencia hay entre no-code y codigo asistido?</h2>
+<p>No-code privilegia velocidad y baja barrera de entrada. Codigo asistido privilegia control, integracion y auditabilidad. Ambos pueden servir, pero no para los mismos contextos.</p>
+</section>
+<section id="por-que-no-basta-con-que-una-demo-funcione-bien-una-vez" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-no-basta-con-que-una-demo-funcione-bien-una-vez">10. Por que no basta con que una demo funcione bien una vez?</h2>
+<p>Porque un sistema real debe sostener calidad, seguridad, costo razonable, monitoreo, trazabilidad y mantenimiento en el tiempo.</p>
+</section>
+<section id="que-se-deberia-versionar-en-un-proyecto-de-ia-generativa" class="level2">
+<h2 class="anchored" data-anchor-id="que-se-deberia-versionar-en-un-proyecto-de-ia-generativa">11. Que se deberia versionar en un proyecto de IA generativa?</h2>
+<p>Codigo, prompts, configuraciones del modelo, datasets de prueba, reglas de negocio y resultados de evaluacion.</p>
+</section>
+<section id="que-miden-las-evals-en-agentes" class="level2">
+<h2 class="anchored" data-anchor-id="que-miden-las-evals-en-agentes">12. Que miden las evals en agentes?</h2>
+<p>No solo calidad del texto final. Tambien completion rate, cantidad de pasos, precision en el uso de herramientas, alucinacion, latencia y costo por tarea.</p>
+</section>
+<section id="por-que-importa-tanto-human-in-the-loop" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-importa-tanto-human-in-the-loop">13. Por que importa tanto human-in-the-loop?</h2>
+<p>Porque hay acciones y decisiones que no deberian delegarse ciegamente, especialmente cuando son irreversibles o tienen impacto financiero, legal o humano.</p>
+</section>
+<section id="cual-es-un-error-comun-al-usar-ia-para-decidir" class="level2">
+<h2 class="anchored" data-anchor-id="cual-es-un-error-comun-al-usar-ia-para-decidir">14. Cual es un error comun al usar IA para decidir?</h2>
+<p>Pedirle a la IA que diga “que hacer” como si reemplazara criterio profesional. Suele ser mejor pedir alternativas, contraargumentos, evidencia usada, vacios de informacion y riesgos no considerados.</p>
+</section>
+<section id="que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno" class="level2">
+<h2 class="anchored" data-anchor-id="que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno">15. Que parte del problema es tecnologica y que parte es de diseno?</h2>
+<p>La tecnologia resuelve acceso a modelos, herramientas y automatizacion. El diseno define alcance, fuentes, riesgo aceptable, reglas, escalamiento y criterios de evaluacion. Sin buen diseno, la tecnologia sola no salva la solucion.</p>
+</section>
+<section id="por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico">16. Por que el caso AFP es tan buen ejemplo pedagogico?</h2>
+<p>Porque obliga a pensar en fuentes oficiales, claridad, riesgo, escalamiento a humano, trazabilidad y limites de autonomia. Muestra muy bien que “responder” no es suficiente.</p>
+</section>
+</section>
+<section id="confusiones-comunes" class="level1">
+<h1>Confusiones comunes</h1>
+<ul>
+<li><code>LLM</code> no es lo mismo que <code>chatbot</code>.</li>
+<li><code>prompt</code> no es solo una pregunta; puede ser una especificacion completa.</li>
+<li><code>RAG</code> no es <code>fine-tuning</code>.</li>
+<li><code>tener muchos datos</code> no significa <code>tener los datos correctos</code>.</li>
+<li><code>un prototipo funcional</code> no es <code>un sistema listo para produccion</code>.</li>
+<li><code>no-code</code> no elimina la necesidad de diseno, pruebas y gobernanza.</li>
+</ul>
+</section>
+<section id="terminos-minimos-que-conviene-recordar" class="level1">
+<h1>Terminos minimos que conviene recordar</h1>
+<ul>
+<li>LLM</li>
+<li>contexto</li>
+<li>prompt estructurado</li>
+<li>temperatura</li>
+<li>RAG</li>
+<li>agente</li>
+<li>herramienta</li>
+<li>memoria</li>
+<li>evals</li>
+<li>trazabilidad</li>
+<li>guardrails</li>
+<li>human-in-the-loop</li>
+<li>trade-off</li>
+</ul>
+</section>
+<section id="base-del-material-en-este-repo" class="level1">
+<h1>Base del material en este repo</h1>
+<p>Este diccionario y FAQ se construyo a partir del vocabulario y enfoque presentes en:</p>
+<ul>
+<li><code>diapositiva_03.qmd</code></li>
+<li><code>m03-clase01-arquitectura-llms.qmd</code></li>
+<li><code>m03-clase02-cicd-mlops-gobernanza.qmd</code></li>
+<li><code>m03-clase03-decision-science-sesgos.qmd</code></li>
+<li><code>m03-caso-aplicado-agente-afp.qmd</code></li>
+<li><code>tokenizacion_tecnicas.qmd</code></li>
+<li><code>clases_other/Clase_260406_del-prompt-al-agente (1).pdf</code></li>
+<li><code>clases_other/Agentes-LLMs-Herramientas-que-Actuan.pdf</code></li>
+<li><code>clases_other/Clase-03-No-Code-vs-Codigo-Asistido.pdf</code></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
