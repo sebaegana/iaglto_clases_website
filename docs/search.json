@@ -4,35 +4,56 @@
     "href": "recursos.html",
     "title": "Recursos",
     "section": "",
-    "text": "Vecillas Martin, D., Berruezo Fernández, C., & Gento Municio, A. M. (2025). Systematic Review of Discrete Event Simulation in Healthcare and Statistics Distributions. Applied Sciences, 15(4), 1861. Enlace aquí\nHeins, J., Schoenfelder, J., Heider, S., Heller, A. R., & Brunner, J. O. (2022). A scalable forecasting framework to predict COVID-19 hospital bed occupancy. INFORMS Journal on Applied Analytics, 52(6), 508-523. Enlace aquí\nHarper, P. R., & Shahani, A. K. (2002). Modelling for the planning and management of bed capacities in hospitals. Journal of the Operational research Society, 53(1), 11-18.\nCavalcante, T., Ospina, R., Leiva, V., Cabezas, X., & Martin-Barreiro, C. (2023). Weibull regression and machine learning survival models: Methodology, comparison, and application to biomedical data related to cardiac surgery. Biology, 12(3), 442.\nFenina, S., Jendoubi, S., & Bouchoucha, F. (2023). Failure rate estimation by Weibull distribution in a stochastic environment: application to the hemodialysis machine. Reliability: Theory & Applications, 18(3 (74)), 450-463.\nNketiah, E. A. (2021). Parameter Estimation of the Weibull Distribution; Comparison of the Least-Squares Method and the Maximum Likelihood Estimation. Int. J. Adv. Eng. Res. Sci, 8, 210-224.\n\n\n\n\nWickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. ” O’Reilly Media, Inc.”. Enlace acá\nGrolemund, G. (2014). Hands-on programming with R: Write your own functions and simulations. ” O’Reilly Media, Inc.”. Enlace acá\nRegenstein Jr, J. K. (2018). Reproducible finance with R: Code flows and shiny apps for portfolio analysis. CRC Press. Enlace acá\nScheuch, C., Voigt, S., & Weiss, P. (2023). Tidy Finance with R (1st ed.). Chapman and Hall/CRC. https://doi.org/10.1201/b23237. Enlace acá\nXie, Y., Allaire, J. J., & Grolemund, G. (2018). R markdown: The definitive guide. CRC Press. Enlace acá\nBryan, J., & Hester, J. (n.d.). Happy Git and GitHub for the useR. Enlace acá\n\n\n\n\n\nUtilización de Renv: Enlace acá\n\n\n\n\n\nhttps://posit.co/resources/cheatsheets/"
+    "text": "Esta página reúne referencias útiles para profundizar los temas del curso. La idea no es cubrir todo, sino dejar una base confiable para seguir estudiando prompting, LLMs, agentes, evaluación y gobernanza.\n\n\n\nQuarto: documentación para publicar apuntes, clases y sitios del curso.\nPosit Cheatsheets: referencia rápida para flujos de trabajo con R y Quarto.\nR Markdown: The Definitive Guide: base útil para entender la lógica de documentos reproducibles.\n\n\n\n\n\nMollick, E. (2024). Co-Intelligence. Libro útil para discutir impacto organizacional y trabajo con IA.\nRussell, S., & Norvig, P. Artificial Intelligence: A Modern Approach. Referencia amplia para conectar IA generativa con el campo general.\nHugging Face Learn: tutoriales y explicaciones accesibles sobre transformers, embeddings y modelos abiertos.\n\n\n\n\n\nMateriales de clase sobre prompt estructurado, prompt como contrato y diferencias entre demo, workflow y agente.\nOpenAI Cookbook: ejemplos prácticos para estructurar tareas, salidas y uso de herramientas.\nAnthropic Prompting Guides: buenas prácticas para instrucciones, evaluación y uso más confiable de modelos.\n\n\n\n\n\nLewis, P. et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\nDocumentación de proveedores y frameworks para herramientas, contexto y orquestación de agentes.\nCasos del curso donde el modelo no opera solo, sino conectado a fuentes, reglas y acciones.\n\n\n\n\n\nNIST AI Risk Management Framework: marco útil para conversar sobre riesgo, control y responsabilidades.\nOECD AI Principles: referencia para discutir uso responsable y accountability.\nMateriales del módulo sobre observabilidad, CI/CD, MLOps, evaluación y human-in-the-loop.\n\n\n\n\n\nR for Data Science\nHands-On Programming with R\nHappy Git and GitHub for the useR\nRenv"
   },
   {
-    "objectID": "recursos.html#libros",
-    "href": "recursos.html#libros",
+    "objectID": "recursos.html#documentación-base",
+    "href": "recursos.html#documentación-base",
     "title": "Recursos",
     "section": "",
-    "text": "Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. ” O’Reilly Media, Inc.”. Enlace acá\nGrolemund, G. (2014). Hands-on programming with R: Write your own functions and simulations. ” O’Reilly Media, Inc.”. Enlace acá\nRegenstein Jr, J. K. (2018). Reproducible finance with R: Code flows and shiny apps for portfolio analysis. CRC Press. Enlace acá\nScheuch, C., Voigt, S., & Weiss, P. (2023). Tidy Finance with R (1st ed.). Chapman and Hall/CRC. https://doi.org/10.1201/b23237. Enlace acá\nXie, Y., Allaire, J. J., & Grolemund, G. (2018). R markdown: The definitive guide. CRC Press. Enlace acá\nBryan, J., & Hester, J. (n.d.). Happy Git and GitHub for the useR. Enlace acá"
+    "text": "Quarto: documentación para publicar apuntes, clases y sitios del curso.\nPosit Cheatsheets: referencia rápida para flujos de trabajo con R y Quarto.\nR Markdown: The Definitive Guide: base útil para entender la lógica de documentos reproducibles."
   },
   {
-    "objectID": "recursos.html#section",
-    "href": "recursos.html#section",
+    "objectID": "recursos.html#conceptos-de-ia-generativa-y-llms",
+    "href": "recursos.html#conceptos-de-ia-generativa-y-llms",
     "title": "Recursos",
     "section": "",
-    "text": "Utilización de Renv: Enlace acá"
+    "text": "Mollick, E. (2024). Co-Intelligence. Libro útil para discutir impacto organizacional y trabajo con IA.\nRussell, S., & Norvig, P. Artificial Intelligence: A Modern Approach. Referencia amplia para conectar IA generativa con el campo general.\nHugging Face Learn: tutoriales y explicaciones accesibles sobre transformers, embeddings y modelos abiertos."
   },
   {
-    "objectID": "recursos.html#cheatsheets",
-    "href": "recursos.html#cheatsheets",
+    "objectID": "recursos.html#prompting-y-diseño-de-soluciones",
+    "href": "recursos.html#prompting-y-diseño-de-soluciones",
     "title": "Recursos",
     "section": "",
-    "text": "https://posit.co/resources/cheatsheets/"
+    "text": "Materiales de clase sobre prompt estructurado, prompt como contrato y diferencias entre demo, workflow y agente.\nOpenAI Cookbook: ejemplos prácticos para estructurar tareas, salidas y uso de herramientas.\nAnthropic Prompting Guides: buenas prácticas para instrucciones, evaluación y uso más confiable de modelos."
+  },
+  {
+    "objectID": "recursos.html#agentes-rag-y-arquitectura",
+    "href": "recursos.html#agentes-rag-y-arquitectura",
+    "title": "Recursos",
+    "section": "",
+    "text": "Lewis, P. et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.\nDocumentación de proveedores y frameworks para herramientas, contexto y orquestación de agentes.\nCasos del curso donde el modelo no opera solo, sino conectado a fuentes, reglas y acciones."
+  },
+  {
+    "objectID": "recursos.html#gobernanza-evaluación-y-criterios-de-uso",
+    "href": "recursos.html#gobernanza-evaluación-y-criterios-de-uso",
+    "title": "Recursos",
+    "section": "",
+    "text": "NIST AI Risk Management Framework: marco útil para conversar sobre riesgo, control y responsabilidades.\nOECD AI Principles: referencia para discutir uso responsable y accountability.\nMateriales del módulo sobre observabilidad, CI/CD, MLOps, evaluación y human-in-the-loop."
+  },
+  {
+    "objectID": "recursos.html#herramientas-de-trabajo-reproducible",
+    "href": "recursos.html#herramientas-de-trabajo-reproducible",
+    "title": "Recursos",
+    "section": "",
+    "text": "R for Data Science\nHands-On Programming with R\nHappy Git and GitHub for the useR\nRenv"
   },
   {
     "objectID": "contacto.html",
     "href": "contacto.html",
     "title": "Contacto",
     "section": "",
-    "text": "Contacto\nSebastián Egaña Santibáñez\nDocente del curso\n\n📧 segana@fen.uchile.cl\n\n💼 LinkedIn\n💻Página Web\n🐈Github"
+    "text": "Contacto\nSebastián Egaña Santibáñez\nDocente del curso\n\nCorreo: segana@fen.uchile.cl\nLinkedIn: linkedin.com/in/sebaegana\nSitio web: segana.netlify.app\nGitHub: github.com/sebaegana\n\nSi estás usando este sitio como apoyo del curso, conviene escribir indicando el módulo, la clase o el material al que haces referencia para poder responder con más contexto."
   },
   {
     "objectID": "clases/m03-clase03-decision-science-sesgos.html#clase-03-decision-science-sesgos-e-ia",
@@ -182,6 +203,244 @@
     "text": "Idea de cierre\nLa IA puede ser una gran herramienta para decidir mejor, pero solo cuando se usa para:\n\nampliar análisis\nordenar complejidad\ndesafiar supuestos\nmejorar trazabilidad\n\nNo cuando se usa para reemplazar criterio, responsabilidad o deliberación."
   },
   {
+    "objectID": "clases/m03-clase01-review.html#clase-01-review",
+    "href": "clases/m03-clase01-review.html#clase-01-review",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Clase 01 Review",
+    "text": "Clase 01 Review\nEmbeddings, atención y RAG"
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#objetivo-de-la-sesión",
+    "href": "clases/m03-clase01-review.html#objetivo-de-la-sesión",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\n\nEntender cómo se conectan embeddings, atención y RAG\nTraducir estos conceptos a decisiones de diseño\nRevisar ejemplos aplicados a contextos organizacionales\nPreparar base conceptual para agentes y soluciones con documentos"
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#hoja-de-ruta",
+    "href": "clases/m03-clase01-review.html#hoja-de-ruta",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Hoja de ruta",
+    "text": "Hoja de ruta\n\nembeddings: cómo representar significado\natención: cómo prioriza contexto el modelo\nRAG: cómo conectar documentos con generación"
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#idea-central-de-la-clase",
+    "href": "clases/m03-clase01-review.html#idea-central-de-la-clase",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Idea central de la clase",
+    "text": "Idea central de la clase\nUn LLM útil en una organización no depende solo del modelo.\nTambién depende de:\n\ncómo representamos la información\ncómo armamos el contexto\ncómo recuperamos contenido relevante"
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#qué-son",
+    "href": "clases/m03-clase01-review.html#qué-son",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "¿Qué son?",
+    "text": "¿Qué son?\nCada texto se transforma en una representación numérica.\nEso permite capturar relaciones como:\n\nsignificado\nsimilitud\ncercanía semántica\ncontexto de uso\n\nIdea simple\nLos embeddings son una forma de traducir lenguaje a vectores comparables."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#una-intuición-más-precisa",
+    "href": "clases/m03-clase01-review.html#una-intuición-más-precisa",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Una intuición más precisa",
+    "text": "Una intuición más precisa\nUn embedding no es “un número”, sino un vector:\n\nuna lista larga de valores\nen muchas dimensiones\ndonde cada posición captura patrones aprendidos\n\nClave conceptual\nTextos parecidos en significado tienden a quedar cerca en el espacio vectorial."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#qué-aprende-el-modelo",
+    "href": "clases/m03-clase01-review.html#qué-aprende-el-modelo",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "¿Qué aprende el modelo?",
+    "text": "¿Qué aprende el modelo?\nDurante el entrenamiento, el sistema aprende regularidades del lenguaje:\n\nqué términos aparecen en contextos parecidos\nqué diferencias ayudan a distinguir significados\nqué relaciones semánticas aparecen de forma recurrente\n\nIdea clave\nNo memoriza definiciones como diccionario; aprende patrones de uso."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#ejemplo-esquemático-en-2-dimensiones",
+    "href": "clases/m03-clase01-review.html#ejemplo-esquemático-en-2-dimensiones",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Ejemplo esquemático en 2 dimensiones",
+    "text": "Ejemplo esquemático en 2 dimensiones\nImaginemos un caso muy simplificado donde solo tenemos dos ejes:\n\neje X: animalidad\neje Y: domesticidad\n\nEn la realidad hay muchas más dimensiones, pero esta simplificación sirve para la intuición."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#cómo-leer-ese-esquema",
+    "href": "clases/m03-clase01-review.html#cómo-leer-ese-esquema",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Cómo leer ese esquema",
+    "text": "Cómo leer ese esquema\nEn ese gráfico:\n\ngato y perro están cerca por similitud de uso\nlobo comparte parte del significado, pero no todo\navión queda lejos porque pertenece a otra zona semántica\n\nIdea clave\nLa distancia representa similitud aprendida desde el lenguaje."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#por-qué-importa-esto-en-la-práctica",
+    "href": "clases/m03-clase01-review.html#por-qué-importa-esto-en-la-práctica",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "¿Por qué importa esto en la práctica?",
+    "text": "¿Por qué importa esto en la práctica?\nPorque permite comparar significado y no solo coincidencia literal.\nEjemplo\nUn usuario pregunta:\n“¿Qué ayuda puedo pedir cuando me jubile?”\nY el documento dice:\n“beneficios disponibles al momento de pensionarse”\nCon embeddings, ambos textos pueden quedar cerca aunque no usen las mismas palabras."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#embeddings-y-búsqueda-semántica",
+    "href": "clases/m03-clase01-review.html#embeddings-y-búsqueda-semántica",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Embeddings y búsqueda semántica",
+    "text": "Embeddings y búsqueda semántica\nUna aplicación clave es esta:\n\nconvertir documentos en embeddings\nconvertir la consulta en embedding\nbuscar los vectores más cercanos\nrecuperar los textos relevantes\n\nResultado\nEl sistema encuentra contenido por sentido y no solo por palabras exactas."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#ejemplo-práctico-generar-embeddings",
+    "href": "clases/m03-clase01-review.html#ejemplo-práctico-generar-embeddings",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Ejemplo práctico: generar embeddings",
+    "text": "Ejemplo práctico: generar embeddings\nfrom openai import OpenAI\nimport numpy as np\nimport faiss\n\nclient = OpenAI()\n\nsentences = [\n    \"The dog is barking.\",\n    \"A cat is sleeping on the couch.\",\n    \"A car is driving down the street.\",\n    \"I love my pet animal.\"\n]\n\nresponse = client.embeddings.create(\n    model=\"text-embedding-3-small\",\n    input=sentences\n)\n\nvectors = np.array([data.embedding for data in response.data])\nprint(\"Dimensión de los embeddings:\", vectors.shape)\nSalida esperada:\nDimensión de los embeddings: (4, 1536)"
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#ejemplo-práctico-buscar-similitud",
+    "href": "clases/m03-clase01-review.html#ejemplo-práctico-buscar-similitud",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Ejemplo práctico: buscar similitud",
+    "text": "Ejemplo práctico: buscar similitud\nindex = faiss.IndexFlatL2(vectors.shape[1])\nindex.add(vectors)\n\nquery = \"My puppy is barking loudly.\"\nquery_vec = client.embeddings.create(\n    model=\"text-embedding-3-small\",\n    input=query\n).data[0].embedding\n\nD, I = index.search(np.array([query_vec]), k=2)\nprint(\"Resultados similares:\")\nfor idx in I[0]:\n    print(\"-\", sentences[idx])\nResultados similares:\n\nThe dog is barking.\nI love my pet animal."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#lectura-práctica",
+    "href": "clases/m03-clase01-review.html#lectura-práctica",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Lectura práctica",
+    "text": "Lectura práctica\nLa consulta no es idéntica a los textos originales.\nSin embargo, el sistema igual recupera contenido relevante porque trabaja sobre vecindad semántica.\nIdea clave\nLa similitud depende del significado compartido, no de repetir exactamente las mismas palabras."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#qué-es-la-atención",
+    "href": "clases/m03-clase01-review.html#qué-es-la-atención",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "¿Qué es la atención?",
+    "text": "¿Qué es la atención?\nLa atención es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.\nIntuición\nCuando genera una palabra, no mira todo con el mismo peso."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#qué-problema-resuelve",
+    "href": "clases/m03-clase01-review.html#qué-problema-resuelve",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "¿Qué problema resuelve?",
+    "text": "¿Qué problema resuelve?\nEn lenguaje natural, el significado depende del contexto.\nNo es lo mismo:\n\nbanco como institución financiera\nbanco como asiento\n\nIdea clave\nLa atención ayuda a decidir qué partes del contexto aclaran el sentido correcto."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#intuición-operativa",
+    "href": "clases/m03-clase01-review.html#intuición-operativa",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Intuición operativa",
+    "text": "Intuición operativa\nCuando el modelo genera una palabra nueva:\n\nmira los tokens previos\nestima cuáles son más relevantes\nles da más peso a algunos\ny menos peso a otros\n\nLectura simple\nNo recuerda todo igual: prioriza dinámicamente."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#ejemplo-intuitivo",
+    "href": "clases/m03-clase01-review.html#ejemplo-intuitivo",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Ejemplo intuitivo",
+    "text": "Ejemplo intuitivo\nTomemos esta frase:\n“El analista revisó el informe porque necesitaba verificar si los beneficios estaban correctamente calculados.”\nSi el modelo quiere continuar después de beneficios, probablemente pondrá más atención en:\n\ninforme\nverificar\ncalculados\n\ny menos en:\n\nel\nporque\nlos"
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#queries-keys-y-values-sin-fórmulas",
+    "href": "clases/m03-clase01-review.html#queries-keys-y-values-sin-fórmulas",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Queries, keys y values sin fórmulas",
+    "text": "Queries, keys y values sin fórmulas\nUna forma simple de explicarlo es esta:\n\ncada token genera una query: qué está buscando ahora\ncada token ofrece una key: qué tipo de información contiene\ncada token aporta una value: el contenido que puede entregar\n\nIntuición\nEl modelo compara la query actual con las keys del contexto y decide de cuáles values conviene tomar más información."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#por-qué-fue-tan-importante",
+    "href": "clases/m03-clase01-review.html#por-qué-fue-tan-importante",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "¿Por qué fue tan importante?",
+    "text": "¿Por qué fue tan importante?\nLa atención permitió:\n\ncapturar relaciones entre palabras distantes\nprocesar contexto de forma más flexible\nescalar mejor a textos complejos\n\nIdea clave\nGran parte del salto de los LLMs modernos pasa por este mecanismo."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#atención-y-calidad-del-prompt",
+    "href": "clases/m03-clase01-review.html#atención-y-calidad-del-prompt",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Atención y calidad del prompt",
+    "text": "Atención y calidad del prompt\nLa forma en que escribimos un prompt afecta qué partes del contexto destacan más.\nPor eso ayuda:\n\nseparar instrucciones de contexto\nusar formato claro\ndestacar restricciones\nordenar bien la información\n\nLectura práctica\nUn buen prompt también guía la atención del modelo."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#riesgo-práctico",
+    "href": "clases/m03-clase01-review.html#riesgo-práctico",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Riesgo práctico",
+    "text": "Riesgo práctico\nLa atención no garantiza:\n\nverdad factual\nrazonamiento correcto\npriorización siempre adecuada\n\nRegla simple\nSi el contexto está mal armado, el modelo puede enfocarse en lo menos importante."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#conexión-con-embeddings",
+    "href": "clases/m03-clase01-review.html#conexión-con-embeddings",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Conexión con embeddings",
+    "text": "Conexión con embeddings\nEn Retrieval-Augmented Generation, los embeddings ayudan a decidir qué fragmentos conviene traer al contexto del modelo.\nFlujo simple\n\nel usuario pregunta\nla consulta se vectoriza\nse buscan trozos similares en una base vectorial\nesos trozos se agregan al prompt\nel LLM responde usando ese contexto\n\nIdea clave\nLos embeddings no reemplazan al LLM: lo ayudan a encontrar mejor el contexto."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#ejemplo-visual-de-flujo-rag",
+    "href": "clases/m03-clase01-review.html#ejemplo-visual-de-flujo-rag",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Ejemplo visual de flujo RAG",
+    "text": "Ejemplo visual de flujo RAG\n\nLectura simple\nLa imagen muestra la etapa de ingesta: cómo un documento entra al sistema, se procesa y queda listo para ser recuperado después."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#qué-hace-cada-nodo-del-flujo-rag",
+    "href": "clases/m03-clase01-review.html#qué-hace-cada-nodo-del-flujo-rag",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Qué hace cada nodo del flujo RAG",
+    "text": "Qué hace cada nodo del flujo RAG\n\nGoogle Drive Trigger: detecta un archivo nuevo\nDownload file: descarga el documento\nDefault Data Loader: transforma el archivo en texto\nRecursive Character Text Splitter: divide en fragmentos\nEmbeddings OpenAI: convierte cada fragmento en vector\nPinecone Vector Store: guarda vectores y metadata\n\nIdea clave\nRAG no empieza respondiendo; primero prepara una base consultable."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#embeddings-y-base-vectorial-en-un-rag",
+    "href": "clases/m03-clase01-review.html#embeddings-y-base-vectorial-en-un-rag",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Embeddings y base vectorial en un RAG",
+    "text": "Embeddings y base vectorial en un RAG\nCada fragmento se guarda junto con:\n\nel texto del chunk\nsu embedding\nmetadata como fuente, fecha o tema\nun identificador para volver al origen\n\nIdea clave\nLa base vectorial guarda texto, representación semántica y contexto operativo."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#ejemplo-aplicado",
+    "href": "clases/m03-clase01-review.html#ejemplo-aplicado",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Ejemplo aplicado",
+    "text": "Ejemplo aplicado\nImaginemos una base documental de una AFP con estos chunks:\n\nChunk A: “Para pensionarse por vejez se requiere cumplir edad legal y requisitos vigentes.”\nChunk B: “Los beneficiarios pueden revisar certificados en la sucursal virtual.”\nChunk C: “Los canales de atención incluyen web, call center y oficina.”\n\nY metadata como:\n\narea = pensiones\nfuente = manual_beneficios_2026.pdf\ncanal = web\n\n¿Para qué sirve?\nPermite combinar similitud semántica con filtros útiles para el negocio."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#retrieval-cómo-encuentra-contexto",
+    "href": "clases/m03-clase01-review.html#retrieval-cómo-encuentra-contexto",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Retrieval: cómo encuentra contexto",
+    "text": "Retrieval: cómo encuentra contexto\nEl retrieval es la etapa donde el sistema busca los fragmentos más útiles para responder.\nDecisiones técnicas\n\ncuántos resultados traer (top-k)\nsi usar filtros por metadata\nsi exigir umbral mínimo de similitud\nsi combinar búsqueda semántica con keywords\n\nIdea clave\nRecuperar bien no es solo buscar parecido, sino traer contexto suficiente y relevante."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#ejemplo-retrieval-y-priorización",
+    "href": "clases/m03-clase01-review.html#ejemplo-retrieval-y-priorización",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Ejemplo: retrieval y priorización",
+    "text": "Ejemplo: retrieval y priorización\nSupongamos la consulta:\n“¿Qué necesito para pensionarme y dónde hago el trámite?”\nUn retrieval razonable debería priorizar fragmentos sobre:\n\nrequisitos para pensionarse\ncanales o lugares para iniciar el trámite\ndocumentación asociada\n\nY no debería poner arriba material menos útil, como certificados o reclamos no relacionados."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#reranking-segundo-filtro-de-relevancia",
+    "href": "clases/m03-clase01-review.html#reranking-segundo-filtro-de-relevancia",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Reranking: segundo filtro de relevancia",
+    "text": "Reranking: segundo filtro de relevancia\nDespués del retrieval, algunos sistemas aplican reranking:\n\nprimero recuperan varios candidatos\nluego un segundo modelo los reordena\ny dejan más arriba los fragmentos más útiles\n\nIdea clave\nRetrieval encuentra candidatos razonables; reranking mejora el orden final."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#límites-y-cuidados",
+    "href": "clases/m03-clase01-review.html#límites-y-cuidados",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Límites y cuidados",
+    "text": "Límites y cuidados\nRAG mejora el acceso a contexto, pero no resuelve todo por sí solo.\nLos problemas más comunes son:\n\ndocumentos desactualizados\nchunking pobre\nmala metadata\nrecuperación insuficiente o excesiva\n\nRegla práctica\nBuen modelo + mala base documental = mala respuesta igual."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#cómo-se-conectan-los-tres-conceptos",
+    "href": "clases/m03-clase01-review.html#cómo-se-conectan-los-tres-conceptos",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Cómo se conectan los tres conceptos",
+    "text": "Cómo se conectan los tres conceptos\n\nembeddings representan significado\nRAG usa esa representación para recuperar contexto\natención decide qué partes de ese contexto pesan más al responder\n\nIdea final\nSi falla una de estas piezas, cae la calidad de toda la solución."
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#preguntas-para-discutir",
+    "href": "clases/m03-clase01-review.html#preguntas-para-discutir",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Preguntas para discutir",
+    "text": "Preguntas para discutir\n\n¿Qué pasa si el embedding es bueno, pero los documentos están mal fragmentados?\n¿Qué pasa si recuperamos muchos chunks, pero el prompt está desordenado?\n¿Qué decisiones de diseño son técnicas y cuáles son de negocio?"
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#cierre-y-transición",
+    "href": "clases/m03-clase01-review.html#cierre-y-transición",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Cierre y transición",
+    "text": "Cierre y transición\nEsta clase deja la base para discutir:\n\nagentes\nherramientas\nmemoria\narquitecturas aplicadas"
+  },
+  {
     "objectID": "clases/m03-clase01-arquitectura-llms.html#clase-01-arquitectura-y-funcionamiento-de-los-llms",
     "href": "clases/m03-clase01-arquitectura-llms.html#clase-01-arquitectura-y-funcionamiento-de-los-llms",
     "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
@@ -193,7 +452,7 @@
     "href": "clases/m03-clase01-arquitectura-llms.html#objetivo-de-la-sesión",
     "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
     "section": "Objetivo de la sesión",
-    "text": "Objetivo de la sesión\n\nEntender cómo procesan lenguaje los LLMs\nRevisar tokens, embeddings, atención, contexto y parámetros\nDistinguir modelos abiertos, cerrados y open-weight\nComparar familias como GPT, Claude, Gemini y Llama\nTraducir estos conceptos a implicancias prácticas para organizaciones"
+    "text": "Objetivo de la sesión\n\nEntender cómo procesan lenguaje los LLMs\nRevisar tokens, embeddings, contexto y parámetros\nDistinguir modelos abiertos, cerrados y open-weight\nComparar familias como GPT, Claude, Gemini y Llama\nTraducir estos conceptos a implicancias prácticas para organizaciones"
   },
   {
     "objectID": "clases/m03-clase01-arquitectura-llms.html#pregunta-de-apertura",
@@ -238,11 +497,200 @@
     "text": "Embeddings\nCada token se transforma en una representación numérica.\nEso permite que el modelo capture relaciones como:\n\nsignificado\nsimilitud\ncontexto de uso\ncercanía semántica\n\nIdea simple\nLos embeddings son el idioma interno del modelo."
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#atención",
-    "href": "clases/m03-clase01-arquitectura-llms.html#atención",
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#embeddings-una-intuición-más-precisa",
+    "href": "clases/m03-clase01-arquitectura-llms.html#embeddings-una-intuición-más-precisa",
     "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Atención",
-    "text": "Atención\nLa atención es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.\nIntuición\nCuando genera una palabra, no mira todo el texto con el mismo peso.\nAlgunas partes del contexto importan más que otras."
+    "section": "Embeddings: una intuición más precisa",
+    "text": "Embeddings: una intuición más precisa\nUn embedding no es “un número”, sino un vector:\n\nuna lista larga de valores\nen muchas dimensiones\ndonde cada posición captura patrones aprendidos\ny el conjunto representa relaciones de significado\n\nClave conceptual\nTextos con usos o sentidos parecidos tienden a quedar cerca en ese espacio vectorial."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#sobre-los-embeddings",
+    "href": "clases/m03-clase01-arquitectura-llms.html#sobre-los-embeddings",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Sobre los embeddings",
+    "text": "Sobre los embeddings\nLos embeddings que usamos en la práctica no se crean desde cero cada vez que los aplicamos.\nProvienen de un proceso de entrenamiento previo sobre enormes cantidades de texto.\nIdea clave\nCuando después usamos un modelo de embeddings, estamos aprovechando una representación que ya fue aprendida antes."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#entrenamiento-previo-de-los-embeddings",
+    "href": "clases/m03-clase01-arquitectura-llms.html#entrenamiento-previo-de-los-embeddings",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Entrenamiento previo de los embeddings",
+    "text": "Entrenamiento previo de los embeddings\nDurante el pre-training, el modelo analiza millones o miles de millones de frases y aprende relaciones estadísticas entre palabras y contextos.\n¿Qué intenta aprender?\n\nqué palabras suelen aparecer juntas\nqué términos aparecen en contextos parecidos\nqué usos del lenguaje se parecen entre sí\nqué diferencias importan para distinguir significados"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-aprende-el-modelo",
+    "href": "clases/m03-clase01-arquitectura-llms.html#qué-aprende-el-modelo",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "¿Qué aprende el modelo?",
+    "text": "¿Qué aprende el modelo?\nEl objetivo no es memorizar una definición tipo diccionario.\nMás bien, el modelo aprende que ciertas palabras o tokens tienden a encajar en contextos similares.\n\n\n\n\n\n\n\n\nTexto de entrenamiento\nTarea implícita\nLo que aprende\n\n\n\n\n“El perro ladra en el jardín.”\nPredecir perro a partir de su contexto\nQue perro aparece en contextos parecidos a gato, animal, mascota.\n\n\n“El avión aterriza en la pista.”\nPredecir avión\nQue avión se asocia a vuelo, piloto, aeropuerto.\n\n\n\nLectura práctica\nAsí, el modelo descubre similitudes semánticas sin que una persona le escriba reglas manuales del tipo “perro se parece a gato”."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-produce-este-aprendizaje",
+    "href": "clases/m03-clase01-arquitectura-llms.html#qué-produce-este-aprendizaje",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "¿Qué produce este aprendizaje?",
+    "text": "¿Qué produce este aprendizaje?\nEl modelo transforma cada palabra o token en un vector numérico que resume su significado aprendido.\nImportante\nEsos vectores viven en un espacio de alta dimensión:\n\na veces cientos de dimensiones\na veces miles\npor ejemplo, 768 o 1536 dimensiones\n\nEn ese espacio, los términos que comparten contexto tienden a quedar cerca, y los que no tienen relación quedan más lejos."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-esquemático-en-2-dimensiones",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-esquemático-en-2-dimensiones",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo esquemático en 2 dimensiones",
+    "text": "Ejemplo esquemático en 2 dimensiones\nImaginemos un caso muy simplificado donde solo tenemos dos ejes:\n\neje X: animalidad\neje Y: domesticidad\n\nEn la realidad hay muchas más dimensiones, pero esta simplificación sirve para la intuición."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#cómo-leer-ese-esquema",
+    "href": "clases/m03-clase01-arquitectura-llms.html#cómo-leer-ese-esquema",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Cómo leer ese esquema",
+    "text": "Cómo leer ese esquema\nEn ese gráfico simplificado:\n\ngato y perro están muy cerca porque comparten rasgos de significado\nlobo está relativamente cerca en una dimensión, pero más lejos en otra\navión queda claramente fuera de ese grupo\n\nIdea clave\nLa cercanía en el espacio vectorial representa similitud aprendida desde el uso del lenguaje."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-clásico-de-relaciones-semánticas",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-clásico-de-relaciones-semánticas",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo clásico de relaciones semánticas",
+    "text": "Ejemplo clásico de relaciones semánticas\nEn divulgación se usa mucho una intuición como esta:\nhombre + corona ≈ rey\no, en la versión más conocida:\nrey - hombre + mujer ≈ reina\n¿Qué quiere mostrar esta idea?\nQue los embeddings no solo guardan palabras, sino relaciones entre conceptos."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#cómo-leer-ese-ejemplo-sin-sobreinterpretarlo",
+    "href": "clases/m03-clase01-arquitectura-llms.html#cómo-leer-ese-ejemplo-sin-sobreinterpretarlo",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Cómo leer ese ejemplo sin sobreinterpretarlo",
+    "text": "Cómo leer ese ejemplo sin sobreinterpretarlo\nNo significa que el modelo haga literalmente esa suma exacta en cada respuesta.\nSignifica algo más importante:\n\naprende regularidades del lenguaje\naproxima relaciones como rol, jerarquía o género\nubica conceptos conectados en posiciones comparables\n\nIdea clave\nEl espacio vectorial conserva estructura semántica, no solo etiquetas."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-aplicado-al-curso",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-aplicado-al-curso",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo aplicado al curso",
+    "text": "Ejemplo aplicado al curso\nPensemos en conceptos del mundo organizacional:\n\ncliente\nreclamo\nsucursal\npensión\nafiliado\nbeneficio\n\nSi el modelo aprendió bien esas relaciones, textos como estos podrían quedar cerca:\n\n“consulta previsional del afiliado”\n“duda sobre pensión y beneficios”\n“solicitud de información previsional”\n\nAunque no usen exactamente las mismas palabras."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#por-qué-importa-esto-en-la-práctica",
+    "href": "clases/m03-clase01-arquitectura-llms.html#por-qué-importa-esto-en-la-práctica",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "¿Por qué importa esto en la práctica?",
+    "text": "¿Por qué importa esto en la práctica?\nPorque permite comparar significado y no solo coincidencia literal.\nEjemplo\nUna búsqueda clásica por palabras puede fallar si el usuario pregunta:\n“¿Qué ayuda puedo pedir cuando me jubile?”\ny el documento habla de:\n“beneficios disponibles al momento de pensionarse”\nCon embeddings, ambos textos pueden quedar cerca aunque no compartan la misma redacción."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#embeddings-y-búsqueda-semántica",
+    "href": "clases/m03-clase01-arquitectura-llms.html#embeddings-y-búsqueda-semántica",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Embeddings y búsqueda semántica",
+    "text": "Embeddings y búsqueda semántica\nUna aplicación muy importante es esta:\n\nconvertir documentos en embeddings\n\nconvertir la consulta del usuario en embedding\n\nbuscar los vectores más cercanos\n\nrecuperar los textos relevantes\n\nResultado\nEl sistema encuentra contenido por sentido y no solo por palabras exactas."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-práctico-generar-embeddings",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-práctico-generar-embeddings",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo práctico: generar embeddings",
+    "text": "Ejemplo práctico: generar embeddings\nEste ejemplo muestra cómo convertir varias frases en vectores usando OpenAI.\nfrom openai import OpenAI\nimport numpy as np\nimport faiss\n\nclient = OpenAI()\n\nsentences = [\n    \"The dog is barking.\",\n    \"A cat is sleeping on the couch.\",\n    \"A car is driving down the street.\",\n    \"I love my pet animal.\"\n]\n\nresponse = client.embeddings.create(\n    model=\"text-embedding-3-small\",\n    input=sentences\n)\n\nvectors = np.array([data.embedding for data in response.data])\nprint(\"Dimensión de los embeddings:\", vectors.shape)\nSalida esperada:\nDimensión de los embeddings: (4, 1536)\nLectura práctica\nTenemos 4 textos y cada uno queda representado por un vector de 1536 dimensiones."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-práctico-buscar-similitud",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-práctico-buscar-similitud",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo práctico: buscar similitud",
+    "text": "Ejemplo práctico: buscar similitud\nUna vez generados los embeddings, podemos indexarlos en una base vectorial y comparar una consulta nueva.\nindex = faiss.IndexFlatL2(vectors.shape[1])\nindex.add(vectors)\n\nquery = \"My puppy is barking loudly.\"\nquery_vec = client.embeddings.create(\n    model=\"text-embedding-3-small\",\n    input=query\n).data[0].embedding\n\nD, I = index.search(np.array([query_vec]), k=2)\nprint(\"Resultados similares:\")\nfor idx in I[0]:\n    print(\"-\", sentences[idx])\nResultados similares:\n\nThe dog is barking.\nI love my pet animal."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-está-pasando-en-ese-ejemplo",
+    "href": "clases/m03-clase01-arquitectura-llms.html#qué-está-pasando-en-ese-ejemplo",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "¿Qué está pasando en ese ejemplo?",
+    "text": "¿Qué está pasando en ese ejemplo?\nLa consulta no es idéntica a ninguno de los textos originales.\nSin embargo, el sistema recupera:\n\nThe dog is barking.\nI love my pet animal.\n\n¿Por qué?\nPorque puppy, dog, barking y pet animal comparten una vecindad semántica en el espacio vectorial.\nIdea clave\nLa similitud no depende de repetir exactamente las mismas palabras, sino de estar cerca en significado."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#conexión-con-rag",
+    "href": "clases/m03-clase01-arquitectura-llms.html#conexión-con-rag",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Conexión con RAG",
+    "text": "Conexión con RAG\nEn soluciones con Retrieval-Augmented Generation, los embeddings ayudan a decidir qué fragmentos conviene traer al contexto del modelo.\nFlujo simple\n\nel usuario pregunta\nla consulta se vectoriza\nse buscan trozos similares en una base vectorial\nesos trozos se agregan al prompt\nel LLM responde usando ese contexto\n\nIdea clave\nLos embeddings no reemplazan al LLM: lo ayudan a encontrar mejor el contexto."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-visual-de-flujo-rag",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-visual-de-flujo-rag",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo visual de flujo RAG",
+    "text": "Ejemplo visual de flujo RAG\n\nLectura simple\nLa imagen muestra un flujo de ingesta: cómo un documento entra al sistema, se procesa y queda listo para ser recuperado después en una solución RAG."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-hace-cada-nodo-del-flujo-rag",
+    "href": "clases/m03-clase01-arquitectura-llms.html#qué-hace-cada-nodo-del-flujo-rag",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Qué hace cada nodo del flujo RAG",
+    "text": "Qué hace cada nodo del flujo RAG\n\nGoogle Drive Trigger: detecta que apareció un archivo nuevo en una carpeta o fuente conectada.\nDownload file: descarga el documento para poder procesarlo dentro del flujo.\nDefault Data Loader: lee el contenido del archivo y lo transforma en texto utilizable por el sistema.\nRecursive Character Text Splitter: divide el documento en fragmentos más pequeños para que puedan indexarse mejor.\nEmbeddings OpenAI: convierte cada fragmento en un vector numérico que representa su significado.\nPinecone Vector Store: guarda esos vectores en una base vectorial para poder buscar luego los trozos más parecidos a una consulta.\n\nIdea clave\nRAG no parte respondiendo. Primero necesita preparar bien la base de conocimiento que después va a consultar."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#embeddings-y-base-vectorial-en-un-rag",
+    "href": "clases/m03-clase01-arquitectura-llms.html#embeddings-y-base-vectorial-en-un-rag",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Embeddings y base vectorial en un RAG",
+    "text": "Embeddings y base vectorial en un RAG\nEn la parte técnica, el sistema toma cada fragmento del documento y lo transforma en un vector.\nLuego guarda ese vector en una base vectorial, junto con información adicional del fragmento.\nQué suele guardarse\n\nel texto del chunk\nsu embedding\nmetadata como fuente, fecha, tema o área\nun identificador para volver al documento original\n\nIdea clave\nLa base vectorial no guarda solo texto: guarda texto + representación semántica + contexto operativo."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-embeddings-y-base-vectorial",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-embeddings-y-base-vectorial",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo: embeddings y base vectorial",
+    "text": "Ejemplo: embeddings y base vectorial\nImaginemos una base documental de una AFP con estos chunks:\n\nChunk A: “Para pensionarse por vejez se requiere cumplir edad legal y requisitos vigentes.”\nChunk B: “Los beneficiarios pueden revisar certificados en la sucursal virtual.”\nChunk C: “Los canales de atención incluyen web, call center y oficina.”\n\nCada chunk se convierte en vector y se guarda con metadata, por ejemplo:\n\narea = pensiones\nfuente = manual_beneficios_2026.pdf\ncanal = web\n\n¿Para qué sirve esa metadata?\nPermite filtrar mejor la búsqueda además de comparar similitud semántica."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#retrieval-cómo-encuentra-contexto",
+    "href": "clases/m03-clase01-arquitectura-llms.html#retrieval-cómo-encuentra-contexto",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Retrieval: cómo encuentra contexto",
+    "text": "Retrieval: cómo encuentra contexto\nEl retrieval es la etapa donde el sistema busca los fragmentos más útiles para responder una consulta.\nQué decisiones técnicas aparecen aquí\n\ncuántos resultados traer (top-k)\nsi usar filtros por metadata\nsi aplicar umbral mínimo de similitud\nsi combinar búsqueda semántica con búsqueda por keywords\n\nIdea clave\nRecuperar bien no es solo “buscar parecido”, sino traer contexto relevante y suficiente."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-retrieval",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-retrieval",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo: retrieval",
+    "text": "Ejemplo: retrieval\nSupongamos que el usuario pregunta:\n“¿Qué necesito para pensionarme y dónde hago el trámite?”\nUn retrieval razonable podría:\n\ntraer top-k = 4 chunks\npriorizar metadata area = pensiones\nexcluir documentos viejos o fuera de vigencia\n\nResultado esperado\nEl sistema debería recuperar fragmentos sobre:\n\nrequisitos para pensionarse\ncanales o lugares donde iniciar el trámite\ndocumentación asociada\n\nNo debería priorizar chunks sobre certificados o reclamos si no aportan a esa pregunta."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#reranking-segundo-filtro-de-relevancia",
+    "href": "clases/m03-clase01-arquitectura-llms.html#reranking-segundo-filtro-de-relevancia",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Reranking: segundo filtro de relevancia",
+    "text": "Reranking: segundo filtro de relevancia\nDespués del retrieval, algunos sistemas aplican reranking.\nEso significa:\n\nprimero se recuperan varios candidatos\nluego un segundo modelo los reordena\ny deja más arriba los fragmentos más útiles para la pregunta exacta\n\nIdea clave\nRetrieval encuentra candidatos razonables; reranking mejora el orden de prioridad."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-reranking",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-reranking",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo: reranking",
+    "text": "Ejemplo: reranking\nImaginemos que el retrieval trae estos tres chunks:\n\n“La pensión por vejez exige cumplir edad legal.”\n“Los canales de atención incluyen sucursal virtual y oficinas.”\n“Los afiliados pueden descargar certificados desde la web.”\n\nTodos tienen cierta relación con la consulta, pero no todos pesan igual.\nQué haría el reranker\nPodría reordenarlos así:\n\nrequisitos para pensionarse\ndónde hacer el trámite\ncertificados, porque es menos central para esa pregunta\n\nLectura práctica\nEso mejora la calidad del contexto que entra al prompt final."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#límites-y-cuidados",
+    "href": "clases/m03-clase01-arquitectura-llms.html#límites-y-cuidados",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Límites y cuidados",
+    "text": "Límites y cuidados\nLos embeddings son muy poderosos, pero no “entienden” como una persona.\nPueden:\n\nacercar textos incorrectos pero parecidos\nmezclar sentidos ambiguos\nreflejar sesgos del entrenamiento\nperder matices si el chunking es malo\n\nRegla práctica\nBuen embedding + mal documento o mal chunking = mala recuperación igual."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo-sobre-embeddings",
+    "href": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo-sobre-embeddings",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Resumen operativo sobre embeddings",
+    "text": "Resumen operativo sobre embeddings\n\nrepresentan texto como vectores\npermiten medir similitud semántica\nhacen posible la búsqueda vectorial\nson una pieza central de RAG y de muchos agentes\n\nPregunta para discutir\n¿En qué procesos de una organización conviene buscar por significado y no solo por palabra exacta?"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#atención-como-puente-conceptual",
+    "href": "clases/m03-clase01-arquitectura-llms.html#atención-como-puente-conceptual",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Atención como puente conceptual",
+    "text": "Atención como puente conceptual\nEl tema de atención quedó separado en un material específico para darle más espacio y tratarlo con más calma.\nEn esta clase nos basta con retener tres ideas\n\nno todo el contexto pesa igual\nla arquitectura Transformer usa atención para priorizar información relevante\nesta idea conecta directamente con la actividad final sobre el paper fundacional"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#conexión-con-esta-clase",
+    "href": "clases/m03-clase01-arquitectura-llms.html#conexión-con-esta-clase",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Conexión con esta clase",
+    "text": "Conexión con esta clase\nAunque aquí no desarrollaremos el mecanismo completo, sí conviene tener presente que la atención ayuda a explicar:\n\npor qué importa el orden y la claridad del contexto\npor qué el prompt no influye de manera uniforme\npor qué el paper Attention Is All You Need marca un punto de inflexión\n\nReferencia\nEl desarrollo completo quedó en m03-clase01-atencion.qmd."
   },
   {
     "objectID": "clases/m03-clase01-arquitectura-llms.html#ventana-de-contexto",
@@ -264,6 +712,48 @@
     "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
     "section": "Parámetros de generación",
     "text": "Parámetros de generación\nTambién controlamos cómo responde el modelo con variables como:\n\ntemperatura\ntop-p\ntop-k\nmax tokens\n\nRegla operativa\nAnálisis y extracción: baja temperatura.\nIdeación y creatividad: temperatura mayor."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#un-mismo-prompt-parámetros-distintos",
+    "href": "clases/m03-clase01-arquitectura-llms.html#un-mismo-prompt-parámetros-distintos",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Un mismo prompt, parámetros distintos",
+    "text": "Un mismo prompt, parámetros distintos\nSupongamos este prompt:\n“Redacta un mensaje breve para invitar a un equipo a probar un asistente interno de IA.”\nLa instrucción es la misma. Lo que cambia es cómo el modelo selecciona y limita su respuesta."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-temperatura",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-temperatura",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo de temperatura",
+    "text": "Ejemplo de temperatura\nLa temperatura controla cuánta variabilidad introduce el modelo.\nCon temperatura baja\nPosible salida:\n“Les invitamos a probar el nuevo asistente interno de IA para agilizar consultas frecuentes y redacción de borradores.”\nCon temperatura alta\nPosible salida:\n“Los invitamos a experimentar con nuestro nuevo copiloto interno de IA: una herramienta pensada para ahorrar tiempo, desbloquear ideas y acelerar tareas del día a día.”\nLectura práctica\n\nbaja temperatura: más estable, predecible y repetible\nalta temperatura: más variedad y creatividad"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-top-p",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-top-p",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo de top-p",
+    "text": "Ejemplo de top-p\ntop-p limita la elección a las palabras cuya probabilidad acumulada esté dentro de un umbral.\nIntuición\nSi top-p es bajo, el modelo elige entre opciones más probables.\nSi top-p es más alto, abre el abanico a opciones menos obvias.\nEjemplo\nCon top-p bajo, podría decir:\n“Prueben el asistente para resolver dudas frecuentes.”\nCon top-p más alto, podría decir:\n“Exploren el asistente como apoyo para consultas, síntesis y primeras versiones de trabajo.”\nLectura práctica\ntop-p ajusta cuán amplio es el conjunto de palabras candidatas antes de elegir."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-top-k",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-top-k",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo de top-k",
+    "text": "Ejemplo de top-k\ntop-k limita la selección a las k palabras más probables en cada paso.\nIntuición\nSi top-k = 5, el modelo solo elige entre sus 5 opciones más probables en cada token.\nSi top-k = 50, tiene más alternativas disponibles.\nEjemplo\nCon top-k bajo, una salida puede sonar más estándar:\n“Invitamos al equipo a usar el asistente interno para tareas frecuentes.”\nCon top-k más alto, puede aparecer una variante menos obvia:\n“Invitamos al equipo a pilotear el asistente interno como apoyo para tareas repetitivas y exploración inicial.”\nLectura práctica\ntop-k restringe por cantidad fija de opciones, mientras top-p restringe por masa de probabilidad acumulada."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-max-tokens",
+    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-max-tokens",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Ejemplo de max tokens",
+    "text": "Ejemplo de max tokens\nmax tokens limita el largo máximo de la respuesta generada.\nEjemplo\nSi pedimos:\n“Explica por qué conviene usar un asistente interno de IA en el área de atención al cliente.”\nCon max tokens muy bajo, podría responder:\n“Ayuda a responder más rápido y estandarizar consultas.”\nCon max tokens más alto, podría responder:\n“Ayuda a responder más rápido, estandarizar consultas frecuentes, reducir carga operativa y apoyar a los equipos con borradores iniciales, siempre con revisión humana en casos sensibles.”\nLectura práctica\nNo cambia tanto el estilo como la extensión disponible para desarrollar la idea."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo",
+    "href": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Resumen operativo",
+    "text": "Resumen operativo\n\ntemperatura: cambia cuánta variación creativa permitimos\ntop-p: abre o cierra el rango probabilístico de opciones\ntop-k: limita la elección a un número fijo de candidatos\nmax tokens: pone techo al largo de la respuesta\n\nRegla simple para clase\nSi queremos una salida más controlada, bajamos variabilidad y acotamos longitud.\nSi queremos explorar ideas, abrimos más espacio de generación."
   },
   {
     "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-hacen-bien-los-llms",
@@ -315,11 +805,67 @@
     "text": "Idea de cierre\nComprender arquitectura de LLMs no busca convertir a todos en ingenieros del modelo.\nBusca permitir mejores decisiones sobre:\n\nqué usar\ncómo integrarlo\nqué controlar\ndónde están sus límites"
   },
   {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#actividad-grupal-breve-paper-fundacional",
+    "href": "clases/m03-clase01-arquitectura-llms.html#actividad-grupal-breve-paper-fundacional",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Actividad grupal breve: paper fundacional",
+    "text": "Actividad grupal breve: paper fundacional\nTexto base: Attention Is All You Need (Vaswani et al., 2017)\nObjetivo\nEntender por qué este paper fue tan influyente y conectar su propuesta con lo que hoy vemos en LLMs.\nFormato\n\ngrupos de 3 a 4 personas\nduración máxima: 30 minutos\ninsumo mínimo: abstract + introducción del paper"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#instrucciones-de-trabajo",
+    "href": "clases/m03-clase01-arquitectura-llms.html#instrucciones-de-trabajo",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Instrucciones de trabajo",
+    "text": "Instrucciones de trabajo\nCada grupo debe leer el abstract y la introducción y responder estas preguntas:\n\n¿Qué limitación de los modelos anteriores identifica el paper?\n¿Cuál es la propuesta central del Transformer?\n¿Por qué la atención aparece como una innovación tan importante?\n¿Qué conexión ven entre este paper y los LLMs actuales?\n\nRegla\nNo se trata de resumir todo el paper, sino de identificar su argumento central."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#producto-esperado-del-grupo",
+    "href": "clases/m03-clase01-arquitectura-llms.html#producto-esperado-del-grupo",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Producto esperado del grupo",
+    "text": "Producto esperado del grupo\nCada grupo prepara una mini-síntesis de 3 partes:\n\nProblema anterior: qué estaba fallando o limitando a los modelos previos\nAporte del paper: qué cambia con el Transformer\nImpacto actual: por qué esto sigue importando en la arquitectura de los LLMs\n\nFormato sugerido\n3 a 5 bullets o una intervención oral de 1 minuto."
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#guía-para-orientar-la-discusión",
+    "href": "clases/m03-clase01-arquitectura-llms.html#guía-para-orientar-la-discusión",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Guía para orientar la discusión",
+    "text": "Guía para orientar la discusión\nSi el grupo se traba, puede apoyarse en esta pista:\n\nantes había más secuencialidad y menos paralelización\nel paper propone apoyarse solo en atención\neso mejora la capacidad de modelar dependencias y escalar entrenamiento\n\nConexión con esta clase\nLa pregunta de fondo es:\n¿Por qué entender atención ayuda a entender por qué los LLMs modernos son posibles?"
+  },
+  {
+    "objectID": "clases/m03-clase01-arquitectura-llms.html#cierre-y-puesta-en-común",
+    "href": "clases/m03-clase01-arquitectura-llms.html#cierre-y-puesta-en-común",
+    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
+    "section": "Cierre y puesta en común",
+    "text": "Cierre y puesta en común\nEn plenario, cada grupo comparte:\n\nuna idea del paper que le pareció fundacional\nuna conexión con conceptos vistos hoy: atención, contexto, escalabilidad o arquitectura\n\nCriterio de éxito\nSi al terminar pueden explicar por qué este paper marca un punto de inflexión, la actividad cumplió su objetivo."
+  },
+  {
     "objectID": "clases/index.html",
     "href": "clases/index.html",
     "title": "Clases y materiales",
     "section": "",
-    "text": "En esta sección se agrupan las sesiones del módulo, el diccionario de apoyo y algunos materiales prácticos usados durante el curso.\n\n\n\nClase 1: Arquitectura y funcionamiento de los LLMs\nClase 2: CI/CD, MLOps y gobernanza\nClase 3: Decision Science y sesgos\nCaso aplicado: Agente AFP\nDiccionario y FAQ del curso\n\n\n\n\n\nTokenización: técnicas y fundamentos\nNotebook 01\nActividad: skill en Markdown\n\n\n\n\nAlgunos materiales están pensados como apoyo de clase y otros como referencia posterior. Si buscas un punto de partida, conviene comenzar por la Clase 1 y luego usar el diccionario como material transversal."
+    "text": "En esta sección se agrupan las sesiones del módulo, el diccionario de apoyo y algunos materiales prácticos usados durante el curso.\n\n\n\nClase 1: Arquitectura y funcionamiento de los LLMs\nMaterial complementario: Atención en LLMs\nClase 2: CI/CD, MLOps y gobernanza\nClase 3: Decision Science y sesgos\nCaso aplicado: Agente AFP\nDiccionario y FAQ del curso\n\n\n\n\n\nRoadmap de aprendizaje en IA\nTokenización: técnicas y fundamentos\nNotebook 01\nActividad: skill en Markdown\n\n\n\n\nAlgunos materiales están pensados como apoyo de clase y otros como referencia posterior. Si buscas un punto de partida, conviene comenzar por la Clase 1 y luego usar el diccionario como material transversal."
+  },
+  {
+    "objectID": "clases/index.html#módulo-3",
+    "href": "clases/index.html#módulo-3",
+    "title": "Clases y materiales",
+    "section": "",
+    "text": "Clase 1: Arquitectura y funcionamiento de los LLMs\nMaterial complementario: Atención en LLMs\nClase 2: CI/CD, MLOps y gobernanza\nClase 3: Decision Science y sesgos\nCaso aplicado: Agente AFP\nDiccionario y FAQ del curso"
+  },
+  {
+    "objectID": "clases/index.html#materiales-complementarios",
+    "href": "clases/index.html#materiales-complementarios",
+    "title": "Clases y materiales",
+    "section": "",
+    "text": "Roadmap de aprendizaje en IA\nTokenización: técnicas y fundamentos\nNotebook 01\nActividad: skill en Markdown"
+  },
+  {
+    "objectID": "clases/index.html#nota-de-uso",
+    "href": "clases/index.html#nota-de-uso",
+    "title": "Clases y materiales",
+    "section": "",
+    "text": "Algunos materiales están pensados como apoyo de clase y otros como referencia posterior. Si buscas un punto de partida, conviene comenzar por la Clase 1 y luego usar el diccionario como material transversal."
   },
   {
     "objectID": "clases/diapositiva_02_v2.html#de-la-comprensión-técnica-a-la-implementación-organizacional",
@@ -891,9 +1437,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Sobre el sitio",
     "section": "",
-    "text": "About this site\n\n1 + 1 + 1\n\n[1] 3"
+    "text": "Este sitio reúne los materiales docentes del curso orientado a IA generativa, prompting, agentes y gobernanza aplicada.\nSu objetivo es ofrecer un punto único para consultar clases, casos, actividades y recursos complementarios, de modo que el trabajo en aula y el estudio posterior queden conectados en una misma estructura.\nEl contenido está organizado para apoyar tanto la comprensión conceptual como la traducción de estos temas a problemas organizacionales concretos."
   },
   {
     "objectID": "clases/clases.html",
@@ -1603,6 +2149,146 @@
     "text": "Caso alternativo: agente analista de inversiones\nInput\nTabla simple de precios o indicadores.\nTarea\n\nresumir\ndetectar tendencia\nsugerir interpretación\n\nMisma lógica\nLLM + contexto + workflow + control."
   },
   {
+    "objectID": "clases/m03-clase01-atencion.html#atención-en-llms",
+    "href": "clases/m03-clase01-atencion.html#atención-en-llms",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Atención en LLMs",
+    "text": "Atención en LLMs\nCómo el modelo prioriza contexto"
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#objetivo-de-la-sesión",
+    "href": "clases/m03-clase01-atencion.html#objetivo-de-la-sesión",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Objetivo de la sesión",
+    "text": "Objetivo de la sesión\n\nEntender qué problema resuelve la atención\nConstruir una intuición operativa del mecanismo\nConectar atención con calidad de prompt y uso de contexto\nPreparar la lectura del paper Attention Is All You Need"
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#qué-es-la-atención",
+    "href": "clases/m03-clase01-atencion.html#qué-es-la-atención",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "¿Qué es la atención?",
+    "text": "¿Qué es la atención?\nLa atención es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.\nIntuición\nCuando genera una palabra, no mira todo con el mismo peso."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#qué-problema-resuelve",
+    "href": "clases/m03-clase01-atencion.html#qué-problema-resuelve",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "¿Qué problema resuelve?",
+    "text": "¿Qué problema resuelve?\nEn lenguaje natural, el significado depende del contexto.\nNo es lo mismo:\n\nbanco como institución financiera\nbanco como asiento\n\nIdea clave\nLa atención ayuda a decidir qué partes del contexto aclaran el sentido correcto."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#intuición-operativa",
+    "href": "clases/m03-clase01-atencion.html#intuición-operativa",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Intuición operativa",
+    "text": "Intuición operativa\nCuando el modelo genera una palabra nueva:\n\nmira los tokens previos\nestima cuáles son más relevantes\nles da más peso a algunos\ny menos peso a otros\n\nLectura simple\nNo recuerda todo igual: prioriza dinámicamente."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#ejemplo-intuitivo",
+    "href": "clases/m03-clase01-atencion.html#ejemplo-intuitivo",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Ejemplo intuitivo",
+    "text": "Ejemplo intuitivo\nTomemos esta frase:\n“El analista revisó el informe porque necesitaba verificar si los beneficios estaban correctamente calculados.”\nSi el modelo quiere continuar después de beneficios, probablemente pondrá más atención en:\n\ninforme\nverificar\ncalculados\n\ny menos en:\n\nel\nporque\nlos"
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#atención-como-mecanismo-de-foco",
+    "href": "clases/m03-clase01-atencion.html#atención-como-mecanismo-de-foco",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Atención como mecanismo de foco",
+    "text": "Atención como mecanismo de foco\nPodemos pensarlo como un sistema de foco variable.\nNo todas las palabras pesan igual\n\nalgunas definen el tema\notras aclaran relaciones\notras casi no aportan significado por sí solas\n\nIdea clave\nLa atención permite construir relevancia contextual token por token."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#queries-keys-y-values-sin-fórmulas",
+    "href": "clases/m03-clase01-atencion.html#queries-keys-y-values-sin-fórmulas",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Queries, keys y values sin fórmulas",
+    "text": "Queries, keys y values sin fórmulas\nUna forma simple de explicarlo es esta:\n\ncada token genera una query: qué está buscando ahora\ncada token ofrece una key: qué tipo de información contiene\ncada token aporta una value: el contenido que puede entregar\n\nIntuición\nEl modelo compara la query actual con las keys del contexto y decide de cuáles values conviene tomar más información."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#ejemplo-simple-de-queries-keys-y-values",
+    "href": "clases/m03-clase01-atencion.html#ejemplo-simple-de-queries-keys-y-values",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Ejemplo simple de queries, keys y values",
+    "text": "Ejemplo simple de queries, keys y values\nSi la pregunta es:\n“¿Qué documentos necesito para pensionarme?”\nLa query implícita buscará información relacionada con:\n\ndocumentos\nrequisitos\npensionarme\n\nEntonces fragmentos sobre:\n\ncertificados\nedad legal\nformularios\nsolicitud de pensión\n\nrecibirán más peso que otros sobre canales generales o información secundaria."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#por-qué-fue-tan-importante",
+    "href": "clases/m03-clase01-atencion.html#por-qué-fue-tan-importante",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "¿Por qué fue tan importante?",
+    "text": "¿Por qué fue tan importante?\nLa atención permitió:\n\ncapturar relaciones entre palabras distantes\nprocesar contexto de forma más flexible\nescalar mejor a textos complejos\n\nIdea clave\nGran parte del salto de los LLMs modernos pasa por este mecanismo."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#atención-y-calidad-del-prompt",
+    "href": "clases/m03-clase01-atencion.html#atención-y-calidad-del-prompt",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Atención y calidad del prompt",
+    "text": "Atención y calidad del prompt\nLa forma en que escribimos un prompt afecta qué partes del contexto destacan más.\nPor eso ayuda:\n\nseparar instrucciones de contexto\nusar formato claro\ndestacar restricciones\nordenar bien la información\n\nLectura práctica\nUn buen prompt también guía la atención del modelo."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#riesgo-práctico",
+    "href": "clases/m03-clase01-atencion.html#riesgo-práctico",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Riesgo práctico",
+    "text": "Riesgo práctico\nLa atención no garantiza:\n\nverdad factual\nrazonamiento correcto\npriorización siempre adecuada\n\nRegla simple\nSi el contexto está mal armado, el modelo puede enfocarse en lo menos importante."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#ejemplo-aplicado-a-una-tarea-organizacional",
+    "href": "clases/m03-clase01-atencion.html#ejemplo-aplicado-a-una-tarea-organizacional",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Ejemplo aplicado a una tarea organizacional",
+    "text": "Ejemplo aplicado a una tarea organizacional\nSupongamos este prompt:\n“Responde al afiliado usando solo la normativa vigente. Si no hay base suficiente, indícalo explícitamente. Consulta: ¿puedo pensionarme anticipadamente?”\nSi el contexto está bien estructurado, la atención debería priorizar:\n\nsolo la normativa vigente\nsi no hay base suficiente\npensionarme anticipadamente\n\nSi el contexto estuviera desordenado, el modelo podría apoyarse en fragmentos menos relevantes."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#resumen-operativo-sobre-atención",
+    "href": "clases/m03-clase01-atencion.html#resumen-operativo-sobre-atención",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Resumen operativo sobre atención",
+    "text": "Resumen operativo sobre atención\n\nayuda a ponderar qué partes del contexto importan más\npermite conectar palabras o fragmentos distantes\nmejora la relevancia local de cada paso de generación\ndepende mucho de cómo está armado el contexto\n\nPregunta para discutir\n¿Qué pasa si una instrucción crítica queda escondida entre demasiado texto irrelevante?"
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#cierre",
+    "href": "clases/m03-clase01-atencion.html#cierre",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Cierre",
+    "text": "Cierre\nEntender atención ayuda a leer mejor tres cosas:\n\nla arquitectura Transformer\nla calidad real del contexto que entregamos\nel sentido del paper fundacional que aparece en la actividad de la clase 01"
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#actividad-grupal-breve-paper-fundacional",
+    "href": "clases/m03-clase01-atencion.html#actividad-grupal-breve-paper-fundacional",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Actividad grupal breve: paper fundacional",
+    "text": "Actividad grupal breve: paper fundacional\nTexto base: Attention Is All You Need (Vaswani et al., 2017)\nObjetivo\nEntender por qué este paper fue tan influyente y conectar su propuesta con lo que hoy vemos en LLMs.\nFormato\n\ngrupos de 3 a 4 personas\nduración máxima: 30 minutos\ninsumo mínimo: abstract + introducción del paper"
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#instrucciones-de-trabajo",
+    "href": "clases/m03-clase01-atencion.html#instrucciones-de-trabajo",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Instrucciones de trabajo",
+    "text": "Instrucciones de trabajo\nCada grupo debe leer el abstract y la introducción y responder estas preguntas:\n\n¿Qué limitación de los modelos anteriores identifica el paper?\n¿Cuál es la propuesta central del Transformer?\n¿Por qué la atención aparece como una innovación tan importante?\n¿Qué conexión ven entre este paper y los LLMs actuales?\n\nRegla\nNo se trata de resumir todo el paper, sino de identificar su argumento central."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#producto-esperado-del-grupo",
+    "href": "clases/m03-clase01-atencion.html#producto-esperado-del-grupo",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Producto esperado del grupo",
+    "text": "Producto esperado del grupo\nCada grupo prepara una mini-síntesis de 3 partes:\n\nProblema anterior: qué estaba fallando o limitando a los modelos previos\nAporte del paper: qué cambia con el Transformer\nImpacto actual: por qué esto sigue importando en la arquitectura de los LLMs\n\nFormato sugerido\n3 a 5 bullets o una intervención oral de 1 minuto."
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#guía-para-orientar-la-discusión",
+    "href": "clases/m03-clase01-atencion.html#guía-para-orientar-la-discusión",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Guía para orientar la discusión",
+    "text": "Guía para orientar la discusión\nSi el grupo se traba, puede apoyarse en esta pista:\n\nantes había más secuencialidad y menos paralelización\nel paper propone apoyarse solo en atención\neso mejora la capacidad de modelar dependencias y escalar entrenamiento\n\nConexión con esta clase\nLa pregunta de fondo es:\n¿Por qué entender atención ayuda a entender por qué los LLMs modernos son posibles?"
+  },
+  {
+    "objectID": "clases/m03-clase01-atencion.html#cierre-y-puesta-en-común",
+    "href": "clases/m03-clase01-atencion.html#cierre-y-puesta-en-común",
+    "title": "Módulo 3: Atención en LLMs",
+    "section": "Cierre y puesta en común",
+    "text": "Cierre y puesta en común\nEn plenario, cada grupo comparte:\n\nuna idea del paper que le pareció fundacional\nuna conexión con conceptos vistos hoy: atención, contexto, escalabilidad o arquitectura\n\nCriterio de éxito\nSi al terminar pueden explicar por qué este paper marca un punto de inflexión, la actividad cumplió su objetivo."
+  },
+  {
     "objectID": "clases/m03-clase02-cicd-mlops-gobernanza.html#clase-02-cicd-mlops-y-gobernanza",
     "href": "clases/m03-clase02-cicd-mlops-gobernanza.html#clase-02-cicd-mlops-y-gobernanza",
     "title": "Módulo 3: CI/CD, MLOps y Gobernanza en IA Generativa",
@@ -1792,11 +2478,11 @@
     "text": "Arquitectura de soluciones\nChatbot\nDefinición simple: interfaz conversacional que responde mensajes.\nPor qué importa: ayuda a no sobrevalorar la capa visible del sistema.\nEjemplo del curso: diapositiva_03.qmd lo contrasta con asistente, copilot y agente.\nNo confundir con: agente. Un chatbot puede limitarse a responder sin usar herramientas ni ejecutar pasos.\nPregunta guía: ¿el sistema solo conversa o también resuelve tareas?\nAsistente\nDefinición simple: sistema que ayuda a una persona en una tarea.\nPor qué importa: pone el foco en apoyo al trabajo humano, no solo en diálogo.\nEjemplo del curso: en varios casos el sistema sugiere, resume o redacta, pero no necesariamente actúa solo.\nNo confundir con: automatización total. Un asistente puede requerir confirmación constante.\nPregunta guía: estamos aumentando capacidad humana o reemplazando un proceso?\nCopilot\nDefinición simple: asistente integrado dentro de una herramienta o flujo de trabajo.\nPor qué importa: muestra una modalidad concreta de adopción organizacional.\nEjemplo del curso: aparece como tipo de sistema distinto a chatbot y agente.\nNo confundir con: interfaz separada. El copilot acompaña trabajo ya existente dentro de otra herramienta.\nPregunta guía: la ayuda ocurre dentro del flujo de trabajo o en un canal aparte?\nAgente\nDefinición simple: sistema que recibe un objetivo, decide pasos, usa contexto o herramientas y produce una salida.\nPor qué importa: es uno de los conceptos centrales del curso y de los PDFs nuevos.\nEjemplo del curso: el caso AFP responde consultas usando fuentes oficiales; el PDF Agentes-LLMs-Herramientas-que-Actuan.pdf insiste en que la diferencia clave es que el agente toma decisiones en el camino y no solo devuelve una respuesta.\nNo confundir con: prompt único. Un agente puede usar múltiples turnos, herramientas, memoria y controles.\nPregunta guía: ¿el sistema solo responde o decide cómo avanzar?\nHerramientas\nDefinición simple: capacidades externas que el agente puede usar, como leer archivos, consultar SQL, ejecutar código, buscar en la web, generar PDF o enviar correo.\nPor qué importa: los PDFs nuevos las describen como “el músculo del agente”.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf enumera categorías como datos, cómputo, búsqueda, escritura, memoria y control; Clase-03-No-Code-vs-Codigo-Asistido.pdf muestra un agente que compara viajes, genera PDF y lo envía por correo.\nNo confundir con: conocimiento interno del LLM. Una herramienta trae capacidad operativa o acceso a información externa.\nPregunta guía: ¿qué herramienta concreta falta para que este agente sea realmente útil?\nWorkflow\nDefinición simple: secuencia de pasos mediante la cual una solución transforma una entrada en una salida.\nPor qué importa: evita pensar el sistema solo como una respuesta aislada.\nEjemplo del curso: en AFP el flujo es consulta, recuperación de información, redacción, control y entrega; en viajes el flujo busca vuelos, hoteles, atracciones, calcula presupuesto y genera un informe.\nNo confundir con: prompt. El prompt es una pieza; el workflow es el proceso completo.\nPregunta guía: ¿cuáles son los pasos reales desde la pregunta hasta la acción final?\nMemoria\nDefinición simple: mecanismos para retener contexto entre pasos, sesiones o documentos.\nPor qué importa: en agentes cambia mucho la experiencia y la capacidad de continuidad.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf distingue memoria de contexto, caché, vectorial y estructurada.\nNo confundir con: ventana de contexto. Memoria puede ir más allá de la conversación actual.\nPregunta guía: ¿qué necesita recordar el sistema y por cuánto tiempo?\nRAG\nDefinición simple: forma de responder usando información recuperada desde documentos o bases externas.\nPor qué importa: reduce dependencia de la memoria genérica del modelo y mejora trazabilidad.\nEjemplo del curso: en AFP se usa para responder con FAQ, cartola y normativa; en Agentes-LLMs-Herramientas-que-Actuan.pdf se ejemplifica con Ley de Renta y documentos del SII.\nNo confundir con: fine-tuning. RAG trae contexto al momento de responder; no reentrena el modelo.\nPregunta guía: ¿de dónde saldrá la información específica y actualizada que necesita el sistema?\nBase de datos vectorial\nDefinición simple: infraestructura pensada para guardar y buscar embeddings.\nPor qué importa: suele ser la pieza técnica que vuelve operativo un esquema RAG.\nEjemplo del curso: aparece asociada a FAQ institucionales, normativa y documentos internos.\nNo confundir con: base relacional tradicional. Una sirve para similitud semántica; la otra para consultas estructuradas.\nPregunta guía: ¿necesito buscar por significado o por campos exactos?\nMCP\nDefinición simple: protocolo estándar para conectar agentes o modelos con herramientas externas.\nPor qué importa: es uno de los términos nuevos que aparece en los materiales recientes y ayuda a explicar integración sin bajar demasiado a detalle técnico.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf lo presenta como el estándar que hace a los agentes más interoperables, comparándolo con USB para periféricos.\nNo confundir con: una herramienta específica. MCP no es la herramienta; es la forma estandarizada de conectar herramientas.\nPregunta guía: ¿la integración está hecha a mano o sigue un estándar reusable?\nMulti-agente\nDefinición simple: arquitectura donde varios agentes especializados colaboran para resolver una tarea.\nPor qué importa: aparece como respuesta a problemas con subtareas, verificación o paralelismo.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf muestra un equipo de cobranza automatizada con orquestador, analista, buscador normativo, redactor y revisor.\nNo confundir con: complejidad innecesaria. No todo problema necesita varios agentes.\nPregunta guía: ¿un solo agente basta o conviene separar funciones especializadas?"
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#operacion-y-despliegue",
-    "href": "clases/m03-diccionario-faq-terminos.html#operacion-y-despliegue",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "Operacion y despliegue",
-    "text": "Operacion y despliegue\nEvals\nDefinicion simple: pruebas para medir si una solucion de IA funciona bien.\nPor que importa: permiten comparar versiones y evitar que la calidad dependa de intuicion o anecdotas.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd y el PDF de agentes recalcan metricas como task completion, pasos, tool accuracy, hallucination, latencia y costo.\nNo confundir con: opinion del usuario solamente. El feedback ayuda, pero no reemplaza medicion sistematica.\nPregunta guia: como sabremos si esta nueva version realmente mejora?\nObservabilidad\nDefinicion simple: capacidad de mirar como se comporta el sistema en uso real.\nPor que importa: un sistema puede seguir “funcionando” y al mismo tiempo estar respondiendo peor, costando mas o fallando de formas silenciosas.\nEjemplo del curso: calidad, latencia, costo, uso de contexto, fallos de herramientas y feedback del usuario.\nNo confundir con: monitoreo tecnico minimo. En IA generativa hay que observar tambien calidad semantica.\nPregunta guia: que veriamos en los datos si el sistema empieza a degradarse?\nCI/CD\nDefinicion simple: practicas para integrar cambios frecuentes y desplegarlos con mas confiabilidad.\nPor que importa: en IA generativa se versionan no solo archivos de codigo, sino tambien prompts, configuraciones, datasets de prueba y evaluaciones.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd lo presenta como paso de experimentacion a despliegue continuo.\nNo confundir con: solo automatizar deploy. Incluye integracion, pruebas y validacion de cambios.\nPregunta guia: que cambia realmente cuando modificamos el sistema?\nMLOps\nDefinicion simple: conjunto de practicas para desarrollar, desplegar, operar y mejorar sistemas basados en modelos de manera confiable.\nPor que importa: conecta datos, modelos, ingenieria y operacion.\nEjemplo del curso: en clase se relaciona con drift, monitoreo, evaluacion, observabilidad y mejora continua.\nNo confundir con: DevOps puro. MLOps agrega problemas propios de modelos, datos y evaluaciones no deterministas.\nPregunta guia: que hace falta para que esto deje de ser demo y pase a capacidad organizacional?\nDrift\nDefinicion simple: deterioro o cambio del comportamiento del sistema a lo largo del tiempo.\nPor que importa: explica por que una solucion puede empeorar sin que “se rompa” tecnicamente.\nEjemplo del curso: cambios en datos, usuarios, prompts, modelos del proveedor o procesos internos.\nNo confundir con: bug unico. El drift suele ser gradual y acumulativo.\nPregunta guia: si esto funcionaba bien hace dos meses, que pudo haber cambiado?\nTrazabilidad\nDefinicion simple: capacidad de reconstruir que informacion se uso, que reglas aplicaron y como se llego a un resultado.\nPor que importa: es clave para auditoria, seguridad, gobernanza y mantenimiento.\nEjemplo del curso: los PDFs nuevos insisten en logica auditable, herramientas visibles y codigo modificable; el de no-code vs codigo asistido advierte que sin logs ni trazabilidad el sistema es imposible de auditar.\nNo confundir con: tener solo el output final. La trazabilidad incluye el camino.\nPregunta guia: podriamos explicar como se llego a esta respuesta o accion?"
+    "objectID": "clases/m03-diccionario-faq-terminos.html#operación-y-despliegue",
+    "href": "clases/m03-diccionario-faq-terminos.html#operación-y-despliegue",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "Operación y despliegue",
+    "text": "Operación y despliegue\nEvals\nDefinición simple: pruebas para medir si una solucion de IA funciona bien.\nPor qué importa: permiten comparar versiones y evitar que la calidad dependa de intuición o anécdotas.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd y el PDF de agentes recalcan métricas como task completion, pasos, tool accuracy, hallucination, latencia y costo.\nNo confundir con: opinión del usuario solamente. El feedback ayuda, pero no reemplaza medición sistemática.\nPregunta guía: ¿cómo sabremos si esta nueva versión realmente mejora?\nObservabilidad\nDefinición simple: capacidad de mirar cómo se comporta el sistema en uso real.\nPor qué importa: un sistema puede seguir “funcionando” y al mismo tiempo estar respondiendo peor, costando más o fallando de formas silenciosas.\nEjemplo del curso: calidad, latencia, costo, uso de contexto, fallos de herramientas y feedback del usuario.\nNo confundir con: monitoreo técnico mínimo. En IA generativa hay que observar también calidad semántica.\nPregunta guía: ¿qué veríamos en los datos si el sistema empieza a degradarse?\nCI/CD\nDefinición simple: prácticas para integrar cambios frecuentes y desplegarlos con más confiabilidad.\nPor qué importa: en IA generativa se versionan no solo archivos de código, sino también prompts, configuraciones, datasets de prueba y evaluaciones.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd lo presenta como paso de experimentación a despliegue continuo.\nNo confundir con: solo automatizar deploy. Incluye integración, pruebas y validación de cambios.\nPregunta guía: ¿qué cambia realmente cuando modificamos el sistema?\nMLOps\nDefinición simple: conjunto de prácticas para desarrollar, desplegar, operar y mejorar sistemas basados en modelos de manera confiable.\nPor qué importa: conecta datos, modelos, ingeniería y operación.\nEjemplo del curso: en clase se relaciona con drift, monitoreo, evaluación, observabilidad y mejora continua.\nNo confundir con: DevOps puro. MLOps agrega problemas propios de modelos, datos y evaluaciones no deterministas.\nPregunta guía: ¿qué hace falta para que esto deje de ser demo y pase a capacidad organizacional?\nDrift\nDefinición simple: deterioro o cambio del comportamiento del sistema a lo largo del tiempo.\nPor qué importa: explica por qué una solución puede empeorar sin que “se rompa” técnicamente.\nEjemplo del curso: cambios en datos, usuarios, prompts, modelos del proveedor o procesos internos.\nNo confundir con: bug único. El drift suele ser gradual y acumulativo.\nPregunta guía: si esto funcionaba bien hace dos meses, ¿qué pudo haber cambiado?\nTrazabilidad\nDefinición simple: capacidad de reconstruir qué información se usó, qué reglas aplicaron y cómo se llegó a un resultado.\nPor qué importa: es clave para auditoría, seguridad, gobernanza y mantenimiento.\nEjemplo del curso: los PDFs nuevos insisten en lógica auditable, herramientas visibles y código modificable; el de no-code vs código asistido advierte que sin logs ni trazabilidad el sistema es imposible de auditar.\nNo confundir con: tener solo el output final. La trazabilidad incluye el camino.\nPregunta guía: ¿podríamos explicar cómo se llegó a esta respuesta o acción?"
   },
   {
     "objectID": "clases/m03-diccionario-faq-terminos.html#riesgo-criterio-y-gobernanza",
@@ -1806,18 +2492,18 @@
     "text": "Riesgo, criterio y gobernanza\nGobernanza\nDefinición simple: conjunto de reglas, roles y controles para asegurar uso responsable y alineado con objetivos organizacionales.\nPor qué importa: ayuda a decidir qué se permite, quién responde y qué riesgos se aceptan.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd la conecta con privacidad, seguridad, roles, políticas y control.\nNo confundir con: prohibicion. Gobernar no es impedir, sino ordenar y responsabilizar.\nPregunta guía: ¿quién decide los límites de este sistema y bajo qué reglas?\nGuardrails\nDefinición simple: controles para limitar comportamientos no deseados.\nPor qué importa: en agentes son esenciales para restringir temas, herramientas, acciones y escalamiento.\nEjemplo del curso: en AFP sirve para impedir recomendaciones previsionales personalizadas sin revisión; en agentes con herramientas ayuda a evitar acciones irreversibles o alcance excesivo.\nNo confundir con: buen prompt solamente. Los guardrails pueden vivir también en reglas del sistema, permisos y aprobaciones.\nPregunta guía: ¿qué no queremos que este agente haga nunca por su cuenta?\nHuman-in-the-loop\nDefinición simple: esquema donde una persona revisa, corrige o aprueba parte del proceso.\nPor qué importa: es la forma práctica de graduar autonomía según riesgo.\nEjemplo del curso: Agentes-LLMs-Herramientas-que-Actuan.pdf define niveles de autonomía según el tipo de acción; para decisiones de cobranza recomienda aprobación o reporte de excepciones.\nNo confundir con: supervisión constante de todo. El punto es decidir bien en qué momentos humanos deben intervenir.\nPregunta guía: ¿qué acción requiere aprobación humana antes de ejecutarse?\nTrade-off\nDefinición simple: tensión entre objetivos que no pueden maximizarse al mismo tiempo.\nPor qué importa: aparece transversalmente en el curso, desde precisión versus velocidad hasta control versus facilidad de implementación.\nEjemplo del curso: AFP trabaja velocidad versus precisión y autonomía versus control; el PDF de no-code versus código asistido trabaja velocidad y facilidad versus control y auditabilidad.\nNo confundir con: error de diseño. Algunos trade-offs son inevitables; lo importante es explicitarlos.\nPregunta guía: ¿qué estamos ganando y qué estamos sacrificando con esta decisión?\nDecision Science\nDefinición simple: disciplina que ayuda a estructurar decisiones complejas bajo incertidumbre.\nPor qué importa: instala la idea de partir por el problema y no por la tecnología.\nEjemplo del curso: m03-clase03-decision-science-sesgos.qmd y el caso AFP preguntan primero qué decisión organizacional estamos tratando de mejorar.\nNo confundir con: analitica técnica solamente. Incluye criterios, consecuencias, incertidumbre y responsables.\nPregunta guía: ¿qué decisión real queremos mejorar con este sistema?\nSesgo de automatización\nDefinición simple: tendencia a confiar demasiado en sistemas automáticos.\nPor qué importa: es uno de los riesgos humanos más relevantes al usar IA en organizaciones.\nEjemplo del curso: en AFP se advierte el riesgo de tomar una respuesta bien escrita como recomendación válida; en decision science se presenta como una señal de alerta organizacional.\nNo confundir con: eficiencia. Que un sistema ahorre tiempo no significa que deba recibir confianza ciega.\nPregunta guía: ¿estamos revisando la salida o solo aceptándola porque viene del sistema?\nAccountability\nDefinición simple: responsabilidad por las decisiones y consecuencias del uso de IA.\nPor qué importa: recuerda que la responsabilidad institucional no desaparece porque participe una herramienta.\nEjemplo del curso: clase 3 de decision science lo vincula con criterio profesional y responsabilidad humana.\nNo confundir con: culpa del proveedor o del modelo. La organización sigue respondiendo por su uso.\nPregunta guía: si esto sale mal, ¿quién responde y con qué evidencia?"
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#construccion-de-soluciones",
-    "href": "clases/m03-diccionario-faq-terminos.html#construccion-de-soluciones",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "Construccion de soluciones",
-    "text": "Construccion de soluciones\nNo-code\nDefinicion simple: forma de construir prototipos o soluciones usando interfaces visuales o descripciones en lenguaje natural, con minima programacion directa.\nPor que importa: baja la barrera de entrada y acelera el prototipado.\nEjemplo del curso: el PDF Clase-03-No-Code-vs-Codigo-Asistido.pdf muestra v0.app, n8n y otras herramientas para construir rapido un agente funcional.\nNo confundir con: produccion segura por defecto. Rapidez de prototipo no implica mantenibilidad ni auditabilidad suficientes.\nPregunta guia: estamos validando una idea rapido o construyendo algo para operar de verdad?\nCodigo asistido\nDefinicion simple: forma de construir software donde una IA ayuda a escribir, ejecutar y corregir codigo dentro de un proyecto real.\nPor que importa: permite mas control, integraciones y trazabilidad, pero exige mas criterio tecnico.\nEjemplo del curso: Clase-03-No-Code-vs-Codigo-Asistido.pdf usa Claude Code para construir un agente comparador de viajes que genera PDF y envia correo.\nNo confundir con: programacion totalmente automatica. Sigue requiriendo arquitectura, pruebas, seguridad y mantenimiento.\nPregunta guia: necesitamos velocidad de prototipo o control fino sobre el sistema?\nPrototipo\nDefinicion simple: version inicial para validar una idea rapidamente.\nPor que importa: los PDFs nuevos insisten en que un prototipo visible puede impresionar mucho, pero no equivale a producto listo.\nEjemplo del curso: el agente de viajes y varias actividades estan pensados para salir de clase con algo funcional.\nNo confundir con: produccion. Un prototipo puede carecer de pruebas, logs, seguridad o manejo de errores.\nPregunta guia: estamos validando una hipotesis o prometiendo operacion real?\nProduccion\nDefinicion simple: etapa en que el sistema opera con usuarios reales, datos reales y consecuencias reales.\nPor que importa: cambia el estandar exigido: seguridad, trazabilidad, monitoreo, manejo de errores, costos y mantenimiento.\nEjemplo del curso: Clase-03-No-Code-vs-Codigo-Asistido.pdf recalca que pasar de prototipo a produccion sigue requiriendo ingenieria de software.\nNo confundir con: demo exitosa. Una demo muestra posibilidad; la produccion exige confiabilidad sostenida.\nPregunta guia: que nos falta para poner esto frente a usuarios reales con tranquilidad?"
+    "objectID": "clases/m03-diccionario-faq-terminos.html#construcción-de-soluciones",
+    "href": "clases/m03-diccionario-faq-terminos.html#construcción-de-soluciones",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "Construcción de soluciones",
+    "text": "Construcción de soluciones\nNo-code\nDefinición simple: forma de construir prototipos o soluciones usando interfaces visuales o descripciones en lenguaje natural, con mínima programación directa.\nPor qué importa: baja la barrera de entrada y acelera el prototipado.\nEjemplo del curso: el PDF Clase-03-No-Code-vs-Codigo-Asistido.pdf muestra v0.app, n8n y otras herramientas para construir rápido un agente funcional.\nNo confundir con: producción segura por defecto. Rapidez de prototipo no implica mantenibilidad ni auditabilidad suficientes.\nPregunta guía: ¿estamos validando una idea rápido o construyendo algo para operar de verdad?\nCódigo asistido\nDefinición simple: forma de construir software donde una IA ayuda a escribir, ejecutar y corregir código dentro de un proyecto real.\nPor qué importa: permite más control, integraciones y trazabilidad, pero exige más criterio técnico.\nEjemplo del curso: Clase-03-No-Code-vs-Codigo-Asistido.pdf usa Claude Code para construir un agente comparador de viajes que genera PDF y envía correo.\nNo confundir con: programacion totalmente automatica. Sigue requiriendo arquitectura, pruebas, seguridad y mantenimiento.\nPregunta guía: ¿necesitamos velocidad de prototipo o control fino sobre el sistema?\nPrototipo\nDefinición simple: versión inicial para validar una idea rápidamente.\nPor qué importa: los PDFs nuevos insisten en que un prototipo visible puede impresionar mucho, pero no equivale a producto listo.\nEjemplo del curso: el agente de viajes y varias actividades estan pensados para salir de clase con algo funcional.\nNo confundir con: producción. Un prototipo puede carecer de pruebas, logs, seguridad o manejo de errores.\nPregunta guía: ¿estamos validando una hipótesis o prometiendo operación real?\nProducción\nDefinición simple: etapa en que el sistema opera con usuarios reales, datos reales y consecuencias reales.\nPor qué importa: cambia el estándar exigido: seguridad, trazabilidad, monitoreo, manejo de errores, costos y mantenimiento.\nEjemplo del curso: Clase-03-No-Code-vs-Codigo-Asistido.pdf recalca que pasar de prototipo a producción sigue requiriendo ingeniería de software.\nNo confundir con: demo exitosa. Una demo muestra posibilidad; la producción exige confiabilidad sostenida.\nPregunta guía: ¿qué nos falta para poner esto frente a usuarios reales con tranquilidad?"
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#cual-es-la-diferencia-entre-ia-ia-generativa-y-llm",
-    "href": "clases/m03-diccionario-faq-terminos.html#cual-es-la-diferencia-entre-ia-ia-generativa-y-llm",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "1. Cual es la diferencia entre IA, IA generativa y LLM?",
-    "text": "1. Cual es la diferencia entre IA, IA generativa y LLM?\nIA es el paraguas amplio. IA generativa es la parte que crea contenido nuevo. Un LLM es un tipo de modelo generativo especializado en lenguaje."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#cuál-es-la-diferencia-entre-ia-ia-generativa-y-llm",
+    "href": "clases/m03-diccionario-faq-terminos.html#cuál-es-la-diferencia-entre-ia-ia-generativa-y-llm",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "1. ¿Cuál es la diferencia entre IA, IA generativa y LLM?",
+    "text": "1. ¿Cuál es la diferencia entre IA, IA generativa y LLM?\nIA es el paraguas amplio. IA generativa es la parte que crea contenido nuevo. Un LLM es un tipo de modelo generativo especializado en lenguaje."
   },
   {
     "objectID": "clases/m03-diccionario-faq-terminos.html#un-llm-y-un-chatbot-son-lo-mismo",
@@ -1827,11 +2513,11 @@
     "text": "2. ¿Un LLM y un chatbot son lo mismo?\nNo. El LLM es el modelo. El chatbot es una interfaz o aplicación que puede usar un LLM, documentos, reglas, memoria y herramientas."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato",
-    "href": "clases/m03-diccionario-faq-terminos.html#por-que-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "3. Por que el curso insiste tanto en que el prompt es un contrato?",
-    "text": "3. Por que el curso insiste tanto en que el prompt es un contrato?\nPorque una instruccion vaga deja demasiado espacio a que el modelo complete vacios con patrones genericos. Los PDFs nuevos muestran que cuando el entregable, criterio y restricciones quedan mejor definidos, la salida se vuelve mas util y mas auditable."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#por-qué-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato",
+    "href": "clases/m03-diccionario-faq-terminos.html#por-qué-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "3. ¿Por qué el curso insiste tanto en que el prompt es un contrato?",
+    "text": "3. ¿Por qué el curso insiste tanto en que el prompt es un contrato?\nPorque una instrucción vaga deja demasiado espacio a que el modelo complete vacíos con patrones genéricos. Los PDFs nuevos muestran que cuando el entregable, criterio y restricciones quedan mejor definidos, la salida se vuelve más útil y más auditable."
   },
   {
     "objectID": "clases/m03-diccionario-faq-terminos.html#un-prompt-bueno-reemplaza-rag",
@@ -1841,11 +2527,11 @@
     "text": "4. ¿Un prompt bueno reemplaza RAG?\nNo. Un buen prompt ayuda a pedir mejor. RAG ayuda a traer información específica y actualizada. Cumplen funciones distintas."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#mas-contexto-siempre-mejora-la-respuesta",
-    "href": "clases/m03-diccionario-faq-terminos.html#mas-contexto-siempre-mejora-la-respuesta",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "5. Mas contexto siempre mejora la respuesta?",
-    "text": "5. Mas contexto siempre mejora la respuesta?\nNo. A veces mejora; otras veces ensucia, distrae o encarece. Muchas veces importa mas seleccionar bien el contexto que simplemente agregar mas."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#más-contexto-siempre-mejora-la-respuesta",
+    "href": "clases/m03-diccionario-faq-terminos.html#más-contexto-siempre-mejora-la-respuesta",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "5. ¿Más contexto siempre mejora la respuesta?",
+    "text": "5. ¿Más contexto siempre mejora la respuesta?\nNo. A veces mejora; otras veces ensucia, distrae o encarece. Muchas veces importa más seleccionar bien el contexto que simplemente agregar más."
   },
   {
     "objectID": "clases/m03-diccionario-faq-terminos.html#si-existe-rag-entonces-ya-no-hay-alucinaciones",
@@ -1855,74 +2541,74 @@
     "text": "6. Si existe RAG, entonces ya no hay alucinaciones?\nNo. RAG reduce parte del problema, pero no elimina errores de recuperación, interpretación o redacción."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#cuando-un-chatbot-pasa-a-ser-agente",
-    "href": "clases/m03-diccionario-faq-terminos.html#cuando-un-chatbot-pasa-a-ser-agente",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "7. Cuando un chatbot pasa a ser agente?",
-    "text": "7. Cuando un chatbot pasa a ser agente?\nCuando deja de limitarse a responder y empieza a decidir pasos, usar herramientas, trabajar con objetivos y ejecutar acciones o subprocesos."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#cuándo-un-chatbot-pasa-a-ser-agente",
+    "href": "clases/m03-diccionario-faq-terminos.html#cuándo-un-chatbot-pasa-a-ser-agente",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "7. ¿Cuándo un chatbot pasa a ser agente?",
+    "text": "7. ¿Cuándo un chatbot pasa a ser agente?\nCuando deja de limitarse a responder y empieza a decidir pasos, usar herramientas, trabajar con objetivos y ejecutar acciones o subprocesos."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#que-aporta-una-herramienta-a-un-agente",
-    "href": "clases/m03-diccionario-faq-terminos.html#que-aporta-una-herramienta-a-un-agente",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "8. Que aporta una herramienta a un agente?",
-    "text": "8. Que aporta una herramienta a un agente?\nLe da capacidad operativa o acceso a informacion externa. Sin herramientas, el agente puede razonar sobre texto; con herramientas puede buscar, calcular, leer, escribir, enviar o consultar sistemas."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-aporta-una-herramienta-a-un-agente",
+    "href": "clases/m03-diccionario-faq-terminos.html#qué-aporta-una-herramienta-a-un-agente",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "8. ¿Qué aporta una herramienta a un agente?",
+    "text": "8. ¿Qué aporta una herramienta a un agente?\nLe da capacidad operativa o acceso a información externa. Sin herramientas, el agente puede razonar sobre texto; con herramientas puede buscar, calcular, leer, escribir, enviar o consultar sistemas."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#que-diferencia-hay-entre-no-code-y-codigo-asistido",
-    "href": "clases/m03-diccionario-faq-terminos.html#que-diferencia-hay-entre-no-code-y-codigo-asistido",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "9. Que diferencia hay entre no-code y codigo asistido?",
-    "text": "9. Que diferencia hay entre no-code y codigo asistido?\nNo-code privilegia velocidad y baja barrera de entrada. Codigo asistido privilegia control, integracion y auditabilidad. Ambos pueden servir, pero no para los mismos contextos."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-diferencia-hay-entre-no-code-y-código-asistido",
+    "href": "clases/m03-diccionario-faq-terminos.html#qué-diferencia-hay-entre-no-code-y-código-asistido",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "9. ¿Qué diferencia hay entre no-code y código asistido?",
+    "text": "9. ¿Qué diferencia hay entre no-code y código asistido?\nNo-code privilegia velocidad y baja barrera de entrada. Código asistido privilegia control, integración y auditabilidad. Ambos pueden servir, pero no para los mismos contextos."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#por-que-no-basta-con-que-una-demo-funcione-bien-una-vez",
-    "href": "clases/m03-diccionario-faq-terminos.html#por-que-no-basta-con-que-una-demo-funcione-bien-una-vez",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "10. Por que no basta con que una demo funcione bien una vez?",
-    "text": "10. Por que no basta con que una demo funcione bien una vez?\nPorque un sistema real debe sostener calidad, seguridad, costo razonable, monitoreo, trazabilidad y mantenimiento en el tiempo."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#por-qué-no-basta-con-que-una-demo-funcione-bien-una-vez",
+    "href": "clases/m03-diccionario-faq-terminos.html#por-qué-no-basta-con-que-una-demo-funcione-bien-una-vez",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "10. ¿Por qué no basta con que una demo funcione bien una vez?",
+    "text": "10. ¿Por qué no basta con que una demo funcione bien una vez?\nPorque un sistema real debe sostener calidad, seguridad, costo razonable, monitoreo, trazabilidad y mantenimiento en el tiempo."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#que-se-deberia-versionar-en-un-proyecto-de-ia-generativa",
-    "href": "clases/m03-diccionario-faq-terminos.html#que-se-deberia-versionar-en-un-proyecto-de-ia-generativa",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "11. Que se deberia versionar en un proyecto de IA generativa?",
-    "text": "11. Que se deberia versionar en un proyecto de IA generativa?\nCodigo, prompts, configuraciones del modelo, datasets de prueba, reglas de negocio y resultados de evaluacion."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-se-debería-versionar-en-un-proyecto-de-ia-generativa",
+    "href": "clases/m03-diccionario-faq-terminos.html#qué-se-debería-versionar-en-un-proyecto-de-ia-generativa",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "11. ¿Qué se debería versionar en un proyecto de IA generativa?",
+    "text": "11. ¿Qué se debería versionar en un proyecto de IA generativa?\nCódigo, prompts, configuraciones del modelo, datasets de prueba, reglas de negocio y resultados de evaluación."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#que-miden-las-evals-en-agentes",
-    "href": "clases/m03-diccionario-faq-terminos.html#que-miden-las-evals-en-agentes",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "12. Que miden las evals en agentes?",
-    "text": "12. Que miden las evals en agentes?\nNo solo calidad del texto final. Tambien completion rate, cantidad de pasos, precision en el uso de herramientas, alucinacion, latencia y costo por tarea."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-miden-las-evals-en-agentes",
+    "href": "clases/m03-diccionario-faq-terminos.html#qué-miden-las-evals-en-agentes",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "12. ¿Qué miden las evals en agentes?",
+    "text": "12. ¿Qué miden las evals en agentes?\nNo solo calidad del texto final. También completion rate, cantidad de pasos, precisión en el uso de herramientas, alucinación, latencia y costo por tarea."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#por-que-importa-tanto-human-in-the-loop",
-    "href": "clases/m03-diccionario-faq-terminos.html#por-que-importa-tanto-human-in-the-loop",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "13. Por que importa tanto human-in-the-loop?",
-    "text": "13. Por que importa tanto human-in-the-loop?\nPorque hay acciones y decisiones que no deberian delegarse ciegamente, especialmente cuando son irreversibles o tienen impacto financiero, legal o humano."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#por-qué-importa-tanto-human-in-the-loop",
+    "href": "clases/m03-diccionario-faq-terminos.html#por-qué-importa-tanto-human-in-the-loop",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "13. ¿Por qué importa tanto human-in-the-loop?",
+    "text": "13. ¿Por qué importa tanto human-in-the-loop?\nPorque hay acciones y decisiones que no deberían delegarse ciegamente, especialmente cuando son irreversibles o tienen impacto financiero, legal o humano."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#cual-es-un-error-comun-al-usar-ia-para-decidir",
-    "href": "clases/m03-diccionario-faq-terminos.html#cual-es-un-error-comun-al-usar-ia-para-decidir",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "14. Cual es un error comun al usar IA para decidir?",
-    "text": "14. Cual es un error comun al usar IA para decidir?\nPedirle a la IA que diga “que hacer” como si reemplazara criterio profesional. Suele ser mejor pedir alternativas, contraargumentos, evidencia usada, vacios de informacion y riesgos no considerados."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#cuál-es-un-error-común-al-usar-ia-para-decidir",
+    "href": "clases/m03-diccionario-faq-terminos.html#cuál-es-un-error-común-al-usar-ia-para-decidir",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "14. ¿Cuál es un error común al usar IA para decidir?",
+    "text": "14. ¿Cuál es un error común al usar IA para decidir?\nPedirle a la IA que diga “qué hacer” como si reemplazara criterio profesional. Suele ser mejor pedir alternativas, contraargumentos, evidencia usada, vacíos de información y riesgos no considerados."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno",
-    "href": "clases/m03-diccionario-faq-terminos.html#que-parte-del-problema-es-tecnologica-y-que-parte-es-de-diseno",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "15. Que parte del problema es tecnologica y que parte es de diseno?",
-    "text": "15. Que parte del problema es tecnologica y que parte es de diseno?\nLa tecnologia resuelve acceso a modelos, herramientas y automatizacion. El diseno define alcance, fuentes, riesgo aceptable, reglas, escalamiento y criterios de evaluacion. Sin buen diseno, la tecnologia sola no salva la solucion."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-parte-del-problema-es-tecnológica-y-qué-parte-es-de-diseño",
+    "href": "clases/m03-diccionario-faq-terminos.html#qué-parte-del-problema-es-tecnológica-y-qué-parte-es-de-diseño",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "15. ¿Qué parte del problema es tecnológica y qué parte es de diseño?",
+    "text": "15. ¿Qué parte del problema es tecnológica y qué parte es de diseño?\nLa tecnología resuelve acceso a modelos, herramientas y automatización. El diseño define alcance, fuentes, riesgo aceptable, reglas, escalamiento y criterios de evaluación. Sin buen diseño, la tecnología sola no salva la solución."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico",
-    "href": "clases/m03-diccionario-faq-terminos.html#por-que-el-caso-afp-es-tan-buen-ejemplo-pedagogico",
-    "title": "Modulo 3: Diccionario y FAQ de terminos del curso",
-    "section": "16. Por que el caso AFP es tan buen ejemplo pedagogico?",
-    "text": "16. Por que el caso AFP es tan buen ejemplo pedagogico?\nPorque obliga a pensar en fuentes oficiales, claridad, riesgo, escalamiento a humano, trazabilidad y limites de autonomia. Muestra muy bien que “responder” no es suficiente."
+    "objectID": "clases/m03-diccionario-faq-terminos.html#por-qué-el-caso-afp-es-tan-buen-ejemplo-pedagógico",
+    "href": "clases/m03-diccionario-faq-terminos.html#por-qué-el-caso-afp-es-tan-buen-ejemplo-pedagógico",
+    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
+    "section": "16. ¿Por qué el caso AFP es tan buen ejemplo pedagógico?",
+    "text": "16. ¿Por qué el caso AFP es tan buen ejemplo pedagógico?\nPorque obliga a pensar en fuentes oficiales, claridad, riesgo, escalamiento a humano, trazabilidad y límites de autonomía. Muestra muy bien que “responder” no es suficiente."
   },
   {
     "objectID": "clases/tokenizacion_tecnicas.html#entender-las-principales-técnicas-de-tokenización",
@@ -2144,477 +2830,127 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Magíster en Administración de Instituciones de Salud",
+    "title": "Curso de IA Generativa y LLMs",
     "section": "",
-    "text": "Este será el repositorio de los distintos materiales utilizados en el curso."
+    "text": "Bienvenidas y bienvenidos al sitio del curso. Acá reunimos las clases, materiales complementarios y recursos de apoyo para trabajar conceptos y casos sobre:"
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#cuándo-un-chatbot-pasa-a-ser-agente",
-    "href": "clases/m03-diccionario-faq-terminos.html#cuándo-un-chatbot-pasa-a-ser-agente",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "7. ¿Cuándo un chatbot pasa a ser agente?",
-    "text": "7. ¿Cuándo un chatbot pasa a ser agente?\nCuando deja de limitarse a responder y empieza a decidir pasos, usar herramientas, trabajar con objetivos y ejecutar acciones o subprocesos."
+    "objectID": "index.html#cómo-usar-este-sitio",
+    "href": "index.html#cómo-usar-este-sitio",
+    "title": "Curso de IA Generativa y LLMs",
+    "section": "Cómo usar este sitio",
+    "text": "Cómo usar este sitio\nLa navegación está organizada para acompañar el trabajo del curso:\n\nen Clases encontrarás las sesiones del módulo y materiales asociados\nen Recursos verás documentación, artículos, libros y guías para profundizar\nen Contacto están los canales del docente"
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-aporta-una-herramienta-a-un-agente",
-    "href": "clases/m03-diccionario-faq-terminos.html#qué-aporta-una-herramienta-a-un-agente",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "8. ¿Qué aporta una herramienta a un agente?",
-    "text": "8. ¿Qué aporta una herramienta a un agente?\nLe da capacidad operativa o acceso a información externa. Sin herramientas, el agente puede razonar sobre texto; con herramientas puede buscar, calcular, leer, escribir, enviar o consultar sistemas."
+    "objectID": "index.html#enfoque-del-curso",
+    "href": "index.html#enfoque-del-curso",
+    "title": "Curso de IA Generativa y LLMs",
+    "section": "Enfoque del curso",
+    "text": "Enfoque del curso\nEl objetivo no es solo entender qué puede hacer un LLM, sino también cuándo conviene usarlo, cómo integrarlo a procesos reales y qué riesgos hay que gestionar para pasar de una demo a una solución útil."
   },
   {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#que-diferencia-hay-entre-no-code-y-código-asistido",
-    "href": "clases/m03-diccionario-faq-terminos.html#que-diferencia-hay-entre-no-code-y-código-asistido",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "9. Que diferencia hay entre no-code y código asistido?",
-    "text": "9. Que diferencia hay entre no-code y código asistido?\nNo-code privilegia velocidad y baja barrera de entrada. Codigo asistido privilegia control, integracion y auditabilidad. Ambos pueden servir, pero no para los mismos contextos."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#por-qué-no-basta-con-que-una-demo-funcione-bien-una-vez",
-    "href": "clases/m03-diccionario-faq-terminos.html#por-qué-no-basta-con-que-una-demo-funcione-bien-una-vez",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "10. ¿Por qué no basta con que una demo funcione bien una vez?",
-    "text": "10. ¿Por qué no basta con que una demo funcione bien una vez?\nPorque un sistema real debe sostener calidad, seguridad, costo razonable, monitoreo, trazabilidad y mantenimiento en el tiempo."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-se-debería-versionar-en-un-proyecto-de-ia-generativa",
-    "href": "clases/m03-diccionario-faq-terminos.html#qué-se-debería-versionar-en-un-proyecto-de-ia-generativa",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "11. ¿Qué se debería versionar en un proyecto de IA generativa?",
-    "text": "11. ¿Qué se debería versionar en un proyecto de IA generativa?\nCódigo, prompts, configuraciones del modelo, datasets de prueba, reglas de negocio y resultados de evaluación."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-miden-las-evals-en-agentes",
-    "href": "clases/m03-diccionario-faq-terminos.html#qué-miden-las-evals-en-agentes",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "12. ¿Qué miden las evals en agentes?",
-    "text": "12. ¿Qué miden las evals en agentes?\nNo solo calidad del texto final. También completion rate, cantidad de pasos, precisión en el uso de herramientas, alucinación, latencia y costo por tarea."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#por-qué-importa-tanto-human-in-the-loop",
-    "href": "clases/m03-diccionario-faq-terminos.html#por-qué-importa-tanto-human-in-the-loop",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "13. ¿Por qué importa tanto human-in-the-loop?",
-    "text": "13. ¿Por qué importa tanto human-in-the-loop?\nPorque hay acciones y decisiones que no deberían delegarse ciegamente, especialmente cuando son irreversibles o tienen impacto financiero, legal o humano."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#cuál-es-un-error-común-al-usar-ia-para-decidir",
-    "href": "clases/m03-diccionario-faq-terminos.html#cuál-es-un-error-común-al-usar-ia-para-decidir",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "14. ¿Cuál es un error común al usar IA para decidir?",
-    "text": "14. ¿Cuál es un error común al usar IA para decidir?\nPedirle a la IA que diga “qué hacer” como si reemplazara criterio profesional. Suele ser mejor pedir alternativas, contraargumentos, evidencia usada, vacíos de información y riesgos no considerados."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-parte-del-problema-es-tecnológica-y-qué-parte-es-de-diseño",
-    "href": "clases/m03-diccionario-faq-terminos.html#qué-parte-del-problema-es-tecnológica-y-qué-parte-es-de-diseño",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "15. ¿Qué parte del problema es tecnológica y qué parte es de diseño?",
-    "text": "15. ¿Qué parte del problema es tecnológica y qué parte es de diseño?\nLa tecnología resuelve acceso a modelos, herramientas y automatización. El diseño define alcance, fuentes, riesgo aceptable, reglas, escalamiento y criterios de evaluación. Sin buen diseño, la tecnología sola no salva la solución."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#por-qué-el-caso-afp-es-tan-buen-ejemplo-pedagógico",
-    "href": "clases/m03-diccionario-faq-terminos.html#por-qué-el-caso-afp-es-tan-buen-ejemplo-pedagógico",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "16. ¿Por qué el caso AFP es tan buen ejemplo pedagógico?",
-    "text": "16. ¿Por qué el caso AFP es tan buen ejemplo pedagógico?\nPorque obliga a pensar en fuentes oficiales, claridad, riesgo, escalamiento a humano, trazabilidad y límites de autonomía. Muestra muy bien que “responder” no es suficiente."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#operación-y-despliegue",
-    "href": "clases/m03-diccionario-faq-terminos.html#operación-y-despliegue",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "Operación y despliegue",
-    "text": "Operación y despliegue\nEvals\nDefinición simple: pruebas para medir si una solucion de IA funciona bien.\nPor qué importa: permiten comparar versiones y evitar que la calidad dependa de intuición o anécdotas.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd y el PDF de agentes recalcan métricas como task completion, pasos, tool accuracy, hallucination, latencia y costo.\nNo confundir con: opinión del usuario solamente. El feedback ayuda, pero no reemplaza medición sistemática.\nPregunta guía: ¿cómo sabremos si esta nueva versión realmente mejora?\nObservabilidad\nDefinición simple: capacidad de mirar cómo se comporta el sistema en uso real.\nPor qué importa: un sistema puede seguir “funcionando” y al mismo tiempo estar respondiendo peor, costando más o fallando de formas silenciosas.\nEjemplo del curso: calidad, latencia, costo, uso de contexto, fallos de herramientas y feedback del usuario.\nNo confundir con: monitoreo técnico mínimo. En IA generativa hay que observar también calidad semántica.\nPregunta guía: ¿qué veríamos en los datos si el sistema empieza a degradarse?\nCI/CD\nDefinición simple: prácticas para integrar cambios frecuentes y desplegarlos con más confiabilidad.\nPor qué importa: en IA generativa se versionan no solo archivos de código, sino también prompts, configuraciones, datasets de prueba y evaluaciones.\nEjemplo del curso: m03-clase02-cicd-mlops-gobernanza.qmd lo presenta como paso de experimentación a despliegue continuo.\nNo confundir con: solo automatizar deploy. Incluye integración, pruebas y validación de cambios.\nPregunta guía: ¿qué cambia realmente cuando modificamos el sistema?\nMLOps\nDefinición simple: conjunto de prácticas para desarrollar, desplegar, operar y mejorar sistemas basados en modelos de manera confiable.\nPor qué importa: conecta datos, modelos, ingeniería y operación.\nEjemplo del curso: en clase se relaciona con drift, monitoreo, evaluación, observabilidad y mejora continua.\nNo confundir con: DevOps puro. MLOps agrega problemas propios de modelos, datos y evaluaciones no deterministas.\nPregunta guía: ¿qué hace falta para que esto deje de ser demo y pase a capacidad organizacional?\nDrift\nDefinición simple: deterioro o cambio del comportamiento del sistema a lo largo del tiempo.\nPor qué importa: explica por qué una solución puede empeorar sin que “se rompa” técnicamente.\nEjemplo del curso: cambios en datos, usuarios, prompts, modelos del proveedor o procesos internos.\nNo confundir con: bug único. El drift suele ser gradual y acumulativo.\nPregunta guía: si esto funcionaba bien hace dos meses, ¿qué pudo haber cambiado?\nTrazabilidad\nDefinición simple: capacidad de reconstruir qué información se usó, qué reglas aplicaron y cómo se llegó a un resultado.\nPor qué importa: es clave para auditoría, seguridad, gobernanza y mantenimiento.\nEjemplo del curso: los PDFs nuevos insisten en lógica auditable, herramientas visibles y código modificable; el de no-code vs código asistido advierte que sin logs ni trazabilidad el sistema es imposible de auditar.\nNo confundir con: tener solo el output final. La trazabilidad incluye el camino.\nPregunta guía: ¿podríamos explicar cómo se llegó a esta respuesta o acción?"
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#construcción-de-soluciones",
-    "href": "clases/m03-diccionario-faq-terminos.html#construcción-de-soluciones",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "Construcción de soluciones",
-    "text": "Construcción de soluciones\nNo-code\nDefinición simple: forma de construir prototipos o soluciones usando interfaces visuales o descripciones en lenguaje natural, con mínima programación directa.\nPor qué importa: baja la barrera de entrada y acelera el prototipado.\nEjemplo del curso: el PDF Clase-03-No-Code-vs-Codigo-Asistido.pdf muestra v0.app, n8n y otras herramientas para construir rápido un agente funcional.\nNo confundir con: producción segura por defecto. Rapidez de prototipo no implica mantenibilidad ni auditabilidad suficientes.\nPregunta guía: ¿estamos validando una idea rápido o construyendo algo para operar de verdad?\nCódigo asistido\nDefinición simple: forma de construir software donde una IA ayuda a escribir, ejecutar y corregir código dentro de un proyecto real.\nPor qué importa: permite más control, integraciones y trazabilidad, pero exige más criterio técnico.\nEjemplo del curso: Clase-03-No-Code-vs-Codigo-Asistido.pdf usa Claude Code para construir un agente comparador de viajes que genera PDF y envía correo.\nNo confundir con: programacion totalmente automatica. Sigue requiriendo arquitectura, pruebas, seguridad y mantenimiento.\nPregunta guía: ¿necesitamos velocidad de prototipo o control fino sobre el sistema?\nPrototipo\nDefinición simple: versión inicial para validar una idea rápidamente.\nPor qué importa: los PDFs nuevos insisten en que un prototipo visible puede impresionar mucho, pero no equivale a producto listo.\nEjemplo del curso: el agente de viajes y varias actividades estan pensados para salir de clase con algo funcional.\nNo confundir con: producción. Un prototipo puede carecer de pruebas, logs, seguridad o manejo de errores.\nPregunta guía: ¿estamos validando una hipótesis o prometiendo operación real?\nProducción\nDefinición simple: etapa en que el sistema opera con usuarios reales, datos reales y consecuencias reales.\nPor qué importa: cambia el estándar exigido: seguridad, trazabilidad, monitoreo, manejo de errores, costos y mantenimiento.\nEjemplo del curso: Clase-03-No-Code-vs-Codigo-Asistido.pdf recalca que pasar de prototipo a producción sigue requiriendo ingeniería de software.\nNo confundir con: demo exitosa. Una demo muestra posibilidad; la producción exige confiabilidad sostenida.\nPregunta guía: ¿qué nos falta para poner esto frente a usuarios reales con tranquilidad?"
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#cuál-es-la-diferencia-entre-ia-ia-generativa-y-llm",
-    "href": "clases/m03-diccionario-faq-terminos.html#cuál-es-la-diferencia-entre-ia-ia-generativa-y-llm",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "1. ¿Cuál es la diferencia entre IA, IA generativa y LLM?",
-    "text": "1. ¿Cuál es la diferencia entre IA, IA generativa y LLM?\nIA es el paraguas amplio. IA generativa es la parte que crea contenido nuevo. Un LLM es un tipo de modelo generativo especializado en lenguaje."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#por-qué-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato",
-    "href": "clases/m03-diccionario-faq-terminos.html#por-qué-el-curso-insiste-tanto-en-que-el-prompt-es-un-contrato",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "3. ¿Por qué el curso insiste tanto en que el prompt es un contrato?",
-    "text": "3. ¿Por qué el curso insiste tanto en que el prompt es un contrato?\nPorque una instrucción vaga deja demasiado espacio a que el modelo complete vacíos con patrones genéricos. Los PDFs nuevos muestran que cuando el entregable, criterio y restricciones quedan mejor definidos, la salida se vuelve más útil y más auditable."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#más-contexto-siempre-mejora-la-respuesta",
-    "href": "clases/m03-diccionario-faq-terminos.html#más-contexto-siempre-mejora-la-respuesta",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "5. ¿Más contexto siempre mejora la respuesta?",
-    "text": "5. ¿Más contexto siempre mejora la respuesta?\nNo. A veces mejora; otras veces ensucia, distrae o encarece. Muchas veces importa más seleccionar bien el contexto que simplemente agregar más."
-  },
-  {
-    "objectID": "clases/m03-diccionario-faq-terminos.html#qué-diferencia-hay-entre-no-code-y-código-asistido",
-    "href": "clases/m03-diccionario-faq-terminos.html#qué-diferencia-hay-entre-no-code-y-código-asistido",
-    "title": "Módulo 3: Diccionario y FAQ de términos del curso",
-    "section": "9. ¿Qué diferencia hay entre no-code y código asistido?",
-    "text": "9. ¿Qué diferencia hay entre no-code y código asistido?\nNo-code privilegia velocidad y baja barrera de entrada. Código asistido privilegia control, integración y auditabilidad. Ambos pueden servir, pero no para los mismos contextos."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#embeddings-una-intuición-más-precisa",
-    "href": "clases/m03-clase01-arquitectura-llms.html#embeddings-una-intuición-más-precisa",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Embeddings: una intuición más precisa",
-    "text": "Embeddings: una intuición más precisa\nUn embedding no es “un número”, sino un vector:\n\nuna lista larga de valores\nen muchas dimensiones\ndonde cada posición captura patrones aprendidos\ny el conjunto representa relaciones de significado\n\nClave conceptual\nTextos con usos o sentidos parecidos tienden a quedar cerca en ese espacio vectorial."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-clásico-de-relaciones-semánticas",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-clásico-de-relaciones-semánticas",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo clásico de relaciones semánticas",
-    "text": "Ejemplo clásico de relaciones semánticas\nEn divulgación se usa mucho una intuición como esta:\nhombre + corona ≈ rey\no, en la versión más conocida:\nrey - hombre + mujer ≈ reina\n¿Qué quiere mostrar esta idea?\nQue los embeddings no solo guardan palabras, sino relaciones entre conceptos."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#cómo-leer-ese-ejemplo-sin-sobreinterpretarlo",
-    "href": "clases/m03-clase01-arquitectura-llms.html#cómo-leer-ese-ejemplo-sin-sobreinterpretarlo",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Cómo leer ese ejemplo sin sobreinterpretarlo",
-    "text": "Cómo leer ese ejemplo sin sobreinterpretarlo\nNo significa que el modelo haga literalmente esa suma exacta en cada respuesta.\nSignifica algo más importante:\n\naprende regularidades del lenguaje\naproxima relaciones como rol, jerarquía o género\nubica conceptos conectados en posiciones comparables\n\nIdea clave\nEl espacio vectorial conserva estructura semántica, no solo etiquetas."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-aplicado-al-curso",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-aplicado-al-curso",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo aplicado al curso",
-    "text": "Ejemplo aplicado al curso\nPensemos en conceptos del mundo organizacional:\n\ncliente\nreclamo\nsucursal\npensión\nafiliado\nbeneficio\n\nSi el modelo aprendió bien esas relaciones, textos como estos podrían quedar cerca:\n\n“consulta previsional del afiliado”\n“duda sobre pensión y beneficios”\n“solicitud de información previsional”\n\nAunque no usen exactamente las mismas palabras."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#por-qué-importa-esto-en-la-práctica",
-    "href": "clases/m03-clase01-arquitectura-llms.html#por-qué-importa-esto-en-la-práctica",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "¿Por qué importa esto en la práctica?",
-    "text": "¿Por qué importa esto en la práctica?\nPorque permite comparar significado y no solo coincidencia literal.\nEjemplo\nUna búsqueda clásica por palabras puede fallar si el usuario pregunta:\n“¿Qué ayuda puedo pedir cuando me jubile?”\ny el documento habla de:\n“beneficios disponibles al momento de pensionarse”\nCon embeddings, ambos textos pueden quedar cerca aunque no compartan la misma redacción."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#embeddings-y-búsqueda-semántica",
-    "href": "clases/m03-clase01-arquitectura-llms.html#embeddings-y-búsqueda-semántica",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Embeddings y búsqueda semántica",
-    "text": "Embeddings y búsqueda semántica\nUna aplicación muy importante es esta:\n\nconvertir documentos en embeddings\n\nconvertir la consulta del usuario en embedding\n\nbuscar los vectores más cercanos\n\nrecuperar los textos relevantes\n\nResultado\nEl sistema encuentra contenido por sentido y no solo por palabras exactas."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#conexión-con-rag",
-    "href": "clases/m03-clase01-arquitectura-llms.html#conexión-con-rag",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Conexión con RAG",
-    "text": "Conexión con RAG\nEn soluciones con Retrieval-Augmented Generation, los embeddings ayudan a decidir qué fragmentos conviene traer al contexto del modelo.\nFlujo simple\n\nel usuario pregunta\nla consulta se vectoriza\nse buscan trozos similares en una base vectorial\nesos trozos se agregan al prompt\nel LLM responde usando ese contexto\n\nIdea clave\nLos embeddings no reemplazan al LLM: lo ayudan a encontrar mejor el contexto."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#límites-y-cuidados",
-    "href": "clases/m03-clase01-arquitectura-llms.html#límites-y-cuidados",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Límites y cuidados",
-    "text": "Límites y cuidados\nLos embeddings son muy poderosos, pero no “entienden” como una persona.\nPueden:\n\nacercar textos incorrectos pero parecidos\nmezclar sentidos ambiguos\nreflejar sesgos del entrenamiento\nperder matices si el chunking es malo\n\nRegla práctica\nBuen embedding + mal documento o mal chunking = mala recuperación igual."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo-sobre-embeddings",
-    "href": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo-sobre-embeddings",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Resumen operativo sobre embeddings",
-    "text": "Resumen operativo sobre embeddings\n\nrepresentan texto como vectores\npermiten medir similitud semántica\nhacen posible la búsqueda vectorial\nson una pieza central de RAG y de muchos agentes\n\nPregunta para discutir\n¿En qué procesos de una organización conviene buscar por significado y no solo por palabra exacta?"
-  },
-  {
-    "objectID": "clases/index.html#módulo-3",
-    "href": "clases/index.html#módulo-3",
-    "title": "Clases y materiales",
+    "objectID": "clases/roadmap-aprendizaje-ia.html",
+    "href": "clases/roadmap-aprendizaje-ia.html",
+    "title": "🧠 Roadmap IA & LLM",
     "section": "",
-    "text": "Clase 1: Arquitectura y funcionamiento de los LLMs\nClase 2: CI/CD, MLOps y gobernanza\nClase 3: Decision Science y sesgos\nCaso aplicado: Agente AFP\nDiccionario y FAQ del curso"
+    "text": "1 Fundamentos de LLMs\n\nQué es un LLM (tokens, contexto)\nLimitaciones (alucinaciones, sesgos)\nCasos de uso básicos\n\n\n\n\n2 Prompting básico\n\nZero-shot / Few-shot\nEstructura: rol + contexto + tarea + formato\nIteración de prompts\n\n\n\n\n3 Prompt Engineering\n\nTemplates reutilizables\nSalidas estructuradas (JSON, tablas)\nPrompt chaining\nEvaluación de respuestas\n\n\n\n\n4 Manejo de contexto\n\nQué son embeddings (conceptual)\nChunking de documentos\nSimilaridad semántica\n\n\n\n\n5 RAG (Retrieval-Augmented Generation)\n\nPipeline: query → retrieval → contexto → respuesta\nIntegración con documentos propios\nEvaluación de relevancia\n\n\n\n\n6 Automatización con LLM\n\nWorkflows (n8n, Zapier, Make)\nUso de APIs\nLLM dentro de procesos\n\n\n\n\n7 Memoria\n\nCorto plazo (context window)\nLargo plazo (vector DB)\nMemoria de usuario / historial\n\n\n\n\n8 Agentes\n\nConcepto de agente (objetivo + herramientas)\nTool use\nPlanificación vs ejecución\n\n\n\n\n9 Multi-agentes\n\nRoles (planner, executor, reviewer)\nCoordinación entre agentes\nDivisión de tareas\n\n\n\n\n10 Skills / Productos\n\nDiseño de soluciones específicas\nInputs y outputs definidos\nInterfaces (chat, dashboards, APIs)\n\n\n\n\n11 Deploy & Escalamiento\n\nAPIs\nAutomatización (GitHub Actions)\nIntegración con sistemas reales\n\n\n\n\n12 Gobernanza y decisión\n\nPrivacidad y riesgos\nEvaluación de impacto\nDecision science + IA"
   },
   {
-    "objectID": "clases/index.html#materiales-complementarios",
-    "href": "clases/index.html#materiales-complementarios",
-    "title": "Clases y materiales",
-    "section": "",
-    "text": "Tokenización: técnicas y fundamentos\nNotebook 01\nActividad: skill en Markdown"
+    "objectID": "clases/roadmap-aprendizaje-ia.html#de-básico-a-avanzado",
+    "href": "clases/roadmap-aprendizaje-ia.html#de-básico-a-avanzado",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "De básico a avanzado",
+    "text": "De básico a avanzado\nUna ruta progresiva para entender, usar y construir con IA generativa"
   },
   {
-    "objectID": "clases/index.html#nota-de-uso",
-    "href": "clases/index.html#nota-de-uso",
-    "title": "Clases y materiales",
-    "section": "",
-    "text": "Algunos materiales están pensados como apoyo de clase y otros como referencia posterior. Si buscas un punto de partida, conviene comenzar por la Clase 1 y luego usar el diccionario como material transversal."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#qué-es-un-llm",
+    "href": "clases/roadmap-aprendizaje-ia.html#qué-es-un-llm",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "¿Qué es un LLM?",
+    "text": "¿Qué es un LLM?\n\n\n\n\n\nflowchart LR\n    T[\"Texto de entrada\"] --&gt; TOK[\"Tokenización\"]\n    TOK --&gt; EMB[\"Embeddings\"]\n    EMB --&gt; MOD[\"Modelo\\n(predicción)\"]\n    MOD --&gt; R[\"Respuesta\"]\n\n    classDef step fill:#4e9af1,color:#fff,stroke:none\n    class T,TOK,EMB,MOD,R step\n\n\n\n\n\n\n\nQué es un LLM (tokens, contexto)\nLimitaciones (alucinaciones, sesgos)\nCasos de uso básicos"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#sobre-los-embeddings",
-    "href": "clases/m03-clase01-arquitectura-llms.html#sobre-los-embeddings",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Sobre los embeddings",
-    "text": "Sobre los embeddings\nLos embeddings que usamos en la práctica no se crean desde cero cada vez que los aplicamos.\nProvienen de un proceso de entrenamiento previo sobre enormes cantidades de texto.\nIdea clave\nCuando después usamos un modelo de embeddings, estamos aprovechando una representación que ya fue aprendida antes."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#cómo-instruir-a-un-modelo",
+    "href": "clases/roadmap-aprendizaje-ia.html#cómo-instruir-a-un-modelo",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Cómo instruir a un modelo",
+    "text": "Cómo instruir a un modelo\n\n\n\n\n\nflowchart LR\n    R[\"Rol\"] --&gt; P[\"Prompt\"]\n    C[\"Contexto\"] --&gt; P\n    T[\"Tarea\"] --&gt; P\n    F[\"Formato\"] --&gt; P\n    P --&gt; M[\"Modelo\"] --&gt; O[\"Output\"]\n\n    classDef elem fill:#4e9af1,color:#fff,stroke:none\n    class R,C,T,F,P,M,O elem\n\n\n\n\n\n\n\nZero-shot / Few-shot\nEstructura: rol + contexto + tarea + formato\nIteración de prompts"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#entrenamiento-previo-de-los-embeddings",
-    "href": "clases/m03-clase01-arquitectura-llms.html#entrenamiento-previo-de-los-embeddings",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Entrenamiento previo de los embeddings",
-    "text": "Entrenamiento previo de los embeddings\nDurante el pre-training, el modelo analiza millones o miles de millones de frases y aprende relaciones estadísticas entre palabras y contextos.\n¿Qué intenta aprender?\n\nqué palabras suelen aparecer juntas\nqué términos aparecen en contextos parecidos\nqué usos del lenguaje se parecen entre sí\nqué diferencias importan para distinguir significados"
+    "objectID": "clases/roadmap-aprendizaje-ia.html#prompts-más-sofisticados",
+    "href": "clases/roadmap-aprendizaje-ia.html#prompts-más-sofisticados",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Prompts más sofisticados",
+    "text": "Prompts más sofisticados\n\n\n\n\n\nflowchart LR\n    P1[\"Prompt 1\"] --&gt; M1[\"Modelo\"]\n    M1 --&gt; O1[\"Output 1\"]\n    O1 --&gt; P2[\"Prompt 2\"]\n    P2 --&gt; M2[\"Modelo\"]\n    M2 --&gt; O2[\"Output final\"]\n\n    classDef step fill:#4e9af1,color:#fff,stroke:none\n    class P1,M1,O1,P2,M2,O2 step\n\n\n\n\n\n\n\nTemplates reutilizables\nSalidas estructuradas (JSON, tablas)\nPrompt chaining\nEvaluación de respuestas"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-aprende-el-modelo",
-    "href": "clases/m03-clase01-arquitectura-llms.html#qué-aprende-el-modelo",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "¿Qué aprende el modelo?",
-    "text": "¿Qué aprende el modelo?\nEl objetivo no es memorizar una definición tipo diccionario.\nMás bien, el modelo aprende que ciertas palabras o tokens tienden a encajar en contextos similares.\n\n\n\n\n\n\n\n\nTexto de entrenamiento\nTarea implícita\nLo que aprende\n\n\n\n\n“El perro ladra en el jardín.”\nPredecir perro a partir de su contexto\nQue perro aparece en contextos parecidos a gato, animal, mascota.\n\n\n“El avión aterriza en la pista.”\nPredecir avión\nQue avión se asocia a vuelo, piloto, aeropuerto.\n\n\n\nLectura práctica\nAsí, el modelo descubre similitudes semánticas sin que una persona le escriba reglas manuales del tipo “perro se parece a gato”."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#texto-como-números",
+    "href": "clases/roadmap-aprendizaje-ia.html#texto-como-números",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Texto como números",
+    "text": "Texto como números\n\n\n\n\n\nflowchart LR\n    DOC[\"Documento\"] --&gt; CHK[\"Chunking\"]\n    CHK --&gt; EMB[\"Embeddings\\n(vectores)\"]\n    EMB --&gt; IDX[\"Índice\\nvectorial\"]\n\n    classDef step fill:#f0a500,color:#fff,stroke:none\n    class DOC,CHK,EMB,IDX step\n\n\n\n\n\n\n\nQué son embeddings (conceptual)\nChunking de documentos\nSimilaridad semántica"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-produce-este-aprendizaje",
-    "href": "clases/m03-clase01-arquitectura-llms.html#qué-produce-este-aprendizaje",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "¿Qué produce este aprendizaje?",
-    "text": "¿Qué produce este aprendizaje?\nEl modelo transforma cada palabra o token en un vector numérico que resume su significado aprendido.\nImportante\nEsos vectores viven en un espacio de alta dimensión:\n\na veces cientos de dimensiones\na veces miles\npor ejemplo, 768 o 1536 dimensiones\n\nEn ese espacio, los términos que comparten contexto tienden a quedar cerca, y los que no tienen relación quedan más lejos."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#retrieval-augmented-generation",
+    "href": "clases/roadmap-aprendizaje-ia.html#retrieval-augmented-generation",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Retrieval-Augmented Generation",
+    "text": "Retrieval-Augmented Generation\n\n\n\n\n\nflowchart LR\n    Q[\"Query\\nusuario\"] --&gt; RET[\"Retrieval\\nvectorial\"]\n    RET --&gt; CTX[\"Contexto\\nrecuperado\"]\n    CTX --&gt; LLM[\"LLM\"]\n    Q --&gt; LLM\n    LLM --&gt; R[\"Respuesta\\nfundamentada\"]\n\n    classDef step fill:#f0a500,color:#fff,stroke:none\n    class Q,RET,CTX,LLM,R step\n\n\n\n\n\n\n\nPipeline: query → retrieval → contexto → respuesta\nIntegración con documentos propios\nEvaluación de relevancia"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-esquemático-en-2-dimensiones",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-esquemático-en-2-dimensiones",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo esquemático en 2 dimensiones",
-    "text": "Ejemplo esquemático en 2 dimensiones\nImaginemos un caso muy simplificado donde solo tenemos dos ejes:\n\neje X: animalidad\neje Y: domesticidad\n\nEn la realidad hay muchas más dimensiones, pero esta simplificación sirve para la intuición.\n\n\n\nPalabra\nEje X (animalidad)\nEje Y (domesticidad)\n\n\n\n\ngato\n0.90\n0.95\n\n\nperro\n0.85\n0.97\n\n\nlobo\n0.88\n0.30\n\n\navión\n0.10\n0.05"
+    "objectID": "clases/roadmap-aprendizaje-ia.html#el-modelo-dentro-de-procesos",
+    "href": "clases/roadmap-aprendizaje-ia.html#el-modelo-dentro-de-procesos",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "El modelo dentro de procesos",
+    "text": "El modelo dentro de procesos\n\n\n\n\n\nflowchart LR\n    TR[\"Trigger\\n(evento)\"] --&gt; WF[\"Workflow\\nn8n / Zapier\"]\n    WF --&gt; LLM[\"LLM\\n(paso del proceso)\"]\n    LLM --&gt; ACT[\"Acción\\n(email, DB, API)\"]\n\n    classDef step fill:#f0a500,color:#fff,stroke:none\n    class TR,WF,LLM,ACT step\n\n\n\n\n\n\n\nWorkflows (n8n, Zapier, Make)\nUso de APIs\nLLM dentro de procesos"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#cómo-leer-ese-esquema",
-    "href": "clases/m03-clase01-arquitectura-llms.html#cómo-leer-ese-esquema",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Cómo leer ese esquema",
-    "text": "Cómo leer ese esquema\nEn ese gráfico simplificado:\n\ngato y perro están muy cerca porque comparten rasgos de significado\nlobo está relativamente cerca en una dimensión, pero más lejos en otra\navión queda claramente fuera de ese grupo\n\nIdea clave\nLa cercanía en el espacio vectorial representa similitud aprendida desde el uso del lenguaje."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#qué-recuerda-el-modelo-y-cómo",
+    "href": "clases/roadmap-aprendizaje-ia.html#qué-recuerda-el-modelo-y-cómo",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Qué recuerda el modelo y cómo",
+    "text": "Qué recuerda el modelo y cómo\n\n\n\n\n\nflowchart TB\n    CP[\"Corto plazo\\n(context window)\"]\n    LP[\"Largo plazo\\n(vector DB)\"]\n    US[\"Memoria de usuario\\n/ historial\"]\n\n    CP --&gt; AGT[\"Agente /\\nSistema\"]\n    LP --&gt; AGT\n    US --&gt; AGT\n\n    classDef step fill:#f0a500,color:#fff,stroke:none\n    class CP,LP,US,AGT step\n\n\n\n\n\n\n\nCorto plazo (context window)\nLargo plazo (vector DB)\nMemoria de usuario / historial"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-práctico-generar-embeddings",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-práctico-generar-embeddings",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo práctico: generar embeddings",
-    "text": "Ejemplo práctico: generar embeddings\nEste ejemplo muestra cómo convertir varias frases en vectores usando OpenAI.\nfrom openai import OpenAI\nimport numpy as np\nimport faiss\n\nclient = OpenAI()\n\nsentences = [\n    \"The dog is barking.\",\n    \"A cat is sleeping on the couch.\",\n    \"A car is driving down the street.\",\n    \"I love my pet animal.\"\n]\n\nresponse = client.embeddings.create(\n    model=\"text-embedding-3-small\",\n    input=sentences\n)\n\nvectors = np.array([data.embedding for data in response.data])\nprint(\"Dimensión de los embeddings:\", vectors.shape)\nSalida esperada:\nDimensión de los embeddings: (4, 1536)\nLectura práctica\nTenemos 4 textos y cada uno queda representado por un vector de 1536 dimensiones."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#de-responder-a-actuar",
+    "href": "clases/roadmap-aprendizaje-ia.html#de-responder-a-actuar",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "De responder a actuar",
+    "text": "De responder a actuar\n\n\n\n\n\nflowchart LR\n    OBJ[\"Objetivo\"] --&gt; AGT[\"Agente\"]\n    AGT --&gt; RAZ[\"Razonamiento\\n(LLM)\"]\n    RAZ --&gt; TOOL[\"Tool use\\n(acción)\"]\n    TOOL --&gt; OBS[\"Observación\"]\n    OBS --&gt; RAZ\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class OBJ,AGT,RAZ,TOOL,OBS step\n\n\n\n\n\n\n\nConcepto de agente (objetivo + herramientas)\nTool use\nPlanificación vs ejecución"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-práctico-buscar-similitud",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-práctico-buscar-similitud",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo práctico: buscar similitud",
-    "text": "Ejemplo práctico: buscar similitud\nUna vez generados los embeddings, podemos indexarlos en una base vectorial y comparar una consulta nueva.\nindex = faiss.IndexFlatL2(vectors.shape[1])\nindex.add(vectors)\n\nquery = \"My puppy is barking loudly.\"\nquery_vec = client.embeddings.create(\n    model=\"text-embedding-3-small\",\n    input=query\n).data[0].embedding\n\nD, I = index.search(np.array([query_vec]), k=2)\nprint(\"Resultados similares:\")\nfor idx in I[0]:\n    print(\"-\", sentences[idx])\nResultados similares:\n\nThe dog is barking.\nI love my pet animal."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#varios-modelos-coordinados",
+    "href": "clases/roadmap-aprendizaje-ia.html#varios-modelos-coordinados",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Varios modelos coordinados",
+    "text": "Varios modelos coordinados\n\n\n\n\n\nflowchart LR\n    PL[\"Planner\"] --&gt; EX[\"Executor\"]\n    EX --&gt; REV[\"Reviewer\"]\n    REV --&gt;|\"feedback\"| EX\n    REV --&gt;|\"aprobado\"| OUT[\"Output final\"]\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class PL,EX,REV,OUT step\n\n\n\n\n\n\n\nRoles (planner, executor, reviewer)\nCoordinación entre agentes\nDivisión de tareas"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-está-pasando-en-ese-ejemplo",
-    "href": "clases/m03-clase01-arquitectura-llms.html#qué-está-pasando-en-ese-ejemplo",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "¿Qué está pasando en ese ejemplo?",
-    "text": "¿Qué está pasando en ese ejemplo?\nLa consulta no es idéntica a ninguno de los textos originales.\nSin embargo, el sistema recupera:\n\nThe dog is barking.\nI love my pet animal.\n\n¿Por qué?\nPorque puppy, dog, barking y pet animal comparten una vecindad semántica en el espacio vectorial.\nIdea clave\nLa similitud no depende de repetir exactamente las mismas palabras, sino de estar cerca en significado."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#diseño-de-soluciones-específicas",
+    "href": "clases/roadmap-aprendizaje-ia.html#diseño-de-soluciones-específicas",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Diseño de soluciones específicas",
+    "text": "Diseño de soluciones específicas\n\n\n\n\n\nflowchart LR\n    IN[\"Input\\ndefinido\"] --&gt; SK[\"Skill / LLM\"]\n    SK --&gt; OUT[\"Output\\ndefinido\"]\n    OUT --&gt; UI[\"Interfaz\\n(chat, API, dashboard)\"]\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class IN,SK,OUT,UI step\n\n\n\n\n\n\n\nDiseño de soluciones específicas\nInputs y outputs definidos\nInterfaces (chat, dashboards, APIs)"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-visual-de-flujo-rag",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-visual-de-flujo-rag",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo visual de flujo RAG",
-    "text": "Ejemplo visual de flujo RAG\n\nLectura simple\nLa imagen muestra un flujo de ingesta: cómo un documento entra al sistema, se procesa y queda listo para ser recuperado después en una solución RAG."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#de-prototipo-a-producción",
+    "href": "clases/roadmap-aprendizaje-ia.html#de-prototipo-a-producción",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "De prototipo a producción",
+    "text": "De prototipo a producción\n\n\n\n\n\nflowchart LR\n    CODE[\"Código\"] --&gt; CI[\"CI/CD\\n(GitHub Actions)\"]\n    CI --&gt; API[\"API\\ndeployada\"]\n    API --&gt; SYS[\"Sistemas\\nreales\"]\n    API --&gt; MON[\"Monitoreo\\ny logs\"]\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class CODE,CI,API,SYS,MON step\n\n\n\n\n\n\n\nAPIs\nAutomatización (GitHub Actions)\nIntegración con sistemas reales"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-hace-cada-nodo-del-flujo-rag",
-    "href": "clases/m03-clase01-arquitectura-llms.html#qué-hace-cada-nodo-del-flujo-rag",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Qué hace cada nodo del flujo RAG",
-    "text": "Qué hace cada nodo del flujo RAG\n\nGoogle Drive Trigger: detecta que apareció un archivo nuevo en una carpeta o fuente conectada.\nDownload file: descarga el documento para poder procesarlo dentro del flujo.\nDefault Data Loader: lee el contenido del archivo y lo transforma en texto utilizable por el sistema.\nRecursive Character Text Splitter: divide el documento en fragmentos más pequeños para que puedan indexarse mejor.\nEmbeddings OpenAI: convierte cada fragmento en un vector numérico que representa su significado.\nPinecone Vector Store: guarda esos vectores en una base vectorial para poder buscar luego los trozos más parecidos a una consulta.\n\nIdea clave\nRAG no parte respondiendo. Primero necesita preparar bien la base de conocimiento que después va a consultar."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#usar-ia-con-criterio",
+    "href": "clases/roadmap-aprendizaje-ia.html#usar-ia-con-criterio",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Usar IA con criterio",
+    "text": "Usar IA con criterio\n\n\n\n\n\nflowchart LR\n    DEC[\"Decisión\\ncon IA\"] --&gt; PRIV[\"Privacidad\\ny riesgos\"]\n    DEC --&gt; IMP[\"Evaluación\\nde impacto\"]\n    DEC --&gt; DS[\"Decision Science\\n+ IA\"]\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class DEC,PRIV,IMP,DS step\n\n\n\n\n\n\n\nPrivacidad y riesgos\nEvaluación de impacto\nDecision science + IA"
   },
   {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#embeddings-y-base-vectorial-en-un-rag",
-    "href": "clases/m03-clase01-arquitectura-llms.html#embeddings-y-base-vectorial-en-un-rag",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Embeddings y base vectorial en un RAG",
-    "text": "Embeddings y base vectorial en un RAG\nEn la parte técnica, el sistema toma cada fragmento del documento y lo transforma en un vector.\nLuego guarda ese vector en una base vectorial, junto con información adicional del fragmento.\nQué suele guardarse\n\nel texto del chunk\nsu embedding\nmetadata como fuente, fecha, tema o área\nun identificador para volver al documento original\n\nIdea clave\nLa base vectorial no guarda solo texto: guarda texto + representación semántica + contexto operativo."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-embeddings-y-base-vectorial",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-embeddings-y-base-vectorial",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo: embeddings y base vectorial",
-    "text": "Ejemplo: embeddings y base vectorial\nImaginemos una base documental de una AFP con estos chunks:\n\nChunk A: “Para pensionarse por vejez se requiere cumplir edad legal y requisitos vigentes.”\nChunk B: “Los beneficiarios pueden revisar certificados en la sucursal virtual.”\nChunk C: “Los canales de atención incluyen web, call center y oficina.”\n\nCada chunk se convierte en vector y se guarda con metadata, por ejemplo:\n\narea = pensiones\nfuente = manual_beneficios_2026.pdf\ncanal = web\n\n¿Para qué sirve esa metadata?\nPermite filtrar mejor la búsqueda además de comparar similitud semántica."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#retrieval-cómo-encuentra-contexto",
-    "href": "clases/m03-clase01-arquitectura-llms.html#retrieval-cómo-encuentra-contexto",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Retrieval: cómo encuentra contexto",
-    "text": "Retrieval: cómo encuentra contexto\nEl retrieval es la etapa donde el sistema busca los fragmentos más útiles para responder una consulta.\nQué decisiones técnicas aparecen aquí\n\ncuántos resultados traer (top-k)\nsi usar filtros por metadata\nsi aplicar umbral mínimo de similitud\nsi combinar búsqueda semántica con búsqueda por keywords\n\nIdea clave\nRecuperar bien no es solo “buscar parecido”, sino traer contexto relevante y suficiente."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-retrieval",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-retrieval",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo: retrieval",
-    "text": "Ejemplo: retrieval\nSupongamos que el usuario pregunta:\n“¿Qué necesito para pensionarme y dónde hago el trámite?”\nUn retrieval razonable podría:\n\ntraer top-k = 4 chunks\npriorizar metadata area = pensiones\nexcluir documentos viejos o fuera de vigencia\n\nResultado esperado\nEl sistema debería recuperar fragmentos sobre:\n\nrequisitos para pensionarse\ncanales o lugares donde iniciar el trámite\ndocumentación asociada\n\nNo debería priorizar chunks sobre certificados o reclamos si no aportan a esa pregunta."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#reranking-segundo-filtro-de-relevancia",
-    "href": "clases/m03-clase01-arquitectura-llms.html#reranking-segundo-filtro-de-relevancia",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Reranking: segundo filtro de relevancia",
-    "text": "Reranking: segundo filtro de relevancia\nDespués del retrieval, algunos sistemas aplican reranking.\nEso significa:\n\nprimero se recuperan varios candidatos\nluego un segundo modelo los reordena\ny deja más arriba los fragmentos más útiles para la pregunta exacta\n\nIdea clave\nRetrieval encuentra candidatos razonables; reranking mejora el orden de prioridad."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-reranking",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-reranking",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo: reranking",
-    "text": "Ejemplo: reranking\nImaginemos que el retrieval trae estos tres chunks:\n\n“La pensión por vejez exige cumplir edad legal.”\n“Los canales de atención incluyen sucursal virtual y oficinas.”\n“Los afiliados pueden descargar certificados desde la web.”\n\nTodos tienen cierta relación con la consulta, pero no todos pesan igual.\nQué haría el reranker\nPodría reordenarlos así:\n\nrequisitos para pensionarse\ndónde hacer el trámite\ncertificados, porque es menos central para esa pregunta\n\nLectura práctica\nEso mejora la calidad del contexto que entra al prompt final."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#qué-problema-resuelve-la-atención",
-    "href": "clases/m03-clase01-arquitectura-llms.html#qué-problema-resuelve-la-atención",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "¿Qué problema resuelve la atención?",
-    "text": "¿Qué problema resuelve la atención?\nEn lenguaje natural, el significado de una palabra depende mucho del resto de la frase.\nPor ejemplo, no es lo mismo:\n\n“banco” como institución financiera\n“banco” como asiento\n\nIdea clave\nLa atención ayuda al modelo a decidir qué partes del contexto aclaran el sentido correcto."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#intuición-operativa",
-    "href": "clases/m03-clase01-arquitectura-llms.html#intuición-operativa",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Intuición operativa",
-    "text": "Intuición operativa\nCuando el modelo está generando una palabra nueva, hace algo parecido a esto:\n\nmira los tokens previos\nestima cuáles son más relevantes\nles da más peso a algunos\ny menos peso a otros\n\nLectura simple\nNo “recuerda todo igual”: prioriza dinámicamente."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-intuitivo",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-intuitivo",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo intuitivo",
-    "text": "Ejemplo intuitivo\nTomemos esta frase:\n“El analista revisó el informe porque necesitaba verificar si los beneficios estaban correctamente calculados.”\nSi el modelo quiere continuar después de “beneficios”, probablemente pondrá más atención en:\n\ninforme\nverificar\ncalculados\n\ny menos en palabras funcionales como:\n\nel\nporque\nlos"
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#atención-como-mecanismo-de-foco",
-    "href": "clases/m03-clase01-arquitectura-llms.html#atención-como-mecanismo-de-foco",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Atención como mecanismo de foco",
-    "text": "Atención como mecanismo de foco\nPodemos pensarlo como un sistema de foco variable.\nNo todas las palabras pesan igual\n\nalgunas definen el tema\notras aclaran relaciones\notras casi no aportan significado por sí solas\n\nIdea clave\nLa atención permite que el modelo construya relevancia contextual token por token."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#queries-keys-y-values-sin-fórmulas",
-    "href": "clases/m03-clase01-arquitectura-llms.html#queries-keys-y-values-sin-fórmulas",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Queries, keys y values sin fórmulas",
-    "text": "Queries, keys y values sin fórmulas\nUna forma simple de explicarlo es esta:\n\ncada token genera una query: qué está buscando ahora\ncada token también ofrece una key: qué tipo de información contiene\ny una value: el contenido que puede aportar\n\nIntuición\nEl modelo compara la query actual con las keys del resto del contexto y decide de cuáles values conviene tomar más información."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-simple-de-queries-keys-y-values",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-simple-de-queries-keys-y-values",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo simple de queries, keys y values",
-    "text": "Ejemplo simple de queries, keys y values\nSi la pregunta es:\n“¿Qué documentos necesito para pensionarme?”\nLa query implícita del modelo buscará información relacionada con:\n\ndocumentos\nrequisitos\npensionarme\n\nEntonces tokens o fragmentos que hablen de:\n\ncertificados\nedad legal\nformularios\nsolicitud de pensión\n\nrecibirán más peso que otros sobre canales generales o información secundaria."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#por-qué-la-atención-fue-tan-importante",
-    "href": "clases/m03-clase01-arquitectura-llms.html#por-qué-la-atención-fue-tan-importante",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "¿Por qué la atención fue tan importante?",
-    "text": "¿Por qué la atención fue tan importante?\nAntes de transformers, otros enfoques tenían más dificultades para mantener dependencias largas de manera eficiente.\nLa atención permitió:\n\ncapturar relaciones entre palabras distantes\nprocesar contexto de forma más flexible\nescalar mejor a textos más complejos\n\nIdea clave\nGran parte del salto de los LLMs modernos pasa por este mecanismo."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#atención-no-significa-comprensión-perfecta",
-    "href": "clases/m03-clase01-arquitectura-llms.html#atención-no-significa-comprensión-perfecta",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Atención no significa comprensión perfecta",
-    "text": "Atención no significa comprensión perfecta\nAunque el mecanismo sea potente, no garantiza:\n\nverdad factual\nrazonamiento correcto\npriorización siempre adecuada\n\nRiesgo práctico\nEl modelo puede atender a fragmentos cercanos pero irrelevantes, o perder partes importantes si el contexto está mal armado."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#atención-y-calidad-del-prompt",
-    "href": "clases/m03-clase01-arquitectura-llms.html#atención-y-calidad-del-prompt",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Atención y calidad del prompt",
-    "text": "Atención y calidad del prompt\nLa forma en que escribimos un prompt afecta qué partes del contexto resaltan más.\nPor eso ayuda:\n\nseparar instrucciones de contexto\nusar formato claro\ndestacar restricciones\nordenar bien la información\n\nLectura práctica\nUn buen prompt no solo “dice cosas”; también guía la atención del modelo."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-aplicado-a-una-tarea-organizacional",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-aplicado-a-una-tarea-organizacional",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo aplicado a una tarea organizacional",
-    "text": "Ejemplo aplicado a una tarea organizacional\nSupongamos este prompt:\n“Responde al afiliado usando solo la normativa vigente. Si no hay base suficiente, indícalo explícitamente. Consulta: ¿puedo pensionarme anticipadamente?”\nSi el contexto está bien estructurado, la atención debería priorizar:\n\nsolo la normativa vigente\nsi no hay base suficiente\npensionarme anticipadamente\n\nSi el contexto estuviera desordenado, el modelo podría terminar apoyándose en fragmentos menos relevantes."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo-sobre-atención",
-    "href": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo-sobre-atención",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Resumen operativo sobre atención",
-    "text": "Resumen operativo sobre atención\n\nayuda a ponderar qué partes del contexto importan más\npermite conectar palabras o fragmentos distantes\nmejora la relevancia local de cada paso de generación\ndepende mucho de cómo está armado el contexto\n\nPregunta para discutir\n¿Qué pasa si una instrucción crítica queda escondida entre demasiado texto irrelevante?"
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#un-mismo-prompt-parámetros-distintos",
-    "href": "clases/m03-clase01-arquitectura-llms.html#un-mismo-prompt-parámetros-distintos",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Un mismo prompt, parámetros distintos",
-    "text": "Un mismo prompt, parámetros distintos\nSupongamos este prompt:\n“Redacta un mensaje breve para invitar a un equipo a probar un asistente interno de IA.”\nLa instrucción es la misma. Lo que cambia es cómo el modelo selecciona y limita su respuesta."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-temperatura",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-temperatura",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo de temperatura",
-    "text": "Ejemplo de temperatura\nLa temperatura controla cuánta variabilidad introduce el modelo.\nCon temperatura baja\nPosible salida:\n“Les invitamos a probar el nuevo asistente interno de IA para agilizar consultas frecuentes y redacción de borradores.”\nCon temperatura alta\nPosible salida:\n“Los invitamos a experimentar con nuestro nuevo copiloto interno de IA: una herramienta pensada para ahorrar tiempo, desbloquear ideas y acelerar tareas del día a día.”\nLectura práctica\n\nbaja temperatura: más estable, predecible y repetible\nalta temperatura: más variedad y creatividad"
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-top-p",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-top-p",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo de top-p",
-    "text": "Ejemplo de top-p\ntop-p limita la elección a las palabras cuya probabilidad acumulada esté dentro de un umbral.\nIntuición\nSi top-p es bajo, el modelo elige entre opciones más probables.\nSi top-p es más alto, abre el abanico a opciones menos obvias.\nEjemplo\nCon top-p bajo, podría decir:\n“Prueben el asistente para resolver dudas frecuentes.”\nCon top-p más alto, podría decir:\n“Exploren el asistente como apoyo para consultas, síntesis y primeras versiones de trabajo.”\nLectura práctica\ntop-p ajusta cuán amplio es el conjunto de palabras candidatas antes de elegir."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-top-k",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-top-k",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo de top-k",
-    "text": "Ejemplo de top-k\ntop-k limita la selección a las k palabras más probables en cada paso.\nIntuición\nSi top-k = 5, el modelo solo elige entre sus 5 opciones más probables en cada token.\nSi top-k = 50, tiene más alternativas disponibles.\nEjemplo\nCon top-k bajo, una salida puede sonar más estándar:\n“Invitamos al equipo a usar el asistente interno para tareas frecuentes.”\nCon top-k más alto, puede aparecer una variante menos obvia:\n“Invitamos al equipo a pilotear el asistente interno como apoyo para tareas repetitivas y exploración inicial.”\nLectura práctica\ntop-k restringe por cantidad fija de opciones, mientras top-p restringe por masa de probabilidad acumulada."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-max-tokens",
-    "href": "clases/m03-clase01-arquitectura-llms.html#ejemplo-de-max-tokens",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Ejemplo de max tokens",
-    "text": "Ejemplo de max tokens\nmax tokens limita el largo máximo de la respuesta generada.\nEjemplo\nSi pedimos:\n“Explica por qué conviene usar un asistente interno de IA en el área de atención al cliente.”\nCon max tokens muy bajo, podría responder:\n“Ayuda a responder más rápido y estandarizar consultas.”\nCon max tokens más alto, podría responder:\n“Ayuda a responder más rápido, estandarizar consultas frecuentes, reducir carga operativa y apoyar a los equipos con borradores iniciales, siempre con revisión humana en casos sensibles.”\nLectura práctica\nNo cambia tanto el estilo como la extensión disponible para desarrollar la idea."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo",
-    "href": "clases/m03-clase01-arquitectura-llms.html#resumen-operativo",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Resumen operativo",
-    "text": "Resumen operativo\n\ntemperatura: cambia cuánta variación creativa permitimos\ntop-p: abre o cierra el rango probabilístico de opciones\ntop-k: limita la elección a un número fijo de candidatos\nmax tokens: pone techo al largo de la respuesta\n\nRegla simple para clase\nSi queremos una salida más controlada, bajamos variabilidad y acotamos longitud.\nSi queremos explorar ideas, abrimos más espacio de generación."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#actividad-grupal-breve-paper-fundacional",
-    "href": "clases/m03-clase01-arquitectura-llms.html#actividad-grupal-breve-paper-fundacional",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Actividad grupal breve: paper fundacional",
-    "text": "Actividad grupal breve: paper fundacional\nTexto base: Attention Is All You Need (Vaswani et al., 2017)\nObjetivo\nEntender por qué este paper fue tan influyente y conectar su propuesta con lo que hoy vemos en LLMs.\nFormato\n\ngrupos de 3 a 4 personas\nduración máxima: 30 minutos\ninsumo mínimo: abstract + introducción del paper"
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#instrucciones-de-trabajo",
-    "href": "clases/m03-clase01-arquitectura-llms.html#instrucciones-de-trabajo",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Instrucciones de trabajo",
-    "text": "Instrucciones de trabajo\nCada grupo debe leer el abstract y la introducción y responder estas preguntas:\n\n¿Qué limitación de los modelos anteriores identifica el paper?\n¿Cuál es la propuesta central del Transformer?\n¿Por qué la atención aparece como una innovación tan importante?\n¿Qué conexión ven entre este paper y los LLMs actuales?\n\nRegla\nNo se trata de resumir todo el paper, sino de identificar su argumento central."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#producto-esperado-del-grupo",
-    "href": "clases/m03-clase01-arquitectura-llms.html#producto-esperado-del-grupo",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Producto esperado del grupo",
-    "text": "Producto esperado del grupo\nCada grupo prepara una mini-síntesis de 3 partes:\n\nProblema anterior: qué estaba fallando o limitando a los modelos previos\nAporte del paper: qué cambia con el Transformer\nImpacto actual: por qué esto sigue importando en la arquitectura de los LLMs\n\nFormato sugerido\n3 a 5 bullets o una intervención oral de 1 minuto."
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#guía-para-orientar-la-discusión",
-    "href": "clases/m03-clase01-arquitectura-llms.html#guía-para-orientar-la-discusión",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Guía para orientar la discusión",
-    "text": "Guía para orientar la discusión\nSi el grupo se traba, puede apoyarse en esta pista:\n\nantes había más secuencialidad y menos paralelización\nel paper propone apoyarse solo en atención\neso mejora la capacidad de modelar dependencias y escalar entrenamiento\n\nConexión con esta clase\nLa pregunta de fondo es:\n¿Por qué entender atención ayuda a entender por qué los LLMs modernos son posibles?"
-  },
-  {
-    "objectID": "clases/m03-clase01-arquitectura-llms.html#cierre-y-puesta-en-común",
-    "href": "clases/m03-clase01-arquitectura-llms.html#cierre-y-puesta-en-común",
-    "title": "Módulo 3: Arquitectura y Funcionamiento de los LLMs",
-    "section": "Cierre y puesta en común",
-    "text": "Cierre y puesta en común\nEn plenario, cada grupo comparte:\n\nuna idea del paper que le pareció fundacional\nuna conexión con conceptos vistos hoy: atención, contexto, escalabilidad o arquitectura\n\nCriterio de éxito\nSi al terminar pueden explicar por qué este paper marca un punto de inflexión, la actividad cumplió su objetivo."
+    "objectID": "clases/roadmap-aprendizaje-ia.html#ruta-completa",
+    "href": "clases/roadmap-aprendizaje-ia.html#ruta-completa",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Ruta completa",
+    "text": "Ruta completa\n\n\n\n\n\nflowchart LR\n    A[\"1\\nFundamentos\\nLLMs\"] --&gt; B[\"2\\nPrompting\\nbásico\"]\n    B --&gt; C[\"3\\nPrompt\\nEngineering\"]\n    C --&gt; D[\"4\\nManejo de\\ncontexto\"]\n    D --&gt; E[\"5\\nRAG\"]\n    E --&gt; F[\"6\\nAutomatización\"]\n    F --&gt; G[\"7\\nMemoria\"]\n    G --&gt; H[\"8\\nAgentes\"]\n    H --&gt; I[\"9\\nMulti-\\nagentes\"]\n    I --&gt; J[\"10\\nSkills /\\nProductos\"]\n    J --&gt; K[\"11\\nDeploy &\\nEscalamiento\"]\n    K --&gt; L[\"12\\nGobernanza\\ny decisión\"]\n\n    classDef basico fill:#4e9af1,color:#fff,stroke:none,rx:6\n    classDef intermedio fill:#f0a500,color:#fff,stroke:none,rx:6\n    classDef avanzado fill:#e05c5c,color:#fff,stroke:none,rx:6\n\n    class A,B,C basico\n    class D,E,F,G intermedio\n    class H,I,J,K,L avanzado\n\n\n\n\n\n\n\n🔵 Básico    🟠 Intermedio    🔴 Avanzado"
   }
 ]

@@ -9,3 +9,7 @@
 *-listing.json
 
 **/*.quarto_ipynb
+
+# secrets
+.env
+**/.env

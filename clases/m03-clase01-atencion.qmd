@@ -1,0 +1,324 @@
+---
+listing_title: "Módulo 03 - Atención en LLMs"
+title: "Módulo 3: Atención en LLMs"
+subtitle: "Cómo el modelo prioriza contexto"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    scrollable: true
+    self-contained: true
+    incremental: false
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+------------------------------------------------------------------------
+
+# Módulo 03
+
+## Atención en LLMs
+
+### Cómo el modelo prioriza contexto
+
+------------------------------------------------------------------------
+
+## Objetivo de la sesión
+
+-   Entender qué problema resuelve la atención
+-   Construir una intuición operativa del mecanismo
+-   Conectar atención con calidad de prompt y uso de contexto
+-   Preparar la lectura del paper *Attention Is All You Need*
+
+------------------------------------------------------------------------
+
+## ¿Qué es la atención?
+
+La atención es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.
+
+### Intuición
+
+Cuando genera una palabra, no mira todo con el mismo peso.
+
+------------------------------------------------------------------------
+
+## ¿Qué problema resuelve?
+
+En lenguaje natural, el significado depende del contexto.
+
+No es lo mismo:
+
+-   `banco` como institución financiera
+-   `banco` como asiento
+
+### Idea clave
+
+La atención ayuda a decidir qué partes del contexto aclaran el sentido correcto.
+
+------------------------------------------------------------------------
+
+## Intuición operativa
+
+Cuando el modelo genera una palabra nueva:
+
+-   mira los tokens previos
+-   estima cuáles son más relevantes
+-   les da más peso a algunos
+-   y menos peso a otros
+
+### Lectura simple
+
+No recuerda todo igual: prioriza dinámicamente.
+
+------------------------------------------------------------------------
+
+## Ejemplo intuitivo
+
+Tomemos esta frase:
+
+**"El analista revisó el informe porque necesitaba verificar si los beneficios estaban correctamente calculados."**
+
+Si el modelo quiere continuar después de `beneficios`, probablemente pondrá más atención en:
+
+-   `informe`
+-   `verificar`
+-   `calculados`
+
+y menos en:
+
+-   `el`
+-   `porque`
+-   `los`
+
+------------------------------------------------------------------------
+
+## Atención como mecanismo de foco
+
+Podemos pensarlo como un sistema de foco variable.
+
+### No todas las palabras pesan igual
+
+-   algunas definen el tema
+-   otras aclaran relaciones
+-   otras casi no aportan significado por sí solas
+
+### Idea clave
+
+La atención permite construir relevancia contextual token por token.
+
+------------------------------------------------------------------------
+
+## Queries, keys y values sin fórmulas
+
+Una forma simple de explicarlo es esta:
+
+-   cada token genera una `query`: qué está buscando ahora
+-   cada token ofrece una `key`: qué tipo de información contiene
+-   cada token aporta una `value`: el contenido que puede entregar
+
+### Intuición
+
+El modelo compara la query actual con las keys del contexto y decide de cuáles values conviene tomar más información.
+
+------------------------------------------------------------------------
+
+## Ejemplo simple de queries, keys y values
+
+Si la pregunta es:
+
+**"¿Qué documentos necesito para pensionarme?"**
+
+La query implícita buscará información relacionada con:
+
+-   `documentos`
+-   `requisitos`
+-   `pensionarme`
+
+Entonces fragmentos sobre:
+
+-   certificados
+-   edad legal
+-   formularios
+-   solicitud de pensión
+
+recibirán más peso que otros sobre canales generales o información secundaria.
+
+------------------------------------------------------------------------
+
+## ¿Por qué fue tan importante?
+
+La atención permitió:
+
+-   capturar relaciones entre palabras distantes
+-   procesar contexto de forma más flexible
+-   escalar mejor a textos complejos
+
+### Idea clave
+
+Gran parte del salto de los LLMs modernos pasa por este mecanismo.
+
+------------------------------------------------------------------------
+
+## Atención y calidad del prompt
+
+La forma en que escribimos un prompt afecta qué partes del contexto destacan más.
+
+Por eso ayuda:
+
+-   separar instrucciones de contexto
+-   usar formato claro
+-   destacar restricciones
+-   ordenar bien la información
+
+### Lectura práctica
+
+Un buen prompt también guía la atención del modelo.
+
+------------------------------------------------------------------------
+
+## Riesgo práctico
+
+La atención no garantiza:
+
+-   verdad factual
+-   razonamiento correcto
+-   priorización siempre adecuada
+
+### Regla simple
+
+Si el contexto está mal armado, el modelo puede enfocarse en lo menos importante.
+
+------------------------------------------------------------------------
+
+## Ejemplo aplicado a una tarea organizacional
+
+Supongamos este prompt:
+
+**"Responde al afiliado usando solo la normativa vigente. Si no hay base suficiente, indícalo explícitamente. Consulta: ¿puedo pensionarme anticipadamente?"**
+
+Si el contexto está bien estructurado, la atención debería priorizar:
+
+-   `solo la normativa vigente`
+-   `si no hay base suficiente`
+-   `pensionarme anticipadamente`
+
+Si el contexto estuviera desordenado, el modelo podría apoyarse en fragmentos menos relevantes.
+
+------------------------------------------------------------------------
+
+## Resumen operativo sobre atención {.smaller}
+
+-   ayuda a ponderar qué partes del contexto importan más
+-   permite conectar palabras o fragmentos distantes
+-   mejora la relevancia local de cada paso de generación
+-   depende mucho de cómo está armado el contexto
+
+### Pregunta para discutir
+
+¿Qué pasa si una instrucción crítica queda escondida entre demasiado texto irrelevante?
+
+------------------------------------------------------------------------
+
+## Cierre
+
+Entender atención ayuda a leer mejor tres cosas:
+
+-   la arquitectura Transformer
+-   la calidad real del contexto que entregamos
+-   el sentido del paper fundacional que aparece en la actividad de la clase 01
+
+------------------------------------------------------------------------
+
+## Actividad grupal breve: paper fundacional {.smaller}
+
+**Texto base:** *Attention Is All You Need* (Vaswani et al., 2017)
+
+### Objetivo
+
+Entender por qué este paper fue tan influyente y conectar su propuesta con lo que hoy vemos en LLMs.
+
+### Formato
+
+-   grupos de 3 a 4 personas
+-   duración máxima: 30 minutos
+-   insumo mínimo: abstract + introducción del paper
+
+------------------------------------------------------------------------
+
+## Instrucciones de trabajo {.smaller}
+
+Cada grupo debe leer el abstract y la introducción y responder estas preguntas:
+
+1. ¿Qué limitación de los modelos anteriores identifica el paper?
+2. ¿Cuál es la propuesta central del Transformer?
+3. ¿Por qué la atención aparece como una innovación tan importante?
+4. ¿Qué conexión ven entre este paper y los LLMs actuales?
+
+### Regla
+
+No se trata de resumir todo el paper, sino de identificar su argumento central.
+
+------------------------------------------------------------------------
+
+## Producto esperado del grupo {.smaller}
+
+Cada grupo prepara una mini-síntesis de 3 partes:
+
+-   `Problema anterior`: qué estaba fallando o limitando a los modelos previos
+-   `Aporte del paper`: qué cambia con el Transformer
+-   `Impacto actual`: por qué esto sigue importando en la arquitectura de los LLMs
+
+### Formato sugerido
+
+3 a 5 bullets o una intervención oral de 1 minuto.
+
+------------------------------------------------------------------------
+
+## Guía para orientar la discusión {.smaller}
+
+Si el grupo se traba, puede apoyarse en esta pista:
+
+-   antes había más secuencialidad y menos paralelización
+-   el paper propone apoyarse solo en atención
+-   eso mejora la capacidad de modelar dependencias y escalar entrenamiento
+
+### Conexión con esta clase
+
+La pregunta de fondo es:  
+**¿Por qué entender atención ayuda a entender por qué los LLMs modernos son posibles?**
+
+------------------------------------------------------------------------
+
+## Cierre y puesta en común {.smaller}
+
+En plenario, cada grupo comparte:
+
+-   una idea del paper que le pareció fundacional
+-   una conexión con conceptos vistos hoy: atención, contexto, escalabilidad o arquitectura
+
+### Criterio de éxito
+
+Si al terminar pueden explicar por qué este paper marca un punto de inflexión, la actividad cumplió su objetivo.
+
+------------------------------------------------------------------------

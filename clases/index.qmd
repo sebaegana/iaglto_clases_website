@@ -9,6 +9,7 @@ En esta sección se agrupan las sesiones del módulo, el diccionario de apoyo y 
 ## Módulo 3
 
 - [Clase 1: Arquitectura y funcionamiento de los LLMs](m03-clase01-arquitectura-llms.qmd)
+- [Material complementario: Atención en LLMs](m03-clase01-atencion.qmd)
 - [Clase 2: CI/CD, MLOps y gobernanza](m03-clase02-cicd-mlops-gobernanza.qmd)
 - [Clase 3: Decision Science y sesgos](m03-clase03-decision-science-sesgos.qmd)
 - [Caso aplicado: Agente AFP](m03-caso-aplicado-agente-afp.qmd)
@@ -16,6 +17,7 @@ En esta sección se agrupan las sesiones del módulo, el diccionario de apoyo y 
 
 ## Materiales complementarios
 
+- [Roadmap de aprendizaje en IA](roadmap-aprendizaje-ia.qmd)
 - [Tokenización: técnicas y fundamentos](tokenizacion_tecnicas.qmd)
 - [Notebook 01](notebook_01.qmd)
 - [Actividad: skill en Markdown](actividad_skill_markdown.qmd)
