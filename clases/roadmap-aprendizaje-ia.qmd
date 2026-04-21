@@ -1,0 +1,142 @@
+---
+listing_title: "Roadmap – IA & LLM"
+title: "🧠 Roadmap IA & LLM"
+subtitle: "De básico a avanzado"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    scrollable: true
+    self-contained: true
+    incremental: false
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+# 1. Fundamentos de LLMs
+
+## ¿Qué es un LLM?
+
+- [ ] Qué es un LLM (tokens, contexto)
+- [ ] Limitaciones (alucinaciones, sesgos)
+- [ ] Casos de uso básicos
+
+------------------------------------------------------------------------
+
+# 2. Prompting básico
+
+## Cómo instruir a un modelo
+
+- [ ] Zero-shot / Few-shot
+- [ ] Estructura: rol + contexto + tarea + formato
+- [ ] Iteración de prompts
+
+------------------------------------------------------------------------
+
+# 3. Prompt Engineering
+
+## Prompts más sofisticados
+
+- [ ] Templates reutilizables
+- [ ] Salidas estructuradas (JSON, tablas)
+- [ ] Prompt chaining
+- [ ] Evaluación de respuestas
+
+------------------------------------------------------------------------
+
+# 4. Manejo de contexto
+
+## Texto como números
+
+- [ ] Qué son embeddings (conceptual)
+- [ ] Chunking de documentos
+- [ ] Similaridad semántica
+
+------------------------------------------------------------------------
+
+# 5. RAG (Retrieval-Augmented Generation)
+
+## Conectar el modelo a información externa
+
+- [ ] Pipeline: query → retrieval → contexto → respuesta
+- [ ] Integración con documentos propios
+- [ ] Evaluación de relevancia
+
+------------------------------------------------------------------------
+
+# 6. Automatización con LLM
+
+## El modelo dentro de procesos
+
+- [ ] Workflows (n8n, Zapier, Make)
+- [ ] Uso de APIs
+- [ ] LLM dentro de procesos
+
+------------------------------------------------------------------------
+
+# 7. Memoria
+
+## Qué recuerda el modelo y cómo
+
+- [ ] Corto plazo (context window)
+- [ ] Largo plazo (vector DB)
+- [ ] Memoria de usuario / historial
+
+------------------------------------------------------------------------
+
+# 8. Agentes
+
+## De responder a actuar
+
+- [ ] Concepto de agente (objetivo + herramientas)
+- [ ] Tool use
+- [ ] Planificación vs ejecución
+
+------------------------------------------------------------------------
+
+# 9. Multi-agentes
+
+## Varios modelos coordinados
+
+- [ ] Roles (planner, executor, reviewer)
+- [ ] Coordinación entre agentes
+- [ ] División de tareas
+
+------------------------------------------------------------------------
+
+# 10. Skills / Productos
+
+## Diseño de soluciones específicas
+
+- [ ] Diseño de soluciones específicas
+- [ ] Inputs y outputs definidos
+- [ ] Interfaces (chat, dashboards, APIs)
+
+------------------------------------------------------------------------
+
+# 11. Deploy & Escalamiento
+
+## De prototipo a producción
+
+- [ ] APIs
+- [ ] Automatización (GitHub Actions)
+- [ ] Integración con sistemas reales
+
+------------------------------------------------------------------------
+
+# 12. Gobernanza y decisión
+
+## Usar IA con criterio
+
+- [ ] Privacidad y riesgos
+- [ ] Evaluación de impacto
+- [ ] Decision science + IA

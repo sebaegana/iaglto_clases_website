@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Recursos – Curso Modelos predictivos</title>
+<title>Recursos – IA Generativa para Organizaciones</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -72,6 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -82,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Curso Modelos predictivos</span>
+    <span class="navbar-title">IA Generativa para Organizaciones</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -125,9 +126,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#recursos-adicionales" id="toc-recursos-adicionales" class="nav-link active" data-scroll-target="#recursos-adicionales">Recursos adicionales</a>
   <ul class="collapse">
-  <li><a href="#libros" id="toc-libros" class="nav-link" data-scroll-target="#libros">Libros</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#cheatsheets" id="toc-cheatsheets" class="nav-link" data-scroll-target="#cheatsheets">Cheatsheets</a></li>
+  <li><a href="#documentación-base" id="toc-documentación-base" class="nav-link" data-scroll-target="#documentación-base">Documentación base</a></li>
+  <li><a href="#conceptos-de-ia-generativa-y-llms" id="toc-conceptos-de-ia-generativa-y-llms" class="nav-link" data-scroll-target="#conceptos-de-ia-generativa-y-llms">Conceptos de IA generativa y LLMs</a></li>
+  <li><a href="#prompting-y-diseño-de-soluciones" id="toc-prompting-y-diseño-de-soluciones" class="nav-link" data-scroll-target="#prompting-y-diseño-de-soluciones">Prompting y diseño de soluciones</a></li>
+  <li><a href="#agentes-rag-y-arquitectura" id="toc-agentes-rag-y-arquitectura" class="nav-link" data-scroll-target="#agentes-rag-y-arquitectura">Agentes, RAG y arquitectura</a></li>
+  <li><a href="#gobernanza-evaluación-y-criterios-de-uso" id="toc-gobernanza-evaluación-y-criterios-de-uso" class="nav-link" data-scroll-target="#gobernanza-evaluación-y-criterios-de-uso">Gobernanza, evaluación y criterios de uso</a></li>
+  <li><a href="#herramientas-de-trabajo-reproducible" id="toc-herramientas-de-trabajo-reproducible" class="nav-link" data-scroll-target="#herramientas-de-trabajo-reproducible">Herramientas de trabajo reproducible</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -156,35 +160,54 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="recursos-adicionales" class="level1">
 <h1>Recursos adicionales</h1>
+<p>Esta página reúne referencias útiles para profundizar los temas del curso. La idea no es cubrir todo, sino dejar una base confiable para seguir estudiando prompting, LLMs, agentes, evaluación y gobernanza.</p>
+<section id="documentación-base" class="level2">
+<h2 class="anchored" data-anchor-id="documentación-base">Documentación base</h2>
 <ul>
-<li><p>Vecillas Martin, D., Berruezo Fernández, C., &amp; Gento Municio, A. M. (2025). Systematic Review of Discrete Event Simulation in Healthcare and Statistics Distributions. Applied Sciences, 15(4), 1861. <a href="https://www.mdpi.com/2076-3417/15/4/1861#:~:text=53,CrossRef">Enlace aquí</a></p></li>
-<li><p>Heins, J., Schoenfelder, J., Heider, S., Heller, A. R., &amp; Brunner, J. O. (2022). A scalable forecasting framework to predict COVID-19 hospital bed occupancy. INFORMS Journal on Applied Analytics, 52(6), 508-523. <a href="https://opus.bibliothek.uni-augsburg.de/opus4/frontdoor/deliver/index/docId/92025/file/92025.pdf#:~:text=jens.brunner%40uni,care%20units%20and%20regular%20wards">Enlace aquí</a></p></li>
-<li><p>Harper, P. R., &amp; Shahani, A. K. (2002). Modelling for the planning and management of bed capacities in hospitals. Journal of the Operational research Society, 53(1), 11-18.</p></li>
-<li><p>Cavalcante, T., Ospina, R., Leiva, V., Cabezas, X., &amp; Martin-Barreiro, C. (2023). Weibull regression and machine learning survival models: Methodology, comparison, and application to biomedical data related to cardiac surgery. Biology, 12(3), 442.</p></li>
-<li><p>Fenina, S., Jendoubi, S., &amp; Bouchoucha, F. (2023). Failure rate estimation by Weibull distribution in a stochastic environment: application to the hemodialysis machine. Reliability: Theory &amp; Applications, 18(3 (74)), 450-463.</p></li>
-<li><p>Nketiah, E. A. (2021). Parameter Estimation of the Weibull Distribution; Comparison of the Least-Squares Method and the Maximum Likelihood Estimation. Int. J. Adv. Eng. Res. Sci, 8, 210-224.</p></li>
-</ul>
-<section id="libros" class="level2">
-<h2 class="anchored" data-anchor-id="libros">Libros</h2>
-<ol type="1">
-<li>Wickham, H., &amp; Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. ” O’Reilly Media, Inc.”. <a href="https://r4ds.had.co.nz/">Enlace acá</a></li>
-<li>Grolemund, G. (2014). Hands-on programming with R: Write your own functions and simulations. ” O’Reilly Media, Inc.”. <a href="https://rstudio-education.github.io/hopr/">Enlace acá</a></li>
-<li>Regenstein Jr, J. K. (2018). Reproducible finance with R: Code flows and shiny apps for portfolio analysis. CRC Press. <a href="http://www.reproduciblefinance.com/">Enlace acá</a></li>
-<li>Scheuch, C., Voigt, S., &amp; Weiss, P. (2023). Tidy Finance with R (1st ed.). Chapman and Hall/CRC. https://doi.org/10.1201/b23237. <a href="https://www.tidy-finance.org/">Enlace acá</a></li>
-<li>Xie, Y., Allaire, J. J., &amp; Grolemund, G. (2018). R markdown: The definitive guide. CRC Press. <a href="https://bookdown.org/yihui/rmarkdown/">Enlace acá</a></li>
-<li>Bryan, J., &amp; Hester, J. (n.d.). Happy Git and GitHub for the useR. <a href="https://happygitwithr.com">Enlace acá</a></li>
-</ol>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
-<ul>
-<li>Utilización de Renv: <a href="https://docs.posit.co/ide/user/ide/guide/environments/r/renv.html">Enlace acá</a></li>
+<li><a href="https://quarto.org/">Quarto</a>: documentación para publicar apuntes, clases y sitios del curso.</li>
+<li><a href="https://posit.co/resources/cheatsheets/">Posit Cheatsheets</a>: referencia rápida para flujos de trabajo con R y Quarto.</li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a>: base útil para entender la lógica de documentos reproducibles.</li>
 </ul>
 </section>
-<section id="cheatsheets" class="level2">
-<h2 class="anchored" data-anchor-id="cheatsheets">Cheatsheets</h2>
+<section id="conceptos-de-ia-generativa-y-llms" class="level2">
+<h2 class="anchored" data-anchor-id="conceptos-de-ia-generativa-y-llms">Conceptos de IA generativa y LLMs</h2>
 <ul>
-<li>https://posit.co/resources/cheatsheets/</li>
+<li>Mollick, E. (2024). <em>Co-Intelligence</em>. Libro útil para discutir impacto organizacional y trabajo con IA.</li>
+<li>Russell, S., &amp; Norvig, P. <em>Artificial Intelligence: A Modern Approach</em>. Referencia amplia para conectar IA generativa con el campo general.</li>
+<li><a href="https://huggingface.co/learn">Hugging Face Learn</a>: tutoriales y explicaciones accesibles sobre transformers, embeddings y modelos abiertos.</li>
+</ul>
+</section>
+<section id="prompting-y-diseño-de-soluciones" class="level2">
+<h2 class="anchored" data-anchor-id="prompting-y-diseño-de-soluciones">Prompting y diseño de soluciones</h2>
+<ul>
+<li>Materiales de clase sobre prompt estructurado, prompt como contrato y diferencias entre demo, workflow y agente.</li>
+<li><a href="https://cookbook.openai.com/">OpenAI Cookbook</a>: ejemplos prácticos para estructurar tareas, salidas y uso de herramientas.</li>
+<li><a href="https://docs.anthropic.com/">Anthropic Prompting Guides</a>: buenas prácticas para instrucciones, evaluación y uso más confiable de modelos.</li>
+</ul>
+</section>
+<section id="agentes-rag-y-arquitectura" class="level2">
+<h2 class="anchored" data-anchor-id="agentes-rag-y-arquitectura">Agentes, RAG y arquitectura</h2>
+<ul>
+<li>Lewis, P. et al.&nbsp;(2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.</li>
+<li>Documentación de proveedores y frameworks para herramientas, contexto y orquestación de agentes.</li>
+<li>Casos del curso donde el modelo no opera solo, sino conectado a fuentes, reglas y acciones.</li>
+</ul>
+</section>
+<section id="gobernanza-evaluación-y-criterios-de-uso" class="level2">
+<h2 class="anchored" data-anchor-id="gobernanza-evaluación-y-criterios-de-uso">Gobernanza, evaluación y criterios de uso</h2>
+<ul>
+<li>NIST AI Risk Management Framework: marco útil para conversar sobre riesgo, control y responsabilidades.</li>
+<li>OECD AI Principles: referencia para discutir uso responsable y accountability.</li>
+<li>Materiales del módulo sobre observabilidad, CI/CD, MLOps, evaluación y human-in-the-loop.</li>
+</ul>
+</section>
+<section id="herramientas-de-trabajo-reproducible" class="level2">
+<h2 class="anchored" data-anchor-id="herramientas-de-trabajo-reproducible">Herramientas de trabajo reproducible</h2>
+<ul>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science</a></li>
+<li><a href="https://rstudio-education.github.io/hopr/">Hands-On Programming with R</a></li>
+<li><a href="https://happygitwithr.com">Happy Git and GitHub for the useR</a></li>
+<li><a href="https://docs.posit.co/ide/user/ide/guide/environments/r/renv.html">Renv</a></li>
 </ul>
 
 
