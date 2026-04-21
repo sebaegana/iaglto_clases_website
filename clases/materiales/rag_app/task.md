@@ -1,0 +1,14 @@
+- [/] Fase 1: Preparación del Entorno
+  - [x] Crear la carpeta `rag_app` dentro de `materiales`.
+  - [x] Crear el entorno virtual `env`.
+  - [x] Instalar las dependencias de Python (`langchain`, `chromadb`, `pypdf`, `langchain-community`, `langchain-openai`, `python-dotenv`).
+  - [x] Crear un archivo `.env` para que el usuario coloque su `OPENAI_API_KEY`.
+- [/] Fase 2: Ingesta de Documentos
+  - [x] Crear `ingest.py`.
+  - [x] Implementar la lógica para leer PDFs, fragmentar y guardar en ChromaDB.
+- [/] Fase 3: Creación del RAG (Consulta)
+  - [x] Crear `query.py`.
+  - [x] Implementar la cadena (Chain) RAG con LangChain usando `ChatOpenAI`.
+- [ ] Verificación
+  - [ ] Ejecutar `ingest.py` y verificar.
+  - [ ] Ejecutar `query.py` con una pregunta de prueba.

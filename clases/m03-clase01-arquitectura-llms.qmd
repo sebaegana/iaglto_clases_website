@@ -47,7 +47,7 @@ library(fontawesome)
 ## Objetivo de la sesión
 
 -   Entender cómo procesan lenguaje los LLMs
--   Revisar tokens, embeddings, atención, contexto y parámetros
+-   Revisar tokens, embeddings, contexto y parámetros
 -   Distinguir modelos abiertos, cerrados y open-weight
 -   Comparar familias como GPT, Claude, Gemini y Llama
 -   Traducir estos conceptos a implicancias prácticas para organizaciones
@@ -624,194 +624,29 @@ Buen embedding + mal documento o mal chunking = mala recuperación igual.
 
 ------------------------------------------------------------------------
 
-## Atención
+## Atención como puente conceptual
 
-La **atención** es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.
+El tema de **atención** quedó separado en un material específico para darle más espacio y tratarlo con más calma.
 
-### Intuición
+### En esta clase nos basta con retener tres ideas
 
-Cuando genera una palabra, no mira todo el texto con el mismo peso.
+-   no todo el contexto pesa igual
+-   la arquitectura Transformer usa atención para priorizar información relevante
+-   esta idea conecta directamente con la actividad final sobre el paper fundacional
 
-Algunas partes del contexto importan más que otras.
+-------------------------------------------------------------------------
 
-------------------------------------------------------------------------
+## Conexión con esta clase
 
-## ¿Qué problema resuelve la atención?
+Aunque aquí no desarrollaremos el mecanismo completo, sí conviene tener presente que la atención ayuda a explicar:
 
-En lenguaje natural, el significado de una palabra depende mucho del resto de la frase.
+-   por qué importa el orden y la claridad del contexto
+-   por qué el prompt no influye de manera uniforme
+-   por qué el paper *Attention Is All You Need* marca un punto de inflexión
 
-Por ejemplo, no es lo mismo:
+### Referencia
 
--   "banco" como institución financiera
--   "banco" como asiento
-
-### Idea clave
-
-La atención ayuda al modelo a decidir **qué partes del contexto aclaran el sentido correcto**.
-
-------------------------------------------------------------------------
-
-## Intuición operativa
-
-Cuando el modelo está generando una palabra nueva, hace algo parecido a esto:
-
--   mira los tokens previos
--   estima cuáles son más relevantes
--   les da más peso a algunos
--   y menos peso a otros
-
-### Lectura simple
-
-No "recuerda todo igual": prioriza dinámicamente.
-
-------------------------------------------------------------------------
-
-## Ejemplo intuitivo
-
-Tomemos esta frase:
-
-**"El analista revisó el informe porque necesitaba verificar si los beneficios estaban correctamente calculados."**
-
-Si el modelo quiere continuar después de "beneficios", probablemente pondrá más atención en:
-
--   `informe`
--   `verificar`
--   `calculados`
-
-y menos en palabras funcionales como:
-
--   `el`
--   `porque`
--   `los`
-
-------------------------------------------------------------------------
-
-## Atención como mecanismo de foco
-
-Podemos pensarlo como un sistema de foco variable.
-
-### No todas las palabras pesan igual
-
--   algunas definen el tema
--   otras aclaran relaciones
--   otras casi no aportan significado por sí solas
-
-### Idea clave
-
-La atención permite que el modelo construya relevancia contextual token por token.
-
-------------------------------------------------------------------------
-
-## Queries, keys y values sin fórmulas
-
-Una forma simple de explicarlo es esta:
-
--   cada token genera una `query`: qué está buscando ahora
--   cada token también ofrece una `key`: qué tipo de información contiene
--   y una `value`: el contenido que puede aportar
-
-### Intuición
-
-El modelo compara la query actual con las keys del resto del contexto y decide de cuáles values conviene tomar más información.
-
-------------------------------------------------------------------------
-
-## Ejemplo simple de queries, keys y values
-
-Si la pregunta es:
-
-**"¿Qué documentos necesito para pensionarme?"**
-
-La query implícita del modelo buscará información relacionada con:
-
--   `documentos`
--   `requisitos`
--   `pensionarme`
-
-Entonces tokens o fragmentos que hablen de:
-
--   certificados
--   edad legal
--   formularios
--   solicitud de pensión
-
-recibirán más peso que otros sobre canales generales o información secundaria.
-
-------------------------------------------------------------------------
-
-## ¿Por qué la atención fue tan importante?
-
-Antes de transformers, otros enfoques tenían más dificultades para mantener dependencias largas de manera eficiente.
-
-La atención permitió:
-
--   capturar relaciones entre palabras distantes
--   procesar contexto de forma más flexible
--   escalar mejor a textos más complejos
-
-### Idea clave
-
-Gran parte del salto de los LLMs modernos pasa por este mecanismo.
-
-------------------------------------------------------------------------
-
-## Atención no significa comprensión perfecta
-
-Aunque el mecanismo sea potente, no garantiza:
-
--   verdad factual
--   razonamiento correcto
--   priorización siempre adecuada
-
-### Riesgo práctico
-
-El modelo puede atender a fragmentos cercanos pero irrelevantes, o perder partes importantes si el contexto está mal armado.
-
-------------------------------------------------------------------------
-
-## Atención y calidad del prompt
-
-La forma en que escribimos un prompt afecta qué partes del contexto resaltan más.
-
-Por eso ayuda:
-
--   separar instrucciones de contexto
--   usar formato claro
--   destacar restricciones
--   ordenar bien la información
-
-### Lectura práctica
-
-Un buen prompt no solo "dice cosas"; también guía la atención del modelo.
-
-------------------------------------------------------------------------
-
-## Ejemplo aplicado a una tarea organizacional
-
-Supongamos este prompt:
-
-**"Responde al afiliado usando solo la normativa vigente. Si no hay base suficiente, indícalo explícitamente. Consulta: ¿puedo pensionarme anticipadamente?"**
-
-Si el contexto está bien estructurado, la atención debería priorizar:
-
--   `solo la normativa vigente`
--   `si no hay base suficiente`
--   `pensionarme anticipadamente`
-
-Si el contexto estuviera desordenado, el modelo podría terminar apoyándose en fragmentos menos relevantes.
-
-------------------------------------------------------------------------
-
-## Resumen operativo sobre atención {.smaller}
-
--   ayuda a ponderar qué partes del contexto importan más
--   permite conectar palabras o fragmentos distantes
--   mejora la relevancia local de cada paso de generación
--   depende mucho de cómo está armado el contexto
-
-### Pregunta para discutir
-
-¿Qué pasa si una instrucción crítica queda escondida entre demasiado texto irrelevante?
+El desarrollo completo quedó en `m03-clase01-atencion.qmd`.
 
 ------------------------------------------------------------------------
 
