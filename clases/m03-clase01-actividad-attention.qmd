@@ -1,0 +1,258 @@
+---
+listing_title: "Módulo 03 – Actividad: Attention Is All You Need"
+title: "Módulo 3: Actividad"
+subtitle: "Attention Is All You Need — NotebookLM"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    scrollable: true
+    self-contained: true
+    incremental: false
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+------------------------------------------------------------------------
+
+# Módulo 03
+
+## Actividad: Attention Is All You Need
+
+### Prompts y guion para generar el material con NotebookLM
+
+------------------------------------------------------------------------
+
+## Qué contiene este documento
+
+Tres insumos listos para usar en NotebookLM:
+
+-   **Prompt 1**: para generar el video / audio podcast
+-   **Prompt 2**: para generar las diapositivas
+-   **Documento libre**: guion completo para cargar como fuente adicional
+
+**Paper fuente:** Vaswani et al. (2017). *Attention Is All You Need.* NeurIPS.
+
+------------------------------------------------------------------------
+
+## Cómo usar este material
+
+1. Sube el PDF del paper a NotebookLM como fuente
+2. Para el video: usa el **Prompt 1** como instrucción al generar el audio
+3. Para las diapositivas: usa el **Prompt 2** como instrucción
+4. Para el documento libre: cópialo como nota o súbelo como archivo de texto adicional
+
+El documento libre le da a NotebookLM el contenido ya redactado para que no se aleje del enfoque del curso.
+
+------------------------------------------------------------------------
+
+# Prompts para NotebookLM
+
+## Prompt 1 — Video / audio podcast {.smaller}
+
+```
+Contexto del curso:
+Soy docente de un programa de especialización en IA Generativa y LLMs
+para la Transformación Organizacional, dirigido a profesionales y
+directivos con formación en gestión, sin background técnico en deep
+learning. Ya vimos qué es un LLM, atención de forma intuitiva,
+embeddings y RAG.
+
+Objetivo: video de 5 a 7 minutos para introducir el paper en clase,
+antes de una discusión grupal. Debe terminar con una pregunta abierta.
+
+Audiencia: profesionales y directivos. Sin fórmulas. Sí entienden
+conceptos de negocio, productividad y tecnología aplicada.
+
+Estructura:
+1. Qué problema tenían los modelos anteriores (RNN, LSTM):
+   secuencialidad, pérdida de dependencias largas, no escala.
+2. Qué propone el paper: atención pura, sin recurrencia.
+3. Por qué fue importante: paralelización, escala, dependencias largas.
+   De ahí vienen GPT, Claude, Gemini.
+4. Cierre: ¿qué cambia cuando el modelo considera todo el contexto
+   al mismo tiempo en lugar de procesarlo paso a paso?
+
+Tono: conversacional, accesible, como docente antes de una actividad.
+Sin fórmulas. Con analogías simples si ayudan.
+```
+
+------------------------------------------------------------------------
+
+## Prompt 2 — Diapositivas {.smaller}
+
+```
+Contexto del curso:
+Soy docente de un programa de especialización en IA Generativa y LLMs
+para la Transformación Organizacional. Audiencia: profesionales con
+formación en gestión. Ya vimos LLMs, embeddings, atención y RAG.
+
+Objetivo: 6 diapositivas en español para introducir el paper
+"Attention Is All You Need" (Vaswani et al., 2017) antes de una
+actividad grupal.
+
+Estructura:
+Slide 1 — Los modelos antes del Transformer
+  Qué limitaba a RNN y LSTM: secuencialidad, dependencias largas,
+  dificultad para escalar.
+
+Slide 2 — Atención es todo lo que necesitas
+  Reemplazar recurrencia por atención pura. Cada token se relaciona
+  directamente con cualquier otro.
+
+Slide 3 — Query, Key y Value
+  Sin fórmulas: el modelo pregunta, compara y decide qué información
+  usar de cada parte del contexto.
+
+Slide 4 — Paralelización y escala
+  Entrenamiento paralelo. Modelos más grandes con más datos.
+
+Slide 5 — De este paper vienen los LLMs actuales
+  GPT, BERT, Claude, Gemini y casi todos los modelos modernos
+  son Transformers.
+
+Slide 6 — Para discutir
+  ¿Qué cambia cuando el modelo puede mirar todo el contexto a la vez?
+  ¿Qué implica eso para prompts, RAG y límites del modelo?
+
+Formato: título + 3 a 4 bullets cortos. Sin jerga innecesaria.
+```
+
+------------------------------------------------------------------------
+
+# Documento libre
+
+## Para cargar como fuente adicional en NotebookLM
+
+Este documento está redactado para subirse como nota o archivo de texto junto al PDF del paper.
+
+NotebookLM lo usará como referencia de contenido, nivel y enfoque para generar el material sin alejarse del curso.
+
+------------------------------------------------------------------------
+
+## Encabezado del documento libre {.smaller}
+
+```
+Curso: Especialización en IA Generativa y LLMs para la Transformación
+Organizacional, FEN U. de Chile.
+
+Audiencia: profesionales y directivos con formación en gestión.
+Sin background técnico en deep learning.
+
+Propósito: introducir el paper "Attention Is All You Need" antes de
+una actividad grupal. Tono divulgativo. Sin fórmulas.
+
+Paper de referencia: Vaswani et al. (2017). Attention Is All You Need.
+NeurIPS. https://arxiv.org/abs/1706.03762
+```
+
+------------------------------------------------------------------------
+
+## Slide 1 del guion {.smaller}
+
+**Título:** Attention Is All You Need
+
+Vaswani et al., 2017 — el paper que cambió la historia de los modelos de lenguaje.
+
+Esta presentación introduce el argumento central del paper para entender por qué fue tan influyente y qué conexión tiene con los LLMs que usamos hoy.
+
+------------------------------------------------------------------------
+
+## Slide 2 del guion {.smaller}
+
+**El problema que existía antes**
+
+Los modelos dominantes antes del Transformer eran las redes recurrentes: RNN y LSTM. Procesaban el texto de forma secuencial, token por token, acumulando información en un estado interno.
+
+Eso generaba dos problemas: las relaciones entre palabras distantes se perdían porque la información tenía que "sobrevivir" muchos pasos intermedios. Y el entrenamiento no podía ejecutarse en paralelo, lo que hacía muy costoso escalar estos modelos.
+
+------------------------------------------------------------------------
+
+## Slide 3 del guion {.smaller}
+
+**La propuesta del paper**
+
+El paper propone eliminar la recurrencia por completo y reemplazarla por un mecanismo de atención puro.
+
+En lugar de procesar el texto paso a paso, el Transformer permite que cada parte del texto se relacione directamente con cualquier otra, en una sola operación.
+
+De ahí viene el título: la atención es todo lo que necesitas. No hace falta recurrencia ni convoluciones.
+
+------------------------------------------------------------------------
+
+## Slide 4 del guion {.smaller}
+
+**Cómo funciona la atención (sin fórmulas)**
+
+Cuando el modelo procesa un token, genera tres cosas:
+
+-   una **query**: qué información está buscando
+-   una **key**: qué tipo de información contiene ese token
+-   un **value**: el contenido que puede aportar
+
+El mecanismo compara la query de cada token con las keys de todos los demás y decide cuánto peso darle a cada uno. Eso determina qué información se incorpora en la respuesta final.
+
+------------------------------------------------------------------------
+
+## Slide 5 del guion {.smaller}
+
+**Por qué eso fue tan importante**
+
+Al eliminar la secuencialidad, el Transformer habilitó dos cosas:
+
+Primero, el entrenamiento puede ejecutarse en paralelo. Ya no hay que esperar el paso N para empezar el N+1. Eso permite entrenar modelos mucho más grandes con mucho más dato.
+
+Segundo, las relaciones entre partes distantes del texto se capturan directamente, sin depender de que la información sobreviva una cadena larga de pasos intermedios.
+
+------------------------------------------------------------------------
+
+## Slide 6 del guion {.smaller}
+
+**El impacto real**
+
+GPT, BERT, Claude, Gemini, Llama y prácticamente todos los modelos de lenguaje relevantes hoy son Transformers.
+
+El mecanismo propuesto en 2017 es la arquitectura sobre la que se construyen los sistemas de IA generativa que vemos en este curso.
+
+Entender atención no es un ejercicio teórico: es entender por qué estos modelos funcionan como funcionan y cuáles son sus límites reales.
+
+------------------------------------------------------------------------
+
+## Slide 7 del guion {.smaller}
+
+**Pregunta para el grupo**
+
+¿Qué cambia, en términos prácticos, cuando un modelo puede considerar todo el contexto al mismo tiempo en lugar de procesarlo paso a paso?
+
+¿Cómo afecta eso a cómo construimos prompts, cómo armamos el contexto en RAG y cómo pensamos los límites del modelo?
+
+------------------------------------------------------------------------
+
+# Referencia
+
+## Paper fundacional
+
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). *Attention Is All You Need.* Advances in Neural Information Processing Systems (NeurIPS).
+
+<https://arxiv.org/abs/1706.03762>

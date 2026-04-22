@@ -442,7 +442,7 @@
   <meta name="generator" content="quarto-1.9.37">
 
   <meta name="dcterms.date" content="2026-04-22">
-  <title>IA Generativa para Organizaciones – Módulo 3: Atención en LLMs</title>
+  <title>IA Generativa para Organizaciones – Módulo 3: Actividad</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -1002,8 +1002,8 @@ align-items: flex-start;
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Módulo 3: Atención en LLMs</h1>
-  <p class="subtitle">Cómo el modelo prioriza contexto</p>
+  <h1 class="title">Módulo 3: Actividad</h1>
+  <p class="subtitle">Attention Is All You Need — NotebookLM</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -1028,233 +1028,191 @@ align-items: flex-start;
 <h1>Módulo 03</h1>
 
 </section>
-<section id="atención-en-llms" class="slide level2">
-<h2>Atención en LLMs</h2>
-<h3 id="cómo-el-modelo-prioriza-contexto">Cómo el modelo prioriza contexto</h3>
+<section id="actividad-attention-is-all-you-need" class="slide level2">
+<h2>Actividad: Attention Is All You Need</h2>
+<h3 id="prompts-y-guion-para-generar-el-material-con-notebooklm">Prompts y guion para generar el material con NotebookLM</h3>
 </section>
-<section id="objetivo-de-la-sesión" class="slide level2">
-<h2>Objetivo de la sesión</h2>
+<section id="qué-contiene-este-documento" class="slide level2">
+<h2>Qué contiene este documento</h2>
+<p>Tres insumos listos para usar en NotebookLM:</p>
 <ul>
-<li>Entender qué problema resuelve la atención</li>
-<li>Construir una intuición operativa del mecanismo</li>
-<li>Conectar atención con calidad de prompt y uso de contexto</li>
-<li>Preparar la lectura del paper <em>Attention Is All You Need</em></li>
+<li><strong>Prompt 1</strong>: para generar el video / audio podcast</li>
+<li><strong>Prompt 2</strong>: para generar las diapositivas</li>
+<li><strong>Documento libre</strong>: guion completo para cargar como fuente adicional</li>
 </ul>
+<p><strong>Paper fuente:</strong> Vaswani et al. (2017). <em>Attention Is All You Need.</em> NeurIPS.</p>
 </section>
-<section id="qué-es-la-atención" class="slide level2">
-<h2>¿Qué es la atención?</h2>
-<p>La atención es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.</p>
-<h3 id="intuición">Intuición</h3>
-<p>Cuando genera una palabra, no mira todo con el mismo peso.</p>
-</section>
-<section id="qué-problema-resuelve" class="slide level2">
-<h2>¿Qué problema resuelve?</h2>
-<p>En lenguaje natural, el significado depende del contexto.</p>
-<p>No es lo mismo:</p>
-<ul>
-<li><code>banco</code> como institución financiera</li>
-<li><code>banco</code> como asiento</li>
-</ul>
-<h3 id="idea-clave">Idea clave</h3>
-<p>La atención ayuda a decidir qué partes del contexto aclaran el sentido correcto.</p>
-</section>
-<section id="intuición-operativa" class="slide level2">
-<h2>Intuición operativa</h2>
-<p>Cuando el modelo genera una palabra nueva:</p>
-<ul>
-<li>mira los tokens previos</li>
-<li>estima cuáles son más relevantes</li>
-<li>les da más peso a algunos</li>
-<li>y menos peso a otros</li>
-</ul>
-<h3 id="lectura-simple">Lectura simple</h3>
-<p>No recuerda todo igual: prioriza dinámicamente.</p>
-</section>
-<section id="ejemplo-intuitivo" class="slide level2">
-<h2>Ejemplo intuitivo</h2>
-<p>Tomemos esta frase:</p>
-<p><strong>“El analista revisó el informe porque necesitaba verificar si los beneficios estaban correctamente calculados.”</strong></p>
-<p>Si el modelo quiere continuar después de <code>beneficios</code>, probablemente pondrá más atención en:</p>
-<ul>
-<li><code>informe</code></li>
-<li><code>verificar</code></li>
-<li><code>calculados</code></li>
-</ul>
-<p>y menos en:</p>
-<ul>
-<li><code>el</code></li>
-<li><code>porque</code></li>
-<li><code>los</code></li>
-</ul>
-</section>
-<section id="atención-como-mecanismo-de-foco" class="slide level2">
-<h2>Atención como mecanismo de foco</h2>
-<p>Podemos pensarlo como un sistema de foco variable.</p>
-<h3 id="no-todas-las-palabras-pesan-igual">No todas las palabras pesan igual</h3>
-<ul>
-<li>algunas definen el tema</li>
-<li>otras aclaran relaciones</li>
-<li>otras casi no aportan significado por sí solas</li>
-</ul>
-<h3 id="idea-clave-1">Idea clave</h3>
-<p>La atención permite construir relevancia contextual token por token.</p>
-</section>
-<section id="queries-keys-y-values-sin-fórmulas" class="slide level2">
-<h2>Queries, keys y values sin fórmulas</h2>
-<p>Una forma simple de explicarlo es esta:</p>
-<ul>
-<li>cada token genera una <code>query</code>: qué está buscando ahora</li>
-<li>cada token ofrece una <code>key</code>: qué tipo de información contiene</li>
-<li>cada token aporta una <code>value</code>: el contenido que puede entregar</li>
-</ul>
-<h3 id="intuición-1">Intuición</h3>
-<p>El modelo compara la query actual con las keys del contexto y decide de cuáles values conviene tomar más información.</p>
-</section>
-<section id="ejemplo-simple-de-queries-keys-y-values" class="slide level2">
-<h2>Ejemplo simple de queries, keys y values</h2>
-<p>Si la pregunta es:</p>
-<p><strong>“¿Qué documentos necesito para pensionarme?”</strong></p>
-<p>La query implícita buscará información relacionada con:</p>
-<ul>
-<li><code>documentos</code></li>
-<li><code>requisitos</code></li>
-<li><code>pensionarme</code></li>
-</ul>
-<p>Entonces fragmentos sobre:</p>
-<ul>
-<li>certificados</li>
-<li>edad legal</li>
-<li>formularios</li>
-<li>solicitud de pensión</li>
-</ul>
-<p>recibirán más peso que otros sobre canales generales o información secundaria.</p>
-</section>
-<section id="por-qué-fue-tan-importante" class="slide level2">
-<h2>¿Por qué fue tan importante?</h2>
-<p>La atención permitió:</p>
-<ul>
-<li>capturar relaciones entre palabras distantes</li>
-<li>procesar contexto de forma más flexible</li>
-<li>escalar mejor a textos complejos</li>
-</ul>
-<h3 id="idea-clave-2">Idea clave</h3>
-<p>Gran parte del salto de los LLMs modernos pasa por este mecanismo.</p>
-</section>
-<section id="atención-y-calidad-del-prompt" class="slide level2">
-<h2>Atención y calidad del prompt</h2>
-<p>La forma en que escribimos un prompt afecta qué partes del contexto destacan más.</p>
-<p>Por eso ayuda:</p>
-<ul>
-<li>separar instrucciones de contexto</li>
-<li>usar formato claro</li>
-<li>destacar restricciones</li>
-<li>ordenar bien la información</li>
-</ul>
-<h3 id="lectura-práctica">Lectura práctica</h3>
-<p>Un buen prompt también guía la atención del modelo.</p>
-</section>
-<section id="riesgo-práctico" class="slide level2">
-<h2>Riesgo práctico</h2>
-<p>La atención no garantiza:</p>
-<ul>
-<li>verdad factual</li>
-<li>razonamiento correcto</li>
-<li>priorización siempre adecuada</li>
-</ul>
-<h3 id="regla-simple">Regla simple</h3>
-<p>Si el contexto está mal armado, el modelo puede enfocarse en lo menos importante.</p>
-</section>
-<section id="ejemplo-aplicado-a-una-tarea-organizacional" class="slide level2">
-<h2>Ejemplo aplicado a una tarea organizacional</h2>
-<p>Supongamos este prompt:</p>
-<p><strong>“Responde al afiliado usando solo la normativa vigente. Si no hay base suficiente, indícalo explícitamente. Consulta: ¿puedo pensionarme anticipadamente?”</strong></p>
-<p>Si el contexto está bien estructurado, la atención debería priorizar:</p>
-<ul>
-<li><code>solo la normativa vigente</code></li>
-<li><code>si no hay base suficiente</code></li>
-<li><code>pensionarme anticipadamente</code></li>
-</ul>
-<p>Si el contexto estuviera desordenado, el modelo podría apoyarse en fragmentos menos relevantes.</p>
-</section>
-<section id="resumen-operativo-sobre-atención" class="slide level2 smaller">
-<h2>Resumen operativo sobre atención</h2>
-<ul>
-<li>ayuda a ponderar qué partes del contexto importan más</li>
-<li>permite conectar palabras o fragmentos distantes</li>
-<li>mejora la relevancia local de cada paso de generación</li>
-<li>depende mucho de cómo está armado el contexto</li>
-</ul>
-<h3 id="pregunta-para-discutir">Pregunta para discutir</h3>
-<p>¿Qué pasa si una instrucción crítica queda escondida entre demasiado texto irrelevante?</p>
-</section>
-<section id="cierre" class="slide level2">
-<h2>Cierre</h2>
-<p>Entender atención ayuda a leer mejor tres cosas:</p>
-<ul>
-<li>la arquitectura Transformer</li>
-<li>la calidad real del contexto que entregamos</li>
-<li>el sentido del paper fundacional que aparece en la actividad de la clase 01</li>
-</ul>
-</section>
-<section id="actividad-grupal-breve-paper-fundacional" class="slide level2 smaller">
-<h2>Actividad grupal breve: paper fundacional</h2>
-<p><strong>Texto base:</strong> <em>Attention Is All You Need</em> (Vaswani et al., 2017)</p>
-<h3 id="objetivo">Objetivo</h3>
-<p>Entender por qué este paper fue tan influyente y conectar su propuesta con lo que hoy vemos en LLMs.</p>
-<h3 id="formato">Formato</h3>
-<ul>
-<li>grupos de 3 a 4 personas</li>
-<li>duración máxima: 30 minutos</li>
-<li>insumo mínimo: abstract + introducción del paper</li>
-</ul>
-</section>
-<section id="instrucciones-de-trabajo" class="slide level2 smaller scrollable">
-<h2>Instrucciones de trabajo</h2>
-<p>Cada grupo debe leer el abstract y la introducción y responder estas preguntas:</p>
+<section id="cómo-usar-este-material" class="slide level2 scrollable">
+<h2>Cómo usar este material</h2>
 <ol type="1">
-<li>¿Qué limitación de los modelos anteriores identifica el paper?</li>
-<li>¿Cuál es la propuesta central del Transformer?</li>
-<li>¿Por qué la atención aparece como una innovación tan importante?</li>
-<li>¿Qué conexión ven entre este paper y los LLMs actuales?</li>
+<li>Sube el PDF del paper a NotebookLM como fuente</li>
+<li>Para el video: usa el <strong>Prompt 1</strong> como instrucción al generar el audio</li>
+<li>Para las diapositivas: usa el <strong>Prompt 2</strong> como instrucción</li>
+<li>Para el documento libre: cópialo como nota o súbelo como archivo de texto adicional</li>
 </ol>
-<h3 id="regla">Regla</h3>
-<p>No se trata de resumir todo el paper, sino de identificar su argumento central.</p>
-</section>
-<section id="producto-esperado-del-grupo" class="slide level2 smaller">
-<h2>Producto esperado del grupo</h2>
-<p>Cada grupo prepara una mini-síntesis de 3 partes:</p>
-<ul>
-<li><code>Problema anterior</code>: qué estaba fallando o limitando a los modelos previos</li>
-<li><code>Aporte del paper</code>: qué cambia con el Transformer</li>
-<li><code>Impacto actual</code>: por qué esto sigue importando en la arquitectura de los LLMs</li>
-</ul>
-<h3 id="formato-sugerido">Formato sugerido</h3>
-<p>3 a 5 bullets o una intervención oral de 1 minuto.</p>
-</section>
-<section id="guía-para-orientar-la-discusión" class="slide level2 smaller">
-<h2>Guía para orientar la discusión</h2>
-<p>Si el grupo se traba, puede apoyarse en esta pista:</p>
-<ul>
-<li>antes había más secuencialidad y menos paralelización</li>
-<li>el paper propone apoyarse solo en atención</li>
-<li>eso mejora la capacidad de modelar dependencias y escalar entrenamiento</li>
-</ul>
-<h3 id="conexión-con-esta-clase">Conexión con esta clase</h3>
-<p>La pregunta de fondo es:<br>
-<strong>¿Por qué entender atención ayuda a entender por qué los LLMs modernos son posibles?</strong></p>
-</section>
-<section id="cierre-y-puesta-en-común" class="slide level2 smaller">
-<h2>Cierre y puesta en común</h2>
-<p>En plenario, cada grupo comparte:</p>
-<ul>
-<li>una idea del paper que le pareció fundacional</li>
-<li>una conexión con conceptos vistos hoy: atención, contexto, escalabilidad o arquitectura</li>
-</ul>
-<h3 id="criterio-de-éxito">Criterio de éxito</h3>
-<p>Si al terminar pueden explicar por qué este paper marca un punto de inflexión, la actividad cumplió su objetivo.</p>
+<p>El documento libre le da a NotebookLM el contenido ya redactado para que no se aleje del enfoque del curso.</p>
 </section>
 <section class="slide level2">
 
+</section></section>
+<section>
+<section id="prompts-para-notebooklm" class="title-slide slide level1 center">
+<h1>Prompts para NotebookLM</h1>
+
+</section>
+<section id="prompt-1-video-audio-podcast" class="slide level2 smaller">
+<h2>Prompt 1 — Video / audio podcast</h2>
+<pre><code>Contexto del curso:
+Soy docente de un programa de especialización en IA Generativa y LLMs
+para la Transformación Organizacional, dirigido a profesionales y
+directivos con formación en gestión, sin background técnico en deep
+learning. Ya vimos qué es un LLM, atención de forma intuitiva,
+embeddings y RAG.
+
+Objetivo: video de 5 a 7 minutos para introducir el paper en clase,
+antes de una discusión grupal. Debe terminar con una pregunta abierta.
+
+Audiencia: profesionales y directivos. Sin fórmulas. Sí entienden
+conceptos de negocio, productividad y tecnología aplicada.
+
+Estructura:
+1. Qué problema tenían los modelos anteriores (RNN, LSTM):
+   secuencialidad, pérdida de dependencias largas, no escala.
+2. Qué propone el paper: atención pura, sin recurrencia.
+3. Por qué fue importante: paralelización, escala, dependencias largas.
+   De ahí vienen GPT, Claude, Gemini.
+4. Cierre: ¿qué cambia cuando el modelo considera todo el contexto
+   al mismo tiempo en lugar de procesarlo paso a paso?
+
+Tono: conversacional, accesible, como docente antes de una actividad.
+Sin fórmulas. Con analogías simples si ayudan.</code></pre>
+</section>
+<section id="prompt-2-diapositivas" class="slide level2 smaller">
+<h2>Prompt 2 — Diapositivas</h2>
+<pre><code>Contexto del curso:
+Soy docente de un programa de especialización en IA Generativa y LLMs
+para la Transformación Organizacional. Audiencia: profesionales con
+formación en gestión. Ya vimos LLMs, embeddings, atención y RAG.
+
+Objetivo: 6 diapositivas en español para introducir el paper
+&quot;Attention Is All You Need&quot; (Vaswani et al., 2017) antes de una
+actividad grupal.
+
+Estructura:
+Slide 1 — Los modelos antes del Transformer
+  Qué limitaba a RNN y LSTM: secuencialidad, dependencias largas,
+  dificultad para escalar.
+
+Slide 2 — Atención es todo lo que necesitas
+  Reemplazar recurrencia por atención pura. Cada token se relaciona
+  directamente con cualquier otro.
+
+Slide 3 — Query, Key y Value
+  Sin fórmulas: el modelo pregunta, compara y decide qué información
+  usar de cada parte del contexto.
+
+Slide 4 — Paralelización y escala
+  Entrenamiento paralelo. Modelos más grandes con más datos.
+
+Slide 5 — De este paper vienen los LLMs actuales
+  GPT, BERT, Claude, Gemini y casi todos los modelos modernos
+  son Transformers.
+
+Slide 6 — Para discutir
+  ¿Qué cambia cuando el modelo puede mirar todo el contexto a la vez?
+  ¿Qué implica eso para prompts, RAG y límites del modelo?
+
+Formato: título + 3 a 4 bullets cortos. Sin jerga innecesaria.</code></pre>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="documento-libre" class="title-slide slide level1 center">
+<h1>Documento libre</h1>
+
+</section>
+<section id="para-cargar-como-fuente-adicional-en-notebooklm" class="slide level2">
+<h2>Para cargar como fuente adicional en NotebookLM</h2>
+<p>Este documento está redactado para subirse como nota o archivo de texto junto al PDF del paper.</p>
+<p>NotebookLM lo usará como referencia de contenido, nivel y enfoque para generar el material sin alejarse del curso.</p>
+</section>
+<section id="encabezado-del-documento-libre" class="slide level2 smaller">
+<h2>Encabezado del documento libre</h2>
+<pre><code>Curso: Especialización en IA Generativa y LLMs para la Transformación
+Organizacional, FEN U. de Chile.
+
+Audiencia: profesionales y directivos con formación en gestión.
+Sin background técnico en deep learning.
+
+Propósito: introducir el paper &quot;Attention Is All You Need&quot; antes de
+una actividad grupal. Tono divulgativo. Sin fórmulas.
+
+Paper de referencia: Vaswani et al. (2017). Attention Is All You Need.
+NeurIPS. https://arxiv.org/abs/1706.03762</code></pre>
+</section>
+<section id="slide-1-del-guion" class="slide level2 smaller">
+<h2>Slide 1 del guion</h2>
+<p><strong>Título:</strong> Attention Is All You Need</p>
+<p>Vaswani et al., 2017 — el paper que cambió la historia de los modelos de lenguaje.</p>
+<p>Esta presentación introduce el argumento central del paper para entender por qué fue tan influyente y qué conexión tiene con los LLMs que usamos hoy.</p>
+</section>
+<section id="slide-2-del-guion" class="slide level2 smaller">
+<h2>Slide 2 del guion</h2>
+<p><strong>El problema que existía antes</strong></p>
+<p>Los modelos dominantes antes del Transformer eran las redes recurrentes: RNN y LSTM. Procesaban el texto de forma secuencial, token por token, acumulando información en un estado interno.</p>
+<p>Eso generaba dos problemas: las relaciones entre palabras distantes se perdían porque la información tenía que “sobrevivir” muchos pasos intermedios. Y el entrenamiento no podía ejecutarse en paralelo, lo que hacía muy costoso escalar estos modelos.</p>
+</section>
+<section id="slide-3-del-guion" class="slide level2 smaller">
+<h2>Slide 3 del guion</h2>
+<p><strong>La propuesta del paper</strong></p>
+<p>El paper propone eliminar la recurrencia por completo y reemplazarla por un mecanismo de atención puro.</p>
+<p>En lugar de procesar el texto paso a paso, el Transformer permite que cada parte del texto se relacione directamente con cualquier otra, en una sola operación.</p>
+<p>De ahí viene el título: la atención es todo lo que necesitas. No hace falta recurrencia ni convoluciones.</p>
+</section>
+<section id="slide-4-del-guion" class="slide level2 smaller">
+<h2>Slide 4 del guion</h2>
+<p><strong>Cómo funciona la atención (sin fórmulas)</strong></p>
+<p>Cuando el modelo procesa un token, genera tres cosas:</p>
+<ul>
+<li>una <strong>query</strong>: qué información está buscando</li>
+<li>una <strong>key</strong>: qué tipo de información contiene ese token</li>
+<li>un <strong>value</strong>: el contenido que puede aportar</li>
+</ul>
+<p>El mecanismo compara la query de cada token con las keys de todos los demás y decide cuánto peso darle a cada uno. Eso determina qué información se incorpora en la respuesta final.</p>
+</section>
+<section id="slide-5-del-guion" class="slide level2 smaller">
+<h2>Slide 5 del guion</h2>
+<p><strong>Por qué eso fue tan importante</strong></p>
+<p>Al eliminar la secuencialidad, el Transformer habilitó dos cosas:</p>
+<p>Primero, el entrenamiento puede ejecutarse en paralelo. Ya no hay que esperar el paso N para empezar el N+1. Eso permite entrenar modelos mucho más grandes con mucho más dato.</p>
+<p>Segundo, las relaciones entre partes distantes del texto se capturan directamente, sin depender de que la información sobreviva una cadena larga de pasos intermedios.</p>
+</section>
+<section id="slide-6-del-guion" class="slide level2 smaller">
+<h2>Slide 6 del guion</h2>
+<p><strong>El impacto real</strong></p>
+<p>GPT, BERT, Claude, Gemini, Llama y prácticamente todos los modelos de lenguaje relevantes hoy son Transformers.</p>
+<p>El mecanismo propuesto en 2017 es la arquitectura sobre la que se construyen los sistemas de IA generativa que vemos en este curso.</p>
+<p>Entender atención no es un ejercicio teórico: es entender por qué estos modelos funcionan como funcionan y cuáles son sus límites reales.</p>
+</section>
+<section id="slide-7-del-guion" class="slide level2 smaller">
+<h2>Slide 7 del guion</h2>
+<p><strong>Pregunta para el grupo</strong></p>
+<p>¿Qué cambia, en términos prácticos, cuando un modelo puede considerar todo el contexto al mismo tiempo en lugar de procesarlo paso a paso?</p>
+<p>¿Cómo afecta eso a cómo construimos prompts, cómo armamos el contexto en RAG y cómo pensamos los límites del modelo?</p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="referencia" class="title-slide slide level1 center">
+<h1>Referencia</h1>
+
+</section>
+<section id="paper-fundacional" class="slide level2">
+<h2>Paper fundacional</h2>
+<p>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., &amp; Polosukhin, I. (2017). <em>Attention Is All You Need.</em> Advances in Neural Information Processing Systems (NeurIPS).</p>
+<p><a href="https://arxiv.org/abs/1706.03762" class="uri">https://arxiv.org/abs/1706.03762</a></p>
 
 
 </section></section>
