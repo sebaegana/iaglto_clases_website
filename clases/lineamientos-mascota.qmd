@@ -1,0 +1,123 @@
+---
+listing_title: "Lineamientos de Mascota"
+title: "Mascota del Curso: Ato"
+subtitle: "Brief de diseño para diapositivas y material visual"
+lang: es
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    self-contained: true
+---
+
+## Concepto
+
+**Nombre:** Ato
+
+**Origen del nombre:** contracción de *attention* — el mecanismo central de los Transformers y del curso.
+
+**Qué es:** un pequeño agente visual que representa un token inteligente. No es un robot clásico ni un humano: es una entidad abstracta y amigable que encarna la idea de que la IA "presta atención" al contexto para generar valor.
+
+**Función en las diapositivas:** acompañar ideas clave, señalar conceptos importantes, aparecer en momentos de cierre o pregunta, y dar identidad visual consistente al material del curso.
+
+---
+
+## Carácter y personalidad
+
+- **Curioso:** siempre mirando hacia algo, inclinado levemente hacia adelante
+- **Útil:** postura de servicio, nunca amenazante ni omnipotente
+- **Simple:** pocas líneas, sin detalles innecesarios — legible en tamaño pequeño
+- **Profesional pero accesible:** no infantil, no corporativo frío
+
+---
+
+## Descripción visual
+
+Ato es una figura geométrica redondeada — cercana a un círculo o cápsula — con rasgos mínimos:
+
+- **Cuerpo:** óvalo o círculo principal en **azul profundo** (`#0045A5`)
+- **Ojos:** dos puntos o líneas horizontales en **blanco** (`#FFFFFF`), expresivos pero simples
+- **Acento:** un detalle en **rojo Pepsi** (`#E31837`) — puede ser un destello, una chispa o un pequeño símbolo en la frente o el pecho que evoca "atención" o "foco"
+- **Borde o halo:** trazo fino en **azul claro** (`#00A3E0`) que lo rodea, sugiriendo una señal o campo de atención
+- **Sin boca definida:** la expresión viene solo de los ojos y la postura
+- **Estilo:** flat design, vectorial, limpio — sin sombras complejas ni gradientes
+
+---
+
+## Posturas principales
+
+Ato debe tener al menos tres posturas para distintos contextos de slide:
+
+| Postura | Cuándo usarla | Descripción |
+|---|---|---|
+| **Neutral / atento** | Slides de contenido | De frente, ojos abiertos, levemente inclinado |
+| **Señalando** | Ideas clave, bullets importantes | Un "brazo" o apéndice extendido hacia el contenido |
+| **Preguntando** | Slides de discusión o cierre | Inclinado, con un signo de interrogación o expresión de espera |
+
+---
+
+## Uso en diapositivas
+
+- Aparece en la **esquina inferior derecha** como elemento fijo o semipermanente
+- En slides de **idea clave**: más grande, centrado o lateral
+- En slides de **pregunta para el grupo**: postura de pregunta, con globo de texto opcional
+- En slides de **sección** (fondo azul): versión en blanco o azul claro del personaje
+- **Tamaño mínimo:** nunca menor a 60px de alto para mantener legibilidad
+
+---
+
+## Lo que Ato no es
+
+- No es un robot con ruedas ni brazos mecánicos
+- No es un humano ni tiene rasgos faciales complejos
+- No es un logo ni reemplaza la identidad institucional
+- No aparece en todas las slides — su presencia debe ser selectiva para mantener impacto
+
+---
+
+## Prompt para generar la imagen (generadores de imagen con IA)
+
+Usa este prompt en Midjourney, DALL·E, Ideogram o similar:
+
+```
+Flat vector mascot character named "Ato". Simple rounded oval body
+in deep blue (#0045A5). Minimal white dot eyes, expressive but simple.
+Small red (#E31837) spark or attention symbol on chest. Thin light blue
+(#00A3E0) glow or halo outline. Clean flat design, no gradients,
+no shadows. Transparent background. Professional but friendly.
+Three poses: neutral/attentive, pointing, and questioning.
+Style: modern minimal icon, suitable for presentation slides.
+```
+
+### Variante en español para Ideogram u otras herramientas en español
+
+```
+Mascota vectorial flat llamada "Ato". Cuerpo ovalado redondeado
+en azul profundo (#0045A5). Ojos simples en blanco, expresivos
+y minimalistas. Detalle en rojo (#E31837) en el pecho que evoca
+atención o foco. Contorno luminoso en azul claro (#00A3E0).
+Diseño limpio sin sombras ni gradientes. Fondo transparente.
+Tono profesional pero amigable. Tres posturas: neutral, señalando
+y preguntando. Estilo: ícono moderno minimalista para diapositivas.
+```
+
+---
+
+## Prompt para incluir a Ato en el contexto de NotebookLM
+
+Cuando generes diapositivas en NotebookLM, agrega esta instrucción al prompt:
+
+```
+Las diapositivas deben incluir indicaciones para una mascota llamada "Ato":
+un pequeño personaje circular en azul profundo con ojos blancos y un
+detalle rojo, estilo flat design. Indica en qué esquina o posición
+debe aparecer en cada slide y qué postura usar:
+- Slides de contenido: esquina inferior derecha, postura neutral
+- Slides de idea clave: lateral derecho, postura señalando
+- Slides de pregunta: centro-inferior, postura preguntando
+No describas a Ato con texto visible en la slide; solo indica su
+posición como nota de diseño entre corchetes, por ejemplo:
+[Ato: esquina inferior derecha, postura neutral]
+```

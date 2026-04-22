@@ -1,0 +1,174 @@
+---
+listing_title: "Lineamientos de Diseño"
+title: "Lineamientos de Diseño"
+subtitle: "Guía de estilo para diapositivas del curso"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    scrollable: true
+    self-contained: true
+    incremental: false
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+## Paleta de colores
+
+La paleta está inspirada en la identidad visual de Pepsi: azul profundo como base, azul claro como acento, rojo para énfasis y blanco para respiro visual.
+
+| Rol | Nombre | HEX | Uso principal |
+|---|---|---|---|
+| Principal | Azul profundo | `#0045A5` | Fondos de sección, títulos destacados |
+| Acento | Azul claro | `#00A3E0` | Subtítulos, bullets clave, bordes |
+| Énfasis | Rojo Pepsi | `#E31837` | Llamadas a la acción, ideas clave, alertas |
+| Neutro | Blanco | `#FFFFFF` | Fondo de slides, texto sobre azul |
+| Texto | Gris oscuro | `#1C1C2E` | Texto corriente sobre fondo blanco |
+
+### Vista de la paleta
+
+::: {style="display:flex; gap:12px; margin: 1rem 0;"}
+::: {style="background:#0045A5; color:white; padding:1rem 1.5rem; border-radius:6px; font-size:0.85rem;"}
+**Azul profundo**\
+#0045A5
+:::
+::: {style="background:#00A3E0; color:white; padding:1rem 1.5rem; border-radius:6px; font-size:0.85rem;"}
+**Azul claro**\
+#00A3E0
+:::
+::: {style="background:#E31837; color:white; padding:1rem 1.5rem; border-radius:6px; font-size:0.85rem;"}
+**Rojo Pepsi**\
+#E31837
+:::
+::: {style="background:#FFFFFF; color:#1C1C2E; padding:1rem 1.5rem; border-radius:6px; font-size:0.85rem; border: 1px solid #ddd;"}
+**Blanco**\
+#FFFFFF
+:::
+::: {style="background:#1C1C2E; color:white; padding:1rem 1.5rem; border-radius:6px; font-size:0.85rem;"}
+**Gris oscuro**\
+#1C1C2E
+:::
+:::
+
+---
+
+## Tipografía
+
+| Elemento | Fuente sugerida | Peso | Tamaño relativo |
+|---|---|---|---|
+| Título de sección | Inter / Montserrat | Bold (700) | Grande |
+| Título de slide | Inter / Montserrat | SemiBold (600) | Mediano-grande |
+| Subtítulo | Inter | Regular (400) | Mediano |
+| Bullets | Inter | Regular (400) | Normal |
+| Código | Fira Code / JetBrains Mono | Regular | Pequeño |
+
+**Regla general:** una sola familia tipográfica por presentación. Variar peso, no fuente.
+
+---
+
+## Estructura de slides
+
+### Slide de apertura de sección
+
+- Fondo: **azul profundo** (`#0045A5`)
+- Título: blanco, bold, centrado verticalmente
+- Sin bullets en este tipo de slide
+
+### Slide de contenido
+
+- Fondo: **blanco**
+- Título: azul profundo o gris oscuro
+- Bullets: gris oscuro
+- Palabra o frase clave por slide: destacar en **azul claro** o **rojo**
+
+### Slide de idea clave
+
+- Recuadro lateral o inferior en **rojo Pepsi**
+- Texto del recuadro: blanco, cursiva o bold
+- Resto del slide: fondo blanco normal
+
+### Slide de código
+
+- Fondo del bloque de código: `#1C1C2E`
+- Texto de código: blanco o syntax highlighting estándar
+- Fondo del slide: blanco
+
+---
+
+## Reglas de uso del color
+
+**Azul profundo** → estructura y jerarquía. Slides de sección, títulos principales, fondos de apertura.
+
+**Azul claro** → acento y guía. Bullets destacados, íconos, bordes, subrayados, números de lista.
+
+**Rojo Pepsi** → énfasis máximo. Solo para la idea más importante del slide. No usar en más de un elemento por slide.
+
+**Blanco** → respiración. Fondo principal de slides de contenido. Nunca saturar.
+
+**Gris oscuro** → texto corriente. Todo texto que no necesita énfasis adicional.
+
+---
+
+## Lo que hay que evitar
+
+- Más de tres colores en un mismo slide
+- Texto rojo sobre fondo azul (bajo contraste)
+- Fondo completamente negro (rompe la identidad de la paleta)
+- Bullets con cinco o más líneas de texto
+- Dos elementos de énfasis en el mismo slide (dos rojos, dos negritas largas)
+- Mezclar más de una familia tipográfica
+
+---
+
+## CSS base para `styles.html`
+
+Puedes agregar esto al archivo `styles.html` del proyecto para aplicar la paleta en las presentaciones Quarto Reveal.js:
+
+```css
+:root {
+  --pepsi-blue-deep:  #0045A5;
+  --pepsi-blue-light: #00A3E0;
+  --pepsi-red:        #E31837;
+  --white:            #FFFFFF;
+  --dark:             #1C1C2E;
+}
+
+.reveal h1, .reveal h2 {
+  color: var(--pepsi-blue-deep);
+  font-weight: 700;
+}
+
+.reveal h3 {
+  color: var(--pepsi-blue-light);
+  font-weight: 600;
+}
+
+.reveal .slide-background-content {
+  background-color: var(--white);
+}
+
+.reveal strong {
+  color: var(--pepsi-red);
+}
+
+.reveal section.has-dark-background h1,
+.reveal section.has-dark-background h2,
+.reveal section.has-dark-background p {
+  color: var(--white);
+}
+```
+
+Para aplicar el fondo azul a un slide de sección, usa el atributo en el encabezado:
+
+```markdown
+# Título de sección {background-color="#0045A5"}
+```

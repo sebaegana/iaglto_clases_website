@@ -1,7 +1,7 @@
 ---
 listing_title: "Módulo 03 - Clase 01 Review"
 title: "Módulo 3: Review de Arquitectura LLM"
-subtitle: "Embeddings, atención y RAG"
+subtitle: "Embeddings y RAG"
 institution: "FEN Unegocios"
 lang: es
 date: today
@@ -40,13 +40,13 @@ library(fontawesome)
 
 ## Clase 01 Review
 
-### Embeddings, atención y RAG
+### Embeddings y RAG
 
 ------------------------------------------------------------------------
 
 ## Objetivo de la sesión
 
--   Entender cómo se conectan embeddings, atención y RAG
+-   Entender cómo se conectan embeddings y RAG
 -   Traducir estos conceptos a decisiones de diseño
 -   Revisar ejemplos aplicados a contextos organizacionales
 -   Preparar base conceptual para agentes y soluciones con documentos
@@ -56,8 +56,7 @@ library(fontawesome)
 ## Hoja de ruta
 
 1. embeddings: cómo representar significado
-2. atención: cómo prioriza contexto el modelo
-3. RAG: cómo conectar documentos con generación
+2. RAG: cómo conectar documentos con generación
 
 ------------------------------------------------------------------------
 
@@ -250,127 +249,6 @@ La similitud depende del significado compartido, no de repetir exactamente las m
 
 ------------------------------------------------------------------------
 
-# Atención
-
-## ¿Qué es la atención?
-
-La atención es el mecanismo que permite al modelo ponderar qué partes del contexto son más relevantes en cada momento.
-
-### Intuición
-
-Cuando genera una palabra, no mira todo con el mismo peso.
-
-------------------------------------------------------------------------
-
-## ¿Qué problema resuelve?
-
-En lenguaje natural, el significado depende del contexto.
-
-No es lo mismo:
-
--   `banco` como institución financiera
--   `banco` como asiento
-
-### Idea clave
-
-La atención ayuda a decidir qué partes del contexto aclaran el sentido correcto.
-
-------------------------------------------------------------------------
-
-## Intuición operativa
-
-Cuando el modelo genera una palabra nueva:
-
--   mira los tokens previos
--   estima cuáles son más relevantes
--   les da más peso a algunos
--   y menos peso a otros
-
-### Lectura simple
-
-No recuerda todo igual: prioriza dinámicamente.
-
-------------------------------------------------------------------------
-
-## Ejemplo intuitivo
-
-Tomemos esta frase:
-
-**"El analista revisó el informe porque necesitaba verificar si los beneficios estaban correctamente calculados."**
-
-Si el modelo quiere continuar después de `beneficios`, probablemente pondrá más atención en:
-
--   `informe`
--   `verificar`
--   `calculados`
-
-y menos en:
-
--   `el`
--   `porque`
--   `los`
-
-------------------------------------------------------------------------
-
-## Queries, keys y values sin fórmulas
-
-Una forma simple de explicarlo es esta:
-
--   cada token genera una `query`: qué está buscando ahora
--   cada token ofrece una `key`: qué tipo de información contiene
--   cada token aporta una `value`: el contenido que puede entregar
-
-### Intuición
-
-El modelo compara la query actual con las keys del contexto y decide de cuáles values conviene tomar más información.
-
-------------------------------------------------------------------------
-
-## ¿Por qué fue tan importante?
-
-La atención permitió:
-
--   capturar relaciones entre palabras distantes
--   procesar contexto de forma más flexible
--   escalar mejor a textos complejos
-
-### Idea clave
-
-Gran parte del salto de los LLMs modernos pasa por este mecanismo.
-
-------------------------------------------------------------------------
-
-## Atención y calidad del prompt
-
-La forma en que escribimos un prompt afecta qué partes del contexto destacan más.
-
-Por eso ayuda:
-
--   separar instrucciones de contexto
--   usar formato claro
--   destacar restricciones
--   ordenar bien la información
-
-### Lectura práctica
-
-Un buen prompt también guía la atención del modelo.
-
-------------------------------------------------------------------------
-
-## Riesgo práctico
-
-La atención no garantiza:
-
--   verdad factual
--   razonamiento correcto
--   priorización siempre adecuada
-
-### Regla simple
-
-Si el contexto está mal armado, el modelo puede enfocarse en lo menos importante.
-
-------------------------------------------------------------------------
-
 # RAG
 
 ## Conexión con embeddings
@@ -517,11 +395,10 @@ Buen modelo + mala base documental = mala respuesta igual.
 
 # Cierre
 
-## Cómo se conectan los tres conceptos
+## Cómo se conectan los conceptos
 
 -   `embeddings` representan significado
--   `RAG` usa esa representación para recuperar contexto
--   `atención` decide qué partes de ese contexto pesan más al responder
+-   `RAG` usa esa representación para recuperar contexto relevante
 
 ### Idea final
 

@@ -26,9 +26,9 @@ format:
 
 ## ¿Qué es un LLM?
 
-- [ ] Qué es un LLM (tokens, contexto)
-- [ ] Limitaciones (alucinaciones, sesgos)
-- [ ] Casos de uso básicos
+- [x] Qué es un LLM (tokens, contexto)
+- [x] Limitaciones (alucinaciones, sesgos)
+- [x] Casos de uso básicos
 
 ------------------------------------------------------------------------
 
@@ -36,9 +36,9 @@ format:
 
 ## Cómo instruir a un modelo
 
-- [ ] Zero-shot / Few-shot
-- [ ] Estructura: rol + contexto + tarea + formato
-- [ ] Iteración de prompts
+- [x] Zero-shot / Few-shot
+- [x] Estructura: rol + contexto + tarea + formato
+- [x] Iteración de prompts
 
 ------------------------------------------------------------------------
 
@@ -46,7 +46,7 @@ format:
 
 ## Prompts más sofisticados
 
-- [ ] Templates reutilizables
+- [x] Templates reutilizables
 - [ ] Salidas estructuradas (JSON, tablas)
 - [ ] Prompt chaining
 - [ ] Evaluación de respuestas
@@ -57,9 +57,9 @@ format:
 
 ## Texto como números
 
-- [ ] Qué son embeddings (conceptual)
-- [ ] Chunking de documentos
-- [ ] Similaridad semántica
+- [x] Qué son embeddings (conceptual)
+- [x] Chunking de documentos
+- [x] Similaridad semántica
 
 ------------------------------------------------------------------------
 
@@ -67,9 +67,9 @@ format:
 
 ## Conectar el modelo a información externa
 
-- [ ] Pipeline: query → retrieval → contexto → respuesta
-- [ ] Integración con documentos propios
-- [ ] Evaluación de relevancia
+- [x] Pipeline: query → retrieval → contexto → respuesta
+- [x] Integración con documentos propios
+- [x] Evaluación de relevancia
 
 ------------------------------------------------------------------------
 
@@ -78,8 +78,7 @@ format:
 ## El modelo dentro de procesos
 
 - [ ] Workflows (n8n, Zapier, Make)
-- [ ] Uso de APIs
-- [ ] LLM dentro de procesos
+- [x] LLM dentro de procesos
 
 ------------------------------------------------------------------------
 
@@ -87,56 +86,38 @@ format:
 
 ## Qué recuerda el modelo y cómo
 
-- [ ] Corto plazo (context window)
-- [ ] Largo plazo (vector DB)
+- [x] Corto plazo (context window)
+- [x] Largo plazo (vector DB)
 - [ ] Memoria de usuario / historial
 
 ------------------------------------------------------------------------
 
-# 8. Agentes
+# 8. Agentes y Multi-agentes
 
 ## De responder a actuar
 
-- [ ] Concepto de agente (objetivo + herramientas)
-- [ ] Tool use
-- [ ] Planificación vs ejecución
-
-------------------------------------------------------------------------
-
-# 9. Multi-agentes
-
-## Varios modelos coordinados
-
+- [x] Concepto de agente (objetivo + herramientas)
+- [x] Planificación vs ejecución
 - [ ] Roles (planner, executor, reviewer)
 - [ ] Coordinación entre agentes
 - [ ] División de tareas
 
 ------------------------------------------------------------------------
 
-# 10. Skills / Productos
+# 9. Productos
 
 ## Diseño de soluciones específicas
 
-- [ ] Diseño de soluciones específicas
 - [ ] Inputs y outputs definidos
 - [ ] Interfaces (chat, dashboards, APIs)
+- [x] Integración con sistemas reales
 
 ------------------------------------------------------------------------
 
-# 11. Deploy & Escalamiento
-
-## De prototipo a producción
-
-- [ ] APIs
-- [ ] Automatización (GitHub Actions)
-- [ ] Integración con sistemas reales
-
-------------------------------------------------------------------------
-
-# 12. Gobernanza y decisión
+# 10. Gobernanza y decisión
 
 ## Usar IA con criterio
 
-- [ ] Privacidad y riesgos
+- [x] Privacidad y riesgos
 - [ ] Evaluación de impacto
 - [ ] Decision science + IA

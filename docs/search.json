@@ -207,21 +207,21 @@
     "href": "clases/m03-clase01-review.html#clase-01-review",
     "title": "Módulo 3: Review de Arquitectura LLM",
     "section": "Clase 01 Review",
-    "text": "Clase 01 Review\nEmbeddings, atención y RAG"
+    "text": "Clase 01 Review\nEmbeddings y RAG"
   },
   {
     "objectID": "clases/m03-clase01-review.html#objetivo-de-la-sesión",
     "href": "clases/m03-clase01-review.html#objetivo-de-la-sesión",
     "title": "Módulo 3: Review de Arquitectura LLM",
     "section": "Objetivo de la sesión",
-    "text": "Objetivo de la sesión\n\nEntender cómo se conectan embeddings, atención y RAG\nTraducir estos conceptos a decisiones de diseño\nRevisar ejemplos aplicados a contextos organizacionales\nPreparar base conceptual para agentes y soluciones con documentos"
+    "text": "Objetivo de la sesión\n\nEntender cómo se conectan embeddings y RAG\nTraducir estos conceptos a decisiones de diseño\nRevisar ejemplos aplicados a contextos organizacionales\nPreparar base conceptual para agentes y soluciones con documentos"
   },
   {
     "objectID": "clases/m03-clase01-review.html#hoja-de-ruta",
     "href": "clases/m03-clase01-review.html#hoja-de-ruta",
     "title": "Módulo 3: Review de Arquitectura LLM",
     "section": "Hoja de ruta",
-    "text": "Hoja de ruta\n\nembeddings: cómo representar significado\natención: cómo prioriza contexto el modelo\nRAG: cómo conectar documentos con generación"
+    "text": "Hoja de ruta\n\nembeddings: cómo representar significado\nRAG: cómo conectar documentos con generación"
   },
   {
     "objectID": "clases/m03-clase01-review.html#idea-central-de-la-clase",
@@ -2853,7 +2853,7 @@
     "href": "clases/roadmap-aprendizaje-ia.html",
     "title": "🧠 Roadmap IA & LLM",
     "section": "",
-    "text": "1 Fundamentos de LLMs\n\nQué es un LLM (tokens, contexto)\nLimitaciones (alucinaciones, sesgos)\nCasos de uso básicos\n\n\n\n\n2 Prompting básico\n\nZero-shot / Few-shot\nEstructura: rol + contexto + tarea + formato\nIteración de prompts\n\n\n\n\n3 Prompt Engineering\n\nTemplates reutilizables\nSalidas estructuradas (JSON, tablas)\nPrompt chaining\nEvaluación de respuestas\n\n\n\n\n4 Manejo de contexto\n\nQué son embeddings (conceptual)\nChunking de documentos\nSimilaridad semántica\n\n\n\n\n5 RAG (Retrieval-Augmented Generation)\n\nPipeline: query → retrieval → contexto → respuesta\nIntegración con documentos propios\nEvaluación de relevancia\n\n\n\n\n6 Automatización con LLM\n\nWorkflows (n8n, Zapier, Make)\nUso de APIs\nLLM dentro de procesos\n\n\n\n\n7 Memoria\n\nCorto plazo (context window)\nLargo plazo (vector DB)\nMemoria de usuario / historial\n\n\n\n\n8 Agentes\n\nConcepto de agente (objetivo + herramientas)\nTool use\nPlanificación vs ejecución\n\n\n\n\n9 Multi-agentes\n\nRoles (planner, executor, reviewer)\nCoordinación entre agentes\nDivisión de tareas\n\n\n\n\n10 Skills / Productos\n\nDiseño de soluciones específicas\nInputs y outputs definidos\nInterfaces (chat, dashboards, APIs)\n\n\n\n\n11 Deploy & Escalamiento\n\nAPIs\nAutomatización (GitHub Actions)\nIntegración con sistemas reales\n\n\n\n\n12 Gobernanza y decisión\n\nPrivacidad y riesgos\nEvaluación de impacto\nDecision science + IA"
+    "text": "Qué es un LLM (tokens, contexto)\nLimitaciones (alucinaciones, sesgos)\nCasos de uso básicos"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#de-básico-a-avanzado",
@@ -2866,29 +2866,29 @@
     "objectID": "clases/roadmap-aprendizaje-ia.html#qué-es-un-llm",
     "href": "clases/roadmap-aprendizaje-ia.html#qué-es-un-llm",
     "title": "🧠 Roadmap IA & LLM",
-    "section": "¿Qué es un LLM?",
-    "text": "¿Qué es un LLM?\n\n\n\n\n\nflowchart LR\n    T[\"Texto de entrada\"] --&gt; TOK[\"Tokenización\"]\n    TOK --&gt; EMB[\"Embeddings\"]\n    EMB --&gt; MOD[\"Modelo\\n(predicción)\"]\n    MOD --&gt; R[\"Respuesta\"]\n\n    classDef step fill:#4e9af1,color:#fff,stroke:none\n    class T,TOK,EMB,MOD,R step\n\n\n\n\n\n\n\nQué es un LLM (tokens, contexto)\nLimitaciones (alucinaciones, sesgos)\nCasos de uso básicos"
+    "section": "",
+    "text": "Qué es un LLM (tokens, contexto)\nLimitaciones (alucinaciones, sesgos)\nCasos de uso básicos"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#cómo-instruir-a-un-modelo",
     "href": "clases/roadmap-aprendizaje-ia.html#cómo-instruir-a-un-modelo",
     "title": "🧠 Roadmap IA & LLM",
     "section": "Cómo instruir a un modelo",
-    "text": "Cómo instruir a un modelo\n\n\n\n\n\nflowchart LR\n    R[\"Rol\"] --&gt; P[\"Prompt\"]\n    C[\"Contexto\"] --&gt; P\n    T[\"Tarea\"] --&gt; P\n    F[\"Formato\"] --&gt; P\n    P --&gt; M[\"Modelo\"] --&gt; O[\"Output\"]\n\n    classDef elem fill:#4e9af1,color:#fff,stroke:none\n    class R,C,T,F,P,M,O elem\n\n\n\n\n\n\n\nZero-shot / Few-shot\nEstructura: rol + contexto + tarea + formato\nIteración de prompts"
+    "text": "Cómo instruir a un modelo\n\nZero-shot / Few-shot\nEstructura: rol + contexto + tarea + formato\nIteración de prompts"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#prompts-más-sofisticados",
     "href": "clases/roadmap-aprendizaje-ia.html#prompts-más-sofisticados",
     "title": "🧠 Roadmap IA & LLM",
     "section": "Prompts más sofisticados",
-    "text": "Prompts más sofisticados\n\n\n\n\n\nflowchart LR\n    P1[\"Prompt 1\"] --&gt; M1[\"Modelo\"]\n    M1 --&gt; O1[\"Output 1\"]\n    O1 --&gt; P2[\"Prompt 2\"]\n    P2 --&gt; M2[\"Modelo\"]\n    M2 --&gt; O2[\"Output final\"]\n\n    classDef step fill:#4e9af1,color:#fff,stroke:none\n    class P1,M1,O1,P2,M2,O2 step\n\n\n\n\n\n\n\nTemplates reutilizables\nSalidas estructuradas (JSON, tablas)\nPrompt chaining\nEvaluación de respuestas"
+    "text": "Prompts más sofisticados\n\nTemplates reutilizables\nSalidas estructuradas (JSON, tablas)\nPrompt chaining\nEvaluación de respuestas"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#texto-como-números",
     "href": "clases/roadmap-aprendizaje-ia.html#texto-como-números",
     "title": "🧠 Roadmap IA & LLM",
     "section": "Texto como números",
-    "text": "Texto como números\n\n\n\n\n\nflowchart LR\n    DOC[\"Documento\"] --&gt; CHK[\"Chunking\"]\n    CHK --&gt; EMB[\"Embeddings\\n(vectores)\"]\n    EMB --&gt; IDX[\"Índice\\nvectorial\"]\n\n    classDef step fill:#f0a500,color:#fff,stroke:none\n    class DOC,CHK,EMB,IDX step\n\n\n\n\n\n\n\nQué son embeddings (conceptual)\nChunking de documentos\nSimilaridad semántica"
+    "text": "Texto como números\n\nQué son embeddings (conceptual)\nChunking de documentos\nSimilaridad semántica"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#retrieval-augmented-generation",
@@ -2902,49 +2902,49 @@
     "href": "clases/roadmap-aprendizaje-ia.html#el-modelo-dentro-de-procesos",
     "title": "🧠 Roadmap IA & LLM",
     "section": "El modelo dentro de procesos",
-    "text": "El modelo dentro de procesos\n\n\n\n\n\nflowchart LR\n    TR[\"Trigger\\n(evento)\"] --&gt; WF[\"Workflow\\nn8n / Zapier\"]\n    WF --&gt; LLM[\"LLM\\n(paso del proceso)\"]\n    LLM --&gt; ACT[\"Acción\\n(email, DB, API)\"]\n\n    classDef step fill:#f0a500,color:#fff,stroke:none\n    class TR,WF,LLM,ACT step\n\n\n\n\n\n\n\nWorkflows (n8n, Zapier, Make)\nUso de APIs\nLLM dentro de procesos"
+    "text": "El modelo dentro de procesos\n\nWorkflows (n8n, Zapier, Make)\nLLM dentro de procesos"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#qué-recuerda-el-modelo-y-cómo",
     "href": "clases/roadmap-aprendizaje-ia.html#qué-recuerda-el-modelo-y-cómo",
     "title": "🧠 Roadmap IA & LLM",
     "section": "Qué recuerda el modelo y cómo",
-    "text": "Qué recuerda el modelo y cómo\n\n\n\n\n\nflowchart TB\n    CP[\"Corto plazo\\n(context window)\"]\n    LP[\"Largo plazo\\n(vector DB)\"]\n    US[\"Memoria de usuario\\n/ historial\"]\n\n    CP --&gt; AGT[\"Agente /\\nSistema\"]\n    LP --&gt; AGT\n    US --&gt; AGT\n\n    classDef step fill:#f0a500,color:#fff,stroke:none\n    class CP,LP,US,AGT step\n\n\n\n\n\n\n\nCorto plazo (context window)\nLargo plazo (vector DB)\nMemoria de usuario / historial"
+    "text": "Qué recuerda el modelo y cómo\n\nCorto plazo (context window)\nLargo plazo (vector DB)\nMemoria de usuario / historial"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#de-responder-a-actuar",
     "href": "clases/roadmap-aprendizaje-ia.html#de-responder-a-actuar",
     "title": "🧠 Roadmap IA & LLM",
     "section": "De responder a actuar",
-    "text": "De responder a actuar\n\n\n\n\n\nflowchart LR\n    OBJ[\"Objetivo\"] --&gt; AGT[\"Agente\"]\n    AGT --&gt; RAZ[\"Razonamiento\\n(LLM)\"]\n    RAZ --&gt; TOOL[\"Tool use\\n(acción)\"]\n    TOOL --&gt; OBS[\"Observación\"]\n    OBS --&gt; RAZ\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class OBJ,AGT,RAZ,TOOL,OBS step\n\n\n\n\n\n\n\nConcepto de agente (objetivo + herramientas)\nTool use\nPlanificación vs ejecución"
+    "text": "De responder a actuar\n\nConcepto de agente (objetivo + herramientas)\nPlanificación vs ejecución\nRoles (planner, executor, reviewer)\nCoordinación entre agentes\nDivisión de tareas"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#varios-modelos-coordinados",
     "href": "clases/roadmap-aprendizaje-ia.html#varios-modelos-coordinados",
     "title": "🧠 Roadmap IA & LLM",
     "section": "Varios modelos coordinados",
-    "text": "Varios modelos coordinados\n\n\n\n\n\nflowchart LR\n    PL[\"Planner\"] --&gt; EX[\"Executor\"]\n    EX --&gt; REV[\"Reviewer\"]\n    REV --&gt;|\"feedback\"| EX\n    REV --&gt;|\"aprobado\"| OUT[\"Output final\"]\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class PL,EX,REV,OUT step\n\n\n\n\n\n\n\nRoles (planner, executor, reviewer)\nCoordinación entre agentes\nDivisión de tareas"
+    "text": "Varios modelos coordinados\n\nRoles (planner, executor, reviewer)\nCoordinación entre agentes\nDivisión de tareas"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#diseño-de-soluciones-específicas",
     "href": "clases/roadmap-aprendizaje-ia.html#diseño-de-soluciones-específicas",
     "title": "🧠 Roadmap IA & LLM",
     "section": "Diseño de soluciones específicas",
-    "text": "Diseño de soluciones específicas\n\n\n\n\n\nflowchart LR\n    IN[\"Input\\ndefinido\"] --&gt; SK[\"Skill / LLM\"]\n    SK --&gt; OUT[\"Output\\ndefinido\"]\n    OUT --&gt; UI[\"Interfaz\\n(chat, API, dashboard)\"]\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class IN,SK,OUT,UI step\n\n\n\n\n\n\n\nDiseño de soluciones específicas\nInputs y outputs definidos\nInterfaces (chat, dashboards, APIs)"
+    "text": "Diseño de soluciones específicas\n\nInputs y outputs definidos\nInterfaces (chat, dashboards, APIs)\nIntegración con sistemas reales"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#de-prototipo-a-producción",
     "href": "clases/roadmap-aprendizaje-ia.html#de-prototipo-a-producción",
     "title": "🧠 Roadmap IA & LLM",
     "section": "De prototipo a producción",
-    "text": "De prototipo a producción\n\n\n\n\n\nflowchart LR\n    CODE[\"Código\"] --&gt; CI[\"CI/CD\\n(GitHub Actions)\"]\n    CI --&gt; API[\"API\\ndeployada\"]\n    API --&gt; SYS[\"Sistemas\\nreales\"]\n    API --&gt; MON[\"Monitoreo\\ny logs\"]\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class CODE,CI,API,SYS,MON step\n\n\n\n\n\n\n\nAPIs\nAutomatización (GitHub Actions)\nIntegración con sistemas reales"
+    "text": "De prototipo a producción\n\nAPIs\nAutomatización (GitHub Actions)\nIntegración con sistemas reales"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#usar-ia-con-criterio",
     "href": "clases/roadmap-aprendizaje-ia.html#usar-ia-con-criterio",
     "title": "🧠 Roadmap IA & LLM",
     "section": "Usar IA con criterio",
-    "text": "Usar IA con criterio\n\n\n\n\n\nflowchart LR\n    DEC[\"Decisión\\ncon IA\"] --&gt; PRIV[\"Privacidad\\ny riesgos\"]\n    DEC --&gt; IMP[\"Evaluación\\nde impacto\"]\n    DEC --&gt; DS[\"Decision Science\\n+ IA\"]\n\n    classDef step fill:#e05c5c,color:#fff,stroke:none\n    class DEC,PRIV,IMP,DS step\n\n\n\n\n\n\n\nPrivacidad y riesgos\nEvaluación de impacto\nDecision science + IA"
+    "text": "Usar IA con criterio\n\nPrivacidad y riesgos\nEvaluación de impacto\nDecision science + IA"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#ruta-completa",
@@ -2952,5 +2952,208 @@
     "title": "🧠 Roadmap IA & LLM",
     "section": "Ruta completa",
     "text": "Ruta completa\n\n\n\n\n\nflowchart LR\n    A[\"1\\nFundamentos\\nLLMs\"] --&gt; B[\"2\\nPrompting\\nbásico\"]\n    B --&gt; C[\"3\\nPrompt\\nEngineering\"]\n    C --&gt; D[\"4\\nManejo de\\ncontexto\"]\n    D --&gt; E[\"5\\nRAG\"]\n    E --&gt; F[\"6\\nAutomatización\"]\n    F --&gt; G[\"7\\nMemoria\"]\n    G --&gt; H[\"8\\nAgentes\"]\n    H --&gt; I[\"9\\nMulti-\\nagentes\"]\n    I --&gt; J[\"10\\nSkills /\\nProductos\"]\n    J --&gt; K[\"11\\nDeploy &\\nEscalamiento\"]\n    K --&gt; L[\"12\\nGobernanza\\ny decisión\"]\n\n    classDef basico fill:#4e9af1,color:#fff,stroke:none,rx:6\n    classDef intermedio fill:#f0a500,color:#fff,stroke:none,rx:6\n    classDef avanzado fill:#e05c5c,color:#fff,stroke:none,rx:6\n\n    class A,B,C basico\n    class D,E,F,G intermedio\n    class H,I,J,K,L avanzado\n\n\n\n\n\n\n\n🔵 Básico    🟠 Intermedio    🔴 Avanzado"
+  },
+  {
+    "objectID": "clases/m03-clase01-review.html#cómo-se-conectan-los-conceptos",
+    "href": "clases/m03-clase01-review.html#cómo-se-conectan-los-conceptos",
+    "title": "Módulo 3: Review de Arquitectura LLM",
+    "section": "Cómo se conectan los conceptos",
+    "text": "Cómo se conectan los conceptos\n\nembeddings representan significado\nRAG usa esa representación para recuperar contexto relevante\n\nIdea final\nSi falla una de estas piezas, cae la calidad de toda la solución."
+  },
+  {
+    "objectID": "clases/roadmap-aprendizaje-ia.html#conectar-el-modelo-a-información-externa",
+    "href": "clases/roadmap-aprendizaje-ia.html#conectar-el-modelo-a-información-externa",
+    "title": "🧠 Roadmap IA & LLM",
+    "section": "Conectar el modelo a información externa",
+    "text": "Conectar el modelo a información externa\n\nPipeline: query → retrieval → contexto → respuesta\nIntegración con documentos propios\nEvaluación de relevancia"
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html",
+    "href": "clases/m03-clase01-actividad-attention.html",
+    "title": "Actividad: Attention Is All You Need",
+    "section": "",
+    "text": "Este archivo contiene el contexto y los prompts que debes entregar a NotebookLM para generar el video y las diapositivas de la actividad sobre el paper Attention Is All You Need.\nPaper fuente: Vaswani et al. (2017). Attention Is All You Need. NeurIPS. https://arxiv.org/abs/1706.03762\nPasos: sube el PDF del paper a NotebookLM y usa los prompts de las secciones siguientes."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#qué-es-este-documento",
+    "href": "clases/m03-clase01-actividad-attention.html#qué-es-este-documento",
+    "title": "Actividad: Attention Is All You Need",
+    "section": "",
+    "text": "Este archivo contiene el contexto y los prompts que debes entregar a NotebookLM para generar el video y las diapositivas de la actividad sobre el paper Attention Is All You Need.\nPaper fuente: Vaswani et al. (2017). Attention Is All You Need. NeurIPS. https://arxiv.org/abs/1706.03762\nPasos: sube el PDF del paper a NotebookLM y usa los prompts de las secciones siguientes."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#prompt-1-para-generar-el-video-audio-podcast",
+    "href": "clases/m03-clase01-actividad-attention.html#prompt-1-para-generar-el-video-audio-podcast",
+    "title": "Actividad: Attention Is All You Need",
+    "section": "Prompt 1 — Para generar el video (audio podcast)",
+    "text": "Prompt 1 — Para generar el video (audio podcast)\nCopia este texto como instrucción en NotebookLM al momento de generar el audio:\nContexto del curso:\nSoy docente de un programa de especialización en IA Generativa y LLMs para la Transformación Organizacional, dirigido a profesionales y directivos con formación en gestión, sin background técnico en deep learning. Ya hemos visto en clases anteriores qué es un LLM, cómo funciona la atención de forma intuitiva, qué son los embeddings y cómo se usa RAG.\n\nObjetivo del video:\nQuiero un video de entre 5 y 7 minutos que introduzca el paper \"Attention Is All You Need\" (Vaswani et al., 2017) como actividad de clase. El video será mostrado en clase antes de una discusión grupal, por lo que debe terminar con una pregunta abierta que active esa conversación.\n\nAudiencia:\nProfesionales y directivos de empresas. No entienden fórmulas matemáticas. Sí entienden conceptos de negocio, productividad y tecnología aplicada.\n\nEstructura esperada del video:\n1. Qué problema tenían los modelos anteriores al Transformer (RNN, LSTM): procesaban el texto de forma secuencial, lo que limitaba su capacidad de conectar ideas distantes y de escalar el entrenamiento.\n2. Qué propone el paper: reemplazar la secuencialidad por un mecanismo de atención puro, que permite que cada parte del texto \"mire\" directamente a cualquier otra parte.\n3. Por qué eso fue tan importante: habilitó el entrenamiento paralelo, modelos mucho más grandes, y captura de dependencias de largo alcance. De ahí vienen GPT, Claude, Gemini y todos los LLMs modernos.\n4. Cierre con una pregunta abierta para discusión grupal: ¿qué cambia, en términos prácticos, cuando un modelo puede considerar todo el contexto al mismo tiempo en lugar de procesarlo paso a paso?\n\nTono:\nConversacional, accesible, como si un docente universitario explicara esto antes de una actividad grupal. Sin fórmulas. Con alguna analogía simple si ayuda."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#prompt-2-para-generar-las-diapositivas",
+    "href": "clases/m03-clase01-actividad-attention.html#prompt-2-para-generar-las-diapositivas",
+    "title": "Actividad: Attention Is All You Need",
+    "section": "Prompt 2 — Para generar las diapositivas",
+    "text": "Prompt 2 — Para generar las diapositivas\nCopia este texto como instrucción en NotebookLM al momento de generar las slides:\nContexto del curso:\nSoy docente de un programa de especialización en IA Generativa y LLMs para la Transformación Organizacional, dirigido a profesionales con formación en gestión. Ya vimos en clases anteriores qué es un LLM, embeddings, atención de forma intuitiva y RAG.\n\nObjetivo de las diapositivas:\nNecesito 6 diapositivas simples en español para introducir el paper \"Attention Is All You Need\" (Vaswani et al., 2017) en clase. Las diapositivas serán mostradas durante o después del video, antes de una actividad grupal de discusión.\n\nEstructura de las diapositivas:\n\nSlide 1 — El problema anterior\nTítulo: Los modelos antes del Transformer\nContenido: qué limitaba a los modelos RNN y LSTM (secuencialidad, pérdida de dependencias largas, dificultad para escalar)\n\nSlide 2 — La propuesta del paper\nTítulo: Atención es todo lo que necesitas\nContenido: reemplazar recurrencia por atención pura; cada token puede relacionarse directamente con cualquier otro\n\nSlide 3 — Cómo funciona la atención\nTítulo: Query, Key y Value\nContenido: explicación sin fórmulas de los tres componentes; el modelo pregunta, compara y decide qué información usar\n\nSlide 4 — Por qué escala mejor\nTítulo: Paralelización y escala\nContenido: el entrenamiento puede ser paralelo; eso permite modelos más grandes con más datos\n\nSlide 5 — Impacto real\nTítulo: De este paper vienen los LLMs actuales\nContenido: GPT, BERT, Claude, Gemini y casi todos los modelos modernos son Transformers\n\nSlide 6 — Pregunta para el grupo\nTítulo: Para discutir\nContenido: ¿qué cambia cuando el modelo puede mirar todo el contexto a la vez, en lugar de procesarlo paso a paso? ¿Qué implicancias tiene eso para cómo lo usamos?\n\nFormato de cada slide: título claro + 3 a 4 bullets cortos. Sin jerga técnica innecesaria. En español."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#documento-libre-guion-de-las-diapositivas-para-cargar-en-notebooklm",
+    "href": "clases/m03-clase01-actividad-attention.html#documento-libre-guion-de-las-diapositivas-para-cargar-en-notebooklm",
+    "title": "Actividad: Attention Is All You Need",
+    "section": "Documento libre — Guion de las diapositivas para cargar en NotebookLM",
+    "text": "Documento libre — Guion de las diapositivas para cargar en NotebookLM\nEste documento está escrito para ser cargado como fuente adicional en NotebookLM junto al PDF del paper. Contiene el guion completo de lo que debería decir cada slide, con el nivel de lenguaje y el enfoque del curso. NotebookLM puede usarlo como referencia para generar el material sin alejarse del contenido que quieres comunicar.\nPuedes copiarlo tal como está y subirlo como archivo de texto o como nota en NotebookLM.\n\n\n\n\n\n\n\nNotaGuion de diapositivas — Attention Is All You Need\n\n\n\nCurso: Especialización en IA Generativa y LLMs para la Transformación Organizacional, FEN U. de Chile\nAudiencia: Profesionales y directivos con formación en gestión. Sin background técnico en deep learning.\nPropósito del material: Introducir el paper fundacional del Transformer antes de una actividad grupal de discusión. El tono es divulgativo, no técnico. No se incluyen fórmulas.\n\nSlide 1 — Título\nTítulo: Attention Is All You Need\nVaswani et al., 2017 — el paper que cambió la historia de los modelos de lenguaje.\nEsta presentación es una introducción al argumento central del paper, pensada para entender por qué fue tan influyente y qué conexión tiene con los LLMs que usamos hoy.\n\nSlide 2 — El problema que existía antes\nAntes del Transformer, los modelos dominantes para trabajar con lenguaje eran las redes recurrentes: RNN y LSTM.\nEstas arquitecturas procesaban el texto de forma secuencial, token por token, acumulando la información en un estado interno que se iba actualizando a medida que avanzaba en el texto.\nEso generaba dos problemas concretos: primero, las relaciones entre palabras muy distantes en el texto se perdían o se distorsionaban, porque la información tenía que “sobrevivir” muchos pasos intermedios. Segundo, el entrenamiento no podía ejecutarse en paralelo, lo que hacía muy costoso escalar estos modelos a más datos o más parámetros.\n\nSlide 3 — La propuesta del paper\nEl paper propone una idea simple en su formulación: eliminar la recurrencia por completo y reemplazarla por un mecanismo de atención puro.\nEn lugar de procesar el texto paso a paso, el Transformer permite que cada parte del texto se relacione directamente con cualquier otra parte, en una sola operación.\nDe ahí viene el título: “la atención es todo lo que necesitas”. No hace falta recurrencia ni convoluciones. Solo atención.\n\nSlide 4 — Cómo funciona la atención (sin fórmulas)\nLa forma más simple de explicarlo es esta:\nCuando el modelo procesa un token, genera tres cosas: una pregunta (query), que representa qué información está buscando; una clave (key), que representa qué tipo de información contiene ese token; y un valor (value), que es el contenido que puede aportar.\nEl mecanismo compara la pregunta de cada token con las claves de todos los demás, y decide cuánto peso darle a cada uno. Ese peso determina qué información se incorpora en la respuesta final.\nEn la práctica, esto significa que el modelo puede decidir que una palabra al inicio del párrafo es más relevante que otra justo al lado, dependiendo del contexto.\n\nSlide 5 — Por qué eso fue tan importante\nAl eliminar la secuencialidad, el Transformer habilitó dos cosas fundamentales:\nPrimero, el entrenamiento puede ejecutarse en paralelo. Ya no hay que esperar que termine el paso N para empezar el paso N+1. Eso permite entrenar modelos mucho más grandes con volúmenes de datos mucho mayores.\nSegundo, las relaciones entre partes distantes del texto se capturan directamente, sin depender de que la información sobreviva una cadena larga de pasos intermedios.\nEsos dos factores son la base técnica del salto de calidad que vemos en los LLMs modernos.\n\nSlide 6 — El impacto real\nGPT, BERT, Claude, Gemini, Llama y prácticamente todos los modelos de lenguaje relevantes hoy son Transformers.\nEl mecanismo propuesto en este paper en 2017 es la arquitectura sobre la que se construyen los sistemas de IA generativa que discutimos en este curso.\nEntender atención no es un ejercicio teórico: es entender por qué estos modelos funcionan como funcionan y cuáles son sus límites reales.\n\nSlide 7 — Pregunta para el grupo\nPara discutir:\n¿Qué cambia, en términos prácticos, cuando un modelo puede considerar todo el contexto al mismo tiempo en lugar de procesarlo paso a paso?\n¿Cómo afecta eso a cómo construimos prompts, cómo armamos el contexto en RAG y cómo pensamos los límites del modelo?"
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#referencia",
+    "href": "clases/m03-clase01-actividad-attention.html#referencia",
+    "title": "Actividad: Attention Is All You Need",
+    "section": "Referencia",
+    "text": "Referencia\nVaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention Is All You Need. NeurIPS. https://arxiv.org/abs/1706.03762"
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#actividad-attention-is-all-you-need",
+    "href": "clases/m03-clase01-actividad-attention.html#actividad-attention-is-all-you-need",
+    "title": "Módulo 3: Actividad",
+    "section": "Actividad: Attention Is All You Need",
+    "text": "Actividad: Attention Is All You Need\nPrompts y guion para generar el material con NotebookLM"
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#qué-contiene-este-documento",
+    "href": "clases/m03-clase01-actividad-attention.html#qué-contiene-este-documento",
+    "title": "Módulo 3: Actividad",
+    "section": "Qué contiene este documento",
+    "text": "Qué contiene este documento\nTres insumos listos para usar en NotebookLM:\n\nPrompt 1: para generar el video / audio podcast\nPrompt 2: para generar las diapositivas\nDocumento libre: guion completo para cargar como fuente adicional\n\nPaper fuente: Vaswani et al. (2017). Attention Is All You Need. NeurIPS."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#cómo-usar-este-material",
+    "href": "clases/m03-clase01-actividad-attention.html#cómo-usar-este-material",
+    "title": "Módulo 3: Actividad",
+    "section": "Cómo usar este material",
+    "text": "Cómo usar este material\n\nSube el PDF del paper a NotebookLM como fuente\nPara el video: usa el Prompt 1 como instrucción al generar el audio\nPara las diapositivas: usa el Prompt 2 como instrucción\nPara el documento libre: cópialo como nota o súbelo como archivo de texto adicional\n\nEl documento libre le da a NotebookLM el contenido ya redactado para que no se aleje del enfoque del curso."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#prompt-1-video-audio-podcast",
+    "href": "clases/m03-clase01-actividad-attention.html#prompt-1-video-audio-podcast",
+    "title": "Módulo 3: Actividad",
+    "section": "Prompt 1 — Video / audio podcast",
+    "text": "Prompt 1 — Video / audio podcast\nContexto del curso:\nSoy docente de un programa de especialización en IA Generativa y LLMs\npara la Transformación Organizacional, dirigido a profesionales y\ndirectivos con formación en gestión, sin background técnico en deep\nlearning. Ya vimos qué es un LLM, atención de forma intuitiva,\nembeddings y RAG.\n\nObjetivo: video de 5 a 7 minutos para introducir el paper en clase,\nantes de una discusión grupal. Debe terminar con una pregunta abierta.\n\nAudiencia: profesionales y directivos. Sin fórmulas. Sí entienden\nconceptos de negocio, productividad y tecnología aplicada.\n\nEstructura:\n1. Qué problema tenían los modelos anteriores (RNN, LSTM):\n   secuencialidad, pérdida de dependencias largas, no escala.\n2. Qué propone el paper: atención pura, sin recurrencia.\n3. Por qué fue importante: paralelización, escala, dependencias largas.\n   De ahí vienen GPT, Claude, Gemini.\n4. Cierre: ¿qué cambia cuando el modelo considera todo el contexto\n   al mismo tiempo en lugar de procesarlo paso a paso?\n\nTono: conversacional, accesible, como docente antes de una actividad.\nSin fórmulas. Con analogías simples si ayudan."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#prompt-2-diapositivas",
+    "href": "clases/m03-clase01-actividad-attention.html#prompt-2-diapositivas",
+    "title": "Módulo 3: Actividad",
+    "section": "Prompt 2 — Diapositivas",
+    "text": "Prompt 2 — Diapositivas\nContexto del curso:\nSoy docente de un programa de especialización en IA Generativa y LLMs\npara la Transformación Organizacional. Audiencia: profesionales con\nformación en gestión. Ya vimos LLMs, embeddings, atención y RAG.\n\nObjetivo: 6 diapositivas en español para introducir el paper\n\"Attention Is All You Need\" (Vaswani et al., 2017) antes de una\nactividad grupal.\n\nEstructura:\nSlide 1 — Los modelos antes del Transformer\n  Qué limitaba a RNN y LSTM: secuencialidad, dependencias largas,\n  dificultad para escalar.\n\nSlide 2 — Atención es todo lo que necesitas\n  Reemplazar recurrencia por atención pura. Cada token se relaciona\n  directamente con cualquier otro.\n\nSlide 3 — Query, Key y Value\n  Sin fórmulas: el modelo pregunta, compara y decide qué información\n  usar de cada parte del contexto.\n\nSlide 4 — Paralelización y escala\n  Entrenamiento paralelo. Modelos más grandes con más datos.\n\nSlide 5 — De este paper vienen los LLMs actuales\n  GPT, BERT, Claude, Gemini y casi todos los modelos modernos\n  son Transformers.\n\nSlide 6 — Para discutir\n  ¿Qué cambia cuando el modelo puede mirar todo el contexto a la vez?\n  ¿Qué implica eso para prompts, RAG y límites del modelo?\n\nFormato: título + 3 a 4 bullets cortos. Sin jerga innecesaria."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#para-cargar-como-fuente-adicional-en-notebooklm",
+    "href": "clases/m03-clase01-actividad-attention.html#para-cargar-como-fuente-adicional-en-notebooklm",
+    "title": "Módulo 3: Actividad",
+    "section": "Para cargar como fuente adicional en NotebookLM",
+    "text": "Para cargar como fuente adicional en NotebookLM\nEste documento está redactado para subirse como nota o archivo de texto junto al PDF del paper.\nNotebookLM lo usará como referencia de contenido, nivel y enfoque para generar el material sin alejarse del curso."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#encabezado-del-documento-libre",
+    "href": "clases/m03-clase01-actividad-attention.html#encabezado-del-documento-libre",
+    "title": "Módulo 3: Actividad",
+    "section": "Encabezado del documento libre",
+    "text": "Encabezado del documento libre\nCurso: Especialización en IA Generativa y LLMs para la Transformación\nOrganizacional, FEN U. de Chile.\n\nAudiencia: profesionales y directivos con formación en gestión.\nSin background técnico en deep learning.\n\nPropósito: introducir el paper \"Attention Is All You Need\" antes de\nuna actividad grupal. Tono divulgativo. Sin fórmulas.\n\nPaper de referencia: Vaswani et al. (2017). Attention Is All You Need.\nNeurIPS. https://arxiv.org/abs/1706.03762"
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#slide-1-del-guion",
+    "href": "clases/m03-clase01-actividad-attention.html#slide-1-del-guion",
+    "title": "Módulo 3: Actividad",
+    "section": "Slide 1 del guion",
+    "text": "Slide 1 del guion\nTítulo: Attention Is All You Need\nVaswani et al., 2017 — el paper que cambió la historia de los modelos de lenguaje.\nEsta presentación introduce el argumento central del paper para entender por qué fue tan influyente y qué conexión tiene con los LLMs que usamos hoy."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#slide-2-del-guion",
+    "href": "clases/m03-clase01-actividad-attention.html#slide-2-del-guion",
+    "title": "Módulo 3: Actividad",
+    "section": "Slide 2 del guion",
+    "text": "Slide 2 del guion\nEl problema que existía antes\nLos modelos dominantes antes del Transformer eran las redes recurrentes: RNN y LSTM. Procesaban el texto de forma secuencial, token por token, acumulando información en un estado interno.\nEso generaba dos problemas: las relaciones entre palabras distantes se perdían porque la información tenía que “sobrevivir” muchos pasos intermedios. Y el entrenamiento no podía ejecutarse en paralelo, lo que hacía muy costoso escalar estos modelos."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#slide-3-del-guion",
+    "href": "clases/m03-clase01-actividad-attention.html#slide-3-del-guion",
+    "title": "Módulo 3: Actividad",
+    "section": "Slide 3 del guion",
+    "text": "Slide 3 del guion\nLa propuesta del paper\nEl paper propone eliminar la recurrencia por completo y reemplazarla por un mecanismo de atención puro.\nEn lugar de procesar el texto paso a paso, el Transformer permite que cada parte del texto se relacione directamente con cualquier otra, en una sola operación.\nDe ahí viene el título: la atención es todo lo que necesitas. No hace falta recurrencia ni convoluciones."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#slide-4-del-guion",
+    "href": "clases/m03-clase01-actividad-attention.html#slide-4-del-guion",
+    "title": "Módulo 3: Actividad",
+    "section": "Slide 4 del guion",
+    "text": "Slide 4 del guion\nCómo funciona la atención (sin fórmulas)\nCuando el modelo procesa un token, genera tres cosas:\n\nuna query: qué información está buscando\nuna key: qué tipo de información contiene ese token\nun value: el contenido que puede aportar\n\nEl mecanismo compara la query de cada token con las keys de todos los demás y decide cuánto peso darle a cada uno. Eso determina qué información se incorpora en la respuesta final."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#slide-5-del-guion",
+    "href": "clases/m03-clase01-actividad-attention.html#slide-5-del-guion",
+    "title": "Módulo 3: Actividad",
+    "section": "Slide 5 del guion",
+    "text": "Slide 5 del guion\nPor qué eso fue tan importante\nAl eliminar la secuencialidad, el Transformer habilitó dos cosas:\nPrimero, el entrenamiento puede ejecutarse en paralelo. Ya no hay que esperar el paso N para empezar el N+1. Eso permite entrenar modelos mucho más grandes con mucho más dato.\nSegundo, las relaciones entre partes distantes del texto se capturan directamente, sin depender de que la información sobreviva una cadena larga de pasos intermedios."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#slide-6-del-guion",
+    "href": "clases/m03-clase01-actividad-attention.html#slide-6-del-guion",
+    "title": "Módulo 3: Actividad",
+    "section": "Slide 6 del guion",
+    "text": "Slide 6 del guion\nEl impacto real\nGPT, BERT, Claude, Gemini, Llama y prácticamente todos los modelos de lenguaje relevantes hoy son Transformers.\nEl mecanismo propuesto en 2017 es la arquitectura sobre la que se construyen los sistemas de IA generativa que vemos en este curso.\nEntender atención no es un ejercicio teórico: es entender por qué estos modelos funcionan como funcionan y cuáles son sus límites reales."
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#slide-7-del-guion",
+    "href": "clases/m03-clase01-actividad-attention.html#slide-7-del-guion",
+    "title": "Módulo 3: Actividad",
+    "section": "Slide 7 del guion",
+    "text": "Slide 7 del guion\nPregunta para el grupo\n¿Qué cambia, en términos prácticos, cuando un modelo puede considerar todo el contexto al mismo tiempo en lugar de procesarlo paso a paso?\n¿Cómo afecta eso a cómo construimos prompts, cómo armamos el contexto en RAG y cómo pensamos los límites del modelo?"
+  },
+  {
+    "objectID": "clases/m03-clase01-actividad-attention.html#paper-fundacional",
+    "href": "clases/m03-clase01-actividad-attention.html#paper-fundacional",
+    "title": "Módulo 3: Actividad",
+    "section": "Paper fundacional",
+    "text": "Paper fundacional\nVaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention Is All You Need. Advances in Neural Information Processing Systems (NeurIPS).\nhttps://arxiv.org/abs/1706.03762"
+  },
+  {
+    "objectID": "clases/lineamientos-diseno.html#paleta-de-colores",
+    "href": "clases/lineamientos-diseno.html#paleta-de-colores",
+    "title": "Lineamientos de Diseño",
+    "section": "Paleta de colores",
+    "text": "Paleta de colores\nLa paleta está inspirada en la identidad visual de Pepsi: azul profundo como base, azul claro como acento, rojo para énfasis y blanco para respiro visual.\n\n\n\n\n\n\n\n\n\nRol\nNombre\nHEX\nUso principal\n\n\n\n\nPrincipal\nAzul profundo\n#0045A5\nFondos de sección, títulos destacados\n\n\nAcento\nAzul claro\n#00A3E0\nSubtítulos, bullets clave, bordes\n\n\nÉnfasis\nRojo Pepsi\n#E31837\nLlamadas a la acción, ideas clave, alertas\n\n\nNeutro\nBlanco\n#FFFFFF\nFondo de slides, texto sobre azul\n\n\nTexto\nGris oscuro\n#1C1C2E\nTexto corriente sobre fondo blanco\n\n\n\nVista de la paleta\n\n\nAzul profundo\n#0045A5\n\n\nAzul claro\n#00A3E0\n\n\nRojo Pepsi\n#E31837\n\n\nBlanco\n#FFFFFF\n\n\nGris oscuro\n#1C1C2E"
+  },
+  {
+    "objectID": "clases/lineamientos-diseno.html#tipografía",
+    "href": "clases/lineamientos-diseno.html#tipografía",
+    "title": "Lineamientos de Diseño",
+    "section": "Tipografía",
+    "text": "Tipografía\n\n\n\n\n\n\n\n\n\nElemento\nFuente sugerida\nPeso\nTamaño relativo\n\n\n\n\nTítulo de sección\nInter / Montserrat\nBold (700)\nGrande\n\n\nTítulo de slide\nInter / Montserrat\nSemiBold (600)\nMediano-grande\n\n\nSubtítulo\nInter\nRegular (400)\nMediano\n\n\nBullets\nInter\nRegular (400)\nNormal\n\n\nCódigo\nFira Code / JetBrains Mono\nRegular\nPequeño\n\n\n\nRegla general: una sola familia tipográfica por presentación. Variar peso, no fuente."
+  },
+  {
+    "objectID": "clases/lineamientos-diseno.html#estructura-de-slides",
+    "href": "clases/lineamientos-diseno.html#estructura-de-slides",
+    "title": "Lineamientos de Diseño",
+    "section": "Estructura de slides",
+    "text": "Estructura de slides\nSlide de apertura de sección\n\nFondo: azul profundo (#0045A5)\nTítulo: blanco, bold, centrado verticalmente\nSin bullets en este tipo de slide\n\nSlide de contenido\n\nFondo: blanco\nTítulo: azul profundo o gris oscuro\nBullets: gris oscuro\nPalabra o frase clave por slide: destacar en azul claro o rojo\n\nSlide de idea clave\n\nRecuadro lateral o inferior en rojo Pepsi\nTexto del recuadro: blanco, cursiva o bold\nResto del slide: fondo blanco normal\n\nSlide de código\n\nFondo del bloque de código: #1C1C2E\nTexto de código: blanco o syntax highlighting estándar\nFondo del slide: blanco"
+  },
+  {
+    "objectID": "clases/lineamientos-diseno.html#reglas-de-uso-del-color",
+    "href": "clases/lineamientos-diseno.html#reglas-de-uso-del-color",
+    "title": "Lineamientos de Diseño",
+    "section": "Reglas de uso del color",
+    "text": "Reglas de uso del color\nAzul profundo → estructura y jerarquía. Slides de sección, títulos principales, fondos de apertura.\nAzul claro → acento y guía. Bullets destacados, íconos, bordes, subrayados, números de lista.\nRojo Pepsi → énfasis máximo. Solo para la idea más importante del slide. No usar en más de un elemento por slide.\nBlanco → respiración. Fondo principal de slides de contenido. Nunca saturar.\nGris oscuro → texto corriente. Todo texto que no necesita énfasis adicional."
+  },
+  {
+    "objectID": "clases/lineamientos-diseno.html#lo-que-hay-que-evitar",
+    "href": "clases/lineamientos-diseno.html#lo-que-hay-que-evitar",
+    "title": "Lineamientos de Diseño",
+    "section": "Lo que hay que evitar",
+    "text": "Lo que hay que evitar\n\nMás de tres colores en un mismo slide\nTexto rojo sobre fondo azul (bajo contraste)\nFondo completamente negro (rompe la identidad de la paleta)\nBullets con cinco o más líneas de texto\nDos elementos de énfasis en el mismo slide (dos rojos, dos negritas largas)\nMezclar más de una familia tipográfica"
+  },
+  {
+    "objectID": "clases/lineamientos-diseno.html#css-base-para-styles.html",
+    "href": "clases/lineamientos-diseno.html#css-base-para-styles.html",
+    "title": "Lineamientos de Diseño",
+    "section": "CSS base para styles.html",
+    "text": "CSS base para styles.html\nPuedes agregar esto al archivo styles.html del proyecto para aplicar la paleta en las presentaciones Quarto Reveal.js:\n:root {\n  --pepsi-blue-deep:  #0045A5;\n  --pepsi-blue-light: #00A3E0;\n  --pepsi-red:        #E31837;\n  --white:            #FFFFFF;\n  --dark:             #1C1C2E;\n}\n\n.reveal h1, .reveal h2 {\n  color: var(--pepsi-blue-deep);\n  font-weight: 700;\n}\n\n.reveal h3 {\n  color: var(--pepsi-blue-light);\n  font-weight: 600;\n}\n\n.reveal .slide-background-content {\n  background-color: var(--white);\n}\n\n.reveal strong {\n  color: var(--pepsi-red);\n}\n\n.reveal section.has-dark-background h1,\n.reveal section.has-dark-background h2,\n.reveal section.has-dark-background p {\n  color: var(--white);\n}\nPara aplicar el fondo azul a un slide de sección, usa el atributo en el encabezado:\n# Título de sección {background-color=\"#0045A5\"}"
   }
 ]
