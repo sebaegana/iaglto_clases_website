@@ -13,3 +13,6 @@
 # secrets
 .env
 **/.env
+
+# chroma vector DB (auto-generated binaries)
+**/chroma_db/
