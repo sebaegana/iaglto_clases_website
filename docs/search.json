@@ -2866,8 +2866,8 @@
     "objectID": "clases/roadmap-aprendizaje-ia.html#qué-es-un-llm",
     "href": "clases/roadmap-aprendizaje-ia.html#qué-es-un-llm",
     "title": "🧠 Roadmap IA & LLM",
-    "section": "",
-    "text": "Qué es un LLM (tokens, contexto)\nLimitaciones (alucinaciones, sesgos)\nCasos de uso básicos"
+    "section": "¿Qué es un LLM?",
+    "text": "¿Qué es un LLM?\n\nQué es un LLM (tokens, contexto)\nLimitaciones (alucinaciones, sesgos)\nCasos de uso básicos"
   },
   {
     "objectID": "clases/roadmap-aprendizaje-ia.html#cómo-instruir-a-un-modelo",
