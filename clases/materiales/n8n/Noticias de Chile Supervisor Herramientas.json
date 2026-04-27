@@ -1,0 +1,333 @@
+{
+  "name": "Noticias de Chile Supervisor Herramientas",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "ab6c1df4-5d89-4d34-a41d-2b917db89a10",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -40
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "13cf34e8-57c2-4408-bd42-8d444ba6c0cc",
+      "name": "Schedule Daily Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        260,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://news.google.com/search?q=noticias%20financieras%20chile&hl=es-CL&gl=CL&ceid=CL%3Aes",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "9e69e55a-bd53-43b0-b3de-8ce0760ab053",
+      "name": "Fetch Google News Chile",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        500,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "Article Titles",
+              "cssSelector": "article h3 a, article h4 a, .JtKRv",
+              "returnArray": true
+            },
+            {
+              "key": "Article Links",
+              "cssSelector": "article h3 a, article h4 a, .JtKRv",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            },
+            {
+              "key": "Article Sources",
+              "cssSelector": "article .wEwyrc, .vr1PYe, .CEMjEf",
+              "returnArray": true
+            },
+            {
+              "key": "Publication Times",
+              "cssSelector": "article time, .WW6dff, .hvbAAd",
+              "returnArray": true
+            },
+            {
+              "key": "Article Snippets",
+              "cssSelector": "article .GI74Re, .St8ea, .y3G2Ed",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {
+          "cleanUpText": true
+        }
+      },
+      "id": "1dfb5c70-f24c-475e-ac42-c855ca9d42d9",
+      "name": "Extract Articles",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        740,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "function parseRelativeTime(str) {\n  if (!str) return null;\n\n  const now = new Date();\n  const text = String(str).toLowerCase().trim();\n  const match = text.match(/hace\\s+(\\d+)\\s+(minuto|minutos|hora|horas|d[ií]a|d[ií]as)/i);\n\n  if (!match) return null;\n\n  const amount = Number(match[1]);\n  const unit = match[2];\n\n  if (unit.startsWith('minuto')) now.setMinutes(now.getMinutes() - amount);\n  else if (unit.startsWith('hora')) now.setHours(now.getHours() - amount);\n  else now.setDate(now.getDate() - amount);\n\n  return now.toISOString();\n}\n\nfunction normalizeLink(link) {\n  if (!link) return '';\n  const value = String(link).trim();\n  if (value.startsWith('./')) return `https://news.google.com/${value.slice(2)}`;\n  if (value.startsWith('/')) return `https://news.google.com${value}`;\n  return value;\n}\n\nfunction truncate(text, max) {\n  const value = String(text || '').trim();\n  return value.length > max ? `${value.slice(0, max - 1)}...` : value;\n}\n\nconst source = items[0].json;\nconst titles = source['Article Titles'] || [];\nconst links = source['Article Links'] || [];\nconst sources = source['Article Sources'] || [];\nconst times = source['Publication Times'] || [];\nconst snippets = source['Article Snippets'] || [];\n\nconst seen = new Set();\nconst out = [];\nconst runDate = new Date().toISOString();\n\nfor (let i = 0; i < titles.length; i++) {\n  const title = truncate(titles[i], 220);\n  const link = normalizeLink(links[i]);\n  const sourceName = truncate(sources[i], 120);\n  const timeRaw = truncate(times[i], 60);\n  const snippet = truncate(snippets[i], 420);\n\n  if (!title || !link) continue;\n\n  const dedupeKey = `${title}__${sourceName}`.toLowerCase();\n  if (seen.has(dedupeKey)) continue;\n  seen.add(dedupeKey);\n\n  out.push({\n    json: {\n      run_date: runDate,\n      title,\n      source: sourceName,\n      time_raw: timeRaw || null,\n      time: parseRelativeTime(timeRaw),\n      link,\n      snippet: snippet || null\n    }\n  });\n}\n\nreturn out.slice(0, 12);"
+      },
+      "id": "f020489d-561d-4cdc-bde8-f75b7f783e0e",
+      "name": "Normalize Articles",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        980,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Devuelve SOLO json valido.\\n\\nDebes usar exactamente una vez estas tres herramientas y consolidar el resultado final:\\n- Clasificar_Noticia\\n- Evaluar_Relevancia_Chile\\n- Estimar_Impacto_Mercado\\n\\nPasa a cada herramienta un query corto basado en title, source y snippet.\\n\\nNoticia actual:\\n- title: {{ $json.title }}\\n- source: {{ $json.source }}\\n- time: {{ $json.time }}\\n- link: {{ $json.link }}\\n- snippet: {{ $json.snippet }}\\n\\nDevuelve esta estructura exacta:\\n{\\n  \"run_date\": \"{{ $json.run_date }}\",\\n  \"title\": \"string\",\\n  \"source\": \"string\",\\n  \"time\": \"string|null\",\\n  \"link\": \"string\",\\n  \"snippet\": \"string|null\",\\n  \"category\": \"string\",\\n  \"subcategory\": \"string\",\\n  \"classification_reason\": \"string\",\\n  \"relevance_score\": 0,\\n  \"relevance_reason\": \"string\",\\n  \"sentiment\": \"positive|neutral|negative|mixed\",\\n  \"impact_score\": 0,\\n  \"impacted_assets\": [\"string\"],\\n  \"summary\": \"string\",\\n  \"actionable_flag\": true,\\n  \"action\": \"string\",\\n  \"confidence\": 0,\\n  \"notes\": \"string\"\\n}",
+        "options": {
+          "systemMessage": "Eres un supervisor editorial de noticias financieras de Chile. Tu trabajo es coordinar herramientas determinísticas, no subagentes.\\n\\nReglas:\\n- Usa exactamente una vez cada herramienta conectada.\\n- Las herramientas devuelven JSON como texto; debes interpretarlo y consolidarlo.\\n- No inventes datos que no estén en title, source o snippet.\\n- relevance_score, impact_score y confidence deben ir de 0 a 100.\\n- Responde SOLO con JSON válido, sin markdown.",
+          "maxIterations": 6,
+          "returnIntermediateSteps": false
+        }
+      },
+      "id": "655a537a-c8f4-4bdf-8038-422f1e937a03",
+      "name": "Supervisor Herramientas",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        1240,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {
+          "responseFormat": "json_object",
+          "temperature": 0.1
+        }
+      },
+      "id": "b81d9ca6-a584-4c6e-9afc-d246f0b6199c",
+      "name": "OpenAI Supervisor Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1240,
+        256
+      ]
+    },
+    {
+      "parameters": {
+        "name": "Clasificar_Noticia",
+        "description": "Clasifica una noticia financiera en category, subcategory y classification_reason. El input es un query corto con title, source y snippet.",
+        "language": "javaScript",
+        "jsCode": "function containsAny(text, words) {\n  return words.some((word) => text.includes(word));\n}\n\nconst raw = String(query || '').toLowerCase();\nlet category = 'internacional';\nlet subcategory = 'mercados';\nlet reason = 'La noticia parece vinculada a mercados o entorno económico general.';\n\nif (containsAny(raw, ['banco central', 'inflacion', 'inflación', 'ipc', 'imacec', 'tasa', 'tasas', 'pib'])) {\n  category = 'macroeconomia';\n  subcategory = 'politica_monetaria';\n  reason = 'Se detectan términos asociados a macroeconomía o política monetaria.';\n} else if (containsAny(raw, ['ipsa', 'bolsa', 'acciones', 'mercado', 'mercados', 'wall street', 'bonos'])) {\n  category = 'mercados';\n  subcategory = 'activos_financieros';\n  reason = 'Se detectan términos asociados a mercados financieros o activos.';\n} else if (containsAny(raw, ['cmf', 'sp', 'superintendencia', 'regulacion', 'regulación', 'ley', 'normativa'])) {\n  category = 'regulacion';\n  subcategory = 'normativa_financiera';\n  reason = 'Se detectan términos asociados a regulación o normativa.';\n} else if (containsAny(raw, ['codelco', 'sqm', 'litio', 'cobre', 'mineria', 'minería'])) {\n  category = 'commodities';\n  subcategory = 'mineria_y_metales';\n  reason = 'Se detectan términos asociados a cobre, litio o minería.';\n} else if (containsAny(raw, ['banco de chile', 'santander', 'bci', 'itau', 'itau', 'scotiabank'])) {\n  category = 'banca';\n  subcategory = 'banca_comercial';\n  reason = 'Se detectan referencias directas al sector bancario.';\n} else if (containsAny(raw, ['empresa', 'utilidad', 'utilidades', 'ingresos', 'resultados', 'firma', 'compañia', 'compania'])) {\n  category = 'empresas';\n  subcategory = 'resultados_corporativos';\n  reason = 'Se detectan términos asociados a empresas o resultados corporativos.';\n}\n\nreturn JSON.stringify({\n  category,\n  subcategory,\n  classification_reason: reason\n});"
+      },
+      "id": "cd3664d8-d069-469e-a1af-d3f9666f22f7",
+      "name": "Clasificar Noticia Tool",
+      "type": "@n8n/n8n-nodes-langchain.toolCode",
+      "typeVersion": 1.3,
+      "position": [
+        1020,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "name": "Evaluar_Relevancia_Chile",
+        "description": "Asigna relevance_score y relevance_reason según la relevancia local para Chile. El input es un query corto con title, source y snippet.",
+        "language": "javaScript",
+        "jsCode": "function score(text) {\n  let total = 20;\n  const boosts = [\n    { words: ['chile', 'chileno', 'chilena', 'clp', 'ipsa'], value: 20 },\n    { words: ['cobre', 'litio', 'codelco', 'sqm'], value: 20 },\n    { words: ['banco central', 'cmf', 'sp', 'afp', 'hacienda'], value: 20 },\n    { words: ['banco de chile', 'bci', 'santander', 'itau', 'falabella', 'copec', 'enel chile'], value: 20 },\n    { words: ['inflacion', 'inflación', 'tasas', 'imacec', 'normativa', 'regulacion', 'regulación'], value: 10 }\n  ];\n\n  for (const boost of boosts) {\n    if (boost.words.some((word) => text.includes(word))) total += boost.value;\n  }\n\n  return Math.max(0, Math.min(total, 100));\n}\n\nconst raw = String(query || '').toLowerCase();\nconst relevance_score = score(raw);\nlet relevance_reason = 'La noticia parece de interés general con baja conexión explícita a Chile.';\n\nif (relevance_score >= 80) {\n  relevance_reason = 'La noticia muestra una conexión directa con economía chilena, activos locales o instituciones del país.';\n} else if (relevance_score >= 50) {\n  relevance_reason = 'La noticia tiene relación moderada con Chile o con variables relevantes para un lector de negocios local.';\n} else if (relevance_score >= 30) {\n  relevance_reason = 'La noticia podría afectar indirectamente a Chile, pero la relación local no es central.';\n}\n\nreturn JSON.stringify({ relevance_score, relevance_reason });"
+      },
+      "id": "fe7f3b14-fd02-4bb8-ad07-27800d67a982",
+      "name": "Evaluar Relevancia Tool",
+      "type": "@n8n/n8n-nodes-langchain.toolCode",
+      "typeVersion": 1.3,
+      "position": [
+        1320,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "name": "Estimar_Impacto_Mercado",
+        "description": "Estima sentiment, impact_score, impacted_assets, summary, actionable_flag, action, confidence y notes. El input es un query corto con title, source y snippet.",
+        "language": "javaScript",
+        "jsCode": "function has(text, words) {\n  return words.some((word) => text.includes(word));\n}\n\nconst raw = String(query || '').toLowerCase();\nlet sentiment = 'neutral';\nlet impact_score = 25;\nlet impacted_assets = [];\nlet actionable_flag = false;\nlet action = 'Monitorear desarrollo y confirmar más contexto antes de actuar.';\nlet confidence = 65;\nlet notes = 'Estimación basada en reglas simples sobre título, fuente y snippet.';\n\nif (has(raw, ['cae', 'baja', 'retrocede', 'pierde', 'riesgo', 'crisis', 'golpe', 'caída'])) {\n  sentiment = 'negative';\n  impact_score += 20;\n}\nif (has(raw, ['sube', 'alza', 'mejora', 'crece', 'avance', 'récord', 'record'])) {\n  sentiment = sentiment === 'negative' ? 'mixed' : 'positive';\n  impact_score += 20;\n}\nif (has(raw, ['ipsa', 'acciones', 'bolsa'])) impacted_assets.push('IPSA');\nif (has(raw, ['clp', 'peso chileno', 'dolar', 'dólar', 'usdclp'])) impacted_assets.push('CLP');\nif (has(raw, ['cobre'])) impacted_assets.push('cobre');\nif (has(raw, ['litio', 'sqm'])) impacted_assets.push('litio');\nif (has(raw, ['banco', 'tasas'])) impacted_assets.push('banca');\nif (has(raw, ['bonos'])) impacted_assets.push('bonos');\nif (has(raw, ['retail', 'falabella'])) impacted_assets.push('retail');\n\nimpacted_assets = [...new Set(impacted_assets)];\nimpact_score = Math.max(0, Math.min(impact_score + impacted_assets.length * 8, 100));\nactionable_flag = impact_score >= 45;\nif (actionable_flag) action = 'Revisar impacto potencial en apertura de mercado y activos expuestos.';\nif (impacted_assets.length === 0) notes = 'No se identificaron activos claramente impactados con las reglas actuales; podría requerir análisis adicional.';\n\nconst summary = impacted_assets.length > 0\n  ? `Noticia con señal ${sentiment} y posible impacto sobre ${impacted_assets.join(', ')}.`\n  : `Noticia con señal ${sentiment} y efecto de mercado poco específico con la información disponible.`;\n\nreturn JSON.stringify({\n  sentiment,\n  impact_score,\n  impacted_assets,\n  summary,\n  actionable_flag,\n  action,\n  confidence,\n  notes\n});"
+      },
+      "id": "1d0bedb8-16e7-4192-8ecf-b8ce9d97e6d5",
+      "name": "Impacto Mercado Tool",
+      "type": "@n8n/n8n-nodes-langchain.toolCode",
+      "typeVersion": 1.3,
+      "position": [
+        1620,
+        520
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "function safeParse(value) {\n  if (value && typeof value === 'object') return value;\n\n  const raw = String(value || '')\n    .trim()\n    .replace(/^```json\\s*/i, '')\n    .replace(/^```/, '')\n    .replace(/```$/, '')\n    .trim();\n\n  return JSON.parse(raw);\n}\n\nconst parsed = safeParse($json.output);\nparsed.impacted_assets = Array.isArray(parsed.impacted_assets) ? parsed.impacted_assets : [];\nparsed.actionable_flag = parsed.actionable_flag === true || String(parsed.actionable_flag).toLowerCase() === 'true';\nreturn { json: parsed };"
+      },
+      "id": "0328ad9a-d250-44c8-9c61-b7aa455c1ec4",
+      "name": "Parse Final JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1480,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "run_date": "={{ $json.run_date }}",
+            "title": "={{ $json.title }}",
+            "source": "={{ $json.source }}",
+            "time": "={{ $json.time }}",
+            "link": "={{ $json.link }}",
+            "snippet": "={{ $json.snippet }}",
+            "category": "={{ $json.category }}",
+            "subcategory": "={{ $json.subcategory }}",
+            "classification_reason": "={{ $json.classification_reason }}",
+            "relevance_score": "={{ $json.relevance_score }}",
+            "relevance_reason": "={{ $json.relevance_reason }}",
+            "sentiment": "={{ $json.sentiment }}",
+            "impact_score": "={{ $json.impact_score }}",
+            "impacted_assets": "={{ Array.isArray($json.impacted_assets) ? $json.impacted_assets.join(', ') : $json.impacted_assets }}",
+            "summary": "={{ $json.summary }}",
+            "actionable_flag": "={{ $json.actionable_flag }}",
+            "action": "={{ $json.action }}",
+            "confidence": "={{ $json.confidence }}",
+            "notes": "={{ $json.notes }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            { "id": "run_date", "displayName": "run_date", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "title", "displayName": "title", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "source", "displayName": "source", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "time", "displayName": "time", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "link", "displayName": "link", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "snippet", "displayName": "snippet", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "category", "displayName": "category", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "subcategory", "displayName": "subcategory", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "classification_reason", "displayName": "classification_reason", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "relevance_score", "displayName": "relevance_score", "required": false, "defaultMatch": false, "display": true, "type": "number", "canBeUsedToMatch": true },
+            { "id": "relevance_reason", "displayName": "relevance_reason", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "sentiment", "displayName": "sentiment", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "impact_score", "displayName": "impact_score", "required": false, "defaultMatch": false, "display": true, "type": "number", "canBeUsedToMatch": true },
+            { "id": "impacted_assets", "displayName": "impacted_assets", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "summary", "displayName": "summary", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "actionable_flag", "displayName": "actionable_flag", "required": false, "defaultMatch": false, "display": true, "type": "boolean", "canBeUsedToMatch": true },
+            { "id": "action", "displayName": "action", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "confidence", "displayName": "confidence", "required": false, "defaultMatch": false, "display": true, "type": "number", "canBeUsedToMatch": true },
+            { "id": "notes", "displayName": "notes", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "bcf9fdbd-7b0f-4426-b489-f69f2f238111",
+      "name": "Append Row in Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1720,
+        32
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Fetch Google News Chile", "type": "main", "index": 0 }]]
+    },
+    "Schedule Daily Trigger": {
+      "main": [[{ "node": "Fetch Google News Chile", "type": "main", "index": 0 }]]
+    },
+    "Fetch Google News Chile": {
+      "main": [[{ "node": "Extract Articles", "type": "main", "index": 0 }]]
+    },
+    "Extract Articles": {
+      "main": [[{ "node": "Normalize Articles", "type": "main", "index": 0 }]]
+    },
+    "Normalize Articles": {
+      "main": [[{ "node": "Supervisor Herramientas", "type": "main", "index": 0 }]]
+    },
+    "OpenAI Supervisor Model": {
+      "ai_languageModel": [[{ "node": "Supervisor Herramientas", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Clasificar Noticia Tool": {
+      "ai_tool": [[{ "node": "Supervisor Herramientas", "type": "ai_tool", "index": 0 }]]
+    },
+    "Evaluar Relevancia Tool": {
+      "ai_tool": [[{ "node": "Supervisor Herramientas", "type": "ai_tool", "index": 0 }]]
+    },
+    "Impacto Mercado Tool": {
+      "ai_tool": [[{ "node": "Supervisor Herramientas", "type": "ai_tool", "index": 0 }]]
+    },
+    "Supervisor Herramientas": {
+      "main": [[{ "node": "Parse Final JSON", "type": "main", "index": 0 }]]
+    },
+    "Parse Final JSON": {
+      "main": [[{ "node": "Append Row in Sheet", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "2a3dd0a6-d6a2-4c87-896f-9827ad4921b6",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "id": "NoticiasChileSupervisorHerramientas",
+  "tags": []
+}

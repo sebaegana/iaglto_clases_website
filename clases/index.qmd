@@ -12,6 +12,7 @@ En esta sección se agrupan las sesiones del módulo, el diccionario de apoyo y 
 - [Material complementario: Atención en LLMs](m03-clase01-atencion.qmd)
 - [Clase 2: CI/CD, MLOps y gobernanza](m03-clase02-cicd-mlops-gobernanza.qmd)
 - [Clase 3: Decision Science y sesgos](m03-clase03-decision-science-sesgos.qmd)
+- [Clase 4: Agentes, orquestación y automatización con n8n](m03-clase04-agentes-orquestacion-n8n.qmd)
 - [Caso aplicado: Agente AFP](m03-caso-aplicado-agente-afp.qmd)
 - [Diccionario y FAQ del curso](m03-diccionario-faq-terminos.qmd)
 

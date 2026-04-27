@@ -1,4 +1,5 @@
 /.quarto/
+/.Rproj.user/
 
 # Quarto / knitr intermediate files
 *.knit.md
@@ -16,6 +17,9 @@
 *.pdf
 
 **/*.quarto_ipynb
+
+# Local teaching notes kept outside git
+*.notas-docente.md
 
 # Keep curated support material versioned
 !materiales/

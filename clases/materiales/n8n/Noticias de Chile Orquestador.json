@@ -1,0 +1,414 @@
+{
+  "name": "Noticias de Chile Orquestador v2",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "3fa5f1d2-5df7-4ec2-9f57-4f3a5da3a111",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -40
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "d12b0748-a527-46b0-b98f-f7ee6c28fbbb",
+      "name": "Schedule Daily Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        260,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://news.google.com/search?q=noticias%20financieras%20chile&hl=es-CL&gl=CL&ceid=CL%3Aes",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "3da3f54c-6708-4b2a-aa71-cf65b9480c73",
+      "name": "Fetch Google News Chile",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        500,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "Article Titles",
+              "cssSelector": "article h3 a, article h4 a, .JtKRv",
+              "returnArray": true
+            },
+            {
+              "key": "Article Links",
+              "cssSelector": "article h3 a, article h4 a, .JtKRv",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            },
+            {
+              "key": "Article Sources",
+              "cssSelector": "article .wEwyrc, .vr1PYe, .CEMjEf",
+              "returnArray": true
+            },
+            {
+              "key": "Publication Times",
+              "cssSelector": "article time, .WW6dff, .hvbAAd",
+              "returnArray": true
+            },
+            {
+              "key": "Article Snippets",
+              "cssSelector": "article .GI74Re, .St8ea, .y3G2Ed",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {
+          "cleanUpText": true
+        }
+      },
+      "id": "6dc39162-3d17-44cf-b8b2-61f34decb05e",
+      "name": "Extract Articles",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        740,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "function parseRelativeTime(str) {\n  if (!str) return null;\n\n  const now = new Date();\n  const text = String(str).toLowerCase().trim();\n  const match = text.match(/hace\\s+(\\d+)\\s+(minuto|minutos|hora|horas|d[ií]a|d[ií]as)/i);\n\n  if (!match) return null;\n\n  const amount = Number(match[1]);\n  const unit = match[2];\n\n  if (unit.startsWith('minuto')) now.setMinutes(now.getMinutes() - amount);\n  else if (unit.startsWith('hora')) now.setHours(now.getHours() - amount);\n  else now.setDate(now.getDate() - amount);\n\n  return now.toISOString();\n}\n\nfunction normalizeLink(link) {\n  if (!link) return '';\n  const value = String(link).trim();\n  if (value.startsWith('./')) return `https://news.google.com/${value.slice(2)}`;\n  if (value.startsWith('/')) return `https://news.google.com${value}`;\n  return value;\n}\n\nfunction truncate(text, max) {\n  const value = String(text || '').trim();\n  return value.length > max ? `${value.slice(0, max - 1)}...` : value;\n}\n\nconst source = items[0].json;\nconst titles = source['Article Titles'] || [];\nconst links = source['Article Links'] || [];\nconst sources = source['Article Sources'] || [];\nconst times = source['Publication Times'] || [];\nconst snippets = source['Article Snippets'] || [];\n\nconst seen = new Set();\nconst out = [];\nconst runDate = new Date().toISOString();\n\nfor (let i = 0; i < titles.length; i++) {\n  const title = truncate(titles[i], 220);\n  const link = normalizeLink(links[i]);\n  const sourceName = truncate(sources[i], 120);\n  const timeRaw = truncate(times[i], 60);\n  const snippet = truncate(snippets[i], 420);\n\n  if (!title || !link) continue;\n\n  const dedupeKey = `${title}__${sourceName}`.toLowerCase();\n  if (seen.has(dedupeKey)) continue;\n  seen.add(dedupeKey);\n\n  out.push({\n    json: {\n      run_date: runDate,\n      title,\n      source: sourceName,\n      time_raw: timeRaw || null,\n      time: parseRelativeTime(timeRaw),\n      link,\n      snippet: snippet || null\n    }\n  });\n}\n\nreturn out.slice(0, 8);"
+      },
+      "id": "69c5a5fd-4f7e-4ba1-b7fc-b7e9c704c85f",
+      "name": "Normalize Articles",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        980,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Devuelve SOLO json valido.\\n\\nDebes llamar exactamente una vez a estas tres herramientas y luego consolidar el resultado final:\\n- Especialista Clasificacion\\n- Especialista Relevancia Chile\\n- Especialista Impacto Mercado\\n\\nPasa a cada herramienta un unico argumento string llamado article_payload. Ese string debe ser JSON valido y contener exactamente: title, source, snippet.\\n\\nNoticia actual:\\n- title: {{ $json.title }}\\n- source: {{ $json.source }}\\n- time_raw: {{ $json.time_raw }}\\n- time: {{ $json.time }}\\n- link: {{ $json.link }}\\n- snippet: {{ $json.snippet }}\\n\\nDevuelve esta estructura exacta:\\n{\\n  \"run_date\": \"{{ $json.run_date }}\",\\n  \"title\": \"string\",\\n  \"source\": \"string\",\\n  \"time\": \"string|null\",\\n  \"link\": \"string\",\\n  \"snippet\": \"string|null\",\\n  \"category\": \"string\",\\n  \"subcategory\": \"string\",\\n  \"classification_reason\": \"string\",\\n  \"relevance_score\": 0,\\n  \"relevance_reason\": \"string\",\\n  \"sentiment\": \"positive|neutral|negative|mixed\",\\n  \"impact_score\": 0,\\n  \"impacted_assets\": [\"string\"],\\n  \"summary\": \"string\",\\n  \"actionable_flag\": true,\\n  \"action\": \"string\",\\n  \"confidence\": 0,\\n  \"notes\": \"string\"\\n}",
+        "options": {
+          "systemMessage": "Eres un orquestador editorial de noticias financieras de Chile. Trabajas sobre una sola noticia por vez.\\n\\nReglas estrictas:\\n- Llama exactamente una vez a cada herramienta conectada.\\n- A cada herramienta le debes pasar un unico argumento string llamado article_payload.\\n- article_payload debe ser JSON valido y pequeno con title, source y snippet.\\n- No inventes datos que no esten en la noticia.\\n- Si falta contexto, reflejalo en notes o en los reasons.\\n- relevance_score, impact_score y confidence van de 0 a 100.\\n- Responde SOLO con JSON valido, sin markdown.",
+          "maxIterations": 6,
+          "returnIntermediateSteps": false
+        }
+      },
+      "id": "50843fb5-b53f-43bb-b10a-2f0c980830d7",
+      "name": "Agente Orquestador",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        1240,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {
+          "responseFormat": "json_object",
+          "temperature": 0.1
+        }
+      },
+      "id": "ef248963-e10a-438f-bf13-e4c4ad9898f3",
+      "name": "OpenAI Orchestrator Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1240,
+        256
+      ]
+    },
+    {
+      "parameters": {
+        "toolDescription": "Clasifica una noticia en categoria y subcategoria financiera y explica brevemente por que. El unico input es article_payload como string JSON con title, source y snippet.",
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('article_payload', 'JSON string valido con exactamente title, source y snippet de una noticia', 'string') }}",
+        "options": {
+          "systemMessage": "Eres un clasificador editorial para noticias financieras relacionadas con Chile. Recibiras un string JSON pequeno con title, source y snippet. Devuelve SOLO json valido con esta forma exacta: {\"category\":\"string\",\"subcategory\":\"string\",\"classification_reason\":\"string\"}.\\n\\nCategorias sugeridas: macroeconomia, mercados, empresas, regulacion, politica_publica, commodities, banca, retail, energia, mineria, internacional. Si snippet viene vacio, igual clasifica usando title y source.",
+          "maxIterations": 3,
+          "returnIntermediateSteps": false
+        }
+      },
+      "id": "78df877a-b356-4186-9ca4-a29efc24c6f4",
+      "name": "Especialista Clasificacion",
+      "type": "@n8n/n8n-nodes-langchain.agentTool",
+      "typeVersion": 3,
+      "position": [
+        1020,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {
+          "responseFormat": "json_object",
+          "temperature": 0.1
+        }
+      },
+      "id": "40d40cc6-e88e-4cb8-8cea-dc87d1473f0a",
+      "name": "OpenAI Classification Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1020,
+        680
+      ]
+    },
+    {
+      "parameters": {
+        "toolDescription": "Evalua cuan relevante es una noticia para Chile o para un lector de negocios en Chile. El unico input es article_payload como string JSON con title, source y snippet.",
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('article_payload', 'JSON string valido con exactamente title, source y snippet de una noticia', 'string') }}",
+        "options": {
+          "systemMessage": "Eres un analista de relevancia local para Chile. Recibiras un string JSON pequeno con title, source y snippet. Devuelve SOLO json valido con esta forma exacta: {\"relevance_score\":0,\"relevance_reason\":\"string\"}.\\n\\nEscala 0 a 100. Puntua alto si afecta economia chilena, CLP, IPSA, cobre, litio, banca local, empresas chilenas, regulacion chilena o inversionistas en Chile. Si snippet viene vacio, razona con title y source, no asumas que faltan todos los datos.",
+          "maxIterations": 3,
+          "returnIntermediateSteps": false
+        }
+      },
+      "id": "eb6bb761-b9d2-494b-aefe-b7995ef8b401",
+      "name": "Especialista Relevancia Chile",
+      "type": "@n8n/n8n-nodes-langchain.agentTool",
+      "typeVersion": 3,
+      "position": [
+        1320,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {
+          "responseFormat": "json_object",
+          "temperature": 0.1
+        }
+      },
+      "id": "93cb74c4-fb3f-4405-bf6d-bff3caeb7a82",
+      "name": "OpenAI Relevance Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1320,
+        680
+      ]
+    },
+    {
+      "parameters": {
+        "toolDescription": "Estima sentimiento, impacto de mercado y una accion sugerida para seguimiento. El unico input es article_payload como string JSON con title, source y snippet.",
+        "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('article_payload', 'JSON string valido con exactamente title, source y snippet de una noticia', 'string') }}",
+        "options": {
+          "systemMessage": "Eres un analista de mercados enfocado en Chile. Recibiras un string JSON pequeno con title, source y snippet. Devuelve SOLO json valido con esta forma exacta: {\"sentiment\":\"positive|neutral|negative|mixed\",\"impact_score\":0,\"impacted_assets\":[\"string\"],\"summary\":\"string\",\"actionable_flag\":true,\"action\":\"string\",\"confidence\":0,\"notes\":\"string\"}.\\n\\nimpact_score y confidence van de 0 a 100. summary debe ser breve y ejecutiva. Si snippet viene vacio, evalua con title y source sin responder con placeholders genericos.",
+          "maxIterations": 3,
+          "returnIntermediateSteps": false
+        }
+      },
+      "id": "fcadabfd-3f80-4e8b-87a7-2d6a566bcdb9",
+      "name": "Especialista Impacto Mercado",
+      "type": "@n8n/n8n-nodes-langchain.agentTool",
+      "typeVersion": 3,
+      "position": [
+        1620,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {
+          "responseFormat": "json_object",
+          "temperature": 0.1
+        }
+      },
+      "id": "0f2f0624-4c56-4364-9f5c-c590678c5990",
+      "name": "OpenAI Impact Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1620,
+        680
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "function safeParse(value) {\n  if (value && typeof value === 'object') return value;\n\n  const raw = String(value || '')\n    .trim()\n    .replace(/^```json\\s*/i, '')\n    .replace(/^```/, '')\n    .replace(/```$/, '')\n    .trim();\n\n  return JSON.parse(raw);\n}\n\nconst parsed = safeParse($json.output);\nparsed.impacted_assets = Array.isArray(parsed.impacted_assets) ? parsed.impacted_assets : [];\nparsed.actionable_flag = parsed.actionable_flag === true || String(parsed.actionable_flag).toLowerCase() === 'true';\nreturn { json: parsed };"
+      },
+      "id": "3f9970db-5492-47cd-92d5-409b4dc4f76e",
+      "name": "Parse Final JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1480,
+        32
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "run_date": "={{ $json.run_date }}",
+            "title": "={{ $json.title }}",
+            "source": "={{ $json.source }}",
+            "time": "={{ $json.time }}",
+            "link": "={{ $json.link }}",
+            "snippet": "={{ $json.snippet }}",
+            "category": "={{ $json.category }}",
+            "subcategory": "={{ $json.subcategory }}",
+            "classification_reason": "={{ $json.classification_reason }}",
+            "relevance_score": "={{ $json.relevance_score }}",
+            "relevance_reason": "={{ $json.relevance_reason }}",
+            "sentiment": "={{ $json.sentiment }}",
+            "impact_score": "={{ $json.impact_score }}",
+            "impacted_assets": "={{ Array.isArray($json.impacted_assets) ? $json.impacted_assets.join(', ') : $json.impacted_assets }}",
+            "summary": "={{ $json.summary }}",
+            "actionable_flag": "={{ $json.actionable_flag }}",
+            "action": "={{ $json.action }}",
+            "confidence": "={{ $json.confidence }}",
+            "notes": "={{ $json.notes }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            { "id": "run_date", "displayName": "run_date", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "title", "displayName": "title", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "source", "displayName": "source", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "time", "displayName": "time", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "link", "displayName": "link", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "snippet", "displayName": "snippet", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "category", "displayName": "category", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "subcategory", "displayName": "subcategory", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "classification_reason", "displayName": "classification_reason", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "relevance_score", "displayName": "relevance_score", "required": false, "defaultMatch": false, "display": true, "type": "number", "canBeUsedToMatch": true },
+            { "id": "relevance_reason", "displayName": "relevance_reason", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "sentiment", "displayName": "sentiment", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "impact_score", "displayName": "impact_score", "required": false, "defaultMatch": false, "display": true, "type": "number", "canBeUsedToMatch": true },
+            { "id": "impacted_assets", "displayName": "impacted_assets", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "summary", "displayName": "summary", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "actionable_flag", "displayName": "actionable_flag", "required": false, "defaultMatch": false, "display": true, "type": "boolean", "canBeUsedToMatch": true },
+            { "id": "action", "displayName": "action", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true },
+            { "id": "confidence", "displayName": "confidence", "required": false, "defaultMatch": false, "display": true, "type": "number", "canBeUsedToMatch": true },
+            { "id": "notes", "displayName": "notes", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "81295f7d-1111-460c-8d84-186586dbeead",
+      "name": "Append Row in Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1720,
+        32
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Fetch Google News Chile", "type": "main", "index": 0 }]]
+    },
+    "Schedule Daily Trigger": {
+      "main": [[{ "node": "Fetch Google News Chile", "type": "main", "index": 0 }]]
+    },
+    "Fetch Google News Chile": {
+      "main": [[{ "node": "Extract Articles", "type": "main", "index": 0 }]]
+    },
+    "Extract Articles": {
+      "main": [[{ "node": "Normalize Articles", "type": "main", "index": 0 }]]
+    },
+    "Normalize Articles": {
+      "main": [[{ "node": "Agente Orquestador", "type": "main", "index": 0 }]]
+    },
+    "OpenAI Orchestrator Model": {
+      "ai_languageModel": [[{ "node": "Agente Orquestador", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Especialista Clasificacion": {
+      "ai_tool": [[{ "node": "Agente Orquestador", "type": "ai_tool", "index": 0 }]]
+    },
+    "OpenAI Classification Model": {
+      "ai_languageModel": [[{ "node": "Especialista Clasificacion", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Especialista Relevancia Chile": {
+      "ai_tool": [[{ "node": "Agente Orquestador", "type": "ai_tool", "index": 0 }]]
+    },
+    "OpenAI Relevance Model": {
+      "ai_languageModel": [[{ "node": "Especialista Relevancia Chile", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Especialista Impacto Mercado": {
+      "ai_tool": [[{ "node": "Agente Orquestador", "type": "ai_tool", "index": 0 }]]
+    },
+    "OpenAI Impact Model": {
+      "ai_languageModel": [[{ "node": "Especialista Impacto Mercado", "type": "ai_languageModel", "index": 0 }]]
+    },
+    "Agente Orquestador": {
+      "main": [[{ "node": "Parse Final JSON", "type": "main", "index": 0 }]]
+    },
+    "Parse Final JSON": {
+      "main": [[{ "node": "Append Row in Sheet", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "52b42d84-0a7f-4e60-a4ea-8ba8c68aa243",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "id": "NoticiasChileOrquestadorV2",
+  "tags": []
+}

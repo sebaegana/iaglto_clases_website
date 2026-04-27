@@ -1,0 +1,6 @@
+# Ignore local Python environments and bulky generated assets during dependency discovery
+materiales/rag_app/env/
+materiales/**/env/
+materiales/**/.venv/
+materiales/**/venv/
+materiales/**/__pycache__/

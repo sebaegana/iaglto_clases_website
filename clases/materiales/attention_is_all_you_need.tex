@@ -1,0 +1,719 @@
+\documentclass[aspectratio=169, 10pt]{beamer}
+
+% ============================================================
+%  TEMA Y COLORES
+% ============================================================
+\usetheme{CambridgeUS}
+\usecolortheme{seahorse}
+
+\definecolor{fenblue}{RGB}{0,56,101}
+\definecolor{fenred}{RGB}{180,30,45}
+\definecolor{fengray}{RGB}{90,90,90}
+\definecolor{fenlight}{RGB}{235,241,248}
+
+\setbeamercolor{frametitle}{bg=fenblue, fg=white}
+\setbeamercolor{title}{fg=fenblue}
+\setbeamercolor{structure}{fg=fenblue}
+\setbeamercolor{block title}{bg=fenblue, fg=white}
+\setbeamercolor{block body}{bg=fenlight}
+\setbeamercolor{alerted text}{fg=fenred}
+\setbeamercolor{itemize item}{fg=fenblue}
+\setbeamercolor{itemize subitem}{fg=fengray}
+\setbeamercolor{footline}{bg=fenblue, fg=white}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,leftskip=.3cm]{footline}%
+      \usebeamerfont{author in head/foot}\insertshortauthor \quad | \quad \insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,rightskip=.3cm plus1fil]{footline}%
+      \usebeamerfont{date in head/foot}\hfill\insertshortdate\quad|\quad\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% ============================================================
+%  PAQUETES
+% ============================================================
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, backgrounds}
+
+% ============================================================
+%  METADATOS
+% ============================================================
+\title[Attention Is All You Need]{\textbf{Attention Is All You Need}}
+\subtitle{Vaswani et al. (2017) --- El paper que cambió el NLP}
+\author[Sebastián Egaña]{Sebastián Egaña Santibáñez}
+\institute[FEN Unegocios]{Módulo 3 · IA Generativa y LLMs \\ FEN Unegocios, Universidad de Chile}
+\date[2026]{Abril 2026}
+
+% ============================================================
+%  MACROS UTILITARIOS
+% ============================================================
+\newcommand{\highlight}[1]{\textcolor{fenred}{\textbf{#1}}}
+\newcommand{\concept}[1]{\textcolor{fenblue}{\textbf{#1}}}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+% ----------------------------------------------------------
+%  PORTADA
+% ----------------------------------------------------------
+\begin{frame}[plain]
+  \maketitle
+\end{frame}
+
+% ----------------------------------------------------------
+%  AGENDA
+% ----------------------------------------------------------
+\begin{frame}{Agenda}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ===========================================================
+\section{El problema que existía}
+% ===========================================================
+
+\begin{frame}{Antes de 2017: modelos que leían de izquierda a derecha}
+
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \textbf{Modelo predominante: RNN / LSTM}
+      \vspace{0.3em}
+      \begin{itemize}
+        \item Procesan texto \concept{token a token}, en secuencia
+        \item Para entender la palabra 10, deben ``recordar'' las 9 anteriores
+        \item La información tiene que \highlight{sobrevivir} muchos pasos intermedios
+      \end{itemize}
+      \vspace{0.5em}
+      \begin{alertblock}{El límite práctico}
+        En frases largas, el modelo \textit{olvidaba} detalles del principio antes de llegar al final.
+      \end{alertblock}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \begin{tikzpicture}[
+        node distance=0.6cm,
+        token/.style={draw=fenblue, rounded corners, fill=fenlight,
+                      minimum width=1.2cm, minimum height=0.6cm, font=\small},
+        arr/.style={-{Latex}, thick, fenblue}
+      ]
+        \node[token] (t1) {el};
+        \node[token, below=of t1] (t2) {modelo};
+        \node[token, below=of t2] (t3) {ley\'o};
+        \node[token, below=of t3] (t4) {el};
+        \node[token, below=of t4] (t5) {informe};
+        \draw[arr] (t1)--(t2);
+        \draw[arr] (t2)--(t3);
+        \draw[arr] (t3)--(t4);
+        \draw[arr] (t4)--(t5);
+        \node[right=0.3cm of t1, font=\tiny, fengray] {estado};
+        \node[right=0.3cm of t2, font=\tiny, fengray] {estado};
+        \node[right=0.3cm of t3, font=\tiny, fengray] {estado};
+        \node[right=0.3cm of t4, font=\tiny, fengray] {estado};
+        \node[right=0.3cm of t5, font=\tiny, fengray] {estado};
+      \end{tikzpicture}
+      \vspace{0.2em}
+      {\small \textit{Cada flecha pasa información al siguiente paso}}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{El cuello de botella: dependencias largas}
+
+  \begin{block}{Ejemplo del curso}
+    \textit{``El analista revisó el informe porque necesitaba verificar si los \textbf{beneficios} estaban correctamente \textbf{calculados}.''}
+  \end{block}
+
+  \vspace{0.5em}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Problema con RNN:}
+      \begin{itemize}
+        \item Para conectar \textit{beneficios} con \textit{calculados}, la información debe pasar por todos los tokens intermedios
+        \item Cuantos más tokens intermedios $\rightarrow$ más probabilidad de ``diluirse''
+        \item No puede paralelizarse $\rightarrow$ entrenamiento lento
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{¿Qué querríamos?}
+      \begin{itemize}
+        \item Que cualquier palabra pudiera ``hablarle directamente'' a cualquier otra
+        \item Sin importar la distancia
+        \item \concept{Y en paralelo}, para escalar
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.6em}
+  \begin{center}
+    \large \textbf{Esa es exactamente la propuesta del paper.}
+  \end{center}
+
+\end{frame}
+
+% ===========================================================
+\section{La propuesta: solo atención}
+% ===========================================================
+
+\begin{frame}{``Attention is all you need'' --- la apuesta central}
+
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \begin{block}{La tesis del paper (Vaswani et al., 2017)}
+        Es posible construir un modelo de lenguaje de alta calidad \highlight{sin recurrencia ni convoluciones}, usando únicamente mecanismos de atención.
+      \end{block}
+
+      \vspace{0.5em}
+      \textbf{Lo que propone el Transformer:}
+      \begin{enumerate}
+        \item Cada token mira a \textit{todos} los demás tokens a la vez
+        \item Les asigna un peso según cuán relevantes son
+        \item Construye su representación a partir de ese peso
+        \item \concept{Todo en paralelo} --- no en secuencia
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \begin{tikzpicture}[
+        token/.style={draw=fenblue, rounded corners, fill=fenlight,
+                      minimum width=1cm, minimum height=0.5cm, font=\scriptsize},
+        arr/.style={-{Latex}, fenred, thick}
+      ]
+        \node[token] (A) at (0,2.5) {el};
+        \node[token] (B) at (1.8,2.5) {modelo};
+        \node[token] (C) at (0,0.8) {ley\'o};
+        \node[token] (D) at (1.8,0.8) {informe};
+
+        \draw[arr] (A) to[bend left=15] (B);
+        \draw[arr] (A) to[bend right=15] (C);
+        \draw[arr] (A) to[bend left=10] (D);
+        \draw[arr] (B) to[bend left=15] (C);
+        \draw[arr] (B) to[bend right=10] (D);
+        \draw[arr] (C) to[bend left=15] (D);
+
+        \node[below=0.3cm of C, font=\tiny, align=center, fengray] {Cada token\\se conecta con todos};
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ===========================================================
+\section{El mecanismo de atención}
+% ===========================================================
+
+\begin{frame}{La intuición: ¿qué es ``prestar atención''?}
+
+  \begin{block}{Definición operativa}
+    La atención es el mecanismo que permite al modelo \concept{ponderar qué partes del contexto son más relevantes} en cada momento.
+  \end{block}
+
+  \vspace{0.5em}
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      Cuando el modelo genera o representa una palabra:
+      \begin{itemize}
+        \item Mira \textit{todos} los tokens del contexto
+        \item Estima cuáles son más relevantes
+        \item Les da \highlight{más peso} a algunos
+        \item Y \highlight{menos peso} a otros
+      \end{itemize}
+      \vspace{0.4em}
+      \textbf{No recuerda todo igual: prioriza dinámicamente.}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \begin{exampleblock}{Ejemplo: ``banco''}
+        \textit{``Fui al \textbf{banco} a depositar el cheque.''}\\[0.3em]
+        Tokens de alto peso: \texttt{depositar}, \texttt{cheque}\\[0.2em]
+        Tokens de bajo peso: \texttt{Fui}, \texttt{al}, \texttt{a}\\[0.3em]
+        $\Rightarrow$ El modelo infiere ``banco'' = institución financiera
+      \end{exampleblock}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{Queries, Keys y Values --- sin fórmulas}
+
+  \begin{columns}[T]
+    \begin{column}{0.53\textwidth}
+      Cada token genera \textbf{tres vectores}:
+      \vspace{0.4em}
+      \begin{description}
+        \item[\concept{Query (Q)}] \textit{¿Qué estoy buscando?}\\
+          La pregunta que hace el token actual
+        \item[\concept{Key (K)}] \textit{¿Qué tipo de información tengo?}\\
+          Lo que cada token ``ofrece''
+        \item[\concept{Value (V)}] \textit{¿Cuál es mi contenido?}\\
+          La información que entregará si es relevante
+      \end{description}
+      \vspace{0.4em}
+      El modelo compara Q con cada K $\rightarrow$ obtiene un puntaje $\rightarrow$ pondera los V.
+    \end{column}
+    \begin{column}{0.44\textwidth}
+      \begin{exampleblock}{Analogía: pregunta sobre pensiones}
+        \textbf{Pregunta (Query):}\\
+        ``¿Qué documentos necesito para pensionarme?''\\[0.3em]
+        \textbf{Fragmentos relevantes (Keys con alto match):}\\
+        {\small certificados, edad legal, formulario, solicitud}\\[0.3em]
+        \textbf{Contenido que se ponderará más (Values):}\\
+        {\small requisitos, plazos, documentación}
+      \end{exampleblock}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{Scaled Dot-Product Attention --- la mecánica}
+
+  \begin{columns}[T]
+    \begin{column}{0.50\textwidth}
+      \textbf{En palabras simples:}
+      \begin{enumerate}
+        \item Para el token actual, toma su \concept{Query}
+        \item Compárala contra las \concept{Keys} de todos los demás tokens (producto punto)
+        \item Normaliza los puntajes (softmax $\Rightarrow$ suman 1)
+        \item Multiplica cada puntaje por el \concept{Value} correspondiente
+        \item Suma ponderada $=$ nueva representación del token
+      \end{enumerate}
+
+      \vspace{0.3em}
+      \begin{alertblock}{Por qué ``scaled''}
+        El producto punto crece con la dimensión del vector. Se divide por $\sqrt{d_k}$ para estabilizar el gradiente durante el entrenamiento.
+      \end{alertblock}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{center}
+      \begin{tikzpicture}[
+        box/.style={draw=fenblue, fill=fenlight, rounded corners,
+                    minimum width=2.2cm, minimum height=0.55cm,
+                    font=\scriptsize, align=center},
+        arr/.style={-{Latex}, thick, fenblue}
+      ]
+        \node[box] (qkv) {Matrices Q, K, V};
+        \node[box, below=0.5cm of qkv] (dot) {Producto punto QK$^T$};
+        \node[box, below=0.5cm of dot] (scale) {Escalar ($\div\sqrt{d_k}$)};
+        \node[box, below=0.5cm of scale] (soft) {Softmax};
+        \node[box, below=0.5cm of soft] (val) {Ponderar por V};
+        \node[box, below=0.5cm of val, fill=fenblue!20] (out) {\textbf{Salida de atenci\'on}};
+
+        \draw[arr] (qkv)--(dot);
+        \draw[arr] (dot)--(scale);
+        \draw[arr] (scale)--(soft);
+        \draw[arr] (soft)--(val);
+        \draw[arr] (val)--(out);
+      \end{tikzpicture}
+      \end{center}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{Multi-Head Attention --- mirar con varios lentes}
+
+  \begin{columns}[T]
+    \begin{column}{0.54\textwidth}
+      \textbf{¿Por qué múltiples cabezas?}
+      \begin{itemize}
+        \item Una sola atención captura \textit{un tipo} de relación a la vez
+        \item Con múltiples cabezas en paralelo, el modelo puede capturar \concept{distintos tipos de dependencias simultáneamente}:
+          \begin{itemize}
+            \item {\small sintácticas (sujeto-verbo)}
+            \item {\small semánticas (causa-efecto)}
+            \item {\small correferenciales (pronombre-referente)}
+          \end{itemize}
+      \end{itemize}
+      \vspace{0.3em}
+      Los resultados de cada cabeza se concatenan y se proyectan en una representación final.
+    \end{column}
+    \begin{column}{0.43\textwidth}
+      \begin{center}
+      \begin{tikzpicture}[
+        head/.style={draw=fenblue, fill=fenlight, rounded corners,
+                     minimum width=1.5cm, minimum height=0.5cm,
+                     font=\scriptsize},
+        arr/.style={-{Latex}, thick, fenblue}
+      ]
+        \node[head] (in) {Entrada (Q, K, V)};
+        \node[head, below left=0.6cm and 0.5cm of in]  (h1) {Head 1};
+        \node[head, below=0.8cm of in]                  (h2) {Head 2};
+        \node[head, below right=0.6cm and 0.5cm of in] (h3) {Head h};
+        \node[head, below=1.6cm of in, fill=fenblue!20]  (cat) {Concat + Proyecci\'on};
+        \node[head, below=0.5cm of cat]                 (out) {\textbf{Salida MHA}};
+
+        \draw[arr] (in)--(h1); \draw[arr] (in)--(h2); \draw[arr] (in)--(h3);
+        \draw[arr] (h1)--(cat); \draw[arr] (h2)--(cat); \draw[arr] (h3)--(cat);
+        \draw[arr] (cat)--(out);
+
+        \node[font=\scriptsize, fengray] at (2.2, -0.8) {$\cdots$};
+      \end{tikzpicture}
+      \end{center}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ===========================================================
+\section{La arquitectura Transformer}
+% ===========================================================
+
+\begin{frame}{Arquitectura Encoder--Decoder}
+
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Encoder} (comprende la entrada):
+      \begin{enumerate}
+        \item Input Embeddings + Positional Encoding
+        \item Bloque $\times N$:
+          \begin{itemize}
+            \item \concept{Multi-Head Self-Attention}
+            \item Add \& Norm
+            \item Feed-Forward Network
+            \item Add \& Norm
+          \end{itemize}
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{Decoder} (genera la salida):
+      \begin{enumerate}
+        \item Output Embeddings + Positional Encoding
+        \item Bloque $\times N$:
+          \begin{itemize}
+            \item \concept{Masked} Multi-Head Self-Attention
+            \item Add \& Norm
+            \item \concept{Cross-Attention} (mira al encoder)
+            \item Add \& Norm
+            \item Feed-Forward Network
+            \item Add \& Norm
+          \end{itemize}
+        \item Linear + Softmax $\rightarrow$ token de salida
+      \end{enumerate}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.5em}
+  \begin{alertblock}{Positional Encoding}
+    Como la atención no es secuencial, hay que \textit{inyectar} la posición de cada token. Se suman señales sinusoidales a los embeddings.
+  \end{alertblock}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{¿Por qué Masked Self-Attention en el Decoder?}
+
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \textbf{Problema:} al \textit{generar} texto, el modelo no puede ver palabras que aún no ha producido.
+
+      \vspace{0.4em}
+      \textbf{Solución:} durante el entrenamiento se aplica una \concept{máscara} que bloquea el acceso a posiciones futuras.
+
+      \begin{exampleblock}{Intuición}
+        Si el modelo ya generó \textit{``El informe fue''}, al predecir la siguiente palabra solo puede mirar esos tres tokens --- no los que vendrán después.
+      \end{exampleblock}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \begin{center}
+      \begin{tikzpicture}[scale=0.8]
+        \foreach \i/\w in {1/El, 2/informe, 3/fue, 4/?}{
+          \node[draw=fenblue, fill=fenlight, rounded corners,
+                minimum width=0.9cm, minimum height=0.5cm,
+                font=\scriptsize] (t\i) at (\i*1.1, 0) {\w};
+        }
+        % allowed
+        \draw[fenblue, thick, ->] (t1) to[bend left=30] (t2);
+        \draw[fenblue, thick, ->] (t1) to[bend left=40] (t3);
+        \draw[fenblue, thick, ->] (t2) to[bend left=30] (t3);
+        \draw[fenblue, thick, ->] (t1) to[bend left=50] (t4);
+        \draw[fenblue, thick, ->] (t2) to[bend left=40] (t4);
+        \draw[fenblue, thick, ->] (t3) to[bend left=30] (t4);
+        % masked (show as X)
+        \draw[fenred, very thick, ->] (t4) to[bend right=40] node[midway, above, font=\tiny, fenred] {$\times$} (t3);
+      \end{tikzpicture}
+      \end{center}
+      {\small \textit{Solo mira hacia atrás}}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ===========================================================
+\section{Por qué fue tan influyente}
+% ===========================================================
+
+\begin{frame}{El impacto: RNN vs.\ Transformer}
+
+  \begin{center}
+  \begin{tabular}{lcc}
+    \toprule
+    \textbf{Criterio} & \textbf{RNN / LSTM} & \textbf{Transformer} \\
+    \midrule
+    Procesamiento & Secuencial & \concept{Paralelo} \\
+    Dependencias largas & Se diluyen & \concept{Acceso directo} \\
+    Escalabilidad & Limitada & \concept{Alta} \\
+    Velocidad de entrenamiento & Lenta & \concept{Mucho más rápida} \\
+    Captura de contexto & Local & \concept{Global} \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+
+  \vspace{0.5em}
+  \begin{block}{Por qué la paralelización importa tanto}
+    Los modelos modernos tienen miles de millones de parámetros. Sin paralelización no sería posible entrenarlos en tiempo razonable. El Transformer es lo que hace viable el escalado a GPT-4, Claude, Gemini, etc.
+  \end{block}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{Resultados del paper --- BLEU en traducción}
+
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      \textbf{Tarea: traducción EN$\to$DE e EN$\to$FR (WMT 2014)}
+
+      \vspace{0.4em}
+      \begin{tabular}{lc}
+        \toprule
+        \textbf{Modelo} & \textbf{BLEU EN$\to$DE} \\
+        \midrule
+        Mejor RNN ensemble & 26.4 \\
+        ConvS2S & 26.4 \\
+        \concept{Transformer (base)} & \concept{27.3} \\
+        \highlight{Transformer (big)} & \highlight{28.4} \\
+        \bottomrule
+      \end{tabular}
+
+      \vspace{0.4em}
+      {\small BLEU = métrica estándar de calidad de traducción (0--100)}
+    \end{column}
+    \begin{column}{0.46\textwidth}
+      \begin{alertblock}{El dato clave}
+        Superó al estado del arte con \textbf{menos costo computacional} de entrenamiento que los modelos previos.\\[0.3em]
+        No solo mejor calidad: también más eficiente.
+      \end{alertblock}
+      \vspace{0.3em}
+      El paper también probó análisis de constituyentes del inglés, mostrando que la arquitectura generaliza más allá de la traducción.
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{De 2017 a hoy: la línea directa}
+
+  \begin{center}
+  \begin{tikzpicture}[
+    ev/.style={draw=fenblue, rounded corners, fill=fenlight,
+               minimum width=2.8cm, minimum height=0.7cm,
+               font=\small, align=center},
+    arr/.style={-{Latex}, thick, fenblue}
+  ]
+    \node[ev] (tr)   at (0,0)    {Transformer\\{\tiny Vaswani et al., 2017}};
+    \node[ev] (bert) at (3.5,0)  {BERT\\{\tiny Google, 2018}};
+    \node[ev] (gpt2) at (7,0)    {GPT-2/3\\{\tiny OpenAI, 2019-20}};
+    \node[ev] (ch)   at (3.5,-1.5) {ChatGPT\\{\tiny OpenAI, 2022}};
+    \node[ev] (cl)   at (0,-1.5)   {Claude / Gemini\\{\tiny Anthropic/Google, 2023+}};
+    \node[ev] (ll)   at (7,-1.5)   {Llama / Mistral\\{\tiny Meta/Mistral, 2023+}};
+
+    \draw[arr] (tr)--(bert);
+    \draw[arr] (bert)--(gpt2);
+    \draw[arr] (gpt2)--(ch);
+    \draw[arr] (tr) to[bend right=20] (cl);
+    \draw[arr] (gpt2) to[bend left=20] (ll);
+  \end{tikzpicture}
+  \end{center}
+
+  \vspace{0.3em}
+  \begin{center}
+    \large \textbf{Todos son Transformers. La arquitectura de 2017 sigue vigente.}
+  \end{center}
+
+\end{frame}
+
+% ===========================================================
+\section{Implicancias prácticas}
+% ===========================================================
+
+\begin{frame}{Atención y calidad del prompt}
+
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \textbf{La atención no es una caja negra irrelevante para nosotros.}
+      \vspace{0.3em}
+      \begin{itemize}
+        \item La forma en que escribimos un prompt \concept{afecta qué partes del contexto destacan más}
+        \item Si el contexto está mal armado, el modelo puede enfocarse en lo menos importante
+        \item Un buen prompt también \textit{guía} la atención del modelo
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \begin{block}{Por eso ayuda\ldots}
+        \begin{itemize}
+          \item Separar instrucciones de contexto
+          \item Usar formato claro (listas, secciones)
+          \item Destacar restricciones críticas
+          \item Ordenar bien la información
+          \item No enterrar restricciones importantes en texto largo
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{Caso aplicado: instrucción crítica en el agente AFP}
+
+  \begin{block}{Escenario}
+    Una AFP implementa un agente que responde preguntas de afiliados. El contexto tiene 5.000 tokens de normativa mezclada.
+  \end{block}
+
+  \vspace{0.4em}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      {\color{fenred}\textbf{Prompt mal estructurado:}}
+      \vspace{0.2em}
+
+      \begin{quote}\small
+        \textit{[\ldots 3.000 tokens de normativa\ldots]}\\
+        Importante: si no tienes certeza, di ``no sé''.\\
+        \textit{[\ldots 2.000 tokens más\ldots]}
+      \end{quote}
+
+      \vspace{0.1em}
+      {\color{fenred}\textbf{Riesgo:}} la instrucción crítica queda diluida. El modelo puede ignorarla.
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      {\color{fenblue}\textbf{Prompt bien estructurado:}}
+      \vspace{0.2em}
+
+      \begin{quote}\small
+        \textbf{Sistema:} ``Si no tienes certeza, responde: 'No tengo información suficiente'. Usa solo la normativa adjunta.''\\
+        \textit{[normativa bien segmentada]}
+      \end{quote}
+
+      \vspace{0.1em}
+      {\color{fenblue}\textbf{Resultado:}} la instrucción recibe alta atención; el modelo la respeta.
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{Lo que la atención NO garantiza}
+
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      A pesar de su potencia, la atención \textbf{no resuelve todo}:
+      \vspace{0.4em}
+      \begin{itemize}
+        \item \highlight{No garantiza verdad factual} --- puede ponderar bien tokens incorrectos
+        \item \highlight{No garantiza razonamiento correcto} --- pesar bien $\neq$ razonar bien
+        \item \highlight{No garantiza priorización adecuada} --- depende de cómo está construido el contexto
+        \item \highlight{No elimina las alucinaciones}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{alertblock}{Regla simple}
+        Si el contexto está mal armado, el modelo puede enfocarse en lo menos importante.\\[0.4em]
+        \textbf{La calidad del input determina la calidad de la atención.}
+      \end{alertblock}
+      \vspace{0.3em}
+      Por eso la gobernanza y el diseño cuidadoso del prompt son parte de cualquier solución seria.
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+% ===========================================================
+\section{Síntesis}
+% ===========================================================
+
+\begin{frame}{Síntesis: ¿qué cambió Attention Is All You Need?}
+
+  \begin{center}
+  \begin{tabular}{>{\bfseries}p{3.5cm} p{8cm}}
+    \toprule
+    Dimensión & Aporte \\
+    \midrule
+    Arquitectura & Reemplazó RNN/LSTM por atención pura \\
+    Paralelización & Permitió entrenar en paralelo $\rightarrow$ escalar a miles de millones de parámetros \\
+    Contexto global & Cualquier token puede relacionarse con cualquier otro directamente \\
+    Fundamento & Es la base de GPT, BERT, Claude, Gemini, Llama y prácticamente todos los LLMs vigentes \\
+    Práctica & La calidad del prompt influye en qué partes del contexto reciben más atención \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+
+  \vspace{0.5em}
+  \begin{center}
+    \large \textit{``Gran parte del salto de los LLMs modernos pasa por este mecanismo.''}
+  \end{center}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}{Actividad de reflexión}
+
+  \begin{block}{Para discutir en grupos (15--20 min)}
+    Con base en el abstract e introducción del paper (Vaswani et al., 2017):
+    \begin{enumerate}
+      \item ¿Qué limitación de los modelos anteriores identifica el paper?
+      \item ¿Cuál es la propuesta central del Transformer?
+      \item ¿Por qué la atención aparece como una innovación tan importante?
+      \item ¿Qué conexión ven entre este paper y los LLMs que usamos hoy?
+    \end{enumerate}
+  \end{block}
+
+  \vspace{0.4em}
+  \textbf{Producto esperado --- mini-síntesis de 3 partes:}
+  \begin{description}
+    \item[Problema anterior] ¿qué estaba fallando o limitando a los modelos previos?
+    \item[Aporte del paper] ¿qué cambia con el Transformer?
+    \item[Impacto actual] ¿por qué esto sigue importando hoy?
+  \end{description}
+
+\end{frame}
+
+% ----------------------------------------------------------
+
+\begin{frame}[plain]
+  \begin{center}
+    \vspace{2em}
+    {\Large \textbf{Gracias}}\\[1em]
+    {\normalsize Sebastián Egaña Santibáñez}\\[0.3em]
+    {\small Módulo 3 · IA Generativa y LLMs}\\
+    {\small FEN Unegocios, Universidad de Chile}\\[1.5em]
+    \textcolor{fengray}{\small Vaswani, A. et al. (2017). \textit{Attention Is All You Need}. NeurIPS.}\\
+    \textcolor{fengray}{\small \texttt{https://arxiv.org/abs/1706.03762}}
+  \end{center}
+\end{frame}
+
+% ============================================================
+\end{document}
+% ============================================================

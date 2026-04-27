@@ -1,0 +1,364 @@
+{
+  "name": "Noticias de Chile",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "9ce6590f-db9d-4981-9445-6426690c9d3b",
+      "name": "Schedule Daily Tech News Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [
+        368,
+        64
+      ],
+      "typeVersion": 1.2
+    },
+    {
+      "parameters": {
+        "url": "https://news.google.com/search?q=noticias%20financieras&hl=es-CL&gl=CL&ceid=CL%3Aes\n",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "f97e0ede-5341-4d52-a360-b49d6741e828",
+      "name": "Fetch Google Tech News",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        560,
+        64
+      ],
+      "notesInFlow": true,
+      "typeVersion": 4.2,
+      "notes": "Fetches tech news from Google News India"
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "Article Titles",
+              "cssSelector": "article h3 a, article h4 a, .JtKRv",
+              "returnArray": true
+            },
+            {
+              "key": "Article Links",
+              "cssSelector": "article h3 a, article h4 a, .JtKRv",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            },
+            {
+              "key": "Article Sources",
+              "cssSelector": "article .wEwyrc, .vr1PYe, .CEMjEf",
+              "returnArray": true
+            },
+            {
+              "key": "Publication Times",
+              "cssSelector": "article time, .WW6dff, .hvbAAd",
+              "returnArray": true
+            },
+            {
+              "key": "Article Snippets",
+              "cssSelector": "article .GI74Re, .St8ea, .y3G2Ed",
+              "returnArray": true
+            },
+            {
+              "key": "All Articles",
+              "cssSelector": "article",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {
+          "cleanUpText": true
+        }
+      },
+      "id": "501e3abb-e82c-4fb1-84aa-458ca3a6d09e",
+      "name": "Extract Tech News Articles",
+      "type": "n8n-nodes-base.html",
+      "position": [
+        768,
+        80
+      ],
+      "notesInFlow": true,
+      "typeVersion": 1.2,
+      "notes": "Updated selectors for Google News structure - extracts titles, sources, times and full content"
+    },
+    {
+      "parameters": {
+        "jsCode": "function parseRelativeTime(str) {\n  const now = new Date();\n\n  if (!str) return null;\n\n  str = str.toLowerCase();\n\n  if (str.includes(\"hace\")) {\n    const parts = str.split(\" \");\n    const amount = parseInt(parts[1]);\n    const unit = parts[2]; // horas, días, minutos\n\n    if (unit.startsWith(\"hora\")) {\n      now.setHours(now.getHours() - amount);\n    } else if (unit.startsWith(\"día\")) {\n      now.setDate(now.getDate() - amount);\n    } else if (unit.startsWith(\"minuto\")) {\n      now.setMinutes(now.getMinutes() - amount);\n    }\n  }\n\n  return now.toISOString();\n}\n\n// Extraemos arrays\nconst titles = items[0].json[\"Article Titles\"];\nconst links = items[0].json[\"Article Links\"];\nconst sources = items[0].json[\"Article Sources\"];\nconst times = items[0].json[\"Publication Times\"];\n\nreturn titles.map((title, index) => ({\n  json: {\n    title,\n    link: links[index],\n    source: sources[index],\n    time_raw: times[index],                // el texto original\n    time: parseRelativeTime(times[index])  // fecha ISO formateada\n  }\n}));\n\n\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        976,
+        80
+      ],
+      "id": "d0b68aee-edb9-4953-a2d2-c4920bf1091b",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "inputText": "={{ $json.title }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.sentimentAnalysis",
+      "typeVersion": 1.1,
+      "position": [
+        1264,
+        176
+      ],
+      "id": "48383264-ac9b-4fcd-a300-d76783d66f24",
+      "name": "Sentiment Analysis"
+    },
+    {
+      "parameters": {
+        "numberInputs": 3
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1744,
+        96
+      ],
+      "id": "a6b01fb2-9a4e-45e2-809c-b4a0089bfd54",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1pFi8NJCv3nwfKLQvAXK_PAkeX78YKo4F7nMpUM2JkS4",
+          "mode": "list",
+          "cachedResultName": "n8n_workflow",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1pFi8NJCv3nwfKLQvAXK_PAkeX78YKo4F7nMpUM2JkS4/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Hoja 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1pFi8NJCv3nwfKLQvAXK_PAkeX78YKo4F7nMpUM2JkS4/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "title": "={{ $json.title }}",
+            "sentiment": "={{ $json.sentimentAnalysis.category }}",
+            "source": "={{ $json.source }}",
+            "link": "={{ $json.link }}",
+            "time": "={{ $json.time }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "title",
+              "displayName": "title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "sentiment",
+              "displayName": "sentiment",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "source",
+              "displayName": "source",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "time",
+              "displayName": "time",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "link",
+              "displayName": "link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1952,
+        96
+      ],
+      "id": "3cedcef4-5a9e-47fb-aeb7-e85e7f19fc4a",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "mEEmKQXm1UuuGmsD",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1040,
+        352
+      ],
+      "id": "93b49ece-6494-4620-a9ea-7beee49a2d06",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "JPB17Hi3dcx8m3vu",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Fetch Google Tech News": {
+      "main": [
+        [
+          {
+            "node": "Extract Tech News Articles",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Tech News Articles": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Daily Tech News Trigger": {
+      "main": [
+        [
+          {
+            "node": "Fetch Google Tech News",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Sentiment Analysis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sentiment Analysis": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ],
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Sentiment Analysis",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "89d4b343-deb1-4e65-8cba-c9205eb21e72",
+  "meta": {
+    "templateId": "7386",
+    "templateCredsSetupCompleted": true,
+    "instanceId": "7b0efce112537d9453960c5d943453f9b7813b13637569844922554ed4d00022"
+  },
+  "id": "gJIEVzKC5Fd7UjW9",
+  "tags": []
+}
