@@ -2958,7 +2958,7 @@
     "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#caso-1-flujo-base-con-automatización-simple",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
     "section": "Caso 1: flujo base con automatización simple",
-    "text": "Caso 1: flujo base con automatización simple\nJSON de referencia: Noticias de Chile (1).json"
+    "text": "Caso 1: flujo base con automatización simple\nJSON de referencia: Noticias de Chile.json"
   },
   {
     "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#lectura-del-caso-1",
@@ -2972,35 +2972,35 @@
     "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#qué-hace-el-flujo-1",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
     "section": "Qué hace el flujo 1",
-    "text": "Qué hace el flujo 1\nEste flujo:\n\nbusca noticias financieras\nextrae artículos desde Google News\ntransforma resultados\naplica un análisis de sentimiento al título\nguarda resultados en Google Sheets\n\nLectura\nTodavía no es un sistema multiagente. Es un flujo automatizado con una capa simple de IA.\nArchivo a revisar en clase\nC:\\Users\\sebae\\Downloads\\Noticias de Chile (1).json"
+    "text": "Qué hace el flujo 1\nEste flujo:\n\nbusca noticias financieras\nextrae artículos desde Google News\ntransforma resultados\naplica un análisis de sentimiento al título\nguarda resultados en Google Sheets\n\nLectura\nTodavía no es un sistema multiagente. Es un flujo automatizado con una capa simple de IA.\nArchivo a revisar en clase\nNoticias de Chile.json"
   },
   {
     "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#vista-general-del-flujo-1",
     "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#vista-general-del-flujo-1",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
     "section": "Vista general del flujo 1",
-    "text": "Vista general del flujo 1\nLa secuencia es:\n\nSchedule Daily Tech News Trigger\nFetch Google Tech News\nExtract Tech News Articles\nCode in JavaScript\nSentiment Analysis\nMerge\nAppend row in sheet\n\nReferencia\nEste es el flujo importado desde Noticias de Chile (1).json."
+    "text": "Vista general del flujo 1\nLa secuencia es:\n\nDaily News Trigger\nFetch Google News\nExtract News Articles\nCode in JavaScript\nSentiment Analysis\nMerge\nAppend row in sheet\n\nReferencia\nEste es el flujo importado desde Noticias de Chile.json."
   },
   {
-    "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-1-schedule-daily-tech-news-trigger",
-    "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-1-schedule-daily-tech-news-trigger",
+    "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-1-daily-news-trigger",
+    "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-1-daily-news-trigger",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
-    "section": "Nodo 1: Schedule Daily Tech News Trigger",
-    "text": "Nodo 1: Schedule Daily Tech News Trigger\nEste nodo programa la ejecución diaria del flujo.\nFunción\n\nactivar el flujo a las 8:00\nconvertir el proceso en una rutina automática\n\nEnseñanza\nLa automatización empieza por decidir cuándo se ejecuta una tarea."
+    "section": "Nodo 1: Daily News Trigger",
+    "text": "Nodo 1: Daily News Trigger\nEste nodo programa la ejecución diaria del flujo.\nFunción\n\nactivar flujo manual\n\nEnseñanza\nLa automatización empieza por decidir cuándo se ejecuta una tarea."
   },
   {
-    "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-2-fetch-google-tech-news",
-    "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-2-fetch-google-tech-news",
+    "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-2-fetch-google-news",
+    "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-2-fetch-google-news",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
-    "section": "Nodo 2: Fetch Google Tech News",
-    "text": "Nodo 2: Fetch Google Tech News\nAunque el nombre quedó heredado de una plantilla, este nodo consulta Google News con una búsqueda de noticias financieras.\nFunción\n\npedir el HTML de la búsqueda\ndefinir el universo de noticias\nestablecer el punto de entrada del dato"
+    "section": "Nodo 2: Fetch Google News",
+    "text": "Nodo 2: Fetch Google News\nEste nodo consulta Google News con una búsqueda de noticias financieras.\nFunción\n\npedir el HTML de la búsqueda\ndefinir el universo de noticias\nestablecer el punto de entrada del dato"
   },
   {
-    "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-3-extract-tech-news-articles",
-    "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-3-extract-tech-news-articles",
+    "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-3-extract-news-articles",
+    "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-3-extract-news-articles",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
-    "section": "Nodo 3: Extract Tech News Articles",
-    "text": "Nodo 3: Extract Tech News Articles\nEste nodo convierte el HTML en datos más estructurados.\nExtrae\n\ntítulos\nlinks\nfuentes\ntiempos de publicación\nsnippets\n\nIdea clave\nAntes de pedir análisis, conviene estructurar."
+    "section": "Nodo 3: Extract News Articles",
+    "text": "Nodo 3: Extract News Articles\nEste nodo convierte el HTML en datos más estructurados.\nExtrae\n\ntítulos\nlinks\nfuentes\ntiempos de publicación\nsnippets\n\nIdea clave\nAntes de pedir análisis, conviene estructurar."
   },
   {
     "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-4-code-in-javascript",
@@ -3049,7 +3049,7 @@
     "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#caso-2-flujo-con-ia-orquestada",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
     "section": "Caso 2: flujo con IA orquestada",
-    "text": "Caso 2: flujo con IA orquestada\nJSON de referencia: Noticias de Chile Orquestador v2.json"
+    "text": "Caso 2: flujo con IA orquestada\nJSON de referencia: Noticias de Chile Orquestador.json"
   },
   {
     "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#lectura-del-caso-2",
@@ -3063,7 +3063,7 @@
     "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#qué-cambia-en-el-flujo-2",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
     "section": "Qué cambia en el flujo 2",
-    "text": "Qué cambia en el flujo 2\nEl segundo flujo ya no solo clasifica sentimiento.\nAhora busca producir una salida más rica:\n\ncategoría\nsubcategoría\nrelevancia para Chile\nimpacto estimado\nactivos afectados\nresumen ejecutivo\nacción sugerida\n\nArchivo a revisar en clase\nC:\\Users\\sebae\\Downloads\\Noticias de Chile Orquestador v2.json"
+    "text": "Qué cambia en el flujo 2\nEl segundo flujo ya no solo clasifica sentimiento.\nAhora busca producir una salida más rica:\n\ncategoría\nsubcategoría\nrelevancia para Chile\nimpacto estimado\nactivos afectados\nresumen ejecutivo\nacción sugerida\n\nArchivo a revisar en clase\nNoticias de Chile Orquestador.json"
   },
   {
     "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#idea-central-del-flujo-2",
@@ -3077,7 +3077,7 @@
     "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#vista-general-del-flujo-2",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
     "section": "Vista general del flujo 2",
-    "text": "Vista general del flujo 2\nLa secuencia conceptual es:\n\ntrigger\nfetch\nextracción\nnormalización\norquestación\nespecialistas\nparseo\npersistencia\n\nReferencia\nEste es el flujo importado desde Noticias de Chile Orquestador v2.json."
+    "text": "Vista general del flujo 2\nLa secuencia conceptual es:\n\ntrigger\nfetch\nextracción\nnormalización\norquestación\nespecialistas\nparseo\npersistencia\n\nReferencia\nEste es el flujo importado desde Noticias de Chile Orquestador.json."
   },
   {
     "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#nodo-1-trigger-del-flujo-2",
@@ -3210,7 +3210,7 @@
     "href": "clases/m03-clase04-agentes-orquestacion-n8n.html#cuándo-mirar-esta-tercera-variante",
     "title": "Módulo 3: Agentes, orquestación y automatización con n8n",
     "section": "Cuándo mirar esta tercera variante",
-    "text": "Cuándo mirar esta tercera variante\nCuando queremos:\n\nmás control\nmenos dependencia de subagentes\nmás trazabilidad operativa\nuna mezcla entre supervisión e instrumentación\n\nPara esta clase\nLa dejamos como bonus, no como flujo principal.\nJSON asociado\nC:\\Users\\sebae\\Downloads\\Noticias de Chile Supervisor Herramientas.json"
+    "text": "Cuándo mirar esta tercera variante\nCuando queremos:\n\nmás control\nmenos dependencia de subagentes\nmás trazabilidad operativa\nuna mezcla entre supervisión e instrumentación\n\nPara esta clase\nLa dejamos como bonus, no como flujo principal.\nJSON asociado\nNoticias de Chile Supervisor Herramientas.json"
   },
   {
     "objectID": "clases/m03-clase04-agentes-orquestacion-n8n.html#resumen-operativo",

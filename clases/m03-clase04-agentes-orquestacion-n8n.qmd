@@ -282,7 +282,7 @@ Una buena automatización parte con una estructura de salida clara.
 
 ## Caso 1: flujo base con automatización simple
 
-### JSON de referencia: `Noticias de Chile (1).json`
+### JSON de referencia: `Noticias de Chile.json`
 
 ------------------------------------------------------------------------
 
@@ -321,7 +321,7 @@ Todavía no es un sistema multiagente. Es un flujo automatizado con una capa sim
 
 ### Archivo a revisar en clase
 
-`C:\Users\sebae\Downloads\Noticias de Chile (1).json`
+`Noticias de Chile.json`
 
 ------------------------------------------------------------------------
 
@@ -329,9 +329,9 @@ Todavía no es un sistema multiagente. Es un flujo automatizado con una capa sim
 
 La secuencia es:
 
-1. `Schedule Daily Tech News Trigger`
-2. `Fetch Google Tech News`
-3. `Extract Tech News Articles`
+1. `Daily News Trigger`
+2. `Fetch Google News`
+3. `Extract News Articles`
 4. `Code in JavaScript`
 5. `Sentiment Analysis`
 6. `Merge`
@@ -339,18 +339,17 @@ La secuencia es:
 
 ### Referencia
 
-Este es el flujo importado desde `Noticias de Chile (1).json`.
+Este es el flujo importado desde `Noticias de Chile.json`.
 
 ------------------------------------------------------------------------
 
-## Nodo 1: Schedule Daily Tech News Trigger
+## Nodo 1: Daily News Trigger
 
 Este nodo programa la ejecución diaria del flujo.
 
 ### Función
 
--   activar el flujo a las 8:00
--   convertir el proceso en una rutina automática
+-   activar flujo manual
 
 ### Enseñanza
 
@@ -358,9 +357,9 @@ La automatización empieza por decidir cuándo se ejecuta una tarea.
 
 ------------------------------------------------------------------------
 
-## Nodo 2: Fetch Google Tech News
+## Nodo 2: Fetch Google News
 
-Aunque el nombre quedó heredado de una plantilla, este nodo consulta Google News con una búsqueda de noticias financieras.
+Este nodo consulta Google News con una búsqueda de noticias financieras.
 
 ### Función
 
@@ -370,7 +369,7 @@ Aunque el nombre quedó heredado de una plantilla, este nodo consulta Google New
 
 ------------------------------------------------------------------------
 
-## Nodo 3: Extract Tech News Articles
+## Nodo 3: Extract News Articles
 
 Este nodo convierte el HTML en datos más estructurados.
 
@@ -488,7 +487,7 @@ La inteligencia todavía está concentrada en una sola tarea pequeña.
 
 ## Caso 2: flujo con IA orquestada
 
-### JSON de referencia: `Noticias de Chile Orquestador v2.json`
+### JSON de referencia: `Noticias de Chile Orquestador.json`
 
 ------------------------------------------------------------------------
 
@@ -528,7 +527,7 @@ Ahora busca producir una salida más rica:
 
 ### Archivo a revisar en clase
 
-`C:\Users\sebae\Downloads\Noticias de Chile Orquestador v2.json`
+`Noticias de Chile Orquestador.json`
 
 ------------------------------------------------------------------------
 
@@ -561,7 +560,7 @@ La secuencia conceptual es:
 
 ### Referencia
 
-Este es el flujo importado desde `Noticias de Chile Orquestador v2.json`.
+Este es el flujo importado desde `Noticias de Chile Orquestador.json`.
 
 ------------------------------------------------------------------------
 
@@ -873,7 +872,7 @@ La dejamos como bonus, no como flujo principal.
 
 ### JSON asociado
 
-`C:\Users\sebae\Downloads\Noticias de Chile Supervisor Herramientas.json`
+`Noticias de Chile Supervisor Herramientas.json`
 
 ------------------------------------------------------------------------
 
