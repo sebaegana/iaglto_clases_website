@@ -14,6 +14,11 @@ En esta sección se agrupan las sesiones del módulo, el diccionario de apoyo y 
 - [Clase 3: Decision Science y sesgos](m03-clase03-decision-science-sesgos.qmd)
 - [Clase 4: Agentes, orquestación y automatización con n8n](m03-clase04-agentes-orquestacion-n8n.qmd)
 - [Caso aplicado: Agente AFP](m03-caso-aplicado-agente-afp.qmd)
+- [Clase de cierre: contexto, flujos y artefactos](m03-clase-cierre.qmd)
+- [Actividad: mejorar un prompt](m03-actividad-prompt.qmd)
+- [Actividad: la búsqueda web como agente](m03-actividad-busqueda-agentic.qmd)
+- [Bonus: cómo ahorrar tokens](m03-bonus-ahorro-tokens.qmd)
+- [Trabajo final](m03-trabajo-final.qmd)
 - [Diccionario y FAQ del curso](m03-diccionario-faq-terminos.qmd)
 
 ## Materiales complementarios

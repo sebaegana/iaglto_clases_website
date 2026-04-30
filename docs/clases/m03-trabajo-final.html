@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.37">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Clases y materiales – IA Generativa para Organizaciones</title>
+<title>Trabajo Final: Diseño de un flujo con IA – IA Generativa para Organizaciones</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -57,17 +57,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 
@@ -86,8 +86,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">IA Generativa para Organizaciones</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../clases/index.html" aria-current="page"> 
+    <a class="nav-link" href="../clases/index.html"> 
 <span class="menu-text">Clases</span></a>
   </li>  
   <li class="nav-item">
@@ -121,24 +121,27 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">En esta página</h2>
    
-  <ul>
-  <li><a href="#clases-del-curso" id="toc-clases-del-curso" class="nav-link active" data-scroll-target="#clases-del-curso">Clases del curso</a>
   <ul class="collapse">
-  <li><a href="#módulo-3" id="toc-módulo-3" class="nav-link" data-scroll-target="#módulo-3">Módulo 3</a></li>
-  <li><a href="#materiales-complementarios" id="toc-materiales-complementarios" class="nav-link" data-scroll-target="#materiales-complementarios">Materiales complementarios</a></li>
-  <li><a href="#nota-de-uso" id="toc-nota-de-uso" class="nav-link" data-scroll-target="#nota-de-uso">Nota de uso</a></li>
-  </ul></li>
+  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
+  <li><a href="#lo-que-debes-entregar" id="toc-lo-que-debes-entregar" class="nav-link" data-scroll-target="#lo-que-debes-entregar">Lo que debes entregar</a></li>
+  <li><a href="#requisito-de-artefactos-y-salidas-estructuradas" id="toc-requisito-de-artefactos-y-salidas-estructuradas" class="nav-link" data-scroll-target="#requisito-de-artefactos-y-salidas-estructuradas">Requisito de artefactos y salidas estructuradas</a></li>
+  <li><a href="#criterios-de-evaluación" id="toc-criterios-de-evaluación" class="nav-link" data-scroll-target="#criterios-de-evaluación">Criterios de evaluación</a></li>
+  <li><a href="#criterio-de-uso-de-ia" id="toc-criterio-de-uso-de-ia" class="nav-link" data-scroll-target="#criterio-de-uso-de-ia">Criterio de uso de IA</a></li>
+  <li><a href="#ejemplos-de-flujos-válidos" id="toc-ejemplos-de-flujos-válidos" class="nav-link" data-scroll-target="#ejemplos-de-flujos-válidos">Ejemplos de flujos válidos</a></li>
+  <li><a href="#formato-de-entrega" id="toc-formato-de-entrega" class="nav-link" data-scroll-target="#formato-de-entrega">Formato de entrega</a></li>
+  <li><a href="#nota-sobre-herramientas" id="toc-nota-sobre-herramientas" class="nav-link" data-scroll-target="#nota-sobre-herramientas">Nota sobre herramientas</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="m03-trabajo-final.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Clases y materiales</h1>
+<h1 class="title">Trabajo Final: Diseño de un flujo con IA</h1>
+<p class="subtitle lead">Módulo 3 — IA Generativa y LLMs para la Transformación Organizacional</p>
 </div>
 
 
@@ -146,6 +149,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">30 de abril de 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -155,41 +164,206 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="clases-del-curso" class="level1">
-<h1>Clases del curso</h1>
-<p>En esta sección se agrupan las sesiones del módulo, el diccionario de apoyo y algunos materiales prácticos usados durante el curso.</p>
-<section id="módulo-3" class="level2">
-<h2 class="anchored" data-anchor-id="módulo-3">Módulo 3</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Trabajo individual.</strong> Cada estudiante entrega su propio flujo y documento.</p>
+</div>
+</div>
+<section id="objetivo" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
+<p>Diseñar un flujo de automatización con IA que resuelva un problema concreto de tu organización o área de trabajo. Lo importante es que el flujo tenga sentido, esté bien explicado, que el uso de IA esté justificado, y que cada etapa produzca una salida con formato definido.</p>
+<hr>
+</section>
+<section id="lo-que-debes-entregar" class="level2">
+<h2 class="anchored" data-anchor-id="lo-que-debes-entregar">Lo que debes entregar</h2>
+<p>Un documento de <strong>2 a 3 páginas</strong> con las siguientes secciones:</p>
+<section id="descripción-del-problema" class="level3">
+<h3 class="anchored" data-anchor-id="descripción-del-problema">1. Descripción del problema</h3>
 <ul>
-<li><a href="../clases/m03-clase01-arquitectura-llms.html">Clase 1: Arquitectura y funcionamiento de los LLMs</a></li>
-<li><a href="../clases/m03-clase01-atencion.html">Material complementario: Atención en LLMs</a></li>
-<li><a href="../clases/m03-clase02-cicd-mlops-gobernanza.html">Clase 2: CI/CD, MLOps y gobernanza</a></li>
-<li><a href="../clases/m03-clase03-decision-science-sesgos.html">Clase 3: Decision Science y sesgos</a></li>
-<li><a href="../clases/m03-clase04-agentes-orquestacion-n8n.html">Clase 4: Agentes, orquestación y automatización con n8n</a></li>
-<li><a href="../clases/m03-caso-aplicado-agente-afp.html">Caso aplicado: Agente AFP</a></li>
-<li><a href="../clases/m03-clase-cierre.html">Clase de cierre: contexto, flujos y artefactos</a></li>
-<li><a href="../clases/m03-actividad-prompt.html">Actividad: mejorar un prompt</a></li>
-<li><a href="m03-actividad-busqueda-agentic.qmd">Actividad: la búsqueda web como agente</a></li>
-<li><a href="../clases/m03-bonus-ahorro-tokens.html">Bonus: cómo ahorrar tokens</a></li>
-<li><a href="../clases/m03-trabajo-final.html">Trabajo final</a></li>
-<li><a href="../clases/m03-diccionario-faq-terminos.html">Diccionario y FAQ del curso</a></li>
+<li>¿Qué tarea quieres automatizar?</li>
+<li>¿Qué entrada recibe el flujo y qué salida final produce?</li>
+<li>¿Por qué esta tarea justifica un flujo con múltiples pasos?</li>
 </ul>
 </section>
-<section id="materiales-complementarios" class="level2">
-<h2 class="anchored" data-anchor-id="materiales-complementarios">Materiales complementarios</h2>
+<section id="diagrama-del-flujo" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-del-flujo">2. Diagrama del flujo</h3>
+<p>Usa la herramienta que prefieras (draw.io, PowerPoint, Miro, n8n, etc.).</p>
+<p>El diagrama debe mostrar:</p>
 <ul>
-<li><a href="../clases/roadmap-aprendizaje-ia.html">Roadmap de aprendizaje en IA</a></li>
-<li><a href="../clases/tokenizacion_tecnicas.html">Tokenización: técnicas y fundamentos</a></li>
-<li><a href="../clases/notebook_01.pdf">Notebook 01</a></li>
-<li><a href="../clases/actividad_skill_markdown.html">Actividad: skill en Markdown</a></li>
+<li><strong>Disparador</strong> (inicio del flujo)</li>
+<li><strong>Pasos principales</strong> con su nombre</li>
+<li><strong>Condiciones</strong> si las hay (bifurcaciones, validaciones)</li>
+<li><strong>Uso de IA o agentes</strong> cuando corresponda</li>
+<li><strong>Artefactos</strong> producidos en cada etapa (ver requisito más abajo)</li>
 </ul>
 </section>
-<section id="nota-de-uso" class="level2">
-<h2 class="anchored" data-anchor-id="nota-de-uso">Nota de uso</h2>
-<p>Algunos materiales están pensados como apoyo de clase y otros como referencia posterior. Si buscas un punto de partida, conviene comenzar por la Clase 1 y luego usar el diccionario como material transversal.</p>
-
-
+<section id="explicación-de-cada-paso" class="level3">
+<h3 class="anchored" data-anchor-id="explicación-de-cada-paso">3. Explicación de cada paso</h3>
+<p>Para cada paso del flujo, indicar:</p>
+<ul>
+<li>¿Qué hace?</li>
+<li>¿Qué recibe como entrada?</li>
+<li>¿Qué devuelve como salida y en qué formato?</li>
+<li>Si usa IA o agentes: ¿qué tarea puntual cumple y por qué no sirve un paso tradicional?</li>
+</ul>
 </section>
+<section id="justificación-general" class="level3">
+<h3 class="anchored" data-anchor-id="justificación-general">4. Justificación general</h3>
+<ul>
+<li>¿Por qué tu flujo está bien diseñado?</li>
+<li>¿Cómo ayuda a ahorrar tiempo, reducir errores o mejorar calidad?</li>
+<li>¿Qué riesgos podrían ocurrir y cómo los manejarías?</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="requisito-de-artefactos-y-salidas-estructuradas" class="level2">
+<h2 class="anchored" data-anchor-id="requisito-de-artefactos-y-salidas-estructuradas">Requisito de artefactos y salidas estructuradas</h2>
+<p>El flujo debe cumplir las siguientes condiciones:</p>
+<section id="mínimo-dos-artefactos-intermedios" class="level3">
+<h3 class="anchored" data-anchor-id="mínimo-dos-artefactos-intermedios">Mínimo dos artefactos intermedios</h3>
+<p>Un <strong>artefacto</strong> es el output concreto de una etapa, con formato definido, que sirve como entrada de la etapa siguiente.</p>
+<p>Cada artefacto debe tener:</p>
+<ul>
+<li>un nombre o descripción</li>
+<li>un formato explícito (JSON, tabla Markdown, lista estructurada, etc.)</li>
+<li>una descripción de qué información contiene</li>
+</ul>
+<p><strong>Ejemplo:</strong> si el paso 2 clasifica noticias, su artefacto podría ser una lista JSON con campos <code>titulo</code>, <code>categoria</code> y <code>relevancia</code>. Ese JSON es lo que recibe el paso 3.</p>
+</section>
+<section id="al-menos-una-salida-estructurada-final" class="level3">
+<h3 class="anchored" data-anchor-id="al-menos-una-salida-estructurada-final">Al menos una salida estructurada final</h3>
+<p>El flujo debe terminar produciendo un output en formato estructurado y reutilizable:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Formato</th>
+<th>Ejemplos de uso</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>.json</code></td>
+<td>Datos para otro sistema, API, base de datos</td>
+</tr>
+<tr class="even">
+<td><code>.xlsx</code> / <code>.csv</code></td>
+<td>Reporte para revisión humana, dashboard</td>
+</tr>
+<tr class="odd">
+<td><code>.md</code></td>
+<td>Documento de síntesis, informe ejecutivo</td>
+</tr>
+<tr class="even">
+<td>Base de datos</td>
+<td>Registro persistente de resultados</td>
+</tr>
+<tr class="odd">
+<td>Correo / mensaje estructurado</td>
+<td>Notificación con campos definidos</td>
+</tr>
+</tbody>
+</table>
+<p>La salida no puede ser solo “texto libre sin estructura”.</p>
+<hr>
+</section>
+</section>
+<section id="criterios-de-evaluación" class="level2">
+<h2 class="anchored" data-anchor-id="criterios-de-evaluación">Criterios de evaluación</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterio</th>
+<th>Peso</th>
+<th>Qué se evalúa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Claridad del problema</td>
+<td>15%</td>
+<td>Se entiende qué tarea se automatiza y por qué</td>
+</tr>
+<tr class="even">
+<td>Coherencia del flujo</td>
+<td>25%</td>
+<td>El diagrama tiene lógica y los pasos están bien ordenados</td>
+</tr>
+<tr class="odd">
+<td>Artefactos e intermedios</td>
+<td>20%</td>
+<td>Se identifican al menos dos artefactos con formato definido</td>
+</tr>
+<tr class="even">
+<td>Uso adecuado de IA</td>
+<td>20%</td>
+<td>La IA se usa solo donde aporta valor; se justifica por qué no sirve un paso simple</td>
+</tr>
+<tr class="odd">
+<td>Explicación de los pasos</td>
+<td>10%</td>
+<td>Se entiende qué hace cada paso y cómo fluye la información</td>
+</tr>
+<tr class="even">
+<td>Presentación</td>
+<td>10%</td>
+<td>Documento claro, ordenado y legible</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="criterio-de-uso-de-ia" class="level2">
+<h2 class="anchored" data-anchor-id="criterio-de-uso-de-ia">Criterio de uso de IA</h2>
+<p>La IA no tiene que estar en todos los pasos. Úsala solo donde agregue valor real frente a una alternativa más simple.</p>
+<p><strong>Preguntas útiles para decidir si un paso necesita IA:</strong></p>
+<ul>
+<li>¿Requiere interpretar lenguaje natural?</li>
+<li>¿Requiere generar texto, clasificar o resumir?</li>
+<li>¿No hay una regla fija que lo resuelva?</li>
+</ul>
+<p>Si la respuesta a las tres es no, probablemente ese paso no necesita un LLM.</p>
+<hr>
+</section>
+<section id="ejemplos-de-flujos-válidos" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplos-de-flujos-válidos">Ejemplos de flujos válidos</h2>
+<p>Los siguientes son ejemplos orientativos. El flujo que diseñes debe ser propio y basado en un problema real o realista.</p>
+<p><strong>Ejemplo A — Monitoreo de prensa regulatoria</strong></p>
+<p>Disparador diario → búsqueda de noticias → extracción de artículos <code>[artefacto 1: JSON con titulares]</code> → clasificación por área regulatoria con LLM → <code>[artefacto 2: tabla con categoría y relevancia]</code> → filtrado de alta relevancia → resumen ejecutivo → envío por correo estructurado <code>[salida final: .md]</code></p>
+<p><strong>Ejemplo B — Procesamiento de solicitudes internas</strong></p>
+<p>Formulario web → extracción de campos → <code>[artefacto 1: JSON con datos de la solicitud]</code> → clasificación del tipo de solicitud con LLM → enrutamiento a área responsable → generación de respuesta borrador → <code>[artefacto 2: texto estructurado con respuesta]</code> → revisión humana → envío <code>[salida final: correo con campos definidos]</code></p>
+<p><strong>Ejemplo C — Análisis de feedback de clientes</strong></p>
+<p>Exportación desde CRM → limpieza de datos → <code>[artefacto 1: tabla CSV normalizada]</code> → análisis de sentimiento y categorización con LLM → <code>[artefacto 2: JSON con sentimiento, categoría y prioridad]</code> → agregación de resultados → <code>[salida final: .xlsx con dashboard de métricas]</code></p>
+<hr>
+</section>
+<section id="formato-de-entrega" class="level2">
+<h2 class="anchored" data-anchor-id="formato-de-entrega">Formato de entrega</h2>
+<ul>
+<li>Documento en PDF o Word</li>
+<li>Diagrama incluido en el documento o como archivo adjunto</li>
+<li>Extensión: 2 a 3 páginas de texto (sin contar el diagrama)</li>
+</ul>
+<hr>
+</section>
+<section id="nota-sobre-herramientas" class="level2">
+<h2 class="anchored" data-anchor-id="nota-sobre-herramientas">Nota sobre herramientas</h2>
+<p>Puedes usar cualquier herramienta para diseñar y documentar el flujo. No es necesario que el flujo esté implementado ni funcionando: el trabajo evalúa el diseño, la lógica y la justificación.</p>
+<p>Si tienes acceso a n8n u otra herramienta de automatización y quieres mostrar una captura del flujo real, puedes incluirla como complemento al diagrama.</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -218,12 +392,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

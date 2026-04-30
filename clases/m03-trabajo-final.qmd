@@ -1,0 +1,157 @@
+---
+title: "Trabajo Final: Diseño de un flujo con IA"
+subtitle: "Módulo 3 — IA Generativa y LLMs para la Transformación Organizacional"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    theme: cosmo
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=2.5cm
+---
+
+::: {.callout-note}
+**Trabajo individual.** Cada estudiante entrega su propio flujo y documento.
+:::
+
+## Objetivo
+
+Diseñar un flujo de automatización con IA que resuelva un problema concreto de tu organización o área de trabajo. Lo importante es que el flujo tenga sentido, esté bien explicado, que el uso de IA esté justificado, y que cada etapa produzca una salida con formato definido.
+
+---
+
+## Lo que debes entregar
+
+Un documento de **2 a 3 páginas** con las siguientes secciones:
+
+### 1. Descripción del problema
+
+- ¿Qué tarea quieres automatizar?
+- ¿Qué entrada recibe el flujo y qué salida final produce?
+- ¿Por qué esta tarea justifica un flujo con múltiples pasos?
+
+### 2. Diagrama del flujo
+
+Usa la herramienta que prefieras (draw.io, PowerPoint, Miro, n8n, etc.).
+
+El diagrama debe mostrar:
+
+- **Disparador** (inicio del flujo)
+- **Pasos principales** con su nombre
+- **Condiciones** si las hay (bifurcaciones, validaciones)
+- **Uso de IA o agentes** cuando corresponda
+- **Artefactos** producidos en cada etapa (ver requisito más abajo)
+
+### 3. Explicación de cada paso
+
+Para cada paso del flujo, indicar:
+
+- ¿Qué hace?
+- ¿Qué recibe como entrada?
+- ¿Qué devuelve como salida y en qué formato?
+- Si usa IA o agentes: ¿qué tarea puntual cumple y por qué no sirve un paso tradicional?
+
+### 4. Justificación general
+
+- ¿Por qué tu flujo está bien diseñado?
+- ¿Cómo ayuda a ahorrar tiempo, reducir errores o mejorar calidad?
+- ¿Qué riesgos podrían ocurrir y cómo los manejarías?
+
+---
+
+## Requisito de artefactos y salidas estructuradas
+
+El flujo debe cumplir las siguientes condiciones:
+
+### Mínimo dos artefactos intermedios
+
+Un **artefacto** es el output concreto de una etapa, con formato definido, que sirve como entrada de la etapa siguiente.
+
+Cada artefacto debe tener:
+
+- un nombre o descripción
+- un formato explícito (JSON, tabla Markdown, lista estructurada, etc.)
+- una descripción de qué información contiene
+
+**Ejemplo:** si el paso 2 clasifica noticias, su artefacto podría ser una lista JSON con campos `titulo`, `categoria` y `relevancia`. Ese JSON es lo que recibe el paso 3.
+
+### Al menos una salida estructurada final
+
+El flujo debe terminar produciendo un output en formato estructurado y reutilizable:
+
+| Formato | Ejemplos de uso |
+|---|---|
+| `.json` | Datos para otro sistema, API, base de datos |
+| `.xlsx` / `.csv` | Reporte para revisión humana, dashboard |
+| `.md` | Documento de síntesis, informe ejecutivo |
+| Base de datos | Registro persistente de resultados |
+| Correo / mensaje estructurado | Notificación con campos definidos |
+
+La salida no puede ser solo "texto libre sin estructura".
+
+---
+
+## Criterios de evaluación
+
+| Criterio | Peso | Qué se evalúa |
+|---|---|---|
+| Claridad del problema | 15% | Se entiende qué tarea se automatiza y por qué |
+| Coherencia del flujo | 25% | El diagrama tiene lógica y los pasos están bien ordenados |
+| Artefactos e intermedios | 20% | Se identifican al menos dos artefactos con formato definido |
+| Uso adecuado de IA | 20% | La IA se usa solo donde aporta valor; se justifica por qué no sirve un paso simple |
+| Explicación de los pasos | 10% | Se entiende qué hace cada paso y cómo fluye la información |
+| Presentación | 10% | Documento claro, ordenado y legible |
+
+---
+
+## Criterio de uso de IA
+
+La IA no tiene que estar en todos los pasos. Úsala solo donde agregue valor real frente a una alternativa más simple.
+
+**Preguntas útiles para decidir si un paso necesita IA:**
+
+- ¿Requiere interpretar lenguaje natural?
+- ¿Requiere generar texto, clasificar o resumir?
+- ¿No hay una regla fija que lo resuelva?
+
+Si la respuesta a las tres es no, probablemente ese paso no necesita un LLM.
+
+---
+
+## Ejemplos de flujos válidos
+
+Los siguientes son ejemplos orientativos. El flujo que diseñes debe ser propio y basado en un problema real o realista.
+
+**Ejemplo A — Monitoreo de prensa regulatoria**
+
+Disparador diario → búsqueda de noticias → extracción de artículos `[artefacto 1: JSON con titulares]` → clasificación por área regulatoria con LLM → `[artefacto 2: tabla con categoría y relevancia]` → filtrado de alta relevancia → resumen ejecutivo → envío por correo estructurado `[salida final: .md]`
+
+**Ejemplo B — Procesamiento de solicitudes internas**
+
+Formulario web → extracción de campos → `[artefacto 1: JSON con datos de la solicitud]` → clasificación del tipo de solicitud con LLM → enrutamiento a área responsable → generación de respuesta borrador → `[artefacto 2: texto estructurado con respuesta]` → revisión humana → envío `[salida final: correo con campos definidos]`
+
+**Ejemplo C — Análisis de feedback de clientes**
+
+Exportación desde CRM → limpieza de datos → `[artefacto 1: tabla CSV normalizada]` → análisis de sentimiento y categorización con LLM → `[artefacto 2: JSON con sentimiento, categoría y prioridad]` → agregación de resultados → `[salida final: .xlsx con dashboard de métricas]`
+
+---
+
+## Formato de entrega
+
+- Documento en PDF o Word
+- Diagrama incluido en el documento o como archivo adjunto
+- Extensión: 2 a 3 páginas de texto (sin contar el diagrama)
+
+---
+
+## Nota sobre herramientas
+
+Puedes usar cualquier herramienta para diseñar y documentar el flujo. No es necesario que el flujo esté implementado ni funcionando: el trabajo evalúa el diseño, la lógica y la justificación.
+
+Si tienes acceso a n8n u otra herramienta de automatización y quieres mostrar una captura del flujo real, puedes incluirla como complemento al diagrama.

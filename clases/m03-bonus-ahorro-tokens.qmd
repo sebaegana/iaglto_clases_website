@@ -1,0 +1,452 @@
+---
+listing_title: "Módulo 03 - Bonus: Ahorro de tokens"
+title: "Bonus: Cómo usar menos tokens sin perder calidad"
+subtitle: "Eficiencia, costo y diseño de prompts"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    scrollable: true
+    self-contained: true
+    incremental: false
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Enlaces
+
+-   `r fa("message", fill = "steelblue")` segana\@fen.uchile.cl
+-   `r fa("computer", fill = "steelblue")` <https://segana.netlify.app>
+-   `r fa("linkedin", fill = "steelblue")` <https://www.linkedin.com/in/sebastian-egana-santibanez/>
+-   `r fa("github", fill = "steelblue")` <https://github.com/sebaegana>
+
+------------------------------------------------------------------------
+
+# Bonus
+
+## Cómo usar menos tokens sin perder calidad
+
+### Eficiencia, costo y diseño de prompts
+
+------------------------------------------------------------------------
+
+## Por qué importa esta clase
+
+Los modelos de lenguaje cobran por token.
+
+Pero el costo no es solo monetario:
+
+-   más tokens en el contexto = mayor latencia
+-   contextos muy grandes degradan la atención del modelo
+-   la ventana de contexto tiene un límite físico
+-   los sistemas mal diseñados escalan muy mal en costo
+
+### Idea central
+
+Diseñar con eficiencia de tokens no es optimización prematura: es parte del diseño de cualquier sistema de IA en producción.
+
+------------------------------------------------------------------------
+
+## ¿Qué es un token?
+
+Un token es la unidad mínima que el modelo procesa.
+
+No equivale exactamente a una palabra ni a un carácter.
+
+### Reglas aproximadas para estimar
+
+-   1 token ≈ 4 caracteres en inglés
+-   1 token ≈ 3 caracteres en español
+-   una palabra en inglés ≈ 1–1.3 tokens
+-   una palabra en español ≈ 1.3–2 tokens
+
+### Por qué importa esto
+
+El mismo contenido semántico cuesta sistemáticamente más tokens en español que en inglés.
+
+------------------------------------------------------------------------
+
+## El idioma importa más de lo que parece
+
+Tomemos una instrucción simple:
+
+| Versión | Texto | Tokens aprox. |
+|---|---|---|
+| Español | "Resume el siguiente documento en tres puntos clave." | ~12 |
+| Inglés | "Summarize the following document in three key points." | ~10 |
+
+La diferencia parece pequeña en un solo prompt.
+
+En un sistema con miles de llamadas diarias, se acumula.
+
+------------------------------------------------------------------------
+
+## ¿Cuánto más cuesta el español?
+
+Para el mismo contenido semántico, el español genera entre un **20% y un 40% más de tokens** que el inglés.
+
+### Las razones técnicas
+
+-   el tokenizador de la mayoría de los modelos fue entrenado principalmente con texto en inglés
+-   palabras largas en español se fragmentan en más subpalabras
+-   tildes y caracteres especiales también suman
+
+### Consecuencia práctica
+
+Un sistema prompt en español de 500 tokens equivale a uno en inglés de 300–380 tokens con el mismo significado.
+
+------------------------------------------------------------------------
+
+## Trabajar en inglés: la recomendación más impactante
+
+Si el flujo lo permite, **escribir los prompts, instrucciones y system messages en inglés** es la intervención de mayor impacto.
+
+### Cuándo aplica bien
+
+-   sistema prompts y reglas internas
+-   instrucciones del agente
+-   definición de skills y planes
+-   CLAUDE.md y archivos de configuración
+
+### Cuándo no aplica
+
+-   cuando la respuesta final debe estar en español
+-   cuando el usuario interactúa directamente en español
+-   cuando el dominio contiene terminología legal o regulatoria en español
+
+------------------------------------------------------------------------
+
+## Ejemplo: mismo system prompt, dos idiomas
+
+### En español (~68 tokens)
+
+```
+Eres un asistente de análisis financiero.
+Solo respondes preguntas sobre indicadores económicos de Chile.
+Usas datos verificables. No das recomendaciones de inversión.
+Si no tienes información, lo dices explícitamente.
+```
+
+### En inglés (~52 tokens)
+
+```
+You are a financial analysis assistant.
+Only answer questions about Chilean economic indicators.
+Use verifiable data. Do not give investment advice.
+If you lack information, say so explicitly.
+```
+
+### Ahorro: ~24% en este caso
+
+En un sistema con el system prompt enviado en cada llamada, ese ahorro se multiplica por el número de requests.
+
+------------------------------------------------------------------------
+
+## La instrucción de idioma: el puente
+
+Trabajar con prompts en inglés no significa que el usuario deba escribir o leer en inglés.
+
+Se puede combinar así:
+
+```
+You are an assistant for AFP Model's customer service team.
+Always respond in Spanish, using formal tone.
+Only use information from the provided documents.
+```
+
+El prompt está en inglés. La respuesta sale en español.
+
+------------------------------------------------------------------------
+
+# Técnicas de ahorro de tokens
+
+------------------------------------------------------------------------
+
+## 1. Eliminar cortesías y relleno
+
+Los modelos no necesitan frases de introducción.
+
+### Antes
+
+```
+Por favor, cuando tengas un momento, me ayudarías a revisar
+el siguiente texto y hacer un resumen conciso de los puntos
+más importantes que se mencionan en él. Muchas gracias.
+
+[texto]
+```
+
+### Después
+
+```
+Summarize the key points of the following text.
+
+[texto]
+```
+
+### Ahorro estimado: 30–50 tokens en este ejemplo
+
+La calidad de la respuesta no cambia.
+
+------------------------------------------------------------------------
+
+## 2. Usar formato estructurado en vez de prosa
+
+Las instrucciones en lista son más compactas que las mismas instrucciones en prosa.
+
+### En prosa (~40 tokens)
+
+```
+Necesito que analices el texto y primero identifiques el tema principal,
+luego detectes el tono, y finalmente propongas tres palabras clave.
+```
+
+### En lista (~28 tokens)
+
+```
+Analyze the text:
+1. Main topic
+2. Tone
+3. Three keywords
+```
+
+------------------------------------------------------------------------
+
+## 3. Limitar el largo del output
+
+Si no necesitas una respuesta larga, pedirle explícitamente al modelo que sea breve ahorra tokens de salida.
+
+Los tokens de salida también tienen costo (y en muchos modelos, mayor costo que los de entrada).
+
+### Instrucciones útiles
+
+```
+Answer in maximum 2 sentences.
+Return only the JSON, no explanation.
+One bullet per item, no elaboration.
+```
+
+------------------------------------------------------------------------
+
+## 4. No repetir contexto que ya está en el sistema
+
+Un error frecuente: repetir en cada mensaje de usuario información que ya está en el system prompt.
+
+### Ineficiente
+
+```
+[system]: You are an assistant for AFP Model...
+[user]: Como asistente de AFP Model que solo usa documentos
+        oficiales, necesito que respondas esta pregunta...
+```
+
+### Eficiente
+
+```
+[system]: You are an assistant for AFP Model...
+[user]: ¿Cuáles son los requisitos para pensionarse por vejez?
+```
+
+------------------------------------------------------------------------
+
+## 5. Resumir el historial de conversación
+
+En sesiones largas, el historial acumulado puede consumir la mayoría de la ventana de contexto.
+
+### Estrategia
+
+En lugar de enviar toda la conversación, comprimir el historial:
+
+```
+[system]: ...instrucciones...
+[summary]: Previous conversation summary: the user asked about
+           retirement requirements. We confirmed age 65 applies
+           for men under the general regime.
+[user]: ¿Y cuál es el mínimo de años cotizados?
+```
+
+### Resultado
+
+Se mantiene la coherencia de la conversación usando una fracción de los tokens.
+
+------------------------------------------------------------------------
+
+## 6. Truncar o resumir documentos antes de enviarlos
+
+Si el documento completo no cabe o no es necesario, conviene:
+
+-   extraer solo las secciones relevantes
+-   pedir primero un resumen y luego trabajar sobre él
+-   usar RAG para traer solo los fragmentos pertinentes
+
+### Regla práctica
+
+No envíes 40 páginas cuando la respuesta está en 2 párrafos.
+RAG existe precisamente para este problema.
+
+------------------------------------------------------------------------
+
+## 7. Prompt caching
+
+Anthropic y otros proveedores ofrecen **prompt caching**: el sistema almacena en caché la parte estática del prompt (system message, documentos de referencia) y no la re-procesa en cada llamada.
+
+### Cómo funciona
+
+```
+[CACHED] system message + documentos base
+         ↓
+[NEW]    pregunta del usuario
+```
+
+Solo se cobra el procesamiento de la parte nueva.
+
+### Ahorro potencial
+
+En sistemas donde el system prompt es largo y se envía miles de veces al día, el ahorro puede ser del 80–90% en tokens de entrada.
+
+------------------------------------------------------------------------
+
+## Prompt caching: cuándo aplica
+
+| Condición | ¿Conviene cachear? |
+|---|---|
+| System prompt largo y estático | Sí — primer candidato |
+| Documentos de referencia fijos | Sí — alto impacto |
+| Few-shot examples repetidos | Sí |
+| Historial de conversación variable | No — cambia en cada turno |
+| Pregunta del usuario | No — siempre es nueva |
+
+### Requisito técnico
+
+La parte cacheada debe aparecer al inicio del contexto y superar un mínimo de tokens (varía por proveedor).
+
+------------------------------------------------------------------------
+
+## 8. Elegir el modelo correcto para la tarea
+
+Los modelos más grandes cuestan más por token.
+
+No todas las tareas requieren el modelo más potente.
+
+| Tarea | Modelo sugerido |
+|---|---|
+| Clasificación simple, sentimiento | Haiku / Flash |
+| Resumen estándar, extracción | Sonnet |
+| Razonamiento complejo, planificación | Opus |
+| Agentes multi-paso con herramientas | Sonnet o Opus según complejidad |
+
+### Regla práctica
+
+Usar el modelo más pequeño que resuelve la tarea correctamente.
+
+------------------------------------------------------------------------
+
+## Resumen de técnicas {.smaller}
+
+| Técnica | Impacto | Dificultad |
+|---|---|---|
+| Prompts en inglés | Alto | Bajo |
+| Eliminar relleno y cortesías | Medio | Bajo |
+| Instrucciones en lista, no prosa | Medio | Bajo |
+| Limitar largo del output | Alto | Bajo |
+| No repetir el system en el user turn | Medio | Bajo |
+| Resumir historial de conversación | Alto | Medio |
+| Truncar documentos / usar RAG | Alto | Medio |
+| Prompt caching | Muy alto | Medio-alto |
+| Modelo correcto para la tarea | Alto | Bajo |
+
+------------------------------------------------------------------------
+
+## Un ejemplo integrado
+
+Sistema de análisis de noticias que corre 500 veces por día.
+
+### Sin optimización
+
+-   System prompt en español: 800 tokens × 500 = 400,000 tokens/día
+-   Sin caching, sin truncación, sin límite de output
+
+### Con optimización
+
+-   System prompt en inglés: ~580 tokens (−27%)
+-   Caching activado: solo se cobra en el primer request del lote
+-   Output limitado a campos JSON: −40% en tokens de salida
+-   Modelo Haiku para clasificación simple
+
+### Resultado
+
+El mismo sistema, a una fracción del costo diario.
+
+------------------------------------------------------------------------
+
+## Lo que no se debe recortar
+
+Ahorrar tokens no significa degradar la calidad del contexto.
+
+### No conviene recortar
+
+-   las restricciones de seguridad y guardrails
+-   la definición del rol del agente
+-   las instrucciones sobre qué no debe hacer el sistema
+-   el criterio de éxito de la tarea
+
+### Regla final
+
+Elimina verbosidad, no claridad.
+Comprime relleno, no restricciones.
+
+------------------------------------------------------------------------
+
+## Checklist de eficiencia
+
+Antes de desplegar un sistema en producción, revisar:
+
+- [ ] ¿El system prompt está en inglés?
+- [ ] ¿Tiene frases de cortesía o relleno eliminables?
+- [ ] ¿Está activo el prompt caching en las partes estáticas?
+- [ ] ¿El output tiene longitud máxima definida?
+- [ ] ¿Se está usando el modelo mínimo suficiente para la tarea?
+- [ ] ¿Los documentos se entregan por RAG en lugar de completos?
+- [ ] ¿El historial largo se comprime o resume?
+
+------------------------------------------------------------------------
+
+## Idea de cierre
+
+Diseñar con eficiencia de tokens no es solo una decisión técnica.
+
+Es una decisión de producto:
+
+-   los sistemas más eficientes son más rápidos
+-   los sistemas más eficientes son más baratos de escalar
+-   los sistemas más eficientes tienen menos ruido en el contexto
+-   los sistemas más eficientes son más fáciles de mantener y auditar
+
+### El contexto bien diseñado no solo es útil: es compacto.
+
+------------------------------------------------------------------------
+
+# Referencias sugeridas
+
+::: tiny
+
+-   Anthropic, "Prompt caching". <https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching>
+-   OpenAI, "Managing tokens". <https://platform.openai.com/docs/guides/production-best-practices>
+-   OpenAI Tokenizer (herramienta interactiva). <https://platform.openai.com/tokenizer>
+-   Anthropic, "Models overview" (tabla de costos por modelo). <https://docs.anthropic.com/en/docs/about-claude/models>
+
+:::
