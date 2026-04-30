@@ -1,0 +1,168 @@
+---
+listing_title: "Módulo 03 - Actividad: mejorar un prompt"
+title: "Actividad: Mejorar un prompt malo"
+subtitle: "Claridad, eficiencia y formato de salida"
+institution: "FEN Unegocios"
+lang: es
+date: today
+format:
+  revealjs:
+    theme: simple
+    center: false
+    slide-number: true
+    scrollable: true
+    self-contained: true
+    incremental: false
+    transition: slide
+    logo: "imagenes/Imagen1.jpg"
+    footer: "© Sebastián Egaña Santibáñez"
+    include-in-header: styles.html
+  pdf:
+    toc: false
+    papersize: a4
+    geometry: margin=1in
+---
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
+
+# Actividad
+
+## Mejorar un prompt malo
+
+------------------------------------------------------------------------
+
+## La tarea
+
+Un analista del área de inversiones escribió este prompt para automatizar el análisis diario de noticias financieras.
+
+El prompt funciona, pero es costoso, lento y produce salidas inconsistentes.
+
+**El desafío: reescribirlo.**
+
+------------------------------------------------------------------------
+
+## El prompt original {.smaller}
+
+```
+Hola, muchas gracias por tu ayuda. Necesito que por favor analices
+la siguiente noticia financiera que encontré hoy y que es relevante
+para nuestro trabajo de análisis de inversiones en Chile.
+
+Lo que necesito es que primero me digas de qué trata la noticia,
+luego que me indiques si el tono es positivo, negativo o neutro,
+y también me gustaría saber qué activos o sectores podrían verse
+afectados según lo que dice la noticia. Además, si puedes decirme
+qué tan relevante crees que es para el mercado chileno eso sería
+muy útil, en una escala del 1 al 5 donde 1 es poco relevante y
+5 es muy relevante. Finalmente, si tienes alguna observación
+adicional que creas importante mencionar, puedes agregarla.
+
+Muchas gracias de antemano por tu tiempo y ayuda con esto.
+
+Noticia: {texto_noticia}
+```
+
+------------------------------------------------------------------------
+
+## Qué tiene de malo {.smaller}
+
+Antes de reescribirlo, el grupo identifica los problemas:
+
+| Problema | Dónde aparece |
+|---|---|
+| Cortesías que no aportan nada | "Hola, muchas gracias...", "Muchas gracias de antemano..." |
+| Instrucciones en prosa, no en lista | Todo mezclado en un párrafo |
+| Sin formato de salida definido | El modelo decide cómo presentar los resultados |
+| Escrito en español | 20–40% más tokens que en inglés |
+| Instrucción vaga al final | "si tienes alguna observación adicional..." |
+
+------------------------------------------------------------------------
+
+## La tarea del grupo
+
+**Duración:** 15 minutos
+**Grupos:** 3 a 4 personas
+
+Reescribir el prompt aplicando lo visto en clase:
+
+1. Eliminar cortesías y relleno
+2. Pasar a inglés
+3. Convertir las instrucciones a lista numerada
+4. Definir un formato de salida estructurado (JSON, tabla o Markdown)
+5. Eliminar instrucciones vagas
+
+------------------------------------------------------------------------
+
+## Criterio de evaluación del grupo {.smaller}
+
+Al terminar, el prompt reescrito debería cumplir:
+
+- [ ] No tiene frases de cortesía ni relleno
+- [ ] Está en inglés
+- [ ] Las instrucciones son una lista clara y ordenada
+- [ ] El output tiene un formato definido y reproducible
+- [ ] No hay instrucciones ambiguas ("si puedes", "si crees importante")
+- [ ] Es más corto que el original
+
+------------------------------------------------------------------------
+
+## Puesta en común
+
+Cada grupo comparte su versión reescrita.
+
+### Preguntas para la discusión
+
+- ¿Qué formato de salida eligieron y por qué?
+- ¿Cuántos tokens estiman que ahorraron?
+- ¿Qué instrucción fue más difícil de compactar?
+
+------------------------------------------------------------------------
+
+## Una versión de referencia {.smaller}
+
+```
+Analyze the following financial news article.
+
+Instructions:
+1. Summarize the main topic in one sentence.
+2. Classify the tone: positive, negative, or neutral.
+3. List the assets or sectors potentially affected.
+4. Rate relevance for the Chilean market (1–5).
+
+Return only a JSON object with this structure:
+{
+  "summary": "...",
+  "tone": "positive | negative | neutral",
+  "affected_assets": ["...", "..."],
+  "chile_relevance": 1-5
+}
+
+News: {texto_noticia}
+```
+
+------------------------------------------------------------------------
+
+## Comparación {.smaller}
+
+| | Prompt original | Prompt mejorado |
+|---|---|---|
+| **Tokens aprox.** | ~130 | ~65 |
+| **Idioma** | Español | Inglés |
+| **Formato de salida** | Libre | JSON definido |
+| **Instrucciones** | Prosa en un párrafo | Lista numerada |
+| **Ambigüedad** | Alta | Ninguna |
+| **Reproducibilidad** | Baja | Alta |
+
+### El mismo resultado, la mitad del costo por llamada.
+
+------------------------------------------------------------------------
+
+## Idea de cierre
+
+Un prompt bien escrito no es solo más barato.
+
+Es más predecible, más fácil de mantener y más fácil de evaluar.
+
+### La claridad del prompt es la claridad del sistema.
